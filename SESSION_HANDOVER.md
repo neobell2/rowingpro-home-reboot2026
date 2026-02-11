@@ -103,11 +103,24 @@ Version Control: Git + GitHub
 
 ## 🚧 다음 작업 (Phase 2: 개발)
 
-### 우선순위 1: Astro 프로젝트 생성
-**담당:** Claude Code (Sonnet)
+### ⚠️ 중요: 프로젝트 상태
+**Astro 환경은 이미 설정되어 있음 (package.json, astro.config.mjs, node_modules 등)**
+
+**하지만:**
+- src/pages/에 index.astro와 colors.astro가 있지만, 이는 **이전 작업의 잔재** (엉망이 된 파일)
+- 2026-02-11에 Git 히스토리 reset 후 프로젝트를 새로 세팅함
+- **기존 페이지 파일들은 참고만 하고, 13개 페이지를 처음부터 깨끗하게 다시 구현 필요**
+
+### 우선순위 1: 13개 페이지 구조 구현
+**담당:** Claude Code (Sonnet) 또는 Gemini Coder
 **작업 내용:**
-1. Astro + Tailwind CSS 프로젝트 초기화
-2. 13개 페이지 파일 생성 (src/pages/)
+1. src/pages/ 폴더의 기존 파일 검토 (재사용 가능 여부 판단)
+2. 13개 페이지 파일 생성 또는 재작성:
+   - index.astro (Home) - 기존 파일 검토 후 재작성
+   - about.astro, programs.astro, service.astro
+   - track-record.astro, contact.astro
+   - service/training.astro, teambuilding.astro, leadership.astro, event.astro, wellness.astro
+   - privacy.astro, 404.astro
 3. 공통 레이아웃 구현 (src/layouts/MainLayout.astro)
 4. 헤더/푸터/네비게이션 컴포넌트
 5. npm run dev 실행 확인
@@ -209,15 +222,23 @@ Version Control: Git + GitHub
 - [x] Git 히스토리 정리 (대용량 파일 제거)
 - [x] 프로젝트 문서 확인
 - [x] **SESSION_HANDOVER.md 복구** ✅
+- [x] 프로젝트 상태 확인 (Astro 환경 이미 설정됨)
 
 **결정:**
 - Git 사용자: neobell2 / neobell2@gmail.com
 - Repository: rowingpro-home-reboot2026
 - 참고자료 폴더는 .gitignore로 제외
 
+**특이사항:**
+- **이전 작업에서 랜딩페이지 시안 확정 후 페이지 제작하다가 파일이 엉망이 됨**
+- **오늘(2026-02-11) Git 히스토리 reset 후 새로 세팅함**
+- src/pages/에 index.astro, colors.astro 있지만 이전 작업의 잔재
+- 기존 파일 검토 후, 13개 페이지를 처음부터 깨끗하게 다시 구현 필요
+
 **다음:**
-- Astro 프로젝트 생성 시작
-- Phase 2 개발 착수
+- 기존 코드 검토 (재사용 vs 재작성 판단)
+- 13개 페이지 깨끗하게 구현
+- Phase 2 개발 본격 착수
 
 ### Session 5 (2026-02-02)
 **완료:**
