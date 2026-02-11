@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROWINGPRO | Premium Teamwork Education</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts: 시인성을 고려한 Playfair(500/700) & Montserrat(400/600) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --navy: #0A1D37;   /* Deep Regatta Navy */
+            --gold: #B89146;   /* Noble Gold */
+            --mist: #E5EBF2;   /* Steel Mist Blue */
+            --antique: #FCFAF5;
+        }
+
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            background-color: var(--antique);
+            color: var(--navy);
+            margin: 0; padding: 0;
+            line-height: 1.6;
+        }
+
+        .font-serif { font-family: 'Playfair Display', serif; }
+        
+        /* 럭셔리 프레임 레이아웃 */
+        .page-frame {
+            border: 15px solid #fff;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* 헤드카피 이퀄 디자인 (시인성 위해 두께 2px로 보정) */
+        .equal-box {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 60px;
+            margin: 0 30px;
+        }
+        .equal-line {
+            height: 2px;
+            width: 100%;
+            background-color: var(--gold);
+        }
+
+        /* 서비스 카드 */
+        .program-card {
+            background: white;
+            border: 1px solid rgba(10, 29, 55, 0.1);
+            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .program-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+        }
+
+        /* 버튼: 고대비 및 시인성 확보 */
+        .btn-premium {
+            padding: 1rem 3rem;
+            background-color: var(--navy);
+            color: white;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            transition: all 0.3s;
+        }
+        .btn-premium:hover {
+            background-color: var(--gold);
+        }
+
+        /* 슬로우 마키 */
+        .marquee-bg {
+            background-color: var(--navy);
+            padding: 20px 0;
+            overflow: hidden;
+        }
+        .marquee-text {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 50s linear infinite;
+            color: rgba(255,255,255,0.8);
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="page-frame">
+        
+        <!-- Navigation -->
+        <nav class="sticky top-0 w-full z-50 bg-[#fcfaf5]/95 backdrop-blur-md border-b border-gray-200 py-6 px-10 flex justify-between items-center">
+            <div class="flex flex-col">
+                <a href="#" class="text-2xl font-bold tracking-tighter text-slate-900">ROWINGPRO</a>
+                <span class="text-[9px] uppercase tracking-[0.3em] text-gray-400 font-semibold">National Team Standard • Est. 2013</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-10 text-[10px] font-bold tracking-widest uppercase text-slate-600">
+                <a href="#spirit" class="hover:text-blue-900 transition">Philosophy</a>
+                <a href="#program" class="hover:text-blue-900 transition">Programs</a>
+                <a href="#masters" class="hover:text-blue-900 transition">Masters</a>
+            </div>
+
+            <a href="#contact" class="hidden md:block border-b-2 border-amber-600 pb-1 text-[10px] font-bold uppercase tracking-widest text-slate-900 hover:text-amber-600 transition">Request Proposal</a>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="relative min-h-[85vh] flex items-center justify-center text-center px-6 overflow-hidden border-b border-gray-100 bg-[#F0F4F8]">
+            <img src="https://images.unsplash.com/photo-1544651395-520f1710ad5e?auto=format&fit=crop&q=80&w=2000" class="absolute inset-0 w-full h-full object-cover opacity-20 grayscale">
+            
+            <div class="relative z-10 max-w-6xl" data-aos="fade-up">
+                <p class="font-serif italic text-2xl md:text-3xl text-amber-700 mb-8">The Art of Synergy.</p>
+                
+                <h1 class="flex flex-col md:flex-row items-center justify-center font-serif text-5xl md:text-9xl text-slate-900 leading-tight">
+                    Rowing
+                    <div class="equal-box my-6 md:my-0" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="equal-line"></div>
+                        <div class="equal-line"></div>
+                    </div>
+                    Teamwork
+                </h1>
+                
+                <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto font-medium leading-relaxed mt-12">
+                    사무실에선 몰랐던 우리 팀의 진짜 호흡, <br class="hidden md:block">
+                    로잉프로가 조정의 가치로 리더십과 팀워크의 정수를 교육합니다.
+                </p>
+                
+                <div class="mt-12 flex flex-col md:flex-row justify-center gap-4">
+                    <a href="#program" class="btn-premium">View Programs</a>
+                    <a href="#contact" class="px-10 py-4 border border-slate-300 text-[11px] font-bold uppercase tracking-widest hover:bg-white transition">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rolling Banner -->
+        <div class="marquee-bg">
+            <div class="marquee-text">
+                Harmony & Synergy • National Masters • 11 Years Accident Free • Noble Leadership • Excellence in Teamwork • Harmony & Synergy • National Masters • 11 Years Accident Free • 
+            </div>
+        </div>
+
+        <!-- Spirit Section -->
+        <section id="spirit" class="py-32 bg-white px-6 border-b border-gray-100">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+                <div data-aos="fade-right">
+                    <span class="text-amber-700 font-bold text-xs tracking-widest uppercase mb-4 block">Education Philosophy</span>
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold italic mb-8 leading-tight">
+                        "In the <span class="border-b-4 border-amber-100">same boat.</span>"
+                    </h2>
+                    <p class="text-lg text-slate-600 font-medium leading-relaxed mb-8">
+                        조정 선수들에게 팀워크는 생존이자 성취의 전부입니다. 
+                        로잉프로는 국가대표 출신 코치진이 직접 '팀이란 무엇인가'를 일깨워주는 프리미엄 교육 플랫폼입니다. 
+                        단순한 운동을 넘어 건강함, 에너지, 그리고 고귀한 협력을 배웁니다.
+                    </p>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-slate-900 border-l-4 border-amber-600 pl-3">Sync</h4>
+                            <p class="text-sm text-gray-500 mt-2">개인의 속도가 아닌 팀의 리듬을 맞추는 법</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 border-l-4 border-amber-600 pl-3">Respect</h4>
+                            <p class="text-sm text-gray-500 mt-2">동료를 향한 배려와 헌신의 가치</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?auto=format&fit=crop&q=80&w=800" class="w-full h-auto shadow-2xl border-[15px] border-white grayscale hover:grayscale-0 transition-all duration-700">
+                    <div class="absolute -bottom-10 -left-10 bg-[#0A1D37] text-white p-10 hidden md:block">
+                        <p class="text-3xl font-serif italic mb-2">100% Safe</p>
+                        <p class="text-[10px] tracking-widest font-bold opacity-70 uppercase">11년 무사고 운영 기록</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Section -->
+        <section id="program" class="py-32 px-6 bg-[#F8F9FB]">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-20" data-aos="fade-up">
+                    <h2 class="text-4xl md:text-6xl font-serif font-bold italic text-slate-900">Education Programs</h2>
+                    <p class="mt-6 text-gray-500 font-semibold tracking-widest uppercase text-xs">참가 목적에 따른 최적의 솔루션</p>
+                </div>
+
+                <div class="grid md:grid-cols-4 gap-6">
+                    <!-- Corporate -->
+                    <div class="program-card p-10 flex flex-col text-center" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-building text-3xl text-amber-700 mb-8"></i>
+                        <h3 class="text-xl font-bold mb-4">Corporate HRD</h3>
+                        <p class="text-sm text-gray-500 font-medium mb-8">기업 임직원을 위한 고도의 팀빌딩 및 조직 활성화 프로그램.</p>
+                        <a href="#" class="mt-auto text-[10px] font-bold text-amber-700 uppercase border-b border-amber-700 pb-1 self-center">Details</a>
+                    </div>
+                    <!-- School -->
+                    <div class="program-card p-10 flex flex-col text-center" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-graduation-cap text-3xl text-amber-700 mb-8"></i>
+                        <h3 class="text-xl font-bold mb-4">Youth Spirit</h3>
+                        <p class="text-sm text-gray-500 font-medium mb-8">초중고교 학교 체육 및 대학생 리더십 캠프.</p>
+                        <a href="#" class="mt-auto text-[10px] font-bold text-amber-700 uppercase border-b border-amber-700 pb-1 self-center">Details</a>
+                    </div>
+                    <!-- Event -->
+                    <div class="program-card p-10 flex flex-col text-center" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-flag-checkered text-3xl text-amber-700 mb-8"></i>
+                        <h3 class="text-xl font-bold mb-4">Event & Festival</h3>
+                        <p class="text-sm text-gray-500 font-medium mb-8">축제 및 이벤트 부스 참여형 로잉 체험 솔루션.</p>
+                        <a href="#" class="mt-auto text-[10px] font-bold text-amber-700 uppercase border-b border-amber-700 pb-1 self-center">Details</a>
+                    </div>
+                    <!-- CSV -->
+                    <div class="program-card p-10 flex flex-col text-center" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fas fa-heart text-3xl text-amber-700 mb-8"></i>
+                        <h3 class="text-xl font-bold mb-4">Social / CSV</h3>
+                        <p class="text-sm text-gray-500 font-medium mb-8">장애인 및 소외계층을 위한 진정성 있는 체육 봉사활동.</p>
+                        <a href="#" class="mt-auto text-[10px] font-bold text-amber-700 uppercase border-b border-amber-700 pb-1 self-center">Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Masters -->
+        <section id="masters" class="py-32 bg-white px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-serif font-bold italic mb-10" data-aos="fade-up">The Masters</h2>
+                <p class="text-lg text-gray-500 font-medium leading-relaxed mb-16" data-aos="fade-up" data-aos-delay="200">
+                    로잉프로의 모든 리더는 <strong class="text-slate-900">전원 국가대표 및 엘리트 선수 출신</strong>입니다. <br class="hidden md:block">
+                    10년 이상의 경력을 갖춘 진짜 전문가들이 전하는 고귀한 가르침을 경험하십시오.
+                </p>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div data-aos="zoom-in" data-aos-delay="100">
+                        <div class="h-64 bg-gray-100 mb-4 grayscale">
+                            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover">
+                        </div>
+                        <p class="text-xs font-bold uppercase tracking-widest">National Champion</p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="200">
+                        <div class="h-64 bg-gray-100 mb-4 grayscale">
+                            <img src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover">
+                        </div>
+                        <p class="text-xs font-bold uppercase tracking-widest">Master Coach</p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="300">
+                        <div class="h-64 bg-gray-100 mb-4 grayscale">
+                            <img src="https://images.unsplash.com/photo-1533174072545-e8d4aa97d848?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover">
+                        </div>
+                        <p class="text-xs font-bold uppercase tracking-widest">Elite Specialist</p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="400">
+                        <div class="h-64 bg-gray-100 mb-4 grayscale">
+                            <img src="https://images.unsplash.com/photo-1558611997-6a56c0b89b43?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover">
+                        </div>
+                        <p class="text-xs font-bold uppercase tracking-widest">Safety Master</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section id="contact" class="py-32 bg-[#0A1D37] text-center px-6">
+            <h2 class="text-4xl md:text-7xl font-serif font-bold italic text-white mb-12" data-aos="fade-up">"We are in the same boat."</h2>
+            <div class="flex flex-col md:flex-row justify-center gap-6" data-aos="fade-up" data-aos-delay="200">
+                <a href="mailto:info@rowingpro.com" class="px-12 py-5 bg-amber-600 text-white font-bold uppercase tracking-[0.2em] text-xs hover:bg-amber-700 transition">Request Private Proposal</a>
+                <a href="#" class="px-12 py-5 border border-white/30 text-white font-bold uppercase tracking-[0.2em] text-xs hover:bg-white/10 transition">Call to Consult</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-12 border-t border-gray-100 px-10 flex flex-col md:flex-row justify-between items-center text-gray-400">
+            <div class="flex flex-col mb-4 md:mb-0">
+                <span class="text-xl font-bold text-slate-900">ROWINGPRO</span>
+                <span class="text-[9px] uppercase tracking-widest mt-1">Republic of Korea • Established 2013</span>
+            </div>
+            <p class="text-[9px] font-bold uppercase tracking-[0.3em]">© 2024 ROWINGPRO. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({ duration: 1200, once: true }); </script>
+</body>
+</html>

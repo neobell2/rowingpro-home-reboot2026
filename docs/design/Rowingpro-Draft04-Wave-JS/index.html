@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROWINGPRO | The Interactive Synergy</title>
+    
+    <!-- CSS 및 라이브러리 로드 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --navy: #0A1D37;   /* Regatta Navy */
+            --gold: #B89146;   /* Noble Gold */
+            --antique: #FCFAF5;
+        }
+
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            background-color: #000; /* 물결이 잘 보이도록 블랙 배경 */
+            color: #fff; 
+            margin: 0; padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* 헨리 레가타 스타일 화이트 프레임 */
+        .site-frame {
+            border: 12px solid white;
+            min-height: 100vh;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* 3D 캔버스 배경 고정 */
+        #wave-canvas {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            z-index: -1; /* 모든 콘텐츠 뒤에 배치 */
+        }
+
+        .font-serif { font-family: 'Playfair Display', serif; }
+        
+        /* 헤드카피 이퀄 마크 (=) */
+        .equal-symbol {
+            display: inline-flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 50px;
+            margin: 0 25px;
+        }
+        .equal-line {
+            height: 2px;
+            width: 100%;
+            background-color: var(--gold);
+            box-shadow: 0 0 10px rgba(184, 145, 70, 0.5);
+        }
+
+        /* 카드 글래스모피즘 (물결이 살짝 비침) */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.5s ease;
+        }
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.07);
+            border-color: var(--gold);
+            transform: translateY(-10px);
+        }
+
+        .btn-regatta {
+            padding: 1rem 3rem;
+            border: 1px solid white;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            transition: all 0.4s;
+        }
+        .btn-regatta:hover {
+            background: white;
+            color: black;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- 1. 배경 3D Interactive Silk Wave -->
+    <div id="wave-canvas"></div>
+
+    <!-- 2. 사이트 레이아웃 시작 -->
+    <div class="site-frame">
+        
+        <!-- Navigation -->
+        <nav class="sticky top-0 w-full z-50 py-8 px-10 flex justify-between items-center mix-blend-difference">
+            <div class="flex flex-col">
+                <a href="#" class="text-2xl font-bold tracking-tighter text-white">ROWINGPRO</a>
+                <span class="text-[9px] uppercase tracking-[0.4em] text-gray-400">The Art of Synergy • Since 2013</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-12 text-[10px] font-bold tracking-widest uppercase text-gray-300">
+                <a href="#spirit" class="hover:text-white transition">Spirit</a>
+                <a href="#solutions" class="hover:text-white transition">Solutions</a>
+                <a href="#masters" class="hover:text-white transition">Masters</a>
+            </div>
+
+            <a href="#contact" class="hidden md:block btn-regatta py-2 px-6 border-gray-500 text-[9px]">Contact Us</a>
+        </nav>
+
+        <!-- Hero Section: Rowing = Teamwork -->
+        <section class="relative h-[90vh] flex flex-col items-center justify-center text-center px-6">
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <p class="font-serif italic text-2xl md:text-3xl text-gray-300 mb-8 opacity-80">The Art of Synergy.</p>
+                
+                <h1 class="flex flex-col md:flex-row items-center justify-center font-serif text-6xl md:text-9xl text-white leading-tight mb-12">
+                    Rowing
+                    <div class="equal-symbol my-6 md:my-0">
+                        <div class="equal-line"></div>
+                        <div class="equal-line"></div>
+                    </div>
+                    Teamwork
+                </h1>
+                
+                <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto font-medium leading-relaxed tracking-wide">
+                    사무실에선 결코 몰랐던 우리 팀의 진짜 호흡, <br class="hidden md:block">
+                    로잉프로가 조정의 가치로 리더십과 팀워크의 본질을 교육합니다.
+                </p>
+                
+                <div class="mt-16 flex flex-col md:flex-row justify-center gap-6">
+                    <a href="#solutions" class="btn-regatta bg-white text-black border-none">Explore Curriculum</a>
+                    <a href="#contact" class="btn-regatta">Get Proposal</a>
+                </div>
+            </div>
+            
+            <!-- 스크롤 유도 -->
+            <div class="absolute bottom-10 animate-bounce opacity-30">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </div>
+        </section>
+
+        <!-- Solutions Section -->
+        <section id="solutions" class="py-32 px-6 relative z-20">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-20" data-aos="fade-right">
+                    <span class="text-amber-600 font-bold text-xs tracking-widest uppercase mb-4 block">Our Solutions</span>
+                    <h2 class="text-4xl md:text-6xl font-serif font-bold italic text-white">Noble Challenges</h2>
+                </div>
+
+                <div class="grid md:grid-cols-4 gap-6">
+                    <!-- Corporate -->
+                    <div class="glass-card p-12 flex flex-col" data-aos="fade-up" data-aos-delay="100">
+                        <span class="text-xs font-bold text-gray-500 mb-10 uppercase tracking-widest">01 / Corporate</span>
+                        <h3 class="text-2xl font-bold mb-4">기업 HRD</h3>
+                        <p class="text-sm text-gray-400 font-light leading-relaxed mb-10">기업 연수 및 워크숍을 위한 고도의 팀빌딩 솔루션.</p>
+                        <a href="#" class="mt-auto text-[10px] font-bold text-amber-600 border-b border-amber-600 pb-1 self-start">Details</a>
+                    </div>
+                    <!-- School -->
+                    <div class="glass-card p-12 flex flex-col" data-aos="fade-up" data-aos-delay="200">
+                        <span class="text-xs font-bold text-gray-500 mb-10 uppercase tracking-widest">02 / Academy</span>
+                        <h3 class="text-2xl font-bold mb-4">학교 체육</h3>
+                        <p class="text-sm text-gray-400 font-light leading-relaxed mb-10">아이비리그의 조정 문화를 통한 청소년 리더십 교육.</p>
+                        <a href="#" class="mt-auto text-[10px] font-bold text-amber-600 border-b border-amber-600 pb-1 self-start">Details</a>
+                    </div>
+                    <!-- Event -->
+                    <div class="glass-card p-12 flex flex-col" data-aos="fade-up" data-aos-delay="300">
+                        <span class="text-xs font-bold text-gray-500 mb-10 uppercase tracking-widest">03 / Event</span>
+                        <h3 class="text-2xl font-bold mb-4">이벤트 부스</h3>
+                        <p class="text-sm text-gray-400 font-light leading-relaxed mb-10">대형 축제 및 행사 참여형 로잉 챌린지 프로그램.</p>
+                        <a href="#" class="mt-auto text-[10px] font-bold text-amber-600 border-b border-amber-600 pb-1 self-start">Details</a>
+                    </div>
+                    <!-- Social -->
+                    <div class="glass-card p-12 flex flex-col" data-aos="fade-up" data-aos-delay="400">
+                        <span class="text-xs font-bold text-gray-500 mb-10 uppercase tracking-widest">04 / CSV</span>
+                        <h3 class="text-2xl font-bold mb-4">사회공헌</h3>
+                        <p class="text-sm text-gray-400 font-light leading-relaxed mb-10">소외계층과 함께 나누는 고귀한 땀방울의 가치.</p>
+                        <a href="#" class="mt-auto text-[10px] font-bold text-amber-600 border-b border-amber-600 pb-1 self-start">Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Authority Section -->
+        <section id="masters" class="py-32 px-6 border-t border-white/5">
+            <div class="max-w-4xl mx-auto text-center" data-aos="zoom-in">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold italic mb-12 text-white">National Masters</h2>
+                <p class="text-lg text-gray-400 font-light leading-relaxed mb-16">
+                    로잉프로의 모든 코치는 <strong class="text-white">전원 국가대표 및 엘리트 선수 출신</strong>입니다. <br class="hidden md:block">
+                    지난 11년간 단 1건의 인명사고도 없이 증명해온 안전과 전문성. <br class="hidden md:block">
+                    진짜 전문가들이 전하는 조정의 정수를 경험하십시오.
+                </p>
+                <div class="flex justify-center gap-12">
+                    <div class="text-center">
+                        <p class="text-4xl font-bold text-white mb-2">11Yrs</p>
+                        <p class="text-[9px] uppercase tracking-widest text-amber-600">Zero Accident</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-4xl font-bold text-white mb-2">100%</p>
+                        <p class="text-[9px] uppercase tracking-widest text-amber-600">Elite Masters</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-20 border-t border-white/5 text-center text-gray-500">
+            <h2 class="font-serif italic text-3xl mb-8 opacity-20 text-white">"We are in the same boat."</h2>
+            <p class="text-[9px] font-bold uppercase tracking-[0.5em] mb-4">© 2024 ROWINGPRO. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-10 text-xs">
+                <a href="#" class="hover:text-white transition">Instagram</a>
+                <a href="#" class="hover:text-white transition">YouTube</a>
+                <a href="#" class="hover:text-white transition">Privacy Policy</a>
+            </div>
+        </footer>
+
+    </div> <!-- Site Frame End -->
+
+    <!-- Three.js (Interactive Silk Wave Animation) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1200, once: true });
+
+        let scene, camera, renderer, lines = [];
+        let mouseX = 0, mouseY = 0;
+
+        init();
+        animate();
+
+        function init() {
+            scene = new THREE.Scene();
+            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 2000);
+            camera.position.z = 600;
+
+            renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+            document.getElementById('wave-canvas').appendChild(renderer.domElement);
+
+            // 실크 물결 생성 (04번 시안 스타일 재현)
+            const lineCount = 18; // 선의 밀도
+            for (let j = 0; j < lineCount; j++) {
+                const geometry = new THREE.BufferGeometry();
+                const points = [];
+                for (let i = 0; i < 120; i++) {
+                    points.push(new THREE.Vector3(i * 25 - 1500, 0, 0));
+                }
+                geometry.setFromPoints(points);
+
+                // 색상 그라데이션 (04번 시안의 블루~퍼플~시아 톤)
+                const material = new THREE.LineBasicMaterial({
+                    color: new THREE.Color(`hsl(${210 + j * 4}, 70%, 45%)`),
+                    transparent: true,
+                    opacity: 0.35,
+                    blending: THREE.AdditiveBlending
+                });
+
+                const line = new THREE.Line(geometry, material);
+                line.userData.offset = j * 0.15;
+                scene.add(line);
+                lines.push(line);
+            }
+
+            window.addEventListener('mousemove', (e) => {
+                // 마우스 위치 정규화 (-1 ~ 1)
+                mouseX = (e.clientX - window.innerWidth / 2);
+                mouseY = (e.clientY - window.innerHeight / 2);
+            });
+
+            window.addEventListener('resize', () => {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            });
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // 카메라가 마우스를 부드럽게 추적 (인터랙티브의 핵심)
+            camera.position.x += (mouseX * 0.4 - camera.position.x) * 0.05;
+            camera.position.y += (-mouseY * 0.4 - camera.position.y) * 0.05;
+            camera.lookAt(scene.position);
+
+            const time = Date.now() * 0.0008;
+
+            lines.forEach((line, index) => {
+                const positions = line.geometry.attributes.position.array;
+                for (let i = 0; i < 120; i++) {
+                    const x = i * 0.08;
+                    // 실크처럼 부드러운 물결 수학 공식
+                    const wave1 = Math.sin(x + time + line.userData.offset) * 80;
+                    const wave2 = Math.cos(x * 0.5 + time * 1.2) * 40;
+                    
+                    // 마우스 y축 영향도를 미세하게 섞음 (마우스 따라 물결 높이 변화)
+                    const mouseImpact = (mouseY * 0.1) * Math.sin(x);
+                    
+                    positions[i * 3 + 1] = wave1 + wave2 + mouseImpact; 
+                    positions[i * 3 + 2] = Math.sin(time + x) * 50; // z축 움직임으로 입체감 추가
+                }
+                line.geometry.attributes.position.needsUpdate = true;
+            });
+
+            renderer.render(scene, camera);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROWINGPRO | BLUE IMPACT</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --brand-blue: #3572A5; /* 로고에서 추출한 정밀 블루 */
+            --dark-bg: #050505;
+        }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--dark-bg); 
+            color: #fff; 
+            overflow-x: hidden; 
+        }
+        .font-bebas { font-family: 'Bebas Neue', cursive; }
+        
+        /* Three.js Canvas */
+        #hero-canvas {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100vh;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* 로고 블루 글로우 효과 */
+        .text-blue-glow {
+            color: var(--brand-blue);
+            text-shadow: 0 0 15px rgba(53, 114, 165, 0.6);
+        }
+
+        /* 익스트림 이퀄 마크 (=) Brand Blue Version */
+        .extreme-equal {
+            display: inline-flex;
+            flex-direction: column;
+            gap: 12px;
+            transform: skewX(-20deg);
+        }
+        .equal-bar {
+            height: 14px;
+            width: 85px;
+            background: var(--brand-blue);
+            box-shadow: 0 0 15px rgba(53, 114, 165, 0.4);
+        }
+
+        /* 로고 감성을 담은 버튼 */
+        .btn-brand-blue {
+            background-color: var(--brand-blue);
+            color: #fff;
+            font-family: 'Bebas Neue';
+            font-size: 1.8rem;
+            letter-spacing: 0.1em;
+            padding: 1rem 3.5rem;
+            transform: skewX(-15deg);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            border: 2px solid var(--brand-blue);
+        }
+        .btn-brand-blue:hover {
+            background-color: transparent;
+            color: var(--brand-blue);
+            box-shadow: 0 0 30px rgba(53, 114, 165, 0.5);
+            transform: skewX(-15deg) scale(1.05);
+        }
+
+        /* 블루 롤링 배너 */
+        .rolling-banner {
+            background: var(--brand-blue);
+            color: #fff;
+            font-family: 'Bebas Neue';
+            font-size: 2.2rem;
+            padding: 12px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            z-index: 20;
+        }
+        .rolling-track {
+            display: inline-block;
+            animation: rolling 15s linear infinite;
+        }
+        @keyframes rolling {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* 블랙 톤 변주 */
+        .bg-carbon { background-color: #121212; }
+        .bg-deep { background-color: #080808; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black/90 backdrop-blur-md border-b border-blue-900/20 px-8 py-5 flex justify-between items-center">
+        <!-- Logo Text Style -->
+        <a href="#" class="text-3xl font-black italic tracking-tighter flex items-center gap-2 font-bebas">
+            <span class="text-blue-500 underline decoration-blue-500">R</span>OWING <span class="text-white">PRO</span>
+        </a>
+        <div class="hidden md:flex space-x-12 font-bebas text-xl tracking-widest text-zinc-400">
+            <a href="#about" class="hover:text-blue-500 transition">GRIT</a>
+            <a href="#program" class="hover:text-blue-500 transition">PROGRAM</a>
+            <a href="#contact" class="hover:text-blue-500 transition text-blue-500">CONTACT</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Fine Particles -->
+    <section class="relative h-screen flex flex-col justify-center items-center overflow-hidden">
+        <canvas id="hero-canvas"></canvas>
+        
+        <div class="relative z-10 text-center px-4">
+            <p class="font-bebas text-2xl md:text-3xl text-blue-500 mb-6 italic tracking-[0.4em]" data-aos="fade-down">The Art of Synergy</p>
+            
+            <h1 class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-10 font-bebas italic leading-none" data-aos="zoom-in">
+                <span class="text-8xl md:text-[12rem] drop-shadow-2xl">ROWING</span>
+                <div class="extreme-equal">
+                    <div class="equal-bar"></div>
+                    <div class="equal-bar"></div>
+                </div>
+                <span class="text-8xl md:text-[12rem] text-white">TEAMWORK</span>
+            </h1>
+
+            <p class="mt-12 text-xl md:text-3xl font-black italic max-w-4xl mx-auto uppercase tracking-tighter text-zinc-300" data-aos="fade-up" data-aos-delay="400">
+                한계를 돌파하는 압도적 에너지 <br class="hidden md:block">
+                로잉프로가 증명하는 팀워크의 절대 공식
+            </p>
+
+            <div class="mt-16" data-aos="fade-up" data-aos-delay="600">
+                <button class="btn-brand-blue">JOIN THE STROKE</button>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 animate-bounce">
+            <i class="fas fa-angle-double-down text-3xl text-blue-500 opacity-50"></i>
+        </div>
+    </section>
+
+    <!-- Rolling Banner -->
+    <div class="rolling-banner">
+        <div class="rolling-track">
+            POWER • SPEED • GRIT • ACTION • SYNERGY • DETERMINATION • POWER • SPEED • GRIT • ACTION • SYNERGY • DETERMINATION • 
+        </div>
+    </div>
+
+    <!-- About Section: Diverse Black Tones -->
+    <section id="about" class="py-32 bg-deep relative z-10">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
+            <div data-aos="fade-right">
+                <h3 class="text-6xl md:text-8xl font-bebas italic leading-none mb-10">
+                    BEYOND THE <br>
+                    <span class="text-blue-500 border-b-8 border-white">LIMIT.</span>
+                </h3>
+                <p class="text-xl text-zinc-400 font-bold mb-8 italic">
+                    조정은 신체적 고계를 동료와 함께 이겨내는 스포츠입니다. <br>
+                    로잉프로는 팀의 정수이자 한계 돌파의 힘을 가르칩니다.
+                </p>
+                <div class="grid grid-cols-2 gap-4 mt-12">
+                    <div class="bg-black p-8 border-t-4 border-blue-500">
+                        <p class="font-bebas text-5xl italic text-white">11YRS</p>
+                        <p class="text-[10px] font-black uppercase text-zinc-500 tracking-widest">Accident Free</p>
+                    </div>
+                    <div class="bg-black p-8 border-t-4 border-blue-500">
+                        <p class="font-bebas text-5xl italic text-white">ELITE</p>
+                        <p class="text-[10px] font-black uppercase text-zinc-500 tracking-widest">Master Class</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative" data-aos="fade-left">
+                <div class="border-8 border-zinc-800 p-2">
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&q=80&w=800" class="w-full grayscale brightness-75 hover:grayscale-0 transition duration-1000">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section id="program" class="py-32 bg-carbon">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-6xl md:text-8xl font-bebas italic text-center mb-20" data-aos="fade-up">ACTION <span class="text-blue-500">SYSTEM</span></h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Program Card -->
+                <div class="group relative h-[550px] bg-black border border-zinc-800 overflow-hidden" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1544651395-520f1710ad5e?auto=format&fit=crop&q=80&w=800" class="absolute w-full h-full object-cover opacity-20 group-hover:scale-110 group-hover:opacity-40 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                    <div class="absolute bottom-10 left-10">
+                        <h4 class="text-4xl font-bebas italic mb-2">CORPORATE FORCE</h4>
+                        <p class="text-xs text-blue-500 font-bold mb-6">전략적 팀빌딩 솔루션</p>
+                        <button class="px-8 py-2 border-2 border-blue-500 text-blue-500 font-bold text-xs hover:bg-blue-500 hover:text-white transition">EXPLORE</button>
+                    </div>
+                </div>
+                <!-- 반복적인 카드들... -->
+                <div class="group relative h-[550px] bg-black border-4 border-blue-500 overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1626246476106-997579f18731?auto=format&fit=crop&q=80&w=800" class="absolute w-full h-full object-cover opacity-30 group-hover:scale-110 group-hover:opacity-50 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                    <div class="absolute bottom-10 left-10">
+                        <h4 class="text-4xl font-bebas italic mb-2 text-white">YOUTH ENERGY</h4>
+                        <p class="text-xs text-zinc-300 font-bold mb-6">청소년 리더십 교육</p>
+                        <button class="px-8 py-2 bg-white text-black font-bold text-xs hover:bg-blue-500 hover:text-white transition">EXPLORE</button>
+                    </div>
+                </div>
+                <div class="group relative h-[550px] bg-black border border-zinc-800 overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1558611997-6a56c0b89b43?auto=format&fit=crop&q=80&w=800" class="absolute w-full h-full object-cover opacity-20 group-hover:scale-110 group-hover:opacity-40 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                    <div class="absolute bottom-10 left-10">
+                        <h4 class="text-4xl font-bebas italic mb-2">EVENT IMPACT</h4>
+                        <p class="text-xs text-blue-500 font-bold mb-6">체험형 부스 마케팅</p>
+                        <button class="px-8 py-2 border-2 border-blue-500 text-blue-500 font-bold text-xs hover:bg-blue-500 hover:text-white transition">EXPLORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 bg-black border-t-8 border-blue-500 text-center">
+        <div class="text-4xl font-bebas italic mb-4">ROWINGPRO <span class="text-blue-500">ATHLETIC</span></div>
+        <div class="flex justify-center gap-10 text-zinc-500 mb-10">
+            <a href="#" class="hover:text-blue-500 transition"><i class="fab fa-instagram text-2xl"></i></a>
+            <a href="#" class="hover:text-blue-500 transition"><i class="fab fa-youtube text-2xl"></i></a>
+        </div>
+        <p class="text-zinc-800 text-[9px] uppercase tracking-[0.5em] font-black">© 2024 ROWINGPRO FORCE. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <!-- Three.js (Fine Mist Particles) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        // Three.js Fine Particle System
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('hero-canvas'), alpha: true, antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+
+        const particlesGeometry = new THREE.BufferGeometry();
+        const particlesCount = 8000; // 개수를 늘리고
+        const posArray = new Float32Array(particlesCount * 3);
+
+        for(let i = 0; i < particlesCount * 3; i++) {
+            posArray[i] = (Math.random() - 0.5) * 8;
+        }
+        particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+
+        const material = new THREE.PointsMaterial({
+            size: 0.005, // 크기를 미세하게 줄임 (중요)
+            color: '#3572A5', // 로고 블루 적용
+            transparent: true,
+            opacity: 0.6,
+            blending: THREE.AdditiveBlending
+        });
+
+        const particlesMesh = new THREE.Points(particlesGeometry, material);
+        scene.add(particlesMesh);
+
+        camera.position.z = 2;
+
+        let mouseX = 0;
+        let mouseY = 0;
+        document.addEventListener('mousemove', (e) => {
+            mouseX = (e.clientX / window.innerWidth) - 0.5;
+            mouseY = (e.clientY / window.innerHeight) - 0.5;
+        });
+
+        const animate = () => {
+            requestAnimationFrame(animate);
+            particlesMesh.rotation.y += 0.001;
+            particlesMesh.rotation.x += mouseY * 0.02;
+            particlesMesh.rotation.y += mouseX * 0.02;
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+    </script>
+</body>
+</html>

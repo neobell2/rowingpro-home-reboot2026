@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROWINGPRO | Impact Force</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Pretendard', sans-serif; background-color: #000; color: #fff; overflow-x: hidden; }
+        .font-montserrat { font-family: 'Montserrat', sans-serif; }
+        .text-impact-gradient { background: linear-gradient(135deg, #22d3ee 0%, #3b82f6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 15px rgba(34, 211, 238, 0.4)); }
+        .equal-sign-glow { text-shadow: 0 0 20px rgba(34, 211, 238, 0.8), 0 0 40px rgba(34, 211, 238, 0.4); animation: pulse-glow 2s infinite ease-in-out; }
+        @keyframes pulse-glow { 0%, 100% { opacity: 0.8; transform: scale(1); } 50% { opacity: 1; transform: scale(1.05); } }
+        #canvas-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+        .btn-bold { background: #fff; color: #000; font-weight: 900; transition: all 0.3s ease; }
+        .btn-bold:hover { background: #22d3ee; box-shadow: 0 0 30px rgba(34, 211, 238, 0.6); }
+        .glass-impact { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); transition: all 0.3s; }
+        .glass-impact:hover { border-color: #22d3ee; background: rgba(34, 211, 238, 0.1); }
+    </style>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    
+    <!-- Nav -->
+    <nav class="fixed w-full z-50 py-6 px-12 flex justify-between items-center mix-blend-difference">
+        <a href="#" class="text-3xl font-montserrat font-black tracking-tighter">ROWING<span class="text-cyan-400">PRO</span></a>
+        <div class="hidden md:flex space-x-10 text-sm font-bold tracking-widest">
+            <a href="#about" class="hover:text-cyan-400 transition">ABOUT</a>
+            <a href="#programs" class="hover:text-cyan-400 transition">PROGRAMS</a>
+            <a href="#masters" class="hover:text-cyan-400 transition">MASTERS</a>
+        </div>
+        <a href="#contact" class="hidden md:inline-block px-8 py-3 bg-white text-black font-black text-xs tracking-widest hover:bg-cyan-400 transition">CONTACT</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative h-screen flex flex-col justify-center items-center text-center px-4">
+        <div data-aos="fade-down" class="mb-6"><span class="px-4 py-1 border-2 border-white/20 rounded-full text-xs font-bold tracking-widest text-cyan-400 uppercase">Established 2013</span></div>
+        <h1 class="flex flex-col md:flex-row items-center justify-center gap-0 md:gap-8 font-montserrat font-black leading-[0.9]">
+            <span class="text-7xl md:text-[10rem] text-white" data-aos="fade-right">ROWING</span>
+            <span class="text-6xl md:text-[8rem] text-cyan-400 equal-sign-glow my-4 md:my-0">=</span>
+            <span class="text-7xl md:text-[10rem] text-impact-gradient" data-aos="fade-left">TEAMWORK</span>
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="600" class="mt-10 text-gray-300 font-bold text-xl max-w-2xl">사무실에선 몰랐던 우리 팀의 진짜 호흡.<br>압도적인 퍼포먼스를 완성합니다.</p>
+        <div class="mt-12 flex gap-4" data-aos="fade-up" data-aos-delay="800">
+            <a href="#programs" class="btn-bold px-12 py-5 uppercase tracking-widest">Explore Programs</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-32 px-6 relative z-10 max-w-77xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-5xl md:text-7xl font-montserrat font-black leading-tight mb-8 uppercase">Real<br><span class="text-cyan-400">Teams</span></h2>
+                <p class="text-xl text-gray-400 leading-relaxed font-bold">대한민국 최초 조정 전문 기업.<br>우리는 흉내가 아닌, 진짜 팀워크를 만듭니다.</p>
+            </div>
+            <div class="grid grid-cols-2 gap-6" data-aos="fade-left">
+                <div class="glass-impact p-10"><div class="text-5xl font-black text-white">10+</div><div class="text-xs font-bold text-gray-500 uppercase mt-2">Years Expert</div></div>
+                <div class="glass-impact p-10 border-cyan-500/50 bg-cyan-500/10"><div class="text-5xl font-black text-white">0</div><div class="text-xs font-bold text-gray-500 uppercase mt-2">Accidents</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs (추가된 부분) -->
+    <section id="programs" class="py-32 px-6 bg-zinc-900/50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-6xl font-black font-montserrat mb-16 italic" data-aos="fade-up">PROGRAMS</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="glass-impact p-8" data-aos="zoom-in">
+                    <i class="fas fa-building text-3xl text-cyan-400 mb-6"></i>
+                    <h3 class="text-2xl font-black mb-4">CORPORATE</h3>
+                    <p class="text-sm text-gray-400">기업/단체 HRD 팀빌딩 솔루션.</p>
+                </div>
+                <div class="glass-impact p-8" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-graduation-cap text-3xl text-cyan-400 mb-6"></i>
+                    <h3 class="text-2xl font-black mb-4">SCHOOL</h3>
+                    <p class="text-sm text-gray-400">초중고대학교 학교 체육 프로그램.</p>
+                </div>
+                <div class="glass-impact p-8" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-flag-checkered text-3xl text-cyan-400 mb-6"></i>
+                    <h3 class="text-2xl font-black mb-4">EVENT</h3>
+                    <p class="text-sm text-gray-400">축제 및 대형 이벤트 체험 부스.</p>
+                </div>
+                <div class="glass-impact p-8" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fas fa-hands-helping text-3xl text-cyan-400 mb-6"></i>
+                    <h3 class="text-2xl font-black mb-4">SOCIAL</h3>
+                    <p class="text-sm text-gray-400">소외계층을 위한 체육 봉사 활동.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Masters (추가된 부분) -->
+    <section id="masters" class="py-32 px-6">
+        <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+            <h2 class="text-6xl font-black font-montserrat mb-12">THE MASTERS</h2>
+            <p class="text-xl text-gray-400 font-bold mb-16">전원 국가대표 및 엘리트 선수 출신의 전문가 그룹.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center"><div class="h-40 bg-zinc-800 mb-4 rounded-2xl"></div><p class="font-black">NATIONAL</p></div>
+                <div class="text-center"><div class="h-40 bg-zinc-800 mb-4 rounded-2xl"></div><p class="font-black">ELITE</p></div>
+                <div class="text-center"><div class="h-40 bg-zinc-800 mb-4 rounded-2xl"></div><p class="font-black">PRO COACH</p></div>
+                <div class="text-center"><div class="h-40 bg-zinc-800 mb-4 rounded-2xl"></div><p class="font-black">DIRECTOR</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-20 border-t-2 border-white/10 text-center relative z-10">
+        <h2 class="text-4xl md:text-7xl font-black font-montserrat text-white/10 mb-10 uppercase tracking-tighter">We are in the same boat</h2>
+        <p class="text-xs text-gray-600 font-black tracking-widest uppercase">© 2024 ROWINGPRO. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({ duration: 1000, once: true }); </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        // Hero Background Script (Strong Wave)
+        const container = document.getElementById('canvas-container');
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        container.appendChild(renderer.domElement);
+        const geometry = new THREE.BufferGeometry();
+        const count = 3000;
+        const positions = new Float32Array(count * 3);
+        let i = 0;
+        for (let ix = 0; ix < 60; ix++) {
+            for (let iy = 0; iy < 50; iy++) {
+                positions[i] = ix * 30 - 900;
+                positions[i + 1] = 0;
+                positions[i + 2] = iy * 30 - 750;
+                i += 3;
+            }
+        }
+        geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+        const material = new THREE.PointsMaterial({ color: 0x22d3ee, size: 2.5, transparent: true, opacity: 0.8 });
+        const particles = new THREE.Points(geometry, material);
+        scene.add(particles);
+        camera.position.set(0, 150, 400);
+        let count_time = 0;
+        function animate() {
+            requestAnimationFrame(animate);
+            const pos = particles.geometry.attributes.position.array;
+            let i = 0;
+            for (let ix = 0; ix < 60; ix++) {
+                for (let iy = 0; iy < 50; iy++) {
+                    pos[i + 1] = (Math.sin((ix + count_time) * 0.3) * 40) + (Math.sin((iy + count_time) * 0.5) * 40);
+                    i += 3;
+                }
+            }
+            particles.geometry.attributes.position.needsUpdate = true;
+            count_time += 0.04;
+            renderer.render(scene, camera);
+        }
+        animate();
+    </script>
+</body>
+</html>

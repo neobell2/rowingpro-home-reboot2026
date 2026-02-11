@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROWING PRO | 대한민국 No.1 조정 교육 전문사</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', 'Noto+Sans+KR', sans-serif;
+        overflow-x: hidden;
+      }
+      .font-heading {
+        font-family: 'Archivo Black', sans-serif;
+      }
+      .skewed-divider {
+        clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+      }
+      .btn-slide-hover {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+      }
+      .btn-slide-hover::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #1e40af; /* darker blue */
+        transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+        z-index: -1;
+      }
+      .btn-slide-hover:hover::before {
+        left: 0;
+      }
+      @keyframes wave {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(-25%); }
+        100% { transform: translateX(0); }
+      }
+      .animate-wave {
+        animation: wave 15s ease-in-out infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

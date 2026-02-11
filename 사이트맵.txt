@@ -1,0 +1,30 @@
+[ROOT]
+- /
+
+[GNB]
+- /about
+- /programs
+- /service
+- /track-record
+- /contact
+
+[Service Hub]
+- /service
+
+[Service > 기업·조직 (완성)]
+- /service/corporate
+  - /service/corporate/training        (사원교육·조직개발)
+  - /service/corporate/teambuilding    (팀빌딩·협업)
+  - /service/corporate/leadership      (리더십)
+  - /service/corporate/event           (행사·체육대회)
+  - /service/corporate/wellness        (건강·웰니스)
+
+[Service > 기타 카테고리 (미정 유지)]
+- /service/school-youth     (학교·청소년)
+- /service/event            (스포츠 이벤트·행사)
+- /service/club-general     (클럽·일반)
+- /service/family           (가족 체험)
+
+[System]
+- /privacy
+- /404

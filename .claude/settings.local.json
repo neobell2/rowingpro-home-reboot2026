@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(timeout /t 3)",
+      "WebFetch(domain:squash.framer.website)",
+      "Bash(npm install:*)",
+      "Bash(git push:*)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\윤종호\\Desktop\\로잉프로홈페이지Reboot.202601\\project"
+    ]
+  }
+}

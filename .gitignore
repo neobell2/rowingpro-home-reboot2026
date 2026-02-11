@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.astro/
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# IDE
+.idea/
+# .vscode/settings.json은 프로젝트 설정이므로 포함
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
+*.temp
+sync.ffs_db

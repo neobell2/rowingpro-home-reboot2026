@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROWINGPRO | The Heritage Experience</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts: 명조(헤드라인) & 고딕(본문/정보) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --navy: #1a2b4b;
+            --crimson: #8b1a1a;
+            --antique-white: #fcfaf5;
+        }
+
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            background-color: var(--antique-white);
+            color: var(--navy);
+            margin: 0; padding: 0;
+        }
+
+        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+
+        /* 헨리 레가타의 상징인 화이트 테두리 효과 */
+        .page-border {
+            border: 16px solid white;
+            position: relative;
+        }
+
+        /* 버튼: 클래식 옥스포드 스타일 */
+        .btn-classic {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            border: 1px solid var(--navy);
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            transition: all 0.4s;
+            cursor: pointer;
+        }
+        .btn-classic:hover {
+            background: var(--navy);
+            color: white;
+        }
+
+        /* 엠블럼 형태의 구분선 */
+        .emblem-divider {
+            width: 1px;
+            height: 60px;
+            background-color: var(--crimson);
+            margin: 2rem auto;
+            position: relative;
+        }
+        .emblem-divider::after {
+            content: 'RP';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 10px;
+            color: var(--crimson);
+            font-weight: bold;
+        }
+
+        /* 이미지 오버레이 (클래식 필터) */
+        .regatta-img {
+            filter: sepia(10%) contrast(1.05) brightness(0.95);
+            transition: all 0.5s;
+        }
+        .regatta-img:hover {
+            filter: sepia(0%) contrast(1.1) brightness(1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- 16px 흰색 테두리 시작 -->
+    <div class="page-border">
+
+        <!-- Navigation -->
+        <nav class="sticky top-0 w-full z-50 bg-[#fcfaf5]/90 backdrop-blur-md border-b border-gray-100 py-6 px-10 flex justify-between items-center">
+            <div class="flex flex-col">
+                <a href="#" class="text-2xl font-black tracking-tighter text-slate-900">ROWINGPRO</a>
+                <span class="text-[9px] uppercase tracking-[0.3em] text-gray-400">Republic of Korea • Est. 2013</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-12 text-[10px] font-bold tracking-widest uppercase text-slate-600">
+                <a href="#spirit" class="hover:text-red-800 transition">Spirit</a>
+                <a href="#service" class="hover:text-red-800 transition">Solutions</a>
+                <a href="#masters" class="hover:text-red-800 transition">Masters</a>
+            </div>
+
+            <a href="#proposal" class="hidden md:block btn-classic py-2 px-6">Get Proposal</a>
+        </nav>
+
+        <!-- Hero: Rowing = Teamwork -->
+        <section class="relative h-[90vh] flex items-center justify-center text-center px-6 overflow-hidden border-b border-gray-100">
+            <!-- Background Image -->
+            <img src="https://images.unsplash.com/photo-1544651395-520f1710ad5e?auto=format&fit=crop&q=80&w=2000" class="absolute inset-0 w-full h-full object-cover regatta-img">
+            <div class="absolute inset-0 bg-white/40"></div> <!-- 밝은 오버레이 (스크린샷처럼 밝게) -->
+
+            <!-- Content Box -->
+            <div class="relative z-10 max-w-4xl" data-aos="fade-up">
+                <p class="text-[10px] uppercase tracking-[0.5em] text-red-800 mb-6 font-bold">Premium Leadership Education</p>
+                <h1 class="text-5xl md:text-8xl font-bold italic mb-8 leading-tight text-slate-900">
+                    Rowing = <span class="font-normal border-b-2 border-slate-900">Teamwork</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-700 max-w-2xl mx-auto font-light leading-relaxed mb-12">
+                    조정은 단순한 운동이 아닙니다. 서로의 호흡이 하나가 되는 순간,<br class="hidden md:block">
+                    배는 물 위를 날아오릅니다. 국가대표 코치진이 이끄는<br class="hidden md:block">
+                    가장 고귀하고 역동적인 팀워크 솔루션.
+                </p>
+                <div class="flex flex-col md:flex-row justify-center gap-6">
+                    <a href="#service" class="btn-classic bg-slate-900 text-white border-none">Explore Solutions</a>
+                    <a href="#masters" class="btn-classic">Meet the Masters</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spirit Section: 교육 철학 -->
+        <section id="spirit" class="py-24 bg-white border-b border-gray-100 px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-20">
+                    <div class="emblem-divider"></div>
+                    <h2 class="text-4xl md:text-5xl font-bold italic mb-6">"In the same boat."</h2>
+                    <p class="text-gray-500 font-light tracking-widest text-sm uppercase">팀워크의 본질을 가르칩니다</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-20 items-center">
+                    <div data-aos="fade-right">
+                        <p class="text-lg text-slate-800 leading-relaxed mb-8 font-light">
+                            조정 선수들에게 팀워크는 단순한 협력이 아닌 <strong class="font-bold">생존</strong>입니다. 
+                            로잉프로는 국가대표 출신의 전문가들이 조정의 가치를 통해 '팀이란 무엇인가'를 
+                            가장 명확하고 역동적으로 알려주는 <span class="text-red-800 italic font-serif">교육 서비스 상품</span>입니다.
+                        </p>
+                        <ul class="space-y-6">
+                            <li class="flex items-start gap-4">
+                                <span class="text-red-800 font-serif italic text-2xl">01</span>
+                                <div>
+                                    <h4 class="font-bold text-sm tracking-widest uppercase mb-1">Harmony</h4>
+                                    <p class="text-gray-500 text-xs">개인의 속도가 아닌 팀의 리듬을 맞추는 법</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4 border-t border-gray-100 pt-6">
+                                <span class="text-red-800 font-serif italic text-2xl">02</span>
+                                <div>
+                                    <h4 class="font-bold text-sm tracking-widest uppercase mb-1">Grit</h4>
+                                    <p class="text-gray-500 text-xs">한계를 넘어 동료와 함께하는 인내와 성취</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="relative" data-aos="fade-left">
+                        <img src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?auto=format&fit=crop&q=80&w=800" class="w-full h-auto rounded-none shadow-2xl regatta-img border-[16px] border-white">
+                        <div class="absolute -bottom-6 -left-6 bg-slate-900 text-white p-8 hidden md:block">
+                            <p class="text-xs tracking-widest font-bold mb-2">SAFETY FIRST</p>
+                            <p class="text-xl italic font-serif leading-tight">11년간 무사고,<br>가장 안전한 교육.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Section: 구체적인 교육 상품 소개 -->
+        <section id="service" class="py-24 bg-[#1a2b4b] text-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                    <div data-aos="fade-right">
+                        <span class="text-red-400 font-bold tracking-[0.3em] text-[10px] uppercase">Curriculum</span>
+                        <h2 class="text-4xl md:text-6xl font-bold italic mt-4">The Noble Challenge</h2>
+                    </div>
+                    <p class="text-gray-400 text-sm max-w-sm text-right font-light leading-relaxed" data-aos="fade-left">
+                        기업 연수, 공공기관 팀빌딩, 학교 체육까지.<br>대상을 고려한 최적의 조정 교육 솔루션을 제안합니다.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-px bg-white/10">
+                    <!-- Item 1 -->
+                    <div class="p-12 hover:bg-white/5 transition-colors group" data-aos="fade-up">
+                        <div class="text-red-400 text-xs font-bold mb-10 tracking-widest uppercase">01 / Building</div>
+                        <h3 class="text-3xl font-bold mb-6">Corporate HRD</h3>
+                        <p class="text-gray-400 text-sm font-light leading-relaxed mb-8">
+                            기업 담당자를 위한 맞춤형 팀워크 워크샵. 인도어/아웃도어 로잉을 통해 조직의 진정한 동력을 깨웁니다.
+                        </p>
+                        <a href="#" class="text-[10px] uppercase font-bold tracking-widest border-b border-red-400 pb-1 hover:text-red-400">View Program</a>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="p-12 border-x border-white/10 hover:bg-white/5 transition-colors group" data-aos="fade-up" data-aos-delay="100">
+                        <div class="text-red-400 text-xs font-bold mb-10 tracking-widest uppercase">02 / Academy</div>
+                        <h3 class="text-3xl font-bold mb-6">Varsity Spirit</h3>
+                        <p class="text-gray-400 text-sm font-light leading-relaxed mb-8">
+                            초중고교 및 대학생 리더십 캠프. 아이비리그의 조정 문화를 통해 배려와 소통의 가치를 전파합니다.
+                        </p>
+                        <a href="#" class="text-[10px] uppercase font-bold tracking-widest border-b border-red-400 pb-1 hover:text-red-400">View Program</a>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="p-12 hover:bg-white/5 transition-colors group" data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-red-400 text-xs font-bold mb-10 tracking-widest uppercase">03 / Presence</div>
+                        <h3 class="text-3xl font-bold mb-6">Event & Festival</h3>
+                        <p class="text-gray-400 text-sm font-light leading-relaxed mb-8">
+                            대형 이벤트 및 축제 부스 참가형 교육. 로잉 챌린지를 통해 대중에게 조정의 즐거움을 전달합니다.
+                        </p>
+                        <a href="#" class="text-[10px] uppercase font-bold tracking-widest border-b border-red-400 pb-1 hover:text-red-400">View Program</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Masters: 전문가 신뢰도 -->
+        <section id="masters" class="py-24 bg-white px-6">
+            <div class="max-w-5xl mx-auto text-center">
+                <div class="emblem-divider"></div>
+                <h2 class="text-4xl md:text-5xl font-bold italic mb-8 mt-4 leading-tight text-slate-900">
+                    "We are in the <br class="md:hidden"> same boat."
+                </h2>
+                <p class="text-gray-500 font-light max-w-2xl mx-auto leading-relaxed mb-16">
+                    로잉프로의 모든 코치는 최소 10년 이상의 엘리트 선수 경력과 국가대표 경력을 갖춘 진짜 전문가들입니다. 
+                    우리는 조정의 고귀함을 누구보다 잘 알고 있으며, 이를 교육으로 승화시키는 탁월한 감각을 가지고 있습니다.
+                </p>
+
+                <!-- Coach Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div data-aos="zoom-in">
+                        <div class="h-64 bg-gray-100 mb-6 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
+                        </div>
+                        <h4 class="text-xs font-bold uppercase tracking-widest mb-1">Master Coach</h4>
+                        <p class="text-[10px] text-gray-400 font-serif italic tracking-widest uppercase">National Champion</p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="100">
+                        <div class="h-64 bg-gray-100 mb-6 overflow-hidden">
+                             <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
+                        </div>
+                        <h4 class="text-xs font-bold uppercase tracking-widest mb-1">Master Coach</h4>
+                        <p class="text-[10px] text-gray-400 font-serif italic tracking-widest uppercase">Elite Specialist</p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="200">
+                        <div class="h-64 bg-gray-100 mb-6 overflow-hidden">
+                             <img src="https://images.unsplash.com/photo-1533174072545-e8d4aa97d848?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
+                        </div>
+                        <h4 class="text-xs font-bold uppercase tracking-widest mb-1">HRD Director</h4>
+                        <p class="text-[10px] text-gray-400 font-serif italic tracking-widest uppercase">Professional Coach</p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="300">
+                        <div class="h-64 bg-gray-100 mb-6 overflow-hidden">
+                             <img src="https://images.unsplash.com/photo-1558611997-6a56c0b89b43?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
+                        </div>
+                        <h4 class="text-xs font-bold uppercase tracking-widest mb-1">Safety Master</h4>
+                        <p class="text-[10px] text-gray-400 font-serif italic tracking-widest uppercase">Certified Professional</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA & Contact -->
+        <section id="contact" class="py-32 bg-white text-center px-6">
+            <h3 class="text-[10px] font-bold tracking-[0.6em] text-red-800 uppercase mb-8">Request for Training</h3>
+            <h2 class="text-4xl md:text-7xl font-bold italic mb-16 text-slate-900 leading-[1.1]">
+                Your team, <br>our Stroke.
+            </h2>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="mailto:info@rowingpro.com" class="btn-classic bg-slate-900 text-white border-none px-16 py-6 text-xs">교육 제안서 받기</a>
+                <a href="#" class="btn-classic px-16 py-6 text-xs">전화 문의하기</a>
+            </div>
+            <p class="mt-12 text-[10px] tracking-widest text-gray-300 uppercase">Since 2013 | RowingPro Athletic Club</p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-10 border-t border-gray-100 bg-white px-10 flex flex-col md:flex-row justify-between items-center text-gray-400">
+            <div class="flex flex-col mb-4 md:mb-0">
+                <span class="text-xl font-black text-slate-900 tracking-tighter">ROWINGPRO</span>
+                <span class="text-[8px] uppercase tracking-widest">Premium Elite Education</span>
+            </div>
+            <div class="flex space-x-8 text-[9px] uppercase font-bold tracking-widest">
+                <a href="#" class="hover:text-red-800 transition">Instagram</a>
+                <a href="#" class="hover:text-red-800 transition">YouTube</a>
+                <a href="#" class="hover:text-red-800 transition">Terms</a>
+            </div>
+            <p class="text-[8px] uppercase tracking-widest mt-4 md:mt-0 font-bold">© 2024 ROWINGPRO. All Rights Reserved.</p>
+        </footer>
+
+    </div> <!-- Page Border End -->
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({ duration: 1200, once: true }); </script>
+</body>
+</html>

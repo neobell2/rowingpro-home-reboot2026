@@ -1,0 +1,69 @@
+:root {
+    --rowing-blue: #0055ff;
+    --rowing-dark: #001a4d;
+}
+
+body {
+    font-family: 'Noto Sans KR', 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-rowing-blue {
+    background-color: var(--rowing-blue);
+}
+
+.text-rowing-blue {
+    color: var(--rowing-blue);
+}
+
+.bg-rowing-dark {
+    background-color: var(--rowing-dark);
+}
+
+/* Smooth transitions */
+.nav-transition {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animation for hero text */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0055ff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #003db3;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}

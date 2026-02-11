@@ -1,0 +1,238 @@
+---
+// 색상 팔레트 확인 페이지
+---
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colors</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      padding: 3rem 2rem;
+      background: #ffffff;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: #000;
+      letter-spacing: -0.02em;
+    }
+
+    .status {
+      font-size: 0.875rem;
+      color: #666;
+      margin-bottom: 3rem;
+    }
+
+    .section {
+      margin-bottom: 4rem;
+    }
+
+    .section h2 {
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .color-card {
+      cursor: pointer;
+      transition: transform 0.15s ease;
+    }
+
+    .color-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .color-swatch {
+      height: 120px;
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 0.75rem;
+    }
+
+    .color-name {
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+      color: #000;
+    }
+
+    .color-code {
+      font-family: 'SF Mono', 'Menlo', monospace;
+      font-size: 0.75rem;
+      color: #999;
+      margin-bottom: 0.5rem;
+    }
+
+    .color-usage {
+      font-size: 0.75rem;
+      color: #666;
+      line-height: 1.4;
+    }
+
+    .gradient-card {
+      height: 80px;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Color System</h1>
+  <div class="status">작업 중 — 미확정</div>
+
+  <!-- 메인 컬러 -->
+  <div class="section">
+    <h2>Primary</h2>
+    <div class="color-grid">
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: #0EA5E9;"></div>
+        <div class="color-name">Sky Blue</div>
+        <div class="color-code">#0EA5E9</div>
+        <div class="color-usage">브랜드 메인, 히어로 배경</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cyan 계열 -->
+  <div class="section">
+    <h2>Cyan Variants</h2>
+    <div class="color-grid">
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: #22D3EE;"></div>
+        <div class="color-name">Cyan Light</div>
+        <div class="color-code">#22D3EE</div>
+        <div class="color-usage">CTA 버튼 전용</div>
+      </div>
+
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: #06B6D4;"></div>
+        <div class="color-name">Cyan</div>
+        <div class="color-code">#06B6D4</div>
+        <div class="color-usage">호버 상태</div>
+      </div>
+
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: #0284C7;"></div>
+        <div class="color-name">Cyan Dark</div>
+        <div class="color-code">#0284C7</div>
+        <div class="color-usage">그라디언트</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 포인트 컬러 -->
+  <div class="section">
+    <h2>Accent</h2>
+    <div class="color-grid">
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: #F43F5E;"></div>
+        <div class="color-name">Rose</div>
+        <div class="color-code">#F43F5E</div>
+        <div class="color-usage">강조 (극히 절제)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 구조 컬러 -->
+  <div class="section">
+    <h2>Structure</h2>
+    <div class="color-grid">
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: #0F172A;"></div>
+        <div class="color-name">Navy Dark</div>
+        <div class="color-code">#0F172A</div>
+        <div class="color-usage">Header</div>
+      </div>
+
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: #1E293B;"></div>
+        <div class="color-name">Navy</div>
+        <div class="color-code">#1E293B</div>
+        <div class="color-usage">Footer</div>
+      </div>
+
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: #000000;"></div>
+        <div class="color-name">Black</div>
+        <div class="color-code">#000000</div>
+        <div class="color-usage">Overlay</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 중립 컬러 -->
+  <div class="section">
+    <h2>Neutral</h2>
+    <div class="color-grid">
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: #FFFFFF; border: 1px solid #e5e5e5;"></div>
+        <div class="color-name">White</div>
+        <div class="color-code">#FFFFFF</div>
+        <div class="color-usage">배경</div>
+      </div>
+
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: #F9FAFB;"></div>
+        <div class="color-name">Gray 50</div>
+        <div class="color-code">#F9FAFB</div>
+        <div class="color-usage">연한 배경</div>
+      </div>
+
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: #475569;"></div>
+        <div class="color-name">Gray 600</div>
+        <div class="color-code">#475569</div>
+        <div class="color-usage">본문 텍스트</div>
+      </div>
+
+      <div class="color-card">
+        <div class="color-swatch" style="background-color: #111827;"></div>
+        <div class="color-name">Gray 900</div>
+        <div class="color-code">#111827</div>
+        <div class="color-usage">헤드라인</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 그라디언트 -->
+  <div class="section">
+    <h2>Gradients</h2>
+    <div style="display: grid; gap: 1rem;">
+      <div class="color-card">
+        <div class="gradient-card" style="background: linear-gradient(to right, #0EA5E9, #06B6D4, #0284C7);"></div>
+        <div class="color-name">Hero</div>
+        <div class="color-code">Primary → Cyan → Cyan Dark</div>
+      </div>
+
+      <div class="color-card">
+        <div class="gradient-card" style="background: linear-gradient(to right, #0EA5E9, #0284C7);"></div>
+        <div class="color-name">Blue Section</div>
+        <div class="color-code">Primary → Cyan Dark</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

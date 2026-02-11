@@ -1,0 +1,5 @@
+{
+  "name": "handoff",
+  "description": "세션 종료 시 HANDOFF.md, SESSION.md, PROGRESS.md 자동 업데이트",
+  "prompt": "현재 세션을 종료하고 다음 세션을 준비합니다.\n\n작업 순서:\n\n1. SESSION.md 업데이트\n   - 종료 시간 기록\n   - 완료된 작업 요약\n   - 상태를 '완료'로 변경\n\n2. HANDOFF.md 업데이트\n   - 이번 세션 완료 사항 추가\n   - 다음 세션 예정 작업 명시\n   - 웹 ChatGPT 전달 문서 목록 확인\n\n3. PROGRESS.md 업데이트\n   - 현재 Phase 진행상황 반영\n   - 완료된 항목 체크\n\n4. 요약 보고\n   - 이번 세션에서 완료한 작업\n   - 다음 세션에서 해야 할 작업\n   - 필요한 문서 목록\n\nTEAM.md를 참조하여 다음 담당 AI를 명시하세요."
+}
