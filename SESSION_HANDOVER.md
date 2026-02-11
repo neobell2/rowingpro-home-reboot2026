@@ -1,6 +1,6 @@
 # SESSION_HANDOVER.md
 
-**최종 업데이트:** 2026-02-11
+**최종 업데이트:** 2026-02-12
 **프로젝트:** 로잉프로 웹사이트 Reboot 2026
 **현재 Phase:** Phase 1 완료, Phase 2 진입 준비
 
@@ -19,20 +19,31 @@
 
 ---
 
-## ✅ 최근 완료 작업 (2026-02-11)
+## ✅ 최근 완료 작업
 
-### 1. GitHub 저장소 연동
+### 2026-02-12 (오늘)
+**AI 협업 규칙 시스템 완성**
+- [x] CLAUDE.md 생성 (Claude Code 행동 지침)
+- [x] .clinerules 생성 (Roo/Gemini 협업 규칙)
+- [x] .antigravityrules 생성 (AntiGravity 규칙)
+- [x] .cursorrules 업데이트 (최신 프로젝트 구조 반영)
+- [x] config.toml 생성 (GPT/Codex 로컬 설정)
+- [x] 5인 AI 팀 협업 체계 구축 완료
+- [x] MCP Memory 공유 시스템 통합
+
+### 2026-02-11
+**GitHub 저장소 연동**
 - Repository: https://github.com/neobell2/rowingpro-home-reboot2026.git
 - 316개 파일, 52,782줄 성공적으로 푸시
 - Git 사용자 설정 완료: neobell2 / neobell2@gmail.com
 - 대용량 참고자료 제외 (.gitignore 업데이트)
 
-### 2. MCP Memory Server 활성화
+**MCP Memory Server 활성화**
 - .mcp.json 생성 및 MCP Memory Server 설정
 - enableAllProjectMcpServers: true 활성화
 - 9개 MCP tools 사용 가능
 
-### 3. 프로젝트 문서 정리
+**프로젝트 문서 정리**
 - PROJECT_BLUEPRINT_2026.md 확인
 - .gitignore 업데이트 (참고자료/, 3D캡처렌더링모음/, Design_ref/ 제외)
 - settings.local.json 권한 설정
@@ -89,15 +100,18 @@ Email: Resend (Email API)
 Version Control: Git + GitHub
 ```
 
-### 4. 팀 구성 (2026-02-11)
+### 4. AI 팀 구성 (2026-02-12 업데이트)
 
-| 역할 | 담당 AI | 도구/환경 | 비용 |
-|---|---|---|---|
-| **사령탑 (설계+실행)** | Claude Code | VS Code Extension | Pro $19 포함 |
-| **재료 공장 (Content)** | WebGPT | 웹 브라우저 | 무제한 |
-| **이미지 생성** | 나노 바나나 + DALL-E 3 | Gemini 앱 + WebGPT | 무료/무제한 |
+| 역할 | 담당 AI | 규칙 파일 | 도구/환경 | 비용 |
+|---|---|---|---|---|
+| **사령탑 (설계+실행)** | Claude Code | CLAUDE.md | VS Code Extension | Pro $19 포함 |
+| **설계+조율** | Roo/Gemini | .clinerules | Cline (VS Code) | 무료 (Gemini) |
+| **실행+편집** | Cursor | .cursorrules | Cursor IDE | 무료 |
+| **로컬 도우미** | GPT/Codex | config.toml | 터미널/로컬 | 무료 |
+| **자율 에이전트** | AntiGravity | .antigravityrules | Web/Desktop | 무료 |
 
-**총 비용:** $19/월 (Claude Pro)
+**MCP Memory 공유:** C:/Users/윤종호/.mcp-memory/memory.jsonl
+**총 비용:** $19/월 (Claude Pro만)
 
 ---
 
@@ -215,6 +229,31 @@ Version Control: Git + GitHub
 
 ## 🔄 세션 히스토리
 
+### Session 7 (2026-02-12)
+**완료:**
+- [x] 5인 AI 팀 협업 규칙 시스템 완성
+- [x] CLAUDE.md 작성 (추론보다 사실 확인 원칙)
+- [x] .clinerules 작성 (Roo 모드별 제약)
+- [x] .antigravityrules 작성 (System Context + Agent Manager)
+- [x] .cursorrules 전면 재작성 (현재 프로젝트 구조 반영)
+- [x] config.toml 작성 (GPT/Codex 우선순위 파일 설정)
+- [x] SESSION_HANDOVER.md 업데이트 (5인 팀 구조 반영)
+
+**결정:**
+- 모든 AI 도구가 공통 문서 참조: PROJECT_BLUEPRINT_2026.md, SESSION_HANDOVER.md
+- MCP Memory 공유 경로: C:/Users/윤종호/.mcp-memory/memory.jsonl
+- 워크플로우: [계획 제안 -> 디렉터 승인 -> 실행]
+
+**특이사항:**
+- Git 히스토리 reset으로 이전 세션 작업 손실
+- 모든 협업 규칙 파일 재작성 완료
+- SESSION_HANDOVER.md도 3인 -> 5인 팀으로 업데이트됨
+
+**다음:**
+- Git commit: 5개 협업 규칙 파일 + SESSION_HANDOVER.md 업데이트
+- (선택) Claude Code 재시작하여 MCP Memory 도구 활성화
+- Phase 2 개발 착수 (13개 페이지 구현)
+
 ### Session 6 (2026-02-11)
 **완료:**
 - [x] GitHub 저장소 연동 및 첫 푸시
@@ -297,6 +336,6 @@ git log --oneline | head -5
 
 ---
 
-**최종 업데이트:** 2026-02-11
-**다음 작업:** Astro 프로젝트 생성 (Phase 2 시작)
-**상태:** 준비 완료 ✅
+**최종 업데이트:** 2026-02-12
+**다음 작업:** Git commit 후 Phase 2 시작 (13개 페이지 구현)
+**상태:** AI 협업 시스템 완료 ✅
