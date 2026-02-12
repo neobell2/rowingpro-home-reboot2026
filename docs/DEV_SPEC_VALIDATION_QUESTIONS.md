@@ -2,7 +2,7 @@
 
 **대상:** WebGPT (설계 담당)
 **목적:** 현재 DEV_SPEC.md v1.2의 모든 항목 확정 여부 검증
-**문서:** [DEV_SPEC.md v1.2](../DEV_SPEC.md)
+**문서:** [DEV_SPEC.md v1.2](./_archive/2026-02-03_GPT_legacy/specs/DEV_SPEC.md)
 **작성일:** 2026-02-03
 
 ---
