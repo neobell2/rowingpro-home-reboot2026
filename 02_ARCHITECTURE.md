@@ -7,7 +7,8 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
-| **v1.0** | 2026-02-13 | 문서 가버넌스 개편에 따라 신규 작성. 기존 `PROJECT_BLUEPRINT_2026.md`의 IA/디자인/기술 섹션과 `SESSION_HANDOVER.md`의 구조 정보를 통합. 디자인 시스템은 Draft 03 기준 BASELINE으로 설정. |
+| **v1.1** | 2026-02-13 | 레거시 참조를 아카이브 경로(`docs/_archive/governance_v1/*_v1.md`)로 정정 |
+| **v1.0** | 2026-02-13 | 문서 가버넌스 개편에 따라 신규 작성. 기존 `docs/_archive/governance_v1/PROJECT_BLUEPRINT_2026_v1.md`의 IA/디자인/기술 섹션과 `docs/_archive/governance_v1/SESSION_HANDOVER_v1.md`의 구조 정보를 통합. 디자인 시스템은 Draft 03 기준 BASELINE으로 설정. |
 
 ---
 
@@ -109,4 +110,3 @@ Service 하위 5페이지:
 | 로고 | `public/logo.svg` |
 
 ---
-

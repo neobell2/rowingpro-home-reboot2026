@@ -7,6 +7,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.1** | 2026-02-13 | 현재 지시를 다음 단계(디자인 시스템 디벨롭/LOCKED 전환)로 갱신 |
 | **v1.0** | 2026-02-13 | 문서 가버넌스 개편에 따라 신규 작성. 현재 지시: 가버넌스 v2 이행 완료. |
 
 ---
@@ -14,13 +15,13 @@
 ## 현재 지시
 
 ```
-목표: 문서 가버넌스 v2 이행 완료 및 기존 문서 아카이브
+목표: 디자인 시스템 디벨롭 (Draft 03 → 최종안) 및 LOCKED 전환
 요구사항:
-  - 포인터 파일(.cursorrules, .antigravityrules, .clinerules) 축소 완료
-  - 기존 시스템 문서를 docs/_archive/governance_v1/ 으로 이동
-  - 이행 완료 후 04_CURRENT_STATE.md 갱신
+  - Draft 03 기반으로 그리드, 컬러, 쉐이프 정밀 specification 작성
+  - 디렉터 승인 후 02_ARCHITECTURE.md의 STATUS를 LOCKED로 변경
 금지사항:
   - src/ 폴더 내 코드 수정 금지
+  - 디렉터 승인 없이 LOCKED 변경 금지
   - 디자인 시스템이 LOCKED 되기 전 UI 코딩 금지
 ```
 
@@ -29,13 +30,12 @@
 ## 다음 예정 지시 (참고용)
 
 ```
-목표: 디자인 시스템 디벨롭 (Draft 03 → 최종안)
+목표: LOCKED 이후 페이지 스켈레톤 구현(13페이지) 착수
 요구사항:
-  - Draft 03 기반으로 그리드, 컬러, 쉐이프 정밀 specification 작성
-  - 디렉터 승인 후 02_ARCHITECTURE.md의 STATUS를 LOCKED로 변경
+  - 02_ARCHITECTURE.md가 [STATUS: LOCKED]인지 확인 후에만 UI 구현 진행
+  - 우선 라우트/레이아웃/공통 컴포넌트 중심으로 최소 골격 구현
 금지사항:
-  - 디렉터 승인 없이 LOCKED 변경 금지
+  - LOCKED 확인 전 UI 코딩 금지
 ```
 
 ---
-
