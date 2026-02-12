@@ -1,0 +1,52 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = 'ROWING PRO | The Kinetic Experience', 
+  description = '대한민국 국가대표 출신이 운영하는 HRD/팀빌딩 전문 기업' 
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="ko" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Fonts: Readex Pro (Display) & Pretendard (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <title>{title}</title>
+  </head>
+  <body class="bg-deep text-white font-sans selection:bg-neon selection:text-deep overflow-x-hidden">
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+    
+    <script>
+      // Initialize Lucide Icons
+      declare const lucide: any;
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    </script>
+  </body>
+</html>
