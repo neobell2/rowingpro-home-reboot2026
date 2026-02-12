@@ -10,10 +10,13 @@
 
 | 항목 | 상태 |
 |---|---|
-| Phase 0 (환경 세팅) | ✅ 완료 |
 | Phase 1 (기획/설계) | ✅ 완료 |
-| GitHub 연동 | ✅ 완료 |
-| Phase 2 (개발 시작) | 🔄 준비 중 |
+| Phase 2 (개발 준비) | 🔄 진행 중 (**디자인 설계 단계 진입**) |
+| 권장 모델 | **Gemini 3 Pro (High)** |
+
+**다음 세션 최우선 순위:**
+1. `JOB_ORDER_PHASE2_01.md`의 **[Step 0] 디자인 아키텍처 확정** 수행.
+2. `Draft03` 프로토타입 기반으로 그리드, 컬러, 쉐이프를 PM과 확정하여 블루프린트에 박제.
 
 **진행률:** 약 70%
 
@@ -337,5 +340,5 @@ git log --oneline | head -5
 ---
 
 **최종 업데이트:** 2026-02-12
-**다음 작업:** Git commit 후 Phase 2 시작 (13개 페이지 구현)
-**상태:** AI 협업 시스템 완료 ✅
+**다음 작업:** [JOB_ORDER_PHASE2_01.md](file:///c:/Users/윤종호/Desktop/로잉프로홈페이지Reboot.202601/JOB_ORDER_PHASE2_01.md) 실행 (13개 페이지 스켈레톤 구현)
+**상태:** Phase 2 Step 1 작업 지시 완료 ✅ (Assignee: Claude Sonnet 4.5)

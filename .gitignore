@@ -26,4 +26,8 @@ Thumbs.db
 # Temp files
 *.tmp
 *.temp
-sync.ffs_db
+# Reference Materials
+참고자료/
+3D캡처렌더링모음/
+Design_ref/
+docs/_archive/
