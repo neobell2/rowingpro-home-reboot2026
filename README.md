@@ -4,6 +4,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.2** | 2026-02-13 | 세션 시작을 Quick/Conditional/Full Start로 정합화 (자동 주입 문서량 최적화) |
 | **v1.1** | 2026-02-12 | 운영 프로토콜 진입점을 v2(`CLAUDE.md`+5핵심)로 정합화 |
 | v1.0 | 2026-02-10 | 최초 작성 |
 
@@ -43,6 +44,7 @@ npm run dev
 | `05_NEXT_TASK.md` | 즉시 실행 지시서 |
 | `docs/contents/` | 페이지별 콘텐츠 원고 |
 | `docs/design/` | 디자인 시안 (Draft 01~10) |
+| `docs/work_orders/` | 업무지시서(Work Order) |
 | `docs/reports/` | 세션 보고서(로그) |
 | `docs/_archive/` | 레거시 보관(비권위) |
 | `docs/_trash/` | 삭제/격리 후보(비권위) |
@@ -53,8 +55,9 @@ npm run dev
 
 ```
 @CLAUDE.md
-# CLAUDE.md의 세션 시작 프로토콜에 따라 아래 순서로 확인
-# 01_PROJECT_CONTEXT.md → 02_ARCHITECTURE.md → 03_DECISIONS.md → 04_CURRENT_STATE.md → 05_NEXT_TASK.md
+# 기본(Quick Start): 04_CURRENT_STATE.md → 05_NEXT_TASK.md
+# 필요 시(Conditional Load): 01_PROJECT_CONTEXT.md / 02_ARCHITECTURE.md / 03_DECISIONS.md 추가 확인
+# Full Start 트리거면: 01~05 전부 재확인
 ```
 
 ---
@@ -68,4 +71,4 @@ npm run dev
 
 ---
 
-**최종 업데이트:** 2026-02-12
+**최종 업데이트:** 2026-02-13
