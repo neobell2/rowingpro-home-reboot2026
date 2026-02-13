@@ -14,6 +14,7 @@
 ## 2) 문서/자산 위치
 - 페이지별 콘텐츠: `docs/contents/`
 - 디자인 시안: `docs/design/`
+- 업무지시서(Work Order): `docs/work_orders/`
 - 세션 보고서(로그): `docs/reports/`
 - 이미지: `assets/images/`
 
