@@ -89,7 +89,7 @@ SESSION_20_AUDIT_WO.md (기술 부채 진단) 착수 전, 디렉터의 요청으
 
 ---
 
-## 4. 변경 파일
+## 4. 변경 파일 (초기)
 
 - **마스터 규칙:** `CLAUDE.md` v2.4
   - 섹션 7 전면 재작성 (9개 역할 정의, RACI 매트릭스)
@@ -104,7 +104,59 @@ SESSION_20_AUDIT_WO.md (기술 부채 진단) 착수 전, 디렉터의 요청으
 
 ---
 
-## 5. 후속 작업
+## 5. 후속 완료: PM/Doc Manager 모델 전환 (D-018)
+
+### 5.1 배경
+
+Session 19.5 완료 후 디렉터의 추가 질문:
+- "PM 담당에 Haiku와 Gemini Pro를 비교하면 누가 우세?"
+- "비용은 얼마나 차이나? 지금 Gemini 3.0 Flash와 Haiku의 퍼포먼스 차이는?"
+
+### 5.2 웹 검색 기반 분석 (2026-02-15)
+
+**가격 비교:**
+- Gemini 3 Flash: $0.50/$3 (입/출력 per 1M tokens)
+- Gemini 3 Pro: $2-4/$12-18
+- Claude Haiku 4.5: $1/$5
+
+**성능 비교 (Flash vs Haiku):**
+- 속도: Flash 약간 빠름 (200+ tokens/sec)
+- Work Order/보고서 품질: Haiku 15~20% 우수
+- 맥락 보존: Haiku 우수
+- 구조화 문서: Haiku 85점 vs Flash 70점
+
+**비용 시뮬레이션:**
+- PM 월간 사용량: 30K tokens → 연간 비용 차이 $0.90 (미미)
+- Doc Manager 월간 사용량: 45K tokens → Pro 대비 월 $0.45-0.90 절감
+
+### 5.3 최종 결정 (D-018)
+
+**변경 사항:**
+- PM: Gemini 3.0 Flash → **Claude Haiku 4.5**
+- Doc Manager: Gemini 3.0 Pro → **Claude Haiku 4.5**
+
+**근거:**
+- PM: 품질 향상 15~20%, 비용 차이 무시 가능
+- Doc Manager: Pro 대비 2~3배 저렴, 문서 관리에 충분한 품질
+- Claude 구독 활용도 증대, Gemini 크레딧 Content에 집중
+
+**효과:**
+- 연간 비용 절감: $6~12
+- 품질 향상: 구조화 작업 강화
+- 자원 배분 최적화
+
+### 5.4 추가 변경 파일
+
+- **마스터 규칙:** `CLAUDE.md` v2.5
+  - 섹션 7.1, 7.2 모델 변경
+- **결정 기록:** `03_DECISIONS.md` v1.12
+  - D-018: PM/Doc Manager Claude Haiku 전환
+- **현재 상태:** `04_CURRENT_STATE.md` v1.12
+  - 운영 스쿼드 템플릿 모델 갱신
+
+---
+
+## 6. 후속 작업
 
 ### 즉시 실행 가능
 - **SESSION 20:** 기술 부채 진단 (`SESSION_20_AUDIT_WO.md`)
@@ -117,7 +169,7 @@ SESSION_20_AUDIT_WO.md (기술 부채 진단) 착수 전, 디렉터의 요청으
 
 ---
 
-## 6. 권고 사항
+## 7. 권고 사항
 
 ### 운영 체계
 1. **PM 관문 강화:** PM의 코드/문서 직접 수정 시도를 시스템적으로 차단
