@@ -7,6 +7,11 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.11** | 2026-02-15 | D-017 추가(05_NEXT_TASK.md 근거 Work Order 명시 추가) |
+| **v1.10** | 2026-02-15 | D-016 추가(비용최적화 재구조화: Gemini 주력 전환, Designer 신설, 9개 역할 확정) |
+| **v1.9** | 2026-02-15 | D-015 추가(팀 구조 재편: PM 권한 제한, Documentation Manager 신설, RACI 매트릭스 도입) |
+| **v1.8** | 2026-02-15 | D-014 추가(콘텐츠 SSOT 최신화 및 재바인딩 기준 확정) |
+| **v1.7** | 2026-02-14 | D-013 추가(SESSION 18 작업 범위 축소 및 분리 결정) |
 | **v1.6** | 2026-02-14 | D-012 추가(Session 16 미결 사안 D1~D12 전체 확정, 히어로 타이틀/포인트 핑크 결정, 법인 정보 확보) |
 | **v1.5** | 2026-02-13 | D-011 추가(디자인 시스템 최종 확정, Heritage 승격, Cobalt 폐기, LOCKED 전환) |
 | **v1.4** | 2026-02-13 | D-010 추가(Quick/Conditional/Full Start 프로토콜 도입, 자동 주입 문서량 최적화) |
@@ -227,6 +232,181 @@
   - 부스형 4단계 가격: CEO 확인 후 변경 가능
   - 나머지: 낮음
 일시: 2026-02-14 (Session 16)
+```
+
+---
+
+### D-013: SESSION 18 작업 범위 축소 및 분리 결정
+
+```
+결정:
+  - SESSION 18의 범위를 "콘텐츠 데이터 바인딩(Content Data Binding)"으로 한정한다.
+  - 디자인 폴리싱(폰트, 간격, 모션 등)은 SESSION 19로 명시적으로 분리/이관한다.
+  - 작업 수행 주체는 Builder(Codex)로 지정한다.
+이유:
+  - 콘텐츠 주입(논리적 정합성)과 디자인 수정(감각적 완성도)을 동시에 진행 시 품질 저하 및 디자인 시스템 위반 위험 방지
+  - 단계별 완료 기준(Definition of Done)을 명확히 하여 검수 효율성 증대
+대안:
+  - 기존대로 통합 진행 → 디렉터 지적으로 폐기 (리스크 높음)
+변경 가능 여부: 낮음 (프로세스 확정)
+일시: 2026-02-14 (Session 17)
+```
+
+---
+
+### D-014: 콘텐츠 SSOT 최신화 및 재바인딩 기준 확정
+
+```
+결정:
+  - `docs/contents/`를 Session 16 확정값(D1~D12) 기준으로 최신화한다.
+  - Home/About/Programs/Services/Contact/Common/Track Record(Deprecated) 문서를 갱신한다.
+  - Track Record 명칭은 보관용으로 유지하고, 실사용 기준은 `/history` + `history_master.md`로 고정한다.
+  - 페이지 콘텐츠 반영 시 `docs/contents` 최신본을 우선 기준으로 재바인딩한다.
+이유:
+  - 기존 `docs/contents` 일부 문서가 2026-02-03 버전에 머물러 설계/결정 최신 상태와 불일치.
+  - 콘텐츠 SSOT가 구버전이면 구현물이 과거 카피로 회귀하는 문제가 반복됨.
+대안:
+  - 페이지 텍스트만 임시 수정하고 SSOT는 유지 → 재발 위험으로 폐기.
+변경 가능 여부:
+  - 중간 (후속 세션에서 카피 고도화 가능, 단 SSOT 단일 기준 원칙은 유지)
+일시: 2026-02-15 (Session 18)
+```
+
+---
+
+### D-015: 팀 구조 재편 (PM 권한 제한, Documentation Manager 신설, RACI 매트릭스 도입)
+
+```
+결정:
+  [팀 구조]
+  - Documentation Manager 역할 신설 (Claude 4.5 Sonnet 담당)
+  - PM(Gemini 3.0 Flash) 권한을 Work Order 발행 및 공정 관리로 제한
+  - 운영 스쿼드를 7개 역할에서 8개 역할로 확대
+
+  [PM 권한 제한]
+  - 허용: Work Order 발행, 세션 보고서 작성, 공정 모니터링(읽기), 디렉터 승인 요청
+  - 금지: 코드 직접 수정, 정본 문서 직접 수정, 신규 폴더 생성/삭제, 문서 체계 변경, 작업물 생산
+  - 문서 변경 필요 시: Documentation Manager에게 Work Order 발행
+
+  [Documentation Manager 책임]
+  - 정본 문서(CLAUDE.md, 01~05) 버전 관리
+  - 콘텐츠 SSOT(docs/contents/) 최신화 검증 및 갱신
+  - 문서 간 정합성 검증 (설계 ↔ 콘텐츠 ↔ 코드)
+  - 결정 기록(03_DECISIONS.md) 지속적 갱신
+  - 문서 파편화 모니터링 및 통합
+
+  [RACI 매트릭스 도입]
+  - 9개 작업 유형별로 R/A/C/I 명시
+  - 역할 침범 발생 시 매트릭스 참조하여 교정
+  - CLAUDE.md 섹션 7에 전체 매트릭스 기록
+
+이유:
+  - 2026-02-15 외부 감사(Claude 4.5 Sonnet) 결과, 3가지 심각한 구조적 결함 식별:
+    1) PM 역할 과부하 (기획+관리+실행+문서관리 혼재)
+    2) 문서관리 담당 부재 (콘텐츠 SSOT 최신화 지연, 문서 파편화 방치)
+    3) 역할 경계 모호성 (PM 통제 실패 반복 발생)
+  - RCA 보고서(docs/reports/RCA_AGENT_CONTROL_FAILURE.md)에서 PM의 독단적 행동 2건 확인:
+    * 2026-02-13: 신규 폴더 생성, CLAUDE.md 임의 수정
+    * 2026-02-14: src/ 폴더 직접 수정 (역할 침범)
+  - Session 18: docs/contents/ 일부 문서가 구버전(2026-02-03)으로 방치된 사실 발견
+  - 문서 체계가 프로젝트 SSOT인데 전담 관리자 없음 = 거버넌스 붕괴 위험
+  - Phase 3 STEP 2에서 PM이 미디어 자산 생산 예정 = PM 역할 범위 벗어남
+
+대안:
+  - 옵션 A (채택): Documentation Manager 신설 + PM 권한 제한
+  - 옵션 B (기각): PM 유지하되 교육 강화 → 구조적 문제로 재발 가능성 높음
+  - 옵션 C (기각): 모든 역할을 더 세분화 → 오버헤드 증가
+
+변경 가능 여부:
+  - 낮음 (구조적 결함 해결을 위한 필수 조치)
+  - Documentation Manager 담당 모델은 변경 가능 (역할 자체는 유지)
+  - RACI 매트릭스는 운영 중 조정 가능
+
+일시: 2026-02-15 (Session 20 외부 감사 후)
+```
+
+---
+
+### D-016: 비용최적화 재구조화 및 Designer 신설
+
+```
+결정:
+  [비용 구조 반영]
+  - Gemini API 크레딧 확보 (Flash 무제한, Pro 40만원)
+  - GPT/Codex 구독 중 (비용 무관)
+  - Claude 구독이지만 토큰 소모 빠름 (최소화 필요)
+
+  [팀 재편]
+  - Doc Manager: Claude 4.5 Sonnet → Gemini 3.0 Pro로 변경
+  - Designer 역할 신설: GPT 5.2 (Reviewer 전환)
+  - Media Producer 역할 신설: Gemini 3.0 Flash
+  - Analyst: 필요시에만 호출 (Doc Manager 병행 불가)
+  - 운영 스쿼드 8개 → 9개 역할로 확대
+
+  [역할별 담당 확정]
+  주력 (매 세션):
+    - PM: Gemini 3.0 Flash
+    - Doc Manager: Gemini 3.0 Pro
+    - Content: Gemini 3.0 Pro
+    - Media Producer: Gemini 3.0 Flash
+    - Builder: GPT Codex 5.3
+    - Designer: GPT 5.2 (디자인 폴리싱 + 최종 QA)
+
+  보조 (필요시만):
+    - Architect: Claude 4.6 Opus (Phase 전환, 중요 결정)
+    - Analyst: Claude 4.5 Sonnet (복잡한 분석)
+
+  [이상적 모델 병기]
+  - 각 역할에 "비용최적" vs "이상적" 모델 병기
+  - 비용 제약 없을 시 참고용
+
+이유:
+  - 외부 감사 후 추가 분석 결과:
+    1) 디자이너 부재: Phase 3 STEP 3이 디자인 폴리싱 중심인데 담당자 없음
+    2) Claude 토큰 소모 과다: Sonnet을 매 세션 사용 시 비용 급증
+    3) Gemini 크레딧 미활용: 40만원 크레딧이 있는데 Flash/Pro 활용 부족
+    4) GPT 구독 활용 부족: 구독 중인데 Codex만 사용
+  - Phase 3 STEP 3 작업 분석:
+    * 폰트/간격/모션/반응형 디테일 = 디자인 감각 필요
+    * Builder(Codex)는 코딩만, 시각적 판단은 별도 역할 필요
+  - 비용 절감 효과:
+    * Claude Sonnet 토큰 90% 절감 (Doc Manager를 Gemini로)
+    * Gemini 크레딧 40만원 최대 활용
+    * GPT 구독 활용 극대화 (Designer 추가)
+
+대안:
+  - 옵션 A (채택): Gemini 주력 + GPT 보조 + Claude 최소화
+  - 옵션 B (기각): Claude 중심 유지 → 비용 과다
+  - 옵션 C (기각): 역할 통합으로 축소 → 디자이너 공백 미해결
+
+변경 가능 여부:
+  - 중간 (운영 중 모델 교체 가능, 역할 자체는 유지)
+  - 비용 구조 변경 시 재조정 가능
+
+일시: 2026-02-15 (Session 20 비용최적화 분석 후)
+```
+
+### D-017: `05_NEXT_TASK.md`에 근거 Work Order 명시 추가
+
+```
+결정:
+  - `05_NEXT_TASK.md`의 "현재 지시" 섹션에 근거 Work Order 파일 경로 명시
+  - 예: "근거: docs/work_orders/PHASE_3_INTEGRATED_ROADMAP_WO.md"
+
+이유:
+  - 문서 추적성(Traceability) 강화
+  - `05_NEXT_TASK.md`는 "즉시 실행 지시서"이지만, 어떤 Work Order를 근거로 작성되었는지 명확하지 않음
+  - PM 보고서에만 Work Order 참조가 있고, 공식 지시서에는 없어 권위 체계가 불명확함
+  - Work Order → Next Task → Execution 흐름을 명시적으로 추적 가능하게 함
+
+대안:
+  - 옵션 A (채택): 근거 Work Order를 명시적으로 기록
+  - 옵션 B (기각): 현상 유지 (버전 히스토리에만 "통합 로드맵" 개념 언급) → 추적성 부족
+
+변경 가능 여부:
+  - 높음 (거버넌스 개선, 필요 시 형식 조정 가능)
+
+일시: 2026-02-15 (Session 20 문서 추적성 감사 후)
 ```
 
 ---

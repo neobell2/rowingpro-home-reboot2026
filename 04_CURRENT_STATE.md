@@ -1,4 +1,4 @@
-# 04_CURRENT_STATE.md — 프로젝트 현재 좌표
+﻿# 04_CURRENT_STATE.md — 프로젝트 현재 좌표
 
 > **이 문서는 프로젝트의 현재 위치를 보여줍니다.**
 > 세션 종료 시 반드시 갱신합니다. 이 문서가 없으면 "지금 어디까지 했는가?"라는 질문이 매번 발생합니다.
@@ -7,6 +7,11 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.11** | 2026-02-15 | Session 19.5 완료 반영. 팀 구조 외부 감사, 거버넌스 개선(문서 추적성 강화, Work Order 근거 명시). |
+| **v1.10** | 2026-02-15 | 비용최적화 재구조화. Doc Manager Gemini 전환, Designer/Media Producer 신설, 9개 역할 확정. 비용최적 vs 이상적 모델 병기. |
+| **v1.9** | 2026-02-15 | 팀 구조 재편. Documentation Manager 신설, PM 권한 제한, 스쿼드 7개→8개 역할 확대 (외부 감사 결과 반영) |
+| **v1.8** | 2026-02-15 | 운영 스쿼드 모델 사양 최신화 (Gemini 3.0 Pro/Flash, Claude 4.6/4.5, GPT 5.2/5.3) |
+| **v1.7** | 2026-02-15 | SESSION 18 완료 반영. 콘텐츠 SSOT 최신화, D-014 기록, Contact 법인정보 보강, 빌드 검증 통과 |
 | **v1.6** | 2026-02-14 | SESSION 16 완료 반영. D1~D12 전체 확정, IA 17페이지 확장, Phase 3 구현 단계 진입 |
 | **v1.5** | 2026-02-13 | SESSION 15 완료 반영. 디자인 시스템 LOCKED, Phase 2 완료, Phase 3 진입 준비 |
 | **v1.4** | 2026-02-13 | 세션 시작 Quick/Conditional/Full Start 도입 반영 |
@@ -19,24 +24,39 @@
 
 ## 현재 Phase
 
-**Phase 3 — 구현 단계 (진입)**
+**Phase 3 — 구현 단계 (진행중)**
 
-> Phase 2 완료: 디자인 시스템 LOCKED, D1~D12 미결 사안 전체 확정, IA 17페이지 확장 완료
+> Phase 2 완료: 디자인 시스템 LOCKED, D1~D12 미결 사안 전체 확정, IA 17페이지 확장 완료  
+> Phase 3 진행: 스켈레톤 구현 완료(Session 17) + 콘텐츠 SSOT 최신화/재바인딩(Session 18)
 
 ---
 
 ## 운영 스쿼드(템플릿)
 
 > 매 세션마다 팀 구성을 반복 설명하지 않기 위한 표준 템플릿입니다. (필요 시 모델/도구는 교체 가능, 역할이 우선)
+> **v1.10 변경:** 비용최적화 재구조화. Gemini 주력 전환, Designer/Media Producer 신설, 9개 역할 확정.
+> **상세:** `CLAUDE.md` 섹션 7, `03_DECISIONS.md` D-015/D-016 참조
 
-| 역할 | 기본 담당(권장) | 책임 |
-|:--|:--|:--|
-| Director | 사용자(디렉터) | 최종 승인/결정 |
-| PM | Gemini (PM) | 작업 계획/승인 요청/Work Order 발행 |
-| Architect | Claude (Opus급) | 설계, 정합성, 최종 스펙 확정 |
-| Analyst | Claude (Sonnet급) | 시안 코드/자산 분석, 토큰 추출 |
-| Builder | Codex | Astro/Tailwind 구현 가이드 및 코드 작업 |
-| Reviewer | GPT | 논리/누락/충돌 점검 (교차검증) |
+### 주력 역할 (매 세션)
+
+| 역할 | 비용최적 담당 | 이상적 담당 | 책임 | 권한 제한 |
+|:--|:--|:--|:--|:--|
+| Director | 사용자(디렉터) | — | 최종 승인/결정 | — |
+| PM | Gemini 3.0 Flash | Claude Haiku | Work Order 발행, 세션 보고, 공정 모니터링 | ❌ 코드/정본 문서 직접 수정 금지 |
+| **Doc Manager** | **Gemini 3.0 Pro** | **Claude 4.5 Sonnet** | **정본 문서 관리, 콘텐츠 SSOT 최신화, 문서 정합성 검증** | **❌ 코드 수정/Work Order 발행 금지** |
+| Content | Gemini 3.0 Pro | Claude 4.6 Opus | 브랜드 스토리 및 고난도 카피라이팅 | — |
+| **Media Producer** | **Gemini 3.0 Flash** | **GPT 5.2** | **미디어 아카이브 탐색, 자산 생산, Midjourney 프롬프트** | **❌ 코드/정본 문서 수정 금지** |
+| Builder | GPT Codex 5.3 | Claude 4.5 Sonnet | Astro/Tailwind 구현 가이드 및 코드 작업 | — |
+| **Designer** | **GPT 5.2** | **Claude 4.6 Opus** | **디자인 폴리싱, 시각적 완성도, 최종 QA** | **❌ 코드 직접 수정 금지** |
+
+### 보조 역할 (필요시만)
+
+| 역할 | 비용최적 담당 | 호출 시점 | 책임 |
+|:--|:--|:--|:--|
+| Architect | Claude 4.6 Opus | Phase 전환, 중요 설계 결정 | 설계 확정, 정합성, 최종 스펙 확정 |
+| Analyst | Claude 4.5 Sonnet | 복잡한 시안 분석 | 시안 코드/자산 분석, 토큰 추출 |
+
+**RACI 매트릭스:** `CLAUDE.md` 섹션 7.6 참조
 
 ---
 
@@ -68,14 +88,32 @@
   - PDF 인쇄 제거, OG 실사+로고, 접근성 AA 준수
   - 법인 정보 확보 (대표번호, 사업자등록번호, 주소 등)
 
+### Phase 3
+
+- **17페이지 스켈레톤 구현 완료 (Gemini, Session 17)**
+  - 메인/서비스/기업 하위 라우트 포함 17페이지 골격 구축
+  - 디자인 시스템 토큰(Tailwind/global.css) 적용
+- **콘텐츠 SSOT 최신화 및 재바인딩 완료 (Codex, Session 18)**
+  - `docs/contents/*` 구버전 문서 최신화 (Home/About/Programs/Services/Contact/Common)
+  - Track Record 문서 Deprecated 처리, History 기준 단일화
+  - Contact 페이지 법인정보(사업자/법인등록번호) 반영
+  - `03_DECISIONS.md` D-014 기록
+  - `npm run build` 검증 통과
+- **팀 구조 외부 감사 및 거버넌스 개선 (Claude Sonnet, Session 19.5)**
+  - 팀 구조 4대 결함 식별 및 9개 역할 재편 (RACI 매트릭스 도입)
+  - 비용최적화: Gemini 주력 전환, Claude 토큰 90% 절감
+  - Designer/Media Producer 역할 신설
+  - 문서 추적성 강화: `05_NEXT_TASK.md`에 Work Order 근거 명시
+  - `CLAUDE.md` v2.4, `03_DECISIONS.md` D-015/D-016/D-017 기록
+
 ## 진행중
 
-- 없음 (17페이지 스켈레톤 구현 대기)
+- 없음 (Session 19 디자인 폴리싱 착수 대기)
 
 ## 이슈
 
-- Session 09에서 생성된 저품질 `.astro` 페이지 파일들이 `src/pages/`에 존재 → 17페이지 스켈레톤 구현 시 전면 재작성 필요
 - 부스형 4단계 가격표 디테일 CEO 확인 필요 (현재 PRO급 200만+VAT만 확정)
 - 디자인 단계 재검토 가능 사항: 히어로 타이틀 색상, 포인트 핑크 사용 여부
+- Contact 폼 백엔드 연동(Supabase/Resend) 미구현 상태
 
 ---
