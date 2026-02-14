@@ -8,14 +8,17 @@
 프로젝트 '로잉프로홈페이지Reboot.202601'은 현재 디자인 베이스라인(Draft 03)을 확정하고 `LOCKED` 상태로 전환하기 위한 정밀 명세화 단계에 있습니다. 시각적 시안 외에 과거 작업 과정에서 논의되고 검토된 핵심 요구사항(레거시)을 추출하여 현재 설계에 완벽히 통합하는 것이 본 작업의 목적입니다.
 
 ## 2. 검토 대상 레거시 문서 (Single Source of Truth 확보용)
-다음 3종의 문서를 정밀 분석하여 현재 설계(Draft 03)와 대조하십시오.
+다음 문서들을 분석하여 현재 설계(Draft 03)와 대조하십시오.
 
-1.  **질문 및 답변 로그**: [DEV_SPEC_VALIDATION_QUESTIONS.md](../DEV_SPEC_VALIDATION_QUESTIONS.md)
-    - 초기 설계 단계의 미결 사항과 이에 대한 답변(Q1~Q22)이 포함되어 있습니다.
-2.  **디자인 철학 및 토큰**: [DESIGN_TOKENS.md](../_archive/2026-02-03_GPT_legacy/specs/DESIGN_TOKENS.md)
-    - 'Sky Blue' 단일 컬러 시스템의 기원과 디자인 원칙이 담겨 있습니다.
-3.  **초기 개발 스펙**: [dev_spec.md](../_archive/WebGPT_outputs/260203/dev_spec.md)
-    - IA 구조, 이미지 3슬롯 규칙, SEO 및 레이아웃 시스템의 원형이 명시되어 있습니다.
+1.  **미결 체크리스트**: [01. 누락·오류·확정 필요 체크리스트.md](../_archive/WebGPT_outputs/260203/01.%20누락·오류·확정%20필요%20체크리스트.md)
+    - 개발 직전 반드시 확정해야 할 Header/Footer 상세, 폼 유효성, 상품 노출 정책 등 21개 항목.
+2.  **IA 및 템플릿 확정안**: [11_IA템플릿확정_이미지3슬롯_설계종료_260201.md](../_archive/WebGPT_outputs/Archive/WEBGPT_Full_Thread_Backup/11_IA템플릿확정_이미지3슬롯_설계종료_260201.md)
+    - 5카드 랜딩 공통 템플릿(10개 섹션) 구조 및 이미지 3슬롯 동작(3.5s 자동슬라이드) 규칙.
+3.  **최종 구조 명세 (v1.2)**: [# [최종 보고서] ... DEV_SPEC.md](../_archive/2026-02-03_GPT_legacy/specs/DEV_SPEC.md)
+    - 기업·조직 하위 5개 상세 URL 구조 및 200만원 체험부스 패키지 등 가격 정책.
+4.  **디자인 철학 원본**: [02. DESIGN.md](../_archive/old_archive/v2_backup/02.%20DESIGN.md)
+    - '통제된 에너지(Disciplined Energy)' 및 타겟별 시각 전략.
+5.  **보조 참조**: [DESIGN_TOKENS.md](../_archive/2026-02-03_GPT_legacy/specs/DESIGN_TOKENS.md), [dev_spec.md](../_archive/WebGPT_outputs/260203/dev_spec.md), [DEV_SPEC_VALIDATION_QUESTIONS.md](../DEV_SPEC_VALIDATION_QUESTIONS.md)
 
 ## 3. 핵심 분석 및 수행 과제
 - **모순점 식별**: Draft 03의 시각적 수치와 레거시 문서의 규격(예: 3슬롯 이미지 규칙, 섹션 교차 패턴 등) 간의 충격 지점을 찾으십시오.

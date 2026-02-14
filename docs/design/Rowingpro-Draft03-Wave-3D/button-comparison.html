@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>버튼 스타일 비교</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            deep: '#05080F',
+            heritage: '#2C63A7',
+            neon: '#00F0FF',
+          },
+          fontFamily: {
+            sans: ['Pretendard', 'sans-serif'],
+            display: ['Readex Pro', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #05080F;
+      color: white;
+    }
+    .spline-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .spline-container iframe {
+      width: 100%;
+      height: 108%;
+      border: none;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="spline-container">
+    <iframe src='https://my.spline.design/claritystream-YVxVyDMpZZ5lAwO6YB49Sz0L/' frameborder='0'></iframe>
+  </div>
+
+  <div class="relative z-10 min-h-screen flex items-center justify-center p-8">
+    <div class="max-w-6xl w-full">
+      <h1 class="font-display text-5xl font-bold text-center mb-4">
+        ROWING <span class="text-heritage">=</span> TEAMWORK
+      </h1>
+      <p class="text-center text-gray-400 mb-16">혼자일 땐 몰랐던 우리 팀의 진짜 호흡</p>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- 옵션 A: 글래스 Heritage -->
+        <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8">
+          <div class="text-heritage text-sm font-bold mb-4">옵션 A: 글래스 Heritage</div>
+          <button class="w-full px-8 py-3 bg-transparent border border-heritage/50 text-white font-bold rounded-full backdrop-blur-sm hover:bg-heritage/15 hover:border-heritage/80 transition-all">
+            프로그램 보기
+          </button>
+          <div class="text-xs text-gray-400 mt-3">
+            • Heritage 브랜드 컬러<br>
+            • 투명 배경 + 테두리<br>
+            • 호버: 미세 배경 + 테두리 강화
+          </div>
+        </div>
+
+        <!-- 옵션 B: 글래스 Neon -->
+        <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8">
+          <div class="text-neon text-sm font-bold mb-4">옵션 B: 글래스 Neon</div>
+          <button class="w-full px-8 py-3 bg-transparent border border-neon/40 text-white font-bold rounded-full backdrop-blur-sm hover:bg-neon/10 hover:border-neon/70 transition-all">
+            프로그램 보기
+          </button>
+          <div class="text-xs text-gray-400 mt-3">
+            • Neon 보조 컬러<br>
+            • 투명 배경 + 테두리<br>
+            • 호버: 미세 배경 + 테두리 강화
+          </div>
+        </div>
+
+        <!-- 옵션 C: 서브틀 Heritage -->
+        <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8">
+          <div class="text-heritage text-sm font-bold mb-4">옵션 C: 서브틀 Heritage</div>
+          <button class="w-full px-8 py-3 bg-heritage/15 border border-heritage/30 text-white font-bold rounded-full hover:bg-heritage/25 hover:border-heritage/50 transition-all">
+            프로그램 보기
+          </button>
+          <div class="text-xs text-gray-400 mt-3">
+            • Heritage 반투명 배경<br>
+            • 미세 테두리<br>
+            • 호버: 배경 진하게
+          </div>
+        </div>
+
+        <!-- 옵션 D: 화이트 미니멀 -->
+        <div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8">
+          <div class="text-white text-sm font-bold mb-4">옵션 D: 화이트 미니멀</div>
+          <button class="w-full px-8 py-3 bg-white/10 border border-white/30 text-white font-bold rounded-full hover:bg-white/15 hover:border-white/50 transition-all">
+            프로그램 보기
+          </button>
+          <div class="text-xs text-gray-400 mt-3">
+            • 화이트 중립<br>
+            • 미세 반투명 배경<br>
+            • 호버: 배경/테두리 강화
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12 text-gray-500 text-sm">
+        Wave 3D 배경 위에서 실제 가시성과 위계를 확인하세요
+      </div>
+    </div>
+  </div>
+</body>
+</html>
