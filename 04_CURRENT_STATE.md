@@ -7,6 +7,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.14** | 2026-02-15 | Session 19.6 완료. 문서 검수(정본/콘텐츠/구조 A-등급), 프로젝트 전수조사(미결 5건 명시), 아카이브 정책 수립(D-019), 2개 최종 보고서 생성. |
 | **v1.13** | 2026-02-15 | Session 19.6 문서 검수 완료. 콘텐츠 SSOT 근거 명시, Git 파일 이동 정리, Doc Manager 검수 보고서 생성. |
 | **v1.12** | 2026-02-15 | PM/Doc Manager를 Claude Haiku로 전환. 품질 향상 및 Gemini 크레딧 Content 집중 투입. |
 | **v1.11** | 2026-02-15 | Session 19.5 완료 반영. 팀 구조 외부 감사, 거버넌스 개선(문서 추적성 강화, Work Order 근거 명시). |
@@ -107,16 +108,21 @@
   - Designer/Media Producer 역할 신설
   - 문서 추적성 강화: `05_NEXT_TASK.md`에 Work Order 근거 명시
   - `CLAUDE.md` v2.4, `03_DECISIONS.md` D-015/D-016/D-017 기록
+- **문서 거버넌스 및 아카이브 정책 수립 (Haiku, Session 19.6)** ✅
+  - 정본 문서 검증 (CLAUDE.md, 01~05) A등급 확정
+  - 콘텐츠 SSOT 정합성 검증 (근거 명시 강화)
+  - 보고서 구조 정리 (Session 15+ 활성, 08~14 아카이브)
+  - 프로젝트 폴더 전수조사 완료 (미결 이슈 5건 명시)
+  - 아카이브 정책 D-019 수립 (간단한 구조)
+  - 최종 보고서 2개 생성 (FINAL_AUDIT, WORK_SUMMARY)
 
 ## 진행중
 
-- **Session 19.6 (Documentation Manager 검수)** — 문서 정합성 검증 및 정리
-  - ✅ 정본 문서(CLAUDE.md, 01~05) 상태 검증
-  - ✅ 콘텐츠 SSOT(docs/contents/) 정합성 확인
-  - ✅ 보고서/Work Order 구조 분석
-  - ✅ 문서 검수 보고서 생성 (`SESSION_19.6_DOC_MANAGER_AUDIT.md`)
-  - ✅ Git 파일 이동 정리
-  - 다음: 디렉터 승인 → Session 19 디자인 폴리싱 착수
+- **Session 19 (Content + Design Polishing)** — 콘텐츠 고도화 및 디자인 폴리싱
+  - STEP 1: Gemini 3.0 Pro — HPOC 기반 브랜드 스토리 및 최종 카피 (착수 대기)
+  - STEP 2: Gemini 3.0 Flash — 미디어 자산 생산 및 정제 (착수 대기)
+  - STEP 3: Builder + Designer — 디자인 폴리싱 및 최종 바인딩 (착수 대기)
+  - ⚠️ PM 확인 필요: IA 페이지, 빌드 상태, public/og/ 구조
 
 ## 이슈
 
