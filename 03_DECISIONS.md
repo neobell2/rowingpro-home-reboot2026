@@ -463,23 +463,34 @@
 
 ---
 
-### D-019: 세션별 아카이브 정책 (프로젝트 완료 후)
+### D-019: 아카이브 정책 (간단한 구조)
 
 ```
 결정:
-  - Phase 3 완료 후, 각 세션의 Work Order + Report를 함께 패키징
-  - 구조: `docs/_archive/sessions/SESSION_XX/` → WO + Report 보관
-  - 최종 배포 후 일괄 정리 (현재는 활성 진행)
+  - `docs/_archive/reports_legacy/`: 레거시 리포트 통합 보관 (SESSION_08~14)
+  - 파일명에 SESSION_XX가 이미 있으므로 세션별 폴더 불필요
+  - `.gitignore`로 Git 추적 제외 (로컬 전용)
+  - 프로젝트 완료 후 필요시 재정리
+
+실제 구조:
+  docs/_archive/
+  └── reports_legacy/
+      ├── SESSION_08_REPORT.md
+      ├── SESSION_09_REPORT.md
+      ├── ... (SESSION_10~14)
+      ├── DEV_SPEC_VALIDATION_QUESTIONS.md
+      ├── RCA_AGENT_CONTROL_FAILURE.md
+      └── [기타 분석 리포트]
 
 이유:
-  - 프로젝트 기간이 짧음 (약 1개월, 2026-02-15 → ~2026-02-22 예상)
-  - 지금 아카이브 구조화는 불필요 (오버킬)
-  - 프로젝트 완료 후 세션별로 패키징하면 충분
+  - 과도한 폴더 구조 제거 (파일명으로 충분)
+  - 간단함 = 유지보수 용이
+  - Git 추적 제외 = 저장소 스프롤 방지
 
 변경 가능 여부:
-  - 높음 (프로젝트 완료 시점에 재판단)
+  - 높음 (프로젝트 완료 시점에 재정리 가능)
 
-일시: 2026-02-15 (Session 19.6 재검토 후)
+일시: 2026-02-15 (Session 19.6 보완)
 ```
 
 ---
