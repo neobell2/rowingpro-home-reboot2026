@@ -25,7 +25,7 @@
 | 4 | [02. DESIGN.md](../_archive/old_archive/v2_backup/02.%20DESIGN.md) | 디자인 철학 원본 | 2026-01-29 |
 | 5 | [DESIGN_TOKENS.md](../_archive/2026-02-03_GPT_legacy/specs/DESIGN_TOKENS.md) | Sky Blue 컬러 시스템 + 수치 규격 | 2026-02-04 |
 | 6 | [dev_spec.md v1.1](../_archive/WebGPT_outputs/260203/dev_spec.md) | 개발 스펙 초안 | 2026-02-03 |
-| 7 | [DEV_SPEC_VALIDATION_QUESTIONS.md](../DEV_SPEC_VALIDATION_QUESTIONS.md) | 22개 검증 질문 (미답변) | 2026-02-03 |
+| 7 | [DEV_SPEC_VALIDATION_QUESTIONS.md](./DEV_SPEC_VALIDATION_QUESTIONS.md) | 22개 검증 질문 (미답변) | 2026-02-03 |
 
 ### 대조 기준
 

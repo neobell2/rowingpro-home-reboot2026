@@ -1,9 +1,95 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
+
+const title = 'About | 로잉프로';
+const description = '국가대표 출신, 13년 무사고, 협회 주관사. CEO 김정겸, 창업주 윤종성 프로필';
 ---
-<MainLayout title="About Us | 로잉프로">
-  <div class="max-w-7xl mx-auto px-4 py-20">
-    <h1 class="text-4xl font-bold font-display text-white mb-6">About Us</h1>
-    <p class="text-lg text-gray-400">국가대표 출신, 13년 무사고, 협회 주관사.</p>
-  </div>
+
+<MainLayout {title} {description}>
+  <section class="relative py-24 bg-deep/90">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <h1 class="text-5xl md:text-6xl font-display font-bold text-white mb-8">
+        왜 조정인가
+      </h1>
+      <p class="text-xl text-white/80 max-w-3xl mx-auto">
+        개인 역량만으로는 성과를 만들 수 없는 환경에서, 조정은 팀이 작동하는 원리를 가장 명확하게 보여줍니다.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-24">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8">
+      <div class="glass-panel p-10">
+        <h2 class="text-3xl font-display font-bold text-white mb-6">교육으로의 번역</h2>
+        <p class="text-white/80 text-lg mb-6">
+          조정의 원리를 현장 교육으로 옮길 때, 로잉프로는 아래 4개 구조를 기준으로 프로그램을 설계합니다.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+            <h3 class="text-xl font-bold text-heritage mb-2">Hardware</h3>
+            <p class="text-white/70">장비, 공간, 동선, 안전 환경을 먼저 설계합니다.</p>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+            <h3 class="text-xl font-bold text-heritage mb-2">People</h3>
+            <p class="text-white/70">참여자 역할과 코치 개입 포인트를 명확히 나눕니다.</p>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+            <h3 class="text-xl font-bold text-heritage mb-2">Operation</h3>
+            <p class="text-white/70">세션 흐름, 피드백 루프, 성과 확인 단계를 운영합니다.</p>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+            <h3 class="text-xl font-bold text-heritage mb-2">Content</h3>
+            <p class="text-white/70">목적별 시나리오와 디브리핑 문항으로 학습을 완성합니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-deep/40">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <h2 class="text-4xl font-display font-bold text-white mb-10 text-center">차별점</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="glass-panel p-8 text-center">
+          <div class="text-5xl font-display font-bold text-heritage mb-4">1보트 1코치</div>
+          <p class="text-white/80">코치가 직접 동승해 현장에서 즉시 피드백합니다.</p>
+        </div>
+        <div class="glass-panel p-8 text-center">
+          <div class="text-5xl font-display font-bold text-heritage mb-4">선수 출신 채용</div>
+          <p class="text-white/80">스탭과 보조 인력 포함 전원 엘리트 선수 출신으로 구성합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-deep/50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <h2 class="text-4xl font-display font-bold text-white mb-12 text-center">창업주 이력</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="glass-panel p-10">
+          <h3 class="text-2xl font-bold text-white mb-4">대표이사 김정겸</h3>
+          <p class="text-white/80 mb-6">
+            2023년 4월 취임. 기업 HRD 운영 및 팀빌딩 프로그램 설계 업무를 총괄하고 있습니다.
+          </p>
+          <div class="text-sm text-white/60">2023.04 ~ 현재</div>
+        </div>
+        <div class="glass-panel p-10">
+          <h3 class="text-2xl font-bold text-white mb-4">창업주 윤종성</h3>
+          <p class="text-white/80 mb-6">
+            2013년 8월 29일 로잉프로 설립. 전 국가대표 조정 선수로서 기업 조정 교육 모델을 최초 도입했습니다.
+          </p>
+          <div class="text-sm text-white/60">2013.08.29 설립</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-display font-bold text-white mb-8">핵심 메시지</h2>
+      <p class="text-xl text-white/80 leading-relaxed">
+        로잉프로는 조정을 통해 팀의 실행 구조를 훈련합니다. 개인 능력을 넘어서 팀이 함께 결과를 내는 방식을 만드는 것이 목표입니다.
+      </p>
+    </div>
+  </section>
 </MainLayout>

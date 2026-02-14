@@ -2,50 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Design Tokens (CSS Variables) - Sky Blue 단일 시스템 */
-:root {
-  /* 메인 컬러 */
-  --color-primary: #0EA5E9;           /* Sky Blue 500 */
+/* Glassmorphism & Design System Tokens */
 
-  /* 변주 */
-  --color-cyan-light: #22D3EE;        /* Cyan 400 - 버튼 */
-  --color-cyan: #06B6D4;              /* Cyan 500 */
-  --color-cyan-dark: #0284C7;         /* Sky 600 */
-
-  /* 포인트 */
-  --color-rose: #F43F5E;              /* Rose 500 */
-
-  /* 구조 */
-  --color-navy-dark: #0F172A;         /* Slate 900 - Header */
-  --color-navy: #1E293B;              /* Slate 800 - Footer */
-}
-
-/* Custom Components */
 @layer components {
+  .glass-panel {
+    @apply backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  }
+
+  .glass-panel-heritage {
+    @apply glass-panel border-heritage/50 shadow-heritage/20;
+  }
+
+  .glass-panel-neon {
+    @apply glass-panel border-neon/50 shadow-neon/20;
+  }
+
+  /* Button System */
   .btn-primary {
-    @apply bg-cyan-light hover:bg-cyan text-white font-semibold px-8 py-4 rounded-lg transition-all shadow-lg hover:shadow-xl transform hover:scale-105;
+    @apply bg-transparent border border-heritage/50 py-3 px-8 rounded-full backdrop-blur-lg transition-all duration-300;
+  }
+
+  .btn-primary:hover {
+    @apply bg-heritage/15 border-heritage/80;
   }
 
   .btn-secondary {
-    @apply bg-white border-2 border-primary text-primary hover:bg-blue-50 font-semibold px-8 py-4 rounded-lg transition-all;
+    @apply bg-white/10 border border-white/30 py-3 px-8 rounded-full backdrop-blur-lg transition-all duration-300;
   }
 
-  .btn-accent {
-    @apply bg-rose hover:bg-rose-600 text-white font-semibold px-8 py-4 rounded-lg transition-all shadow-lg hover:shadow-xl;
+  .btn-secondary:hover {
+    @apply bg-white/15 border-white/50;
   }
 }
 
-/* Base Styles */
 @layer base {
   body {
-    @apply font-sans text-gray-900;
+    @apply bg-deep text-white font-sans;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold text-gray-900;
+    @apply font-display font-semibold;
   }
 
   a {
-    @apply transition-colors;
+    @apply transition-colors duration-300;
   }
 }

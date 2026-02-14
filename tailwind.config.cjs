@@ -4,28 +4,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Upclub Style - Primary Colors
-        primary: '#0a9afa',     // Primary Blue - CTAs, links, highlights
-        orange: '#f4741a',      // Secondary Orange - hover states, accents
+        // Design System Colors (LOCKED)
+        heritage: '#2C63A7',   // Heritage Blue - 로고, 주 제목, 브랜드 핵심
+        neon: '#00F0FF',       // Neon Cyan - 인터랙션, 호버, 밝기 보완
+        deep: '#05080F',       // Deep Navy - 메인 배경 (프리미엄 깊이감)
+        white: '#FFFFFF',      // White - 텍스트, 글라스 요소
 
-        // Upclub Style - Neutral Colors
-        dark: {
-          DEFAULT: '#0a0909',   // Dark background
-          deep: '#000000',      // Deepest black
-          gray: '#1e1e1e',      // Dark gray
-        },
-        light: {
-          DEFAULT: '#f2f6f9',   // Light gray background
-          pure: '#ffffff',      // Pure white
-        },
-        text: {
-          DEFAULT: '#333333',   // Primary text
-          secondary: '#595959', // Secondary text
-          muted: '#999999',     // Muted text
-        },
+        // Opacity variants can be added via Tailwind's opacity modifiers
+        // e.g., 'heritage/50', 'neon/20'
       },
       fontFamily: {
         sans: ['Pretendard Variable', 'Inter', 'sans-serif'],
+        display: ['Readex Pro', 'sans-serif'],
       },
     },
   },

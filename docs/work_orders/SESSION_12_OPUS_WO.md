@@ -18,7 +18,7 @@
     - 기업·조직 하위 5개 상세 URL 구조 및 200만원 체험부스 패키지 등 가격 정책.
 4.  **디자인 철학 원본**: [02. DESIGN.md](../_archive/old_archive/v2_backup/02.%20DESIGN.md)
     - '통제된 에너지(Disciplined Energy)' 및 타겟별 시각 전략.
-5.  **보조 참조**: [DESIGN_TOKENS.md](../_archive/2026-02-03_GPT_legacy/specs/DESIGN_TOKENS.md), [dev_spec.md](../_archive/WebGPT_outputs/260203/dev_spec.md), [DEV_SPEC_VALIDATION_QUESTIONS.md](../DEV_SPEC_VALIDATION_QUESTIONS.md)
+5.  **보조 참조**: [DESIGN_TOKENS.md](../_archive/2026-02-03_GPT_legacy/specs/DESIGN_TOKENS.md), [dev_spec.md](../_archive/WebGPT_outputs/260203/dev_spec.md), [DEV_SPEC_VALIDATION_QUESTIONS.md](../reports/DEV_SPEC_VALIDATION_QUESTIONS.md)
 
 ## 3. 핵심 분석 및 수행 과제
 - **모순점 식별**: Draft 03의 시각적 수치와 레거시 문서의 규격(예: 3슬롯 이미지 규칙, 섹션 교차 패턴 등) 간의 충격 지점을 찾으십시오.

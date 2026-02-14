@@ -1,9 +1,136 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
+
+const title = 'Contact | 로잉프로';
+const description = '문의 폼 (실패 시 대표번호 1566-1931 노출)';
+
+const faqItems = [
+  {
+    q: '프로그램은 최소 몇 명부터 진행할 수 있나요?',
+    a: '프로그램 유형마다 다르지만 일반적으로 10명 내외부터 설계가 가능합니다.',
+  },
+  {
+    q: '실내와 수상 프로그램을 함께 진행할 수 있나요?',
+    a: '가능합니다. 일정과 장소 조건에 맞춰 MIX 형태로 제안드립니다.',
+  },
+  {
+    q: '행사형 부스 운영도 견적이 가능한가요?',
+    a: '가능합니다. 인원, 시간, 지역에 따라 패키지별 운영안을 안내드립니다.',
+  },
+  {
+    q: '문의 후 답변은 얼마나 걸리나요?',
+    a: '평일 접수 기준으로 24시간 이내 회신을 원칙으로 운영합니다.',
+  },
+];
 ---
-<MainLayout title="Contact | 로잉프로">
-  <div class="max-w-7xl mx-auto px-4 py-20">
-    <h1 class="text-4xl font-bold font-display text-white mb-6">Contact Us</h1>
-    <p class="text-lg text-gray-400">문의하기</p>
-  </div>
+
+<MainLayout {title} {description}>
+  <!-- Hero -->
+  <section class="relative py-24 bg-deep/90">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <h1 class="text-5xl md:text-6xl font-display font-bold text-white mb-8">
+        문의하기
+      </h1>
+      <p class="text-xl text-white/80 max-w-3xl mx-auto">
+        원하시는 프로그램 유형, 인원, 일정, 예산 등을 자유롭게 적어주시면 빠르게 연락드리겠습니다.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div class="glass-panel p-10">
+          <h2 class="text-3xl font-display font-bold text-white mb-8">문의 폼</h2>
+          <p class="text-white/70 mb-8">
+            폼 기능은 추후 Supabase + Resend 연동으로 구현 예정입니다.
+          </p>
+          <div class="space-y-4">
+            <div class="h-12 bg-white/5 rounded-lg"></div>
+            <div class="h-12 bg-white/5 rounded-lg"></div>
+            <div class="h-32 bg-white/5 rounded-lg"></div>
+            <div class="h-12 bg-white/5 rounded-lg"></div>
+          </div>
+          <div class="mt-8 pt-8 border-t border-white/10">
+            <p class="text-sm text-white/60">
+              폼 제출 실패 시 대표번호 1566-1931로 연락 주시기 바랍니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="space-y-10">
+          <div class="glass-panel p-10">
+            <h3 class="text-2xl font-bold text-white mb-6">연락처 정보</h3>
+            <div class="space-y-4">
+              <div>
+                <div class="text-sm text-white/50">대표번호</div>
+                <div class="text-xl font-bold text-white">1566-1931</div>
+              </div>
+              <div>
+                <div class="text-sm text-white/50">이메일</div>
+                <div class="text-xl font-bold text-white">contact@rowingpro.co.kr</div>
+              </div>
+              <div>
+                <div class="text-sm text-white/50">주소</div>
+                <div class="text-xl font-bold text-white">
+                  경기도 하남시 덕풍동로 111-21, 케이에듀동 10층 1021호
+                </div>
+              </div>
+              <div>
+                <div class="text-sm text-white/50">사업자등록번호</div>
+                <div class="text-xl font-bold text-white">211-88-99912</div>
+              </div>
+              <div>
+                <div class="text-sm text-white/50">법인등록번호</div>
+                <div class="text-xl font-bold text-white">110111-5216282</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-panel p-10">
+            <h3 class="text-2xl font-bold text-white mb-6">응답 시간</h3>
+            <p class="text-white/70">
+              평일 오전 9시 ~ 오후 6시 사이 문의는 24시간 내 답변 드립니다.<br>
+              주말 및 공휴일 문의는 다음 영업일 오전에 순차적으로 처리됩니다.
+            </p>
+          </div>
+
+          <div class="glass-panel p-10">
+            <h3 class="text-2xl font-bold text-white mb-6">오시는 길</h3>
+            <div class="h-48 rounded-2xl border border-white/10 bg-white/5 flex items-center justify-center text-white/60 text-sm">
+              지도 연동 예정 (카카오맵/네이버맵)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 border-t border-white/10">
+    <div class="max-w-5xl mx-auto px-6 lg:px-8">
+      <h2 class="text-4xl font-display font-bold text-white mb-10 text-center">자주 묻는 질문</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {faqItems.map((item) => (
+          <div class="glass-panel p-6">
+            <h3 class="text-lg font-bold text-white mb-3">{item.q}</h3>
+            <p class="text-white/70">{item.a}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-deep/50">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-display font-bold text-white mb-8">
+        직접 전화 문의
+      </h2>
+      <p class="text-xl text-white/80 mb-12">
+        긴급한 문의는 대표번호로 바로 연락하실 수 있습니다.
+      </p>
+      <a href="tel:1566-1931" class="btn-primary inline-flex items-center justify-center px-12 py-4 text-lg">
+        1566-1931 전화 걸기
+      </a>
+    </div>
+  </section>
 </MainLayout>

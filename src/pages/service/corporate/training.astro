@@ -1,9 +1,18 @@
 ---
-import MainLayout from '../../../layouts/MainLayout.astro';
+import ServiceDetailPage from '../../../components/ServiceDetailPage.astro';
+
+const bullets = [
+  '신입·주니어 구성원을 위한 팀워크 기반 온보딩 교육',
+  '직무 간 협업을 강화하는 커뮤니케이션 훈련 세션',
+  '실내 기초 훈련 후 수상 체험으로 연결되는 단계형 커리큘럼',
+];
 ---
-<MainLayout title="Corporate Training | 로잉프로">
-  <div class="max-w-7xl mx-auto px-4 py-20">
-    <h1 class="text-4xl font-bold font-display text-white mb-6">Training</h1>
-    <p class="text-lg text-gray-400">사원 교육 및 조직 개발 프로그램.</p>
-  </div>
-</MainLayout>
+
+<ServiceDetailPage
+  title="Corporate Training"
+  description="사원 교육 및 조직 개발 프로그램"
+  summary="HRD 적용형 교육 목적에 맞춰 설계하는 기업 훈련 프로그램입니다."
+  bullets={bullets}
+  audience="신입사원 교육팀, 조직개발 담당자, 직무 전환·협업 교육 조직"
+  ctaLabel="교육 프로그램 문의"
+/>

@@ -1,8 +1,9 @@
-# 운영 실적(Track Record) 콘텐츠
+# Track Record (Deprecated)
 
-## 1. 주요 실적
-- 연도별 운영 이력 (rp_05 공신력 자료 참조)
-- 주요 고객사 리스트 (삼성, 현대 등 대기업 및 공공기관)
+이 문서는 보관용입니다.  
+최신 운영 실적 콘텐츠는 아래 문서를 기준으로 사용합니다.
 
-## 2. 대표 사례
-- (주요 프로젝트별 성공 사례 카피 및 데이터)
+- `docs/contents/history_master.md`
+- 라우트: `/history` (페이지명: 걸어온 길)
+
+근거: `03_DECISIONS.md` D3 (Track Record → History 변경)

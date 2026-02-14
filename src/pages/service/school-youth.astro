@@ -1,0 +1,19 @@
+---
+import ServiceDetailPage from '../../components/ServiceDetailPage.astro';
+
+const bullets = [
+  '인성 교육과 체육 활동을 결합한 학교 맞춤형 조정 수업',
+  '리더십 캠프, 학급 단합 프로그램, 진로 체험형 코스 운영',
+  '실내 장비와 수상 체험을 연계한 단계별 학습 구성',
+];
+---
+
+<ServiceDetailPage
+  title="School & Youth"
+  description="학교 및 청소년 대상 조정 프로그램"
+  summary="인성 교육, 체육 활동, 리더십 캠프 목적에 맞춰 설계하는 학교·청소년 프로그램입니다."
+  bullets={bullets}
+  audience="중·고등학교, 청소년 기관, 학교 밖 교육 프로그램 운영기관"
+  footnote="세부 운영 시간표와 안전 인력 배치는 학사 일정과 계절 조건에 맞춰 조정됩니다."
+  ctaLabel="학교 프로그램 문의"
+/>
