@@ -7,6 +7,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.15** | 2026-02-15 | Session 19.7 완료. Preflight Work Order 발행, 팀 스쿼드 체제 확립, 이미지 자산 요구사항 명세, 거버넌스 이슈 발견(PM 권한). |
 | **v1.14** | 2026-02-15 | Session 19.6 완료. 문서 검수(정본/콘텐츠/구조 A-등급), 프로젝트 전수조사(미결 5건 명시), 아카이브 정책 수립(D-019), 2개 최종 보고서 생성. |
 | **v1.13** | 2026-02-15 | Session 19.6 문서 검수 완료. 콘텐츠 SSOT 근거 명시, Git 파일 이동 정리, Doc Manager 검수 보고서 생성. |
 | **v1.12** | 2026-02-15 | PM/Doc Manager를 Claude Haiku로 전환. 품질 향상 및 Gemini 크레딧 Content 집중 투입. |
@@ -115,6 +116,11 @@
   - 프로젝트 폴더 전수조사 완료 (미결 이슈 5건 명시)
   - 아카이브 정책 D-019 수립 (간단한 구조)
   - 최종 보고서 2개 생성 (FINAL_AUDIT, WORK_SUMMARY)
+- **계획 고도화 및 Preflight Work Order 발행 (PM/Sonnet, Session 19.7)** ✅
+  - SESSION_19.7_PREFLIGHT_WO.md 발행 (선행 조건 정리)
+  - 팀 스쿼드 체제 확립 (Builder/Media Producer/Doc Manager 상세 지시서)
+  - 이미지 자산 요구사항 명세 (필수 4장, J:\공유 드라이브 탐색 경로 확정)
+  - 거버넌스 이슈 발견 (PM 권한 vs Doc Manager 호출, Sonnet 검토 대기)
 
 ## 진행중
 

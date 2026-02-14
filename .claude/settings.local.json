@@ -21,7 +21,8 @@
       "Bash(timeout 60 bash -c 'while pgrep -f \"\"astro build\"\" > /dev/null; do sleep 1; done':*)",
       "Bash(__NEW_LINE_534b04dceef794d5__ git add -A)",
       "Bash(__NEW_LINE_7ae78adaa1aaf80e__ echo \"=== 3개 보고서 비교 ===\")",
-      "Bash(__NEW_LINE_edeee81c188dad25__ rm docs/reports/SESSION_19.6_DOC_MANAGER_AUDIT.md)"
+      "Bash(__NEW_LINE_edeee81c188dad25__ rm docs/reports/SESSION_19.6_DOC_MANAGER_AUDIT.md)",
+      "Bash(__NEW_LINE_28a8a633b21a1ecb__ git add 04_CURRENT_STATE.md)"
     ],
     "additionalDirectories": [
       "c:\\Users\\윤종호\\Desktop\\로잉프로홈페이지Reboot.202601\\project"
