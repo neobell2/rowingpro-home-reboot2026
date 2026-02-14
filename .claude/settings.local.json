@@ -9,7 +9,17 @@
       "Bash(git remote add:*)",
       "Bash(grep:*)",
       "Bash(git rm:*)",
-      "Bash(__NEW_LINE_2d0e547a4cabc8f7__ git add -A)"
+      "Bash(__NEW_LINE_2d0e547a4cabc8f7__ git add -A)",
+      "Bash(__NEW_LINE_4b8142b858722be4__ git add docs/_archive/)",
+      "Bash(__NEW_LINE_61289963a8f0e2e4__ echo \"=== 2. 설정 파일 확인 ===\")",
+      "Bash(test:*)",
+      "Bash(xargs basename -a echo \"\" echo \"Corporate 서비스 \\(6페이지\\):\")",
+      "Bash(xargs basename -a echo \"\" echo \"Service 카테고리 허브 \\(4개 예상\\):\")",
+      "Bash(xargs basename:*)",
+      "Bash(xargs:*)",
+      "Bash(npm run build:*)",
+      "Bash(timeout 60 bash -c 'while pgrep -f \"\"astro build\"\" > /dev/null; do sleep 1; done':*)",
+      "Bash(__NEW_LINE_534b04dceef794d5__ git add -A)"
     ],
     "additionalDirectories": [
       "c:\\Users\\윤종호\\Desktop\\로잉프로홈페이지Reboot.202601\\project"
