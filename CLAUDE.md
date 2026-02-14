@@ -8,6 +8,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v2.5** | 2026-02-15 | PM/Doc Manager를 Claude Haiku로 전환. 품질 향상 및 Gemini 크레딧 Content 집중 투입. |
 | **v2.4** | 2026-02-15 | 비용최적화 재구조화. Doc Manager Gemini 전환, Designer 신설, Media Producer 추가. 9개 역할 확정. |
 | **v2.3** | 2026-02-15 | 팀 구조 재편. PM 권한 명시적 제한, Documentation Manager 역할 신설, RACI 매트릭스 도입. 외부 감사 결과 반영. |
 | **v2.2** | 2026-02-13 | 세션 시작을 Quick/Conditional/Full Start로 재정의하고, 자동 주입 문서량을 줄이는 운영 방식을 도입. |
@@ -165,7 +166,7 @@ git log --oneline -5
 
 ### 7.1 PM (Project Manager) 권한 제한
 
-**담당:** Gemini 3.0 Flash
+**담당:** Claude Haiku 4.5 (비용최적) | **이상적:** Claude Haiku 4.5
 
 **허용 권한:**
 - Work Order 발행 (`docs/work_orders/`에만)
@@ -191,7 +192,7 @@ git log --oneline -5
 
 ### 7.2 Documentation Manager 역할 정의
 
-**담당:** Gemini 3.0 Pro (비용최적) | **이상적:** Claude 4.5 Sonnet
+**담당:** Claude Haiku 4.5 (비용최적) | **이상적:** Claude 4.5 Sonnet
 
 **책임:**
 - 모든 정본 문서(`01~05`, `CLAUDE.md`) 버전 관리

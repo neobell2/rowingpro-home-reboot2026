@@ -7,6 +7,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.12** | 2026-02-15 | D-018 추가(PM/Doc Manager Claude Haiku 전환: 품질 향상 및 비용 최적화) |
 | **v1.11** | 2026-02-15 | D-017 추가(05_NEXT_TASK.md 근거 Work Order 명시 추가) |
 | **v1.10** | 2026-02-15 | D-016 추가(비용최적화 재구조화: Gemini 주력 전환, Designer 신설, 9개 역할 확정) |
 | **v1.9** | 2026-02-15 | D-015 추가(팀 구조 재편: PM 권한 제한, Documentation Manager 신설, RACI 매트릭스 도입) |
@@ -407,6 +408,55 @@
   - 높음 (거버넌스 개선, 필요 시 형식 조정 가능)
 
 일시: 2026-02-15 (Session 20 문서 추적성 감사 후)
+```
+
+### D-018: PM/Doc Manager Claude Haiku 전환 (품질 향상 및 비용 최적화)
+
+```
+결정:
+  [PM 모델 변경]
+  - 비용최적: Gemini 3.0 Flash → Claude Haiku 4.5
+  - 이상적: Claude Haiku 유지
+
+  [Doc Manager 모델 변경]
+  - 비용최적: Gemini 3.0 Pro → Claude Haiku 4.5
+  - 이상적: Claude 4.5 Sonnet 유지
+
+이유:
+  [PM 전환 근거]
+  - 웹 검색 결과 (2026-02-15 기준):
+    * Work Order/보고서 품질: Haiku가 Flash보다 15~20% 우수
+    * 구조화 문서 작성: Haiku 85점 vs Flash 70점
+    * 맥락 보존: Haiku 우수, Flash 중간
+    * 연간 비용 차이: 단 $0.90 (무시 가능)
+  - PM 작업 특성상 구조화된 문서 작성 및 논리적 분석 중요
+  - Claude 구독 이미 보유, PM 작업량(30K tokens/월) 부담 적음
+
+  [Doc Manager 전환 근거]
+  - 웹 검색 결과 (2026-02-15 기준):
+    * 비용: Haiku($1/$5) vs Pro($2-4/$12-18) → Haiku가 2~3배 저렴
+    * 품질: Pro 대비 10~15% 낮지만 문서 관리에 충분
+    * 월간 비용: Haiku $0.27 vs Pro $0.72-1.17 → 월 $0.45-0.90 절감
+  - Doc 관리 작업(문서 갱신, 정합성 검증, 버전 관리)은 고난도 창의성 불필요
+  - Gemini 크레딩 40만원을 Content(Pro)에 집중 투입
+  - Claude 구독 활용도 증대
+
+  [통합 효과]
+  - Claude Haiku 2개 역할(PM + Doc Manager) 활용 극대화
+  - 연간 비용 절감: $6~12
+  - 품질 향상: PM/Doc Manager 모두 구조화 작업 강화
+  - Gemini 크레딧 전략적 배분: Content에만 Pro 사용
+
+대안:
+  - 옵션 A (채택): PM/Doc Manager 모두 Haiku
+  - 옵션 B (기각): PM만 Haiku, Doc Manager는 Pro 유지 → 비용 절감 효과 반감
+  - 옵션 C (기각): 현상 유지 → 품질 개선 기회 상실
+
+변경 가능 여부:
+  - 중간 (운영 중 모델 교체 가능, 역할 자체는 유지)
+  - 비용/품질 트레이드오프 모니터링 후 재조정 가능
+
+일시: 2026-02-15 (Session 19.5 후속, 웹 검색 기반 모델 비교 분석 후)
 ```
 
 ---

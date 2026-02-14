@@ -7,6 +7,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.12** | 2026-02-15 | PM/Doc Manager를 Claude Haiku로 전환. 품질 향상 및 Gemini 크레딧 Content 집중 투입. |
 | **v1.11** | 2026-02-15 | Session 19.5 완료 반영. 팀 구조 외부 감사, 거버넌스 개선(문서 추적성 강화, Work Order 근거 명시). |
 | **v1.10** | 2026-02-15 | 비용최적화 재구조화. Doc Manager Gemini 전환, Designer/Media Producer 신설, 9개 역할 확정. 비용최적 vs 이상적 모델 병기. |
 | **v1.9** | 2026-02-15 | 팀 구조 재편. Documentation Manager 신설, PM 권한 제한, 스쿼드 7개→8개 역할 확대 (외부 감사 결과 반영) |
@@ -34,16 +35,16 @@
 ## 운영 스쿼드(템플릿)
 
 > 매 세션마다 팀 구성을 반복 설명하지 않기 위한 표준 템플릿입니다. (필요 시 모델/도구는 교체 가능, 역할이 우선)
-> **v1.10 변경:** 비용최적화 재구조화. Gemini 주력 전환, Designer/Media Producer 신설, 9개 역할 확정.
-> **상세:** `CLAUDE.md` 섹션 7, `03_DECISIONS.md` D-015/D-016 참조
+> **v1.12 변경:** PM/Doc Manager를 Claude Haiku로 전환. 품질 향상 및 Gemini 크레딧 Content 집중.
+> **상세:** `CLAUDE.md` 섹션 7, `03_DECISIONS.md` D-018 참조
 
 ### 주력 역할 (매 세션)
 
 | 역할 | 비용최적 담당 | 이상적 담당 | 책임 | 권한 제한 |
 |:--|:--|:--|:--|:--|
 | Director | 사용자(디렉터) | — | 최종 승인/결정 | — |
-| PM | Gemini 3.0 Flash | Claude Haiku | Work Order 발행, 세션 보고, 공정 모니터링 | ❌ 코드/정본 문서 직접 수정 금지 |
-| **Doc Manager** | **Gemini 3.0 Pro** | **Claude 4.5 Sonnet** | **정본 문서 관리, 콘텐츠 SSOT 최신화, 문서 정합성 검증** | **❌ 코드 수정/Work Order 발행 금지** |
+| PM | **Claude Haiku 4.5** | Claude Haiku 4.5 | Work Order 발행, 세션 보고, 공정 모니터링 | ❌ 코드/정본 문서 직접 수정 금지 |
+| **Doc Manager** | **Claude Haiku 4.5** | **Claude 4.5 Sonnet** | **정본 문서 관리, 콘텐츠 SSOT 최신화, 문서 정합성 검증** | **❌ 코드 수정/Work Order 발행 금지** |
 | Content | Gemini 3.0 Pro | Claude 4.6 Opus | 브랜드 스토리 및 고난도 카피라이팅 | — |
 | **Media Producer** | **Gemini 3.0 Flash** | **GPT 5.2** | **미디어 아카이브 탐색, 자산 생산, Midjourney 프롬프트** | **❌ 코드/정본 문서 수정 금지** |
 | Builder | GPT Codex 5.3 | Claude 4.5 Sonnet | Astro/Tailwind 구현 가이드 및 코드 작업 | — |
