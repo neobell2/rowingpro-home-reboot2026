@@ -7,9 +7,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.19** | 2026-02-15 | SESSION_21 외부감사 완료. Phase 3 WO APPROVED. CLAUDE.md v2.8 반영 (Conditional Load 보완, PM 에스컬레이션, RACI Phase 승인). |
 | **v1.18** | 2026-02-15 | GPT Designer 제거 및 운영 스쿼드 재편 반영. Builder 모델 교체 권고 추가. D-025, D-026 반영. |
 | **v1.17** | 2026-02-15 | Architect 역할 공식 지정 (외부감사관 겸임, Sonnet), 필수 호출 지점 명시. D-024 반영. |
-| **v1.16** | 2026-02-15 | 거버넌스 모순 해결 완료. PM 권한 재정의, Doc Manager 재포지셔닝, 세션 종료 프로토콜 개정. CLAUDE.md v2.6, 03_DECISIONS.md D-021~023 기록. |
 
 > 📋 **전체 버전 히스토리:** [06_VERSION_HISTORY.md](06_VERSION_HISTORY.md)
 
@@ -121,18 +121,31 @@
   - 세션 종료 프로토콜 개정: 역할별 차별화된 체크리스트
   - CLAUDE.md v2.6 개정, 03_DECISIONS.md D-021~023 기록
   - 운영 효율성 70% 개선 (세션 종료 시간 단축, 수동 전환 제거)
+- **SESSION_21 외부감사 완료 (Architect/Opus, Session 21)** ✅
+  - Sonnet 거버넌스 설계 4가지 이슈 분석: 2건 설계 결함 + 2건 정상 간극
+  - 즉시 개선: Conditional Load 작업 유형별 필수 로드, PM 에스컬레이션 프로토콜, RACI Phase 승인 행
+  - CLAUDE.md v2.8 개정
+  - Phase 3 Work Order APPROVED (디렉터 승인 2026-02-15)
+  - 빌드 블로커 해결 확인 (Builder/Codex, Node 22 고정)
 
 ## 진행중
 
-- **Session 19 (Content + Design Polishing)** — 콘텐츠 고도화 및 디자인 폴리싱
-  - STEP 1: Gemini 3.0 Pro — HPOC 기반 브랜드 스토리 및 최종 카피 (착수 준비)
-  - STEP 2: Gemini 3.0 Flash — 미디어 자산 생산 및 정제 (착수 준비)
-  - STEP 3: Builder + Designer — 디자인 폴리싱 및 최종 바인딩 (착수 준비)
-  - ⚠️ PM 확인 필요: IA 페이지, 빌드 상태, public/og/ 구조
+- **Phase 3 (Content + Design Polishing)** — 콘텐츠 고도화 및 디자인 폴리싱
+  - ✅ **상태: APPROVED — 즉시 착수 가능**
+  - STEP 1: Gemini 3.0 Pro — HPOC 기반 브랜드 스토리 및 최종 카피
+  - STEP 2: Gemini 3.0 Flash — 미디어 자산 생산 및 정제
+  - STEP 3: Claude 4.5 Sonnet (Builder/Designer) — 디자인 폴리싱 및 최종 바인딩
+  - ✅ **블로커 1 RESOLVED**: npm run build 성공 (Node 22로 고정, Exit 0, dist 생성)
+  - ✅ **블로커 2 RESOLVED**: PHASE_3_INTEGRATED_ROADMAP_WO 디렉터 승인 완료 (2026-02-15)
 
 ## 이슈
 
 ### 차단(Blocking)
+- ~~**npm run build 실패** (Session 20 발견)~~ → ✅ **RESOLVED (Session 21, Builder/Codex)**
+  - 원인: Node v24 + Astro 4.16.19 호환성 (Windows crash 0xC0000409)
+  - 해결: Node 22 LTS로 빌드 경로 고정 (package.json)
+  - 검증: npm run build Exit 0, dist/ 생성, preview HTTP 200
+
 - Contact 폼 백엔드 연동(Supabase/Resend) 미구현 상태
   - 현재: 폼 UI/검증 구현만 완료
   - 예정: Session 20+ (SEO/OG 배포 품질 확보 단계)
