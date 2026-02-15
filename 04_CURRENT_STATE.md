@@ -130,31 +130,36 @@
 
 ## 진행중
 
-- **SESSION_22 (PM)** — 외부감사 정리 및 긴급 복구 Work Order 발행 ✅
+- **SESSION_22 (PM)** — 외부감사 정리 및 Header 긴급 복구 완료 ✅
   - 외부감사 보고서 21건 전수 검토 및 우선순위 분류
   - Header 모바일 메뉴 긴급 복구 Work Order 발행 (WO_HEADER_MOBILE_EMERGENCY)
   - 기술 부채 해결 로드맵 Work Order 발행 (WO_TECHNICAL_DEBT_ROADMAP)
   - 리포트 폴더 정리 (11개 → 3개)
   - 05_NEXT_TASK.md v1.9 갱신
+  - ✅ **Header 모바일 메뉴 복구 완료** (Builder/Codex, 2026-02-16)
+    - 햄버거 토글, 5가지 닫기 동작, 활성 링크, 빌드 검증 완료
+    - Commit: 4efcf16
 
 - **Phase 3 (Content + Design Polishing)** — 콘텐츠 고도화 및 디자인 폴리싱
-  - ✅ **상태: APPROVED — Header 복구 후 착수**
-  - 🔴 **우선:** Header 모바일 메뉴 긴급 복구 (Builder 투입 대기)
-  - STEP 1: Gemini 3.0 Pro — HPOC 기반 브랜드 스토리 및 최종 카피
+  - ✅ **상태: APPROVED — Content 작업 착수 준비 완료**
+  - ✅ **Header 복구 완료** (SESSION_22, Builder/Codex)
+  - STEP 1: Gemini 3.0 Pro — HPOC 기반 브랜드 스토리 및 최종 카피 (다음 작업)
   - STEP 2: Gemini 3.0 Flash — 미디어 자산 생산 및 정제
   - STEP 3: Claude 4.5 Sonnet (Builder/Designer) — 디자인 폴리싱 및 최종 바인딩
   - ✅ **블로커 1 RESOLVED**: npm run build 성공 (Node 22로 고정, Exit 0, dist 생성)
   - ✅ **블로커 2 RESOLVED**: PHASE_3_INTEGRATED_ROADMAP_WO 디렉터 승인 완료 (2026-02-15)
+  - ✅ **블로커 3 RESOLVED**: Header 모바일 메뉴 복구 완료 (2026-02-16)
 
 ## 이슈
 
 ### 차단(Blocking)
-- 🔴 **Header 모바일 메뉴 기능 파산** (Session 21 외부감사 발견) → **긴급 복구 중**
+- ~~**Header 모바일 메뉴 기능 파산** (Session 21 외부감사 발견)~~ → ✅ **RESOLVED (Session 22, Builder/Codex)**
   - 현상: 모바일(360px~768px)에서 햄버거 버튼 클릭 시 메뉴 미동작
   - 원인: Session 17 스켈레톤 구현 시 미완성 (모바일 메뉴 스크립트/패널 마크업 누락)
-  - 영향: 모바일 사용자 네비게이션 불가능 (CRITICAL)
-  - 조치: WO_HEADER_MOBILE_EMERGENCY 발행 (Builder 투입 대기)
-  - 예상 소요: 1~2시간
+  - 해결: 햄버거 토글, 5가지 닫기 동작, 활성 링크, 글라스모피즘 적용 완료
+  - 검증: npm run build Exit 0, 모바일 동작 확인 완료
+  - Work Order: docs/work_orders/WO_HEADER_MOBILE_EMERGENCY.md
+  - Report: docs/reports/SESSION_22_BUILDER_CODEX.md
 
 - ~~**npm run build 실패** (Session 20 발견)~~ → ✅ **RESOLVED (Session 21, Builder/Codex)**
   - 원인: Node v24 + Astro 4.16.19 호환성 (Windows crash 0xC0000409)

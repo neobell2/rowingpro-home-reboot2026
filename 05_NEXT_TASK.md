@@ -31,40 +31,13 @@ Phase 3 → Phase 4 전환 조건:
 
 ## 현재 지시
 
-**근거:** `docs/work_orders/WO_HEADER_MOBILE_EMERGENCY.md`
+**근거:** `docs/work_orders/PHASE_3_INTEGRATED_ROADMAP_WO.md`
 
 ```
-목표: 🔴 Header 모바일 메뉴 긴급 복구 (CRITICAL)
+목표: 브랜드 스토리 및 카피라이팅 (Phase 3 STEP 1)
 우선순위: 즉시 실행
 요구사항:
-  - [작업자] Builder (Claude 4.5 Sonnet)
-  - [파일] src/components/Header.astro
-  - [구현]
-    1. 모바일 메뉴 동작 스크립트 (햄버거 버튼 토글)
-    2. 메뉴 패널 마크업 (슬라이드 패널 + GNB 전체)
-    3. 디자인 시스템 LOCKED 기준 준수 (glass-panel 활용)
-    4. GNB 링크 검증 (17페이지 IA 기준)
-  - [검증]
-    - 모바일(360px~768px) 햄버거 버튼 클릭 시 메뉴 표시
-    - npm run build 성공
-    - Console 에러 없음
-금지사항:
-  - 디자인 시스템 변경 금지
-  - 외부 라이브러리 도입 금지 (Vanilla JS만)
-완료 보고:
-  - docs/reports/SESSION_22_HEADER_RECOVERY_REPORT.md
-```
-
----
-
-## 다음 예정 지시 (참고용)
-
-### 1차: Phase 3 STEP 1 (Header 복구 후 즉시)
-```
-목표: 브랜드 스토리 및 카피라이팅 (Content)
-근거: docs/work_orders/PHASE_3_INTEGRATED_ROADMAP_WO.md
-요구사항:
-  - [작업자] Gemini 3.0 Pro (Content 역할)
+  - [작업자] Content (Gemini 3.0 Pro)
   - [입력] 01_PROJECT_CONTEXT.md, 02_ARCHITECTURE.md, docs/contents/*
   - [출력] docs/contents/ 내 각 페이지별 최종 카피 (Markdown)
   - [중점] "국가대표 출신", "13년 무사고", "팀워크" 핵심 메시지
@@ -74,7 +47,11 @@ Phase 3 → Phase 4 전환 조건:
   - 스포츠/레저의 가벼운 톤 사용 금지
 ```
 
-### 2차: Phase 3 STEP 2~3 (병렬)
+---
+
+## 다음 예정 지시 (참고용)
+
+### 1차: Phase 3 STEP 2~3 (Content 완료 후)
 ```
 목표: 미디어 자산 생산 + 디자인 폴리싱
 근거: docs/work_orders/PHASE_3_INTEGRATED_ROADMAP_WO.md
@@ -84,7 +61,7 @@ Phase 3 → Phase 4 전환 조건:
   - [필수] TD-01 모바일 반응형 전수 검증 (docs/work_orders/WO_TECHNICAL_DEBT_ROADMAP.md)
 ```
 
-### 3차: Phase 4 (기술 부채 + 배포)
+### 2차: Phase 4 (기술 부채 + 배포)
 ```
 목표: 기술 부채 해결 + Contact 폼 실연동 + SEO/OG 배포
 근거: docs/work_orders/WO_TECHNICAL_DEBT_ROADMAP.md
