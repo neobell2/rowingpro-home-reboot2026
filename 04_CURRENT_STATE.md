@@ -7,6 +7,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.17** | 2026-02-15 | Architect 역할 지정 완료. 외부감사관 겸임 (Sonnet), 필수 호출 지점 명시. CLAUDE.md v2.7, 03_DECISIONS.md D-024 기록. |
 | **v1.16** | 2026-02-15 | 거버넌스 모순 해결 완료. PM 권한 재정의, Doc Manager 재포지셔닝, 세션 종료 프로토콜 개정. CLAUDE.md v2.6, 03_DECISIONS.md D-021~023 기록. |
 | **v1.15** | 2026-02-15 | Session 19.7 완료. Preflight Work Order 발행, 팀 스쿼드 체제 확립, 이미지 자산 요구사항 명세, 거버넌스 이슈 발견(PM 권한). |
 | **v1.14** | 2026-02-15 | Session 19.6 완료. 문서 검수(정본/콘텐츠/구조 A-등급), 프로젝트 전수조사(미결 5건 명시), 아카이브 정책 수립(D-019), 2개 최종 보고서 생성. |
@@ -54,14 +55,19 @@
 | Builder | GPT Codex 5.3 | Claude 4.5 Sonnet | Astro/Tailwind 구현 가이드 및 코드 작업 | — |
 | **Designer** | **GPT 5.2** | **Claude 4.6 Opus** | **디자인 폴리싱, 시각적 완성도, 최종 QA** | **❌ 코드 직접 수정 금지** |
 
-### 보조 역할 (필요시만)
+### 보조 역할
 
-| 역할 | 비용최적 담당 | 호출 시점 | 책임 |
+| 역할 | 담당 | 호출 시점 | 책임 |
 |:--|:--|:--|:--|
-| Architect | Claude 4.6 Opus | Phase 전환, 중요 설계 결정 | 설계 확정, 정합성, 최종 스펙 확정 |
-| Analyst | Claude 4.5 Sonnet | 복잡한 시안 분석 | 시안 코드/자산 분석, 토큰 추출 |
+| **External Auditor + Architect** | **Claude 4.5 Sonnet** | **Phase 전환(필수), Contact 백엔드 설계(필수), 거버넌스 이슈(ad-hoc)** | **거버넌스 감사, 기술 설계 확정, 아키텍처 정합성 검증** |
+| Analyst | Claude 4.5 Sonnet | 복잡한 시안 분석 (필요시만) | 시안 코드/자산 분석, 토큰 추출 |
 
-**RACI 매트릭스:** `CLAUDE.md` 섹션 7.6 참조
+**필수 호출 지점 (Architect):**
+- Phase 3 → Phase 4 전환 시 (MANDATORY)
+- Contact 백엔드 설계 확정 시 (MANDATORY)
+- Session 20 최종 QA (RECOMMENDED)
+
+**RACI 매트릭스:** `CLAUDE.md` 섹션 7.7 참조
 
 ---
 
