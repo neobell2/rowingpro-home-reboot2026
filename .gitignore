@@ -32,3 +32,6 @@ Thumbs.db
 Design_ref/
 docs/_archive/*
 !docs/_archive/03_DECISIONS_PHASE*.md
+
+# Claude Code CLI local settings
+.claude/settings*.json
