@@ -7,7 +7,8 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
-| **v1.17** | 2026-02-15 | Architect 역할 지정 완료. 외부감사관 겸임 (Sonnet), 필수 호출 지점 명시. CLAUDE.md v2.7, 03_DECISIONS.md D-024 기록. |
+| **v1.18** | 2026-02-15 | GPT Designer 제거 및 운영 스쿼드 재편 반영. Builder 모델 교체 권고 추가. D-025, D-026 반영. |
+| **v1.17** | 2026-02-15 | Architect 역할 공식 지정 (외부감사관 겸임, Sonnet), 필수 호출 지점 명시. D-024 반영. |
 | **v1.16** | 2026-02-15 | 거버넌스 모순 해결 완료. PM 권한 재정의, Doc Manager 재포지셔닝, 세션 종료 프로토콜 개정. CLAUDE.md v2.6, 03_DECISIONS.md D-021~023 기록. |
 | **v1.15** | 2026-02-15 | Session 19.7 완료. Preflight Work Order 발행, 팀 스쿼드 체제 확립, 이미지 자산 요구사항 명세, 거버넌스 이슈 발견(PM 권한). |
 | **v1.14** | 2026-02-15 | Session 19.6 완료. 문서 검수(정본/콘텐츠/구조 A-등급), 프로젝트 전수조사(미결 5건 명시), 아카이브 정책 수립(D-019), 2개 최종 보고서 생성. |
@@ -51,9 +52,9 @@
 | PM | **Claude Haiku 4.5** | Claude Haiku 4.5 | Work Order 발행, 세션 보고, 공정 모니터링 | ❌ 코드/정본 문서 직접 수정 금지 |
 | **Doc Manager** | **Claude Haiku 4.5** | **Claude 4.5 Sonnet** | **정본 문서 관리, 콘텐츠 SSOT 최신화, 문서 정합성 검증** | **❌ 코드 수정/Work Order 발행 금지** |
 | Content | Gemini 3.0 Pro | Claude 4.6 Opus | 브랜드 스토리 및 고난도 카피라이팅 | — |
-| **Media Producer** | **Gemini 3.0 Flash** | **GPT 5.2** | **미디어 아카이브 탐색, 자산 생산, Midjourney 프롬프트** | **❌ 코드/정본 문서 수정 금지** |
-| Builder | GPT Codex 5.3 | Claude 4.5 Sonnet | Astro/Tailwind 구현 가이드 및 코드 작업 | — |
-| **Designer** | **GPT 5.2** | **Claude 4.6 Opus** | **디자인 폴리싱, 시각적 완성도, 최종 QA** | **❌ 코드 직접 수정 금지** |
+| **Media Producer** | **Gemini 3.0 Flash** | **Claude 4.5 Sonnet** | **미디어 아카이브 탐색, 자산 생산, Midjourney 프롬프트** | **❌ 코드/정본 문서 수정 금지** |
+| Builder | **Claude 4.5 Sonnet** | Claude 4.6 Opus | Astro/Tailwind 구현 가이드 및 코드 작업 | — |
+| **Designer** | **Claude 4.5 Sonnet** | **Claude 4.6 Opus** | **디자인 폴리싱, 시각적 완성도, 최종 QA** | **❌ 코드 직접 수정 금지** |
 
 ### 보조 역할
 
@@ -138,9 +139,9 @@
 ## 진행중
 
 - **Session 19 (Content + Design Polishing)** — 콘텐츠 고도화 및 디자인 폴리싱
-  - STEP 1: Gemini 3.0 Pro — HPOC 기반 브랜드 스토리 및 최종 카피 (착수 대기)
-  - STEP 2: Gemini 3.0 Flash — 미디어 자산 생산 및 정제 (착수 대기)
-  - STEP 3: Builder + Designer — 디자인 폴리싱 및 최종 바인딩 (착수 대기)
+  - STEP 1: Gemini 3.0 Pro — HPOC 기반 브랜드 스토리 및 최종 카피 (착수 준비)
+  - STEP 2: Gemini 3.0 Flash — 미디어 자산 생산 및 정제 (착수 준비)
+  - STEP 3: Builder + Designer — 디자인 폴리싱 및 최종 바인딩 (착수 준비)
   - ⚠️ PM 확인 필요: IA 페이지, 빌드 상태, public/og/ 구조
 
 ## 이슈
