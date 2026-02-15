@@ -8,9 +8,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v2.9** | 2026-02-16 | 세션 종료 프로토콜 Section 5: 세션 보고서 파일명 표준화 반영 (작업자 약칭 추가). D-028 반영. |
 | **v2.8** | 2026-02-15 | SESSION_21 외부감사 결과 반영: Conditional Load 작업 유형별 필수 로드 추가, PM 이슈 에스컬레이션 프로토콜 신설, RACI Phase 승인 행 추가. |
 | **v2.7** | 2026-02-15 | Architect 역할 지정: 외부감사관 겸임 (Sonnet), 필수 호출 지점 명시 (Phase 전환, Contact 백엔드). D-024 반영. |
-| **v2.6** | 2026-02-15 | PM 권한 재정의(계층적 접근), Doc Manager 재포지셔닝(검증자+구조전문가), 세션 종료 프로토콜 역할별 차별화. 거버넌스 모순 해결. |
 
 > 📋 **전체 버전 히스토리:** [06_VERSION_HISTORY.md](06_VERSION_HISTORY.md)
 
@@ -145,7 +145,10 @@ git log --oneline -5
 ### 모든 역할 공통
 
 1. **Git 상태 확인** — `git status`, `git diff` 결과 디렉터에게 보고
-2. **세션 보고서 생성** — `docs/reports/SESSION_XX_[ROLE]_REPORT.md`
+2. **세션 보고서 생성** — `docs/reports/SESSION_XX_[ROLE]_[ACTOR].md`
+   - 파일명 형식: `SESSION_{번호}_{역할}_{작업자}.md`
+   - 예: `SESSION_22_PM_HAIKU.md`, `SESSION_17_BUILDER_GEMINI.md`
+   - 작업자 약칭: HAIKU, SONNET, OPUS, GEMINI, FLASH, CODEX 등
 3. **MCP Memory 증류** — 핵심 결론을 요약하여 메모리 서버 동기화
 
 ### PM 전용

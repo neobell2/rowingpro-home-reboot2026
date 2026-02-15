@@ -30,4 +30,5 @@ Thumbs.db
 참고자료/
 3D캡처렌더링모음/
 Design_ref/
-docs/_archive/
+docs/_archive/*
+!docs/_archive/03_DECISIONS_PHASE*.md
