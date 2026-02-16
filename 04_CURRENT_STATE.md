@@ -7,6 +7,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.20** | 2026-02-16 | SESSION_24 Architect 감사: D-030 PM+DocMgr 통합(Sonnet), CLAUDE.md v3.0 반영. |
 | **v1.19** | 2026-02-15 | SESSION_21 외부감사 완료. Phase 3 WO APPROVED. CLAUDE.md v2.8 반영 (Conditional Load 보완, PM 에스컬레이션, RACI Phase 승인). |
 | **v1.18** | 2026-02-15 | GPT Designer 제거 및 운영 스쿼드 재편 반영. Builder 모델 교체 권고 추가. D-025, D-026 반영. |
 | **v1.17** | 2026-02-15 | Architect 역할 공식 지정 (외부감사관 겸임, Sonnet), 필수 호출 지점 명시. D-024 반영. |
@@ -27,20 +28,19 @@
 ## 운영 스쿼드(템플릿)
 
 > 매 세션마다 팀 구성을 반복 설명하지 않기 위한 표준 템플릿입니다. (필요 시 모델/도구는 교체 가능, 역할이 우선)
-> **v1.12 변경:** PM/Doc Manager를 Claude Haiku로 전환. 품질 향상 및 Gemini 크레딧 Content 집중.
-> **상세:** `CLAUDE.md` 섹션 7, `03_DECISIONS.md` D-018 참조
+> **v1.20 변경:** D-030 반영 — PM+DocManager 통합, Sonnet 배정. Haiku PM 업무품질 문제(SESSION_24) 및 Architect 설계 결함 교정.
+> **상세:** `CLAUDE.md` 섹션 7, `03_DECISIONS.md` D-030 참조
 
 ### 주력 역할 (매 세션)
 
-| 역할 | 비용최적 담당 | 이상적 담당 | 책임 | 권한 제한 |
-|:--|:--|:--|:--|:--|
-| Director | 사용자(디렉터) | — | 최종 승인/결정 | — |
-| PM | **Claude Haiku 4.5** | Claude Haiku 4.5 | Work Order 발행, 세션 보고, 공정 모니터링 | ❌ 코드/정본 문서 직접 수정 금지 |
-| **Doc Manager** | **Claude Haiku 4.5** | **Claude 4.5 Sonnet** | **정본 문서 관리, 콘텐츠 SSOT 최신화, 문서 정합성 검증** | **❌ 코드 수정/Work Order 발행 금지** |
-| Content | Gemini 3.0 Pro | Claude 4.6 Opus | 브랜드 스토리 및 고난도 카피라이팅 | — |
-| **Media Producer** | **Gemini 3.0 Flash** | **Claude 4.5 Sonnet** | **미디어 아카이브 탐색, 자산 생산, Midjourney 프롬프트** | **❌ 코드/정본 문서 수정 금지** |
-| Builder | **Claude 4.5 Sonnet** | Claude 4.6 Opus | Astro/Tailwind 구현 가이드 및 코드 작업 | — |
-| **Designer** | **Claude 4.5 Sonnet** | **Claude 4.6 Opus** | **디자인 폴리싱, 시각적 완성도, 최종 QA** | **❌ 코드 직접 수정 금지** |
+| 역할 | 담당 | 책임 | 권한 제한 |
+|:--|:--|:--|:--|
+| Director | 사용자(디렉터) | 최종 승인/결정 | — |
+| **PM (Doc Manager 통합)** | **Claude 4.5 Sonnet** | **WO 발행, 세션 보고, 공정 모니터링, 정본 문서 정합성 검증, 문서 체계 관리** | **❌ 코드 수정, 정본 구조 변경(승인 필요), Phase 전환 결정** |
+| Content | Gemini 3.0 Pro | 브랜드 스토리 및 고난도 카피라이팅 | — |
+| **Media Producer** | **Gemini 3.0 Flash** | **미디어 아카이브 탐색, 자산 생산, Midjourney 프롬프트** | **❌ 코드/정본 문서 수정 금지** |
+| Builder | **Claude 4.5 Sonnet** | Astro/Tailwind 구현 가이드 및 코드 작업 | — |
+| **Designer** | **Claude 4.5 Sonnet** | **디자인 폴리싱, 시각적 완성도, 최종 QA** | **❌ 코드 직접 수정 금지** |
 
 ### 보조 역할
 
