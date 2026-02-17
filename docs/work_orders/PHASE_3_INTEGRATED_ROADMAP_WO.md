@@ -6,10 +6,15 @@
 
 ---
 
-## 📝 업데이트 이력 (SESSION 21)
-- D-025, D-026 반영 (모델 변경)
-- D-027 반영 (SESSION_20 병목 분석)
-- 운영 스쿼드 최신화 (Haiku 모델 전환, GPT 제거)
+## 📝 업데이트 이력
+
+| 세션 | 내용 |
+|:--|:--|
+| SESSION_21 | D-025, D-026 반영 (모델 변경), D-027 병목 분석, 운영 스쿼드 최신화 |
+| SESSION_22 | ✅ **Header 모바일 메뉴 복구 완료** (Builder/Codex, Commit 4efcf16) |
+| SESSION_24 | ✅ **Vertex AI 도입 NO-GO** (Architect 판정 — ROI 미달, 운영 리스크) |
+| SESSION_24 | ✅ **D-030** — PM+DocMgr 통합, Haiku → Sonnet 교체 |
+| SESSION_24 | ✅ **STEP 1 방식 변경** — Gemini 초안 완료, 이후 Opus 티키타카 톤 리라이팅(STEP 1-1)으로 전환 |
 
 ---
 
