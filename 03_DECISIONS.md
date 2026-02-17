@@ -20,12 +20,12 @@
 
 > **완료되었거나 다른 정본 문서에 반영된 결정은 별도 보관되었습니다.**
 
-**Phase 2 (설계 단계):** [docs/_archive/03_DECISIONS_PHASE2.md](docs/_archive/03_DECISIONS_PHASE2.md)
+**Phase 2 (설계 단계):** [docs/_archive/decisions/03_DECISIONS_PHASE2.md](docs/_archive/decisions/03_DECISIONS_PHASE2.md)
 - 포함: D-001 ~ D-012
 - 기간: 2026-02-02 ~ 2026-02-14
 - 사유: Phase 2 완료
 
-**Phase 3 초기 (완료됨):** [docs/_archive/03_DECISIONS_PHASE3_EARLY.md](docs/_archive/03_DECISIONS_PHASE3_EARLY.md)
+**Phase 3 초기 (완료됨):** [docs/_archive/decisions/03_DECISIONS_PHASE3_EARLY.md](docs/_archive/decisions/03_DECISIONS_PHASE3_EARLY.md)
 - 포함: D-013 ~ D-018, D-027
 - 기간: 2026-02-14 ~ 2026-02-15
 - 사유: 완료 또는 CLAUDE.md/04_CURRENT_STATE.md에 통합됨
@@ -114,10 +114,10 @@
 ```
 결정:
   [1단계] Phase 2 결정 아카이브
-  - D-001~D-012를 `docs/_archive/03_DECISIONS_PHASE2.md`로 분리
+  - D-001~D-012를 `docs/_archive/decisions/03_DECISIONS_PHASE2.md`로 분리
 
   [2단계] Phase 3 초기 결정 아카이브
-  - D-013~D-018, D-027을 `docs/_archive/03_DECISIONS_PHASE3_EARLY.md`로 분리
+  - D-013~D-018, D-027을 `docs/_archive/decisions/03_DECISIONS_PHASE3_EARLY.md`로 분리
   - 사유: 완료 또는 CLAUDE.md/04_CURRENT_STATE.md에 이미 반영됨
 
   [결과] 활성 결정만 유지
@@ -161,7 +161,7 @@
   - SESSION_22 점검 중 기록 검색성 문제 식별:
     * 복수 세션에서 역할은 동일하나 실제 작업자(모델)가 다른 경우 구분 불가
     * SESSION_17(Gemini 3 Pro), SESSION_18(Codex) 등 작업자 추적 어려움
-    * 분산된 폴더 구조(docs/reports/, docs/_archive/reports/, reports_legacy/) + 작업자 정보 부재로 검색 비효율
+    * 분산된 폴더 구조(docs/reports/, docs/_archive/reports/) + 작업자 정보 부재로 검색 비효율
   - Header.astro 오류 근본 원인 추적 시 "누가 작성했는가" 파악에 과도한 시간 소요
   - 파일명에 작업자를 명시하면 ls/grep만으로도 즉시 추적 가능
 
@@ -412,17 +412,16 @@
 
 ```
 결정:
-  - `docs/_archive/reports_legacy/`: 레거시 리포트 통합 보관 (SESSION_08~14)
+  - `docs/_archive/reports/`: 모든 세션 보고서 통합 보관 (SESSION_08~24)
   - 파일명에 SESSION_XX가 이미 있으므로 세션별 폴더 불필요
   - `.gitignore`로 Git 추적 제외 (로컬 전용)
-  - 프로젝트 완료 후 필요시 재정리
+
+  [SESSION_25 갱신] reports_legacy/ → reports/로 통합 완료 (2026-02-17)
 
 실제 구조:
   docs/_archive/
-  └── reports_legacy/
-      ├── SESSION_08_REPORT.md
-      ├── SESSION_09_REPORT.md
-      ├── ... (SESSION_10~14)
+  └── reports/
+      ├── SESSION_08_REPORT.md ~ SESSION_24_*
       ├── DEV_SPEC_VALIDATION_QUESTIONS.md
       ├── RCA_AGENT_CONTROL_FAILURE.md
       └── [기타 분석 리포트]

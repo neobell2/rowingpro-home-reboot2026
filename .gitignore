@@ -32,7 +32,8 @@ Thumbs.db
 3D캡처렌더링모음/
 Design_ref/
 docs/_archive/*
-!docs/_archive/03_DECISIONS_PHASE*.md
+!docs/_archive/decisions/
+!docs/_archive/decisions/03_DECISIONS_PHASE*.md
 
 # Claude Code CLI local settings
 .claude/settings*.json

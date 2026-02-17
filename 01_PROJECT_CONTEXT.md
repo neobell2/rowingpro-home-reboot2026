@@ -7,8 +7,8 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
-| **v1.1** | 2026-02-13 | 레거시 참조를 아카이브 경로(`docs/_archive/governance_v1/*_v1.md`)로 정정 |
-| **v1.0** | 2026-02-13 | 문서 가버넌스 개편에 따라 신규 작성. 기존 `docs/_archive/governance_v1/PROJECT_BLUEPRINT_2026_v1.md`와 `docs/_archive/governance_v1/SESSION_HANDOVER_v1.md`의 브랜드 정체성 섹션을 통합. |
+| **v1.1** | 2026-02-13 | 레거시 참조를 아카이브 경로(`docs/_archive/legacy/governance_v1/*_v1.md`)로 정정 |
+| **v1.0** | 2026-02-13 | 문서 가버넌스 개편에 따라 신규 작성. 기존 `docs/_archive/legacy/governance_v1/PROJECT_BLUEPRINT_2026_v1.md`와 `docs/_archive/legacy/governance_v1/SESSION_HANDOVER_v1.md`의 브랜드 정체성 섹션을 통합. |
 
 > 📋 **전체 버전 히스토리:** [06_VERSION_HISTORY.md](06_VERSION_HISTORY.md)
 

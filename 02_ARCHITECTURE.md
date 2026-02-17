@@ -9,7 +9,7 @@
 |:--|:--|:--|
 | **v1.3** | 2026-02-14 | SESSION 16 미결 사안 반영. IA 17페이지 확장(4개 카테고리 추가), Track Record→History 변경, Programs 역할 정의, 히어로 타이틀 White 확정, Footer 법인정보 추가, 보류사항 정리. |
 | **v1.2** | 2026-02-13 | SESSION 15 디자인 명세 반영. 컬러 시스템 확정(Heritage 승격, Cobalt 폐기), 타이포그래피/글라스모피즘/버튼 시스템 명세 추가. STATUS → LOCKED. |
-| **v1.1** | 2026-02-13 | 레거시 참조를 아카이브 경로(`docs/_archive/governance_v1/*_v1.md`)로 정정 |
+| **v1.1** | 2026-02-13 | 레거시 참조를 아카이브 경로(`docs/_archive/legacy/governance_v1/*_v1.md`)로 정정 |
 
 > 📋 **전체 버전 히스토리:** [06_VERSION_HISTORY.md](06_VERSION_HISTORY.md)
 

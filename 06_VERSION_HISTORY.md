@@ -27,8 +27,8 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
-| **v1.1** | 2026-02-13 | 레거시 참조를 아카이브 경로(`docs/_archive/governance_v1/*_v1.md`)로 정정 |
-| **v1.0** | 2026-02-13 | 문서 가버넌스 개편에 따라 신규 작성. 기존 `docs/_archive/governance_v1/PROJECT_BLUEPRINT_2026_v1.md`와 `docs/_archive/governance_v1/SESSION_HANDOVER_v1.md`의 브랜드 정체성 섹션을 통합. |
+| **v1.1** | 2026-02-13 | 레거시 참조를 아카이브 경로(`docs/_archive/legacy/governance_v1/*_v1.md`)로 정정 |
+| **v1.0** | 2026-02-13 | 문서 가버넌스 개편에 따라 신규 작성. 기존 `docs/_archive/legacy/governance_v1/PROJECT_BLUEPRINT_2026_v1.md`와 `docs/_archive/legacy/governance_v1/SESSION_HANDOVER_v1.md`의 브랜드 정체성 섹션을 통합. |
 
 ---
 
@@ -38,8 +38,8 @@
 |:--|:--|:--|
 | **v1.3** | 2026-02-14 | SESSION 16 미결 사안 반영. IA 17페이지 확장(4개 카테고리 추가), Track Record→History 변경, Programs 역할 정의, 히어로 타이틀 White 확정, Footer 법인정보 추가, 보류사항 정리. |
 | **v1.2** | 2026-02-13 | SESSION 15 디자인 명세 반영. 컬러 시스템 확정(Heritage 승격, Cobalt 폐기), 타이포그래피/글라스모피즘/버튼 시스템 명세 추가. STATUS → LOCKED. |
-| **v1.1** | 2026-02-13 | 레거시 참조를 아카이브 경로(`docs/_archive/governance_v1/*_v1.md`)로 정정 |
-| **v1.0** | 2026-02-13 | 문서 가버넌스 개편에 따라 신규 작성. 기존 `docs/_archive/governance_v1/PROJECT_BLUEPRINT_2026_v1.md`의 IA/디자인/기술 섹션과 `docs/_archive/governance_v1/SESSION_HANDOVER_v1.md`의 구조 정보를 통합. 디자인 시스템은 Draft 03 기준 BASELINE으로 설정. |
+| **v1.1** | 2026-02-13 | 레거시 참조를 아카이브 경로(`docs/_archive/legacy/governance_v1/*_v1.md`)로 정정 |
+| **v1.0** | 2026-02-13 | 문서 가버넌스 개편에 따라 신규 작성. 기존 `docs/_archive/legacy/governance_v1/PROJECT_BLUEPRINT_2026_v1.md`의 IA/디자인/기술 섹션과 `docs/_archive/legacy/governance_v1/SESSION_HANDOVER_v1.md`의 구조 정보를 통합. 디자인 시스템은 Draft 03 기준 BASELINE으로 설정. |
 
 ---
 
@@ -88,9 +88,9 @@
 | **v1.5** | 2026-02-13 | SESSION 15 완료 반영. 디자인 시스템 LOCKED, Phase 2 완료, Phase 3 진입 준비 |
 | **v1.4** | 2026-02-13 | 세션 시작 Quick/Conditional/Full Start 도입 반영 |
 | **v1.3** | 2026-02-13 | 운영 스쿼드 템플릿 추가, 진행중 항목 중복 제거 |
-| **v1.2** | 2026-02-13 | 레거시 참조를 아카이브 경로(`docs/_archive/governance_v1/SESSION_HANDOVER_v1.md`)로 정정 |
+| **v1.2** | 2026-02-13 | 레거시 참조를 아카이브 경로(`docs/_archive/legacy/governance_v1/SESSION_HANDOVER_v1.md`)로 정정 |
 | **v1.1** | 2026-02-13 | 01~05 정본 문서 확정 및 도구 지침 참조 정렬 반영 |
-| **v1.0** | 2026-02-13 | 문서 가버넌스 개편에 따라 신규 작성. `docs/_archive/governance_v1/SESSION_HANDOVER_v1.md`의 상태 정보 추출 및 정리. |
+| **v1.0** | 2026-02-13 | 문서 가버넌스 개편에 따라 신규 작성. `docs/_archive/legacy/governance_v1/SESSION_HANDOVER_v1.md`의 상태 정보 추출 및 정리. |
 
 ---
 
