@@ -7,9 +7,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.23** | 2026-02-17 | SESSION_27 PM(Sonnet): config.toml 교정, GEMINI.md 생성, 거버넌스 오류 수정(06 누락버전 12개, D-031 교정, PROTOCOLS.md 06갱신규칙 추가). |
+| **v1.22** | 2026-02-17 | SESSION_26 Architect(Opus): CLAUDE.md 경량화(302→61줄), PROTOCOLS.md/ROLES.md 분리, Architect 모델 오타 교정, D-031, Gemini 툴체인 검토. |
 | **v1.21** | 2026-02-17 | SESSION_25 PM(Sonnet, D-030 첫 가동): Git 정리, WO 상태 갱신, 네이밍 규칙 수립, docs/_archive/ 전면 정비 완료. |
-| **v1.20** | 2026-02-16 | SESSION_24 Architect 감사: D-030 PM+DocMgr 통합(Sonnet), CLAUDE.md v3.0 반영. |
-| **v1.19** | 2026-02-15 | SESSION_21 외부감사 완료. Phase 3 WO APPROVED. CLAUDE.md v2.8 반영 (Conditional Load 보완, PM 에스컬레이션, RACI Phase 승인). |
 
 > 📋 **전체 버전 히스토리:** [06_VERSION_HISTORY.md](06_VERSION_HISTORY.md)
 
@@ -63,7 +63,7 @@
 
 - Phase 1: 기획/설계 완료
 - Phase 2: 디자인 시스템 LOCKED, D1~D12 확정, IA 17페이지 확장
-- Phase 3 (완료분): 스켈레톤 구현, 콘텐츠 SSOT 최신화, 거버넌스 감사 3회, Header 복구, Git/문서 정비
+- Phase 3 (완료분): 스켈레톤 구현, 콘텐츠 SSOT 최신화, 거버넌스 감사 3회, Header 복구, Git/문서 정비, CLAUDE.md 경량화
 
 ## 진행중
 
@@ -77,10 +77,16 @@
     - 햄버거 토글, 5가지 닫기 동작, 활성 링크, 빌드 검증 완료
     - Commit: 4efcf16
 
+- **SESSION_27 (PM)** — 거버넌스 정비 완료 ✅
+  - config.toml: priority_files에 PROTOCOLS.md 추가
+  - GEMINI.md 생성: Gemini Code Assist VSCode 확장 룰파일 (디렉터 지시)
+  - 거버넌스 오류 수정: 06_VERSION_HISTORY.md 누락 버전 12개 추가, D-031 GEMINI.md 교정, PROTOCOLS.md 06 갱신 의무 명시, CLAUDE.md 줄수 61줄 통일
+  - Gemini 툴체인 현황 파악: MCP Memory 이슈(Cline+Gemini 불안정), 접근 루트 7개 확인, 로컬 거버넌스 유지 전략 확인
+
 - **Phase 3 (Content + Design Polishing)** — 콘텐츠 고도화 및 디자인 폴리싱
   - ✅ **상태: APPROVED — Content 작업 착수 준비 완료**
   - ✅ **Header 복구 완료** (SESSION_22, Builder/Codex)
-  - STEP 1-1: Claude Opus — 디렉터 티키타카 방식으로 Home 톤 확정 (다음 작업, SESSION 26)
+  - STEP 1-1: Claude Opus — 디렉터 티키타카 방식으로 Home 톤 확정 (다음 작업, SESSION 28)
   - STEP 2: Gemini 3.0 Flash — 미디어 자산 생산 및 정제
   - STEP 3: Claude 4.5 Sonnet (Builder/Designer) — 디자인 폴리싱 및 최종 바인딩
   - ✅ **블로커 1 RESOLVED**: npm run build 성공 (Node 22로 고정, Exit 0, dist 생성)

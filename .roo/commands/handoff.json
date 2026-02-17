@@ -1,5 +1,5 @@
 {
   "name": "handoff",
-  "description": "세션 종료: 04_CURRENT_STATE.md/03_DECISIONS.md 갱신 + SESSION_XX_REPORT.md 생성",
-  "prompt": "현재 세션을 종료하고 다음 세션을 준비합니다.\n\n기준(SSOT): CLAUDE.md\n\n작업 순서:\n\n1) 04_CURRENT_STATE.md 갱신\n   - 완료/진행중/이슈 업데이트\n\n2) 03_DECISIONS.md 갱신\n   - 이번 세션에서 발생한 결정(결정/이유/대안/변경가능여부) 기록\n\n3) docs/reports/SESSION_XX_REPORT.md 생성\n   - 이번 세션 작업 요약(로그)\n\n4) (선택) MCP Memory 동기화\n   - 이번 세션 핵심 요약만 저장\n\n5) Git 상태 보고\n   - git status / git diff 요약을 디렉터에게 보고하고 승인 요청"
+  "description": "세션 종료: PROTOCOLS.md v1.1 기준 세션 종료 체크리스트 실행",
+  "prompt": "현재 세션을 종료하고 다음 세션을 준비합니다.\n\n기준(SSOT): CLAUDE.md + PROTOCOLS.md\n\n## 모든 역할 공통\n\n1) Git 상태 보고\n   - git status / git diff 결과를 디렉터에게 보고\n\n2) 세션 보고서 생성\n   - 경로: docs/reports/SESSION_{번호}_{역할}_{작업자}.md\n   - 작업자 약칭: HAIKU, SONNET, OPUS, GEMINI, FLASH, CODEX 등\n\n3) MCP Memory 증류\n   - 핵심 결론만 요약하여 메모리 서버 동기화 (컨텍스트 비대화 방지)\n\n## PM 전용 (Doc Manager 통합, D-030)\n\n4) 04_CURRENT_STATE.md 갱신\n   - \"진행중\", \"이슈/차단사항\" 섹션만 업데이트\n   - 허용: 작업 진척 상태 기록\n   - 금지: Phase 전환, 운영 스쿼드 역할/모델 변경, 문서 구조 변경\n   - 주의: 정본 문서(01~05) 버전 변경 시 → 06_VERSION_HISTORY.md 동시 갱신 필수\n\n5) Work Order 상태 갱신\n   - 발행한 Work Order의 진척 상태 기록\n\n6) 결정 기록\n   - 03_DECISIONS.md 갱신 시 디렉터에게 초안 확인 필수\n\n7) 정합성 검증 (Phase 전환/구조 변경 시에만)\n   - 정본 문서 정합성 검증 (01~05 간 모순 점검)\n   - 버전 히스토리 갱신 (06_VERSION_HISTORY.md)\n   - 문서 체계 검증 (링크 유효성, 파편화 모니터링)\n\n## 코드 수정 역할 (Builder, Designer)\n\n8) 빌드 확인\n   - npm run build 성공 확인\n\n9) Git 커밋 승인 요청\n   - 변경 내용 요약 + 디렉터 승인 대기"
 }

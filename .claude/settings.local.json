@@ -31,7 +31,8 @@
       "WebFetch(domain:www.finout.io)",
       "WebFetch(domain:linkgo.dev)",
       "WebFetch(domain:bestsnipebots.com)",
-      "WebFetch(domain:www.pump.co)"
+      "WebFetch(domain:www.pump.co)",
+      "Bash(git reset HEAD:*)"
     ],
     "additionalDirectories": [
       "c:\\Users\\윤종호\\Desktop\\로잉프로홈페이지Reboot.202601\\project"

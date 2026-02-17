@@ -79,5 +79,12 @@
   - `docs/_archive/` 전면 정비 (legacy/, decisions/, reports/ 구조 확립)
   - 활성 정본 문서 링크 전수 수정 (01, 02, 03, 06) — governance_v1 → legacy/governance_v1
   - `01_PROJECT_CONTEXT.md` 13페이지 → 17페이지 정정
+- **SESSION_26 (Architect/Opus, 운영이슈 대응)** ✅
+  - WO_GEMINI_TOOLCHAIN_REVIEW 검토: 옵션 A 판정 (AI Studio Flash-Lite → Cline)
+  - CLAUDE.md 경량화: 302→61줄 (80% 감소), PROTOCOLS.md/ROLES.md 분리
+  - Architect 모델 오타 교정: Sonnet → Opus 4.6 (4파일 7개소)
+  - Roo → Cline 전환 확정
+  - D-031 결정 기록, 06_VERSION_HISTORY 갱신
+  - Commit: e9b5e92
 
 ---

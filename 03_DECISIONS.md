@@ -7,11 +7,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.24** | 2026-02-17 | D-031 내 GEMINI.md 항목 교정 + 줄수 62→61 교정: SESSION_27(PM) 생성 사실 반영. |
 | **v1.23** | 2026-02-17 | D-031 추가: CLAUDE.md 경량화 + Roo→Cline 전환 + Architect 모델 교정(Opus). |
 | **v1.22** | 2026-02-16 | D-030 추가: PM+DocManager 통합, Sonnet 배정. D-021/D-022/D-023 부분 대체. Architect 설계 결함 자인. |
-| **v1.21** | 2026-02-16 | D-029 갱신, Phase 3 초기 결정(D-013~D-018, D-027) 추가 아카이브. 활성 결정 10개만 유지 (618줄 → 270줄 예상). |
-| **v1.20** | 2026-02-16 | D-029 추가(Phase 2 아카이브 및 역순 정렬), Phase 2 결정(D-001~D-012) 아카이브 분리, Phase 3 결정(D-013~D-029) 역순 배치. |
-| **v1.19** | 2026-02-16 | D-028 추가(세션 보고서 파일명 표준화: 작업자 약칭 추가로 검색성 향상). |
 
 > 📋 **전체 버전 히스토리:** [06_VERSION_HISTORY.md](06_VERSION_HISTORY.md)
 
@@ -54,7 +52,7 @@
 ```
 결정:
   [1. CLAUDE.md 3분할 — 토큰 비용 최적화]
-  - CLAUDE.md (302줄 → 62줄): 관문 프로토콜 + 핵심 규칙 + 역할 경계 요약만 잔류
+  - CLAUDE.md (302줄 → 61줄): 관문 프로토콜 + 핵심 규칙 + 역할 경계 요약만 잔류
   - PROTOCOLS.md (신설): 세션 시작/종료 프로토콜, 맥락 유지, 문서 구조, 작업 환경
   - ROLES.md (신설): 역할 정의 상세 + RACI 매트릭스
   - 04_CURRENT_STATE.md: "완료" 77줄 → 3줄 요약 + docs/_archive/04_COMPLETED_LOG.md
@@ -69,7 +67,7 @@
 
   [4. Gemini 툴체인 전략]
   - WO_GEMINI_TOOLCHAIN_REVIEW: 옵션 A 채택 (AI Studio Flash-Lite API → Cline 재연결)
-  - GEMINI.md 불필요 (Cline 내에서 CLAUDE.md로 충분)
+  - GEMINI.md: SESSION_27(PM)에서 생성 — Gemini Code Assist VSCode 확장 대비용 룰파일 (디렉터 지시)
   - 준비 시점: STEP 1-1 완료 후 (5분 작업)
 
 이유:
