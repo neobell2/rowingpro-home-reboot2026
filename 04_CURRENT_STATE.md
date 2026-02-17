@@ -7,10 +7,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.21** | 2026-02-17 | SESSION_25 PM(Sonnet, D-030 첫 가동): Git 정리, WO 상태 갱신, 네이밍 규칙 수립, docs/_archive/ 전면 정비 완료. |
 | **v1.20** | 2026-02-16 | SESSION_24 Architect 감사: D-030 PM+DocMgr 통합(Sonnet), CLAUDE.md v3.0 반영. |
 | **v1.19** | 2026-02-15 | SESSION_21 외부감사 완료. Phase 3 WO APPROVED. CLAUDE.md v2.8 반영 (Conditional Load 보완, PM 에스컬레이션, RACI Phase 승인). |
-| **v1.18** | 2026-02-15 | GPT Designer 제거 및 운영 스쿼드 재편 반영. Builder 모델 교체 권고 추가. D-025, D-026 반영. |
-| **v1.17** | 2026-02-15 | Architect 역할 공식 지정 (외부감사관 겸임, Sonnet), 필수 호출 지점 명시. D-024 반영. |
 
 > 📋 **전체 버전 히스토리:** [06_VERSION_HISTORY.md](06_VERSION_HISTORY.md)
 
@@ -128,6 +127,14 @@
   - Phase 3 Work Order APPROVED (디렉터 승인 2026-02-15)
   - 빌드 블로커 해결 확인 (Builder/Codex, Node 22 고정)
 
+- **SESSION_25 (PM/Sonnet, D-030 첫 가동)** ✅
+  - Git 정리: SESSION 23~24 산출물 커밋, 삭제 대기 파일 2건 git rm
+  - WO 상태 갱신 3건: VERTEX NO-GO COMPLETED, ARCHITECT_AUDIT COMPLETED, PHASE3_STEP1_CONTENT COMPLETED
+  - `docs/NAMING_CONVENTIONS.md` 신규 작성 (세션 보고서/WO/이슈폴더/콘텐츠 SSOT 네이밍 규칙)
+  - `docs/_archive/` 전면 정비 (legacy/, decisions/, reports/ 구조 확립)
+  - 활성 정본 문서 링크 전수 수정 (01, 02, 03, 06) — governance_v1 → legacy/governance_v1
+  - `01_PROJECT_CONTEXT.md` 13페이지 → 17페이지 정정
+
 ## 진행중
 
 - **SESSION_22 (PM)** — 외부감사 정리 및 Header 긴급 복구 완료 ✅
@@ -143,7 +150,7 @@
 - **Phase 3 (Content + Design Polishing)** — 콘텐츠 고도화 및 디자인 폴리싱
   - ✅ **상태: APPROVED — Content 작업 착수 준비 완료**
   - ✅ **Header 복구 완료** (SESSION_22, Builder/Codex)
-  - STEP 1: Gemini 3.0 Pro — HPOC 기반 브랜드 스토리 및 최종 카피 (다음 작업)
+  - STEP 1-1: Claude Opus — 디렉터 티키타카 방식으로 Home 톤 확정 (다음 작업, SESSION 26)
   - STEP 2: Gemini 3.0 Flash — 미디어 자산 생산 및 정제
   - STEP 3: Claude 4.5 Sonnet (Builder/Designer) — 디자인 폴리싱 및 최종 바인딩
   - ✅ **블로커 1 RESOLVED**: npm run build 성공 (Node 22로 고정, Exit 0, dist 생성)

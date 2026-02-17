@@ -7,9 +7,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.10** | 2026-02-17 | SESSION_25 PM(Sonnet) 완료 — 다음 지시를 STEP 1-1 콘텐츠 톤 확정 (Opus 티키타카)으로 갱신. |
 | **v1.9** | 2026-02-16 | SESSION_22: Header 모바일 메뉴 긴급 복구 우선순위 변경. 기술 부채 로드맵 반영. |
 | **v1.8** | 2026-02-15 | Phase 전환 체크리스트 신설, Architect 필수 호출 지점 명시 추가. D-024 반영. |
-| **v1.7** | 2026-02-15 | GPT Designer 제거 및 운영 스쿼드 재편 반영. D-025, D-026 반영. |
 
 > 📋 **전체 버전 히스토리:** [06_VERSION_HISTORY.md](06_VERSION_HISTORY.md)
 
@@ -34,17 +34,28 @@ Phase 3 → Phase 4 전환 조건:
 **근거:** `docs/work_orders/PHASE_3_INTEGRATED_ROADMAP_WO.md`
 
 ```
-목표: 브랜드 스토리 및 카피라이팅 (Phase 3 STEP 1)
+목표: STEP 1-1 — Home 페이지 톤 확정 (디렉터 티키타카)
 우선순위: 즉시 실행
-요구사항:
-  - [작업자] Content (Gemini 3.0 Pro)
-  - [입력] 01_PROJECT_CONTEXT.md, 02_ARCHITECTURE.md, docs/contents/*
-  - [출력] docs/contents/ 내 각 페이지별 최종 카피 (Markdown)
-  - [중점] "국가대표 출신", "13년 무사고", "팀워크" 핵심 메시지
-  - [검수] 톤앤매너 "프리미엄 + 전문성 + 신뢰"
-금지사항:
-  - 없는 사실 지어내기, 과장 광고 금지
-  - 스포츠/레저의 가벼운 톤 사용 금지
+작업자: Content (Claude Opus — 고감도 카피라이팅 전담)
+방식: 디렉터와 티키타카 방식으로 Home 콘텐츠 톤 확정
+
+입력:
+  - 01_PROJECT_CONTEXT.md (브랜드 정체성/핵심 메시지)
+  - docs/contents/home.md (현재 콘텐츠 SSOT)
+  - docs/contents/Headline_ideas_Set.txt (헤드라인 아이디어 세트)
+  - SESSION_24 Architect 판정 (HPOC 제거, 톤 전면 교체 필요)
+
+출력:
+  - docs/contents/home.md 업데이트 (Hero H1/H2 확정, 섹션별 카피)
+  - 확정된 톤 원칙 요약 (다음 13페이지 확장 기준)
+
+중점:
+  - H1: "ROWING = TEAMWORK" (고정, 변경 불가)
+  - H2: 디렉터 티키타카로 확정 (★핵심 작업)
+  - 금지 표현: HPOC 제거 (SESSION_24 Architect 지시)
+  - 톤: 프리미엄 + 전문성 + 신뢰 (스포츠/레저 경량 톤 금지)
+
+검수 순서: Home 확정 → About → Programs → Corporate Hub (순차 확장)
 ```
 
 ---
