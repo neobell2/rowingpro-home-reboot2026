@@ -5,7 +5,7 @@
 
 ---
 
-## 1. 페이지 개요 [LOCK]
+## 1. 페이지 개요
 - 영문명: HISTORY
 - 국문명: 걸어온 길
 - 카피: The Origin of Corporate Rowing
@@ -14,7 +14,7 @@
 
 ---
 
-## 2. 반영 기준 [LOCK]
+## 2. 반영 기준
 - 연도별 실적 데이터는 `history_master.md`를 단일 기준으로 사용
 - 요약 지표는 `13+ Years`, `150+ Clients`, `10,000+ Participants`, `Zero Accident` 유지
 - 기존 `track-record` 명칭/경로는 사용하지 않음
