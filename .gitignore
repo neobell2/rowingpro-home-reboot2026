@@ -26,6 +26,7 @@ Thumbs.db
 # Temp files
 *.tmp
 *.temp
+.tmp.driveupload/
 # Reference Materials
 참고자료/
 3D캡처렌더링모음/
