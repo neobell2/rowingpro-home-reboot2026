@@ -7,6 +7,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.24** | 2026-02-17 | SESSION_27 PM(Sonnet) 2차: WO 정비(PHASE_3_ROADMAP HPOC폐기·스쿼드 갱신, GEMINI_TOOLCHAIN COMPLETED), 리포트 아카이브 정리, 보고서 작성, git push 완료. |
 | **v1.23** | 2026-02-17 | SESSION_27 PM(Sonnet): config.toml 교정, GEMINI.md 생성, 거버넌스 오류 수정(06 누락버전 12개, D-031 교정, PROTOCOLS.md 06갱신규칙 추가). |
 | **v1.22** | 2026-02-17 | SESSION_26 Architect(Opus): CLAUDE.md 경량화(302→61줄), PROTOCOLS.md/ROLES.md 분리, Architect 모델 오타 교정, D-031, Gemini 툴체인 검토. |
 | **v1.21** | 2026-02-17 | SESSION_25 PM(Sonnet, D-030 첫 가동): Git 정리, WO 상태 갱신, 네이밍 규칙 수립, docs/_archive/ 전면 정비 완료. |
@@ -77,11 +78,16 @@
     - 햄버거 토글, 5가지 닫기 동작, 활성 링크, 빌드 검증 완료
     - Commit: 4efcf16
 
-- **SESSION_27 (PM)** — 거버넌스 정비 완료 ✅
+- **SESSION_27 (PM)** — 전체 완료 ✅
   - config.toml: priority_files에 PROTOCOLS.md 추가
-  - GEMINI.md 생성: Gemini Code Assist VSCode 확장 룰파일 (디렉터 지시)
-  - 거버넌스 오류 수정: 06_VERSION_HISTORY.md 누락 버전 12개 추가, D-031 GEMINI.md 교정, PROTOCOLS.md 06 갱신 의무 명시, CLAUDE.md 줄수 61줄 통일
-  - Gemini 툴체인 현황 파악: MCP Memory 이슈(Cline+Gemini 불안정), 접근 루트 7개 확인, 로컬 거버넌스 유지 전략 확인
+  - GEMINI.md 생성: Gemini Code Assist VSCode 확장 룰파일
+  - 거버넌스 오류 수정: 06_VERSION_HISTORY.md 누락 버전 12개, D-031 교정, PROTOCOLS.md 06갱신 의무 명시
+  - Gemini 툴체인 현황 파악 및 WO_GEMINI_TOOLCHAIN_REVIEW COMPLETED 처리
+  - .claude/settings.local.json: git reset HEAD:* 로 교정 (파괴적 명령 차단)
+  - .roo/ 정리 및 최신화 (PROTOCOLS.md v1.1·D-030 기준)
+  - 리포트 아카이브 정리 (SESSION_24~26 완료분 이동, SESSION_24_ARCHITECT_AUDIT 유지)
+  - PHASE_3_INTEGRATED_ROADMAP_WO: HPOC 폐기 반영, 운영 스쿼드 갱신 (Opus·Sonnet)
+  - git push 완료 (origin 동기화, 39커밋)
 
 - **Phase 3 (Content + Design Polishing)** — 콘텐츠 고도화 및 디자인 폴리싱
   - ✅ **상태: APPROVED — Content 작업 착수 준비 완료**

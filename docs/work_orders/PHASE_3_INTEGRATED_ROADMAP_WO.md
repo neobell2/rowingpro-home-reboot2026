@@ -15,6 +15,8 @@
 | SESSION_24 | ✅ **Vertex AI 도입 NO-GO** (Architect 판정 — ROI 미달, 운영 리스크) |
 | SESSION_24 | ✅ **D-030** — PM+DocMgr 통합, Haiku → Sonnet 교체 |
 | SESSION_24 | ✅ **STEP 1 방식 변경** — Gemini 초안 완료, 이후 Opus 티키타카 톤 리라이팅(STEP 1-1)으로 전환 |
+| SESSION_24 | ✅ **HPOC 프레임워크 폐기** — Architect 판정: 고객 노출 콘텐츠에서 완전 제거. 메시지 내용 유지, HPOC 라벨 제거 후 자연어 재작성 |
+| SESSION_27 | ✅ **운영 스쿼드 갱신** — D-030 반영: PM Haiku→Sonnet, Content Gemini Pro→Opus 4.6 |
 
 ---
 
@@ -51,25 +53,28 @@
 
 ## 3. 상세 요구사항 (STEP 1 중심)
 
-### 3.1 HPOC 브랜드 스토리 (Pro 담당)
-- **Hardware**: 장비의 전문성 및 안전 환경
-- **People**: 선수 출신 코치진의 진정성
-- **Operation**: 13년 무사고 운영 시스템
-- **Content**: HRD 관점의 교육 시나리오
+### 3.1 콘텐츠 톤 기준 (SESSION_24 Architect 판정 — HPOC 폐기)
+
+> ⚠️ HPOC 프레임워크는 SESSION_24 Architect 판정으로 **고객 노출 콘텐츠에서 완전 폐기**됨.
+> 아래는 HPOC를 대체하는 톤/콘텐츠 방향 기준.
+
+- **금지 표현**: HPOC 라벨(Hardware/People/Operation/Content), "체계적인", "맞춤형", "최적의 솔루션", "~의 본질", "마인드셋", "내재화", "HRD 적용형/비적용형", "모듈"
+- **허용 방향**: 구체적 실적/숫자 우선, 고객에게 직접 말하는 톤, 13년 업력/418건/무사고 등 사실 기반
+- **톤 확정 방식**: STEP 1-1에서 Opus와 디렉터 티키타카로 Home부터 확정 → 나머지 16개 확장
 
 ### 3.2 17P 최종 카피 및 가격 정책
 - 서비스별 [특징/대상/기대효과] 표준화
 - 부스형 4단계 패키지(SIMPLE/CORE/PRO/MASTER) 상세 스펙 확정
 
 ## 4. 모델별 협업 및 비용 최적화
-**최신 운영 스쿼드 (D-018, D-025, D-026 반영):**
+**최신 운영 스쿼드 (D-030 반영 — SESSION_27 갱신):**
 
-- **Gemini 3.0 Pro** (Content): 고난도 전략 및 HPOC 기반 카피라이팅 (STEP 1)
+- **Claude Opus 4.6** (Content): 디렉터 티키타카 톤 리라이팅, 고감도 카피라이팅 (STEP 1-1)
 - **Gemini 3.0 Flash** (Media Producer): 미디어 생성 지원, 데이터 정제 (STEP 2)
-- **Claude Haiku 4.5** (PM): 공정 관리 및 진척 모니터링 (전 단계)
+- **Claude 4.5 Sonnet** (PM, Doc Manager 통합): 공정 관리, 문서 정합성 (전 단계)
 - **Claude 4.5 Sonnet** (Builder): 코드 구현 및 최종 바인딩 (STEP 3)
 - **Claude 4.5 Sonnet** (Designer): 시각적 완성도 및 폴리싱 검증 (STEP 3)
-- **Claude Opus 4.6** (Architect): 아키텍처 정합성 최종 검증 (STEP 3)
+- **Claude Opus 4.6** (Architect): 아키텍처 정합성 최종 검증, Phase 전환 필수 호출 (STEP 3)
 
 ## 5. 완료 기준 (DoD)
 - [ ] 파편화 없는 단계별 작업 연계 확인

@@ -1,6 +1,6 @@
 # WO_GEMINI_TOOLCHAIN_REVIEW.md — Gemini 툴체인 생존 전략 검토
 
-> **발행:** 2026-02-17 | **발행자:** PM (Sonnet, SESSION 25) | **STATUS: PENDING**
+> **발행:** 2026-02-17 | **발행자:** PM (Sonnet, SESSION 25) | **STATUS: COMPLETED (SESSION_27)**
 
 ---
 
@@ -10,8 +10,8 @@
 STEP 2(미디어 단계)에서 Gemini Flash 투입이 예정되어 있어 대안 툴체인 수립이 필요함.
 
 디렉터가 외부 참고 자료 2건을 입수해 PM과 검토 완료:
-- `docs/reports/SESSION_24_DIRECTOR_Issue_gemini-survival-guide.md` (주 문서)
-- `docs/reports/SESSION_24_DIRECTOR_Issue_gemini-survival-guide_ANNEX.md` (ANNEX)
+- `docs/_archive/reports/SESSION_24_DIRECTOR_Issue_gemini-survival-guide.md` (주 문서)
+- `docs/_archive/reports/SESSION_24_DIRECTOR_Issue_gemini-survival-guide_ANNEX.md` (ANNEX)
 
 PM 분석 요약:
 - 두 문서 간 **MCP 충돌** 확인 (Firebase Studio ↔ 로컬 MCP 연결 가능 여부)
@@ -64,9 +64,22 @@ PM 분석 요약:
 
 ---
 
+## 처리 결과 (SESSION_26~27)
+
+| 항목 | 결정 | 세션 |
+|:--|:--|:--|
+| 툴체인 전략 | **옵션 A** — AI Studio Flash-Lite API → Cline 재연결 | SESSION_26 Architect |
+| GEMINI.md 생성 | **생성 완료** — Gemini Code Assist VSCode 확장용 (Architect 판정과 목적 상이, 충돌 아님) | SESSION_27 PM |
+| config.toml 갱신 | PROTOCOLS.md priority_files 추가 완료 | SESSION_27 PM |
+| MCP 공유 전략 | **현행 유지** — 로컬 MCP + GitHub 동기화 | SESSION_26 Architect |
+| STEP 2 투입 준비 | **STEP 1-1 완료 후** 착수 | SESSION_26 Architect |
+| Gemini 투입 확대 범위 | **보류** — 디렉터 판단 대기 (Sonnet 쿼터 압박 시 재논의) | SESSION_27 PM |
+
+---
+
 ## 참고 문서
 
-- `docs/reports/SESSION_24_DIRECTOR_Issue_gemini-survival-guide.md`
-- `docs/reports/SESSION_24_DIRECTOR_Issue_gemini-survival-guide_ANNEX.md`
+- `docs/_archive/reports/SESSION_24_DIRECTOR_Issue_gemini-survival-guide.md`
+- `docs/_archive/reports/SESSION_24_DIRECTOR_Issue_gemini-survival-guide_ANNEX.md`
 - `docs/work_orders/PHASE_3_INTEGRATED_ROADMAP_WO.md` (STEP 2 미디어 계획)
 - `ROLES.md` Architect 역할 정의

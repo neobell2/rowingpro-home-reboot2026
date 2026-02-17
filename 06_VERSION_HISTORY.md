@@ -98,6 +98,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.24** | 2026-02-17 | SESSION_27 PM(Sonnet) 2차: WO 정비(PHASE_3_ROADMAP HPOC폐기·스쿼드 갱신, GEMINI_TOOLCHAIN COMPLETED), 리포트 아카이브 정리, git push 완료. |
 | **v1.23** | 2026-02-17 | SESSION_27 PM(Sonnet): config.toml 교정, GEMINI.md 생성, 거버넌스 오류 수정(06 누락버전 12개, D-031 교정, PROTOCOLS.md 06갱신규칙 추가). |
 | **v1.22** | 2026-02-17 | SESSION_26 Architect(Opus): CLAUDE.md 경량화(302→61줄), PROTOCOLS.md/ROLES.md 분리, Architect 모델 오타 교정, D-031, Gemini 툴체인 검토. |
 | **v1.21** | 2026-02-17 | SESSION_25 PM(Sonnet, D-030 첫 가동): Git 정리, WO 상태 갱신, 네이밍 규칙 수립, docs/_archive/ 전면 정비 완료. |
