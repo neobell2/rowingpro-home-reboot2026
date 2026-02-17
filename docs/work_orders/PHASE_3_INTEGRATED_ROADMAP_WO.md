@@ -69,7 +69,7 @@
 - **Claude Haiku 4.5** (PM): 공정 관리 및 진척 모니터링 (전 단계)
 - **Claude 4.5 Sonnet** (Builder): 코드 구현 및 최종 바인딩 (STEP 3)
 - **Claude 4.5 Sonnet** (Designer): 시각적 완성도 및 폴리싱 검증 (STEP 3)
-- **Claude 4.5 Sonnet** (Architect): 아키텍처 정합성 최종 검증 (STEP 3)
+- **Claude Opus 4.6** (Architect): 아키텍처 정합성 최종 검증 (STEP 3)
 
 ## 5. 완료 기준 (DoD)
 - [ ] 파편화 없는 단계별 작업 연계 확인

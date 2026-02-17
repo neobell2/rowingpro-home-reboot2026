@@ -9,7 +9,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
-| **v2.7** | 2026-02-15 | Architect 역할 지정: 외부감사관 겸임 (Sonnet), 필수 호출 지점 명시 (Phase 전환, Contact 백엔드). D-024 반영. |
+| **v3.1** | 2026-02-17 | 경량화: 302줄→62줄. PROTOCOLS.md/ROLES.md 분리. 중복 제거. Roo→Cline. Architect Opus 교정. D-031. |
+| **v3.0** | 2026-02-16 | D-030 반영: PM+DocManager 통합, Sonnet 배정. 섹션 7.1/7.2 통합, 7.7 RACI 갱신. |
+| **v2.7** | 2026-02-15 | Architect 역할 지정: 외부감사관 겸임 (Opus), 필수 호출 지점 명시 (Phase 전환, Contact 백엔드). D-024 반영. |
 | **v2.6** | 2026-02-15 | PM 권한 재정의(계층적 접근), Doc Manager 재포지셔닝(검증자+구조전문가), 세션 종료 프로토콜 역할별 차별화. 거버넌스 모순 해결. |
 | **v2.5** | 2026-02-15 | PM/Doc Manager를 Claude Haiku로 전환. 품질 향상 및 Gemini 크레딧 Content 집중 투입. |
 | **v2.4** | 2026-02-15 | 비용최적화 재구조화. Doc Manager Gemini 전환, Designer 신설, Media Producer 추가. 9개 역할 확정. |

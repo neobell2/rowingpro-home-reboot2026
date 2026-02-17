@@ -69,4 +69,4 @@ PM 분석 요약:
 - `docs/reports/SESSION_24_DIRECTOR_Issue_gemini-survival-guide.md`
 - `docs/reports/SESSION_24_DIRECTOR_Issue_gemini-survival-guide_ANNEX.md`
 - `docs/work_orders/PHASE_3_INTEGRATED_ROADMAP_WO.md` (STEP 2 미디어 계획)
-- `CLAUDE.md` 섹션 7.5 (Architect 역할 정의)
+- `ROLES.md` Architect 역할 정의
