@@ -1,18 +1,16 @@
 ---
 import ServiceDetailPage from '../../../components/ServiceDetailPage.astro';
+import { getEntry } from 'astro:content';
 
-const bullets = [
-  '임직원 건강 관리와 스트레스 완화를 위한 활동형 웰니스 세션',
-  '체력 수준별 저강도-중강도 운동 프로그램 선택 운영',
-  '장기 복지 프로그램과 연계 가능한 정기 코스 제안',
-];
+const page = await getEntry('pages', 'service-corporate-wellness');
+const { title, description, summary, bullets, audience, ctaLabel } = page.data;
 ---
 
 <ServiceDetailPage
   title="Corporate Wellness"
-  description="임직원 건강 관리 및 웰니스 프로그램"
-  summary="신체 활동과 팀 인터랙션을 결합해 조직 웰빙을 높이는 복지형 프로그램입니다."
-  bullets={bullets}
-  audience="복지 담당부서, 건강증진 캠페인 운영 조직, 장기 복지 프로그램 기획팀"
-  ctaLabel="웰니스 프로그램 문의"
+  {description}
+  {summary}
+  {bullets}
+  {audience}
+  {ctaLabel}
 />

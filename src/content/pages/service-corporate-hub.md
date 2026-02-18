@@ -1,0 +1,22 @@
+---
+title: "Corporate Service Hub | 로잉프로"
+description: "기업·조직 맞춤형 조정 프로그램 허브"
+heroTitle: "Corporate Service Hub"
+heroSubtitle: "기업·조직 대상 프로그램은 HRD 적용형과 비HRD 행사형으로 나누어 설계합니다."
+services:
+  - href: "/service/corporate/training"
+    title: "Training"
+    description: "신입교육·조직개발 목적의 HRD 적용형 프로그램"
+  - href: "/service/corporate/teambuilding"
+    title: "Teambuilding"
+    description: "협업 구조를 체감하는 현장형 팀빌딩 과정"
+  - href: "/service/corporate/leadership"
+    title: "Leadership"
+    description: "리더·팔로워 역할 전환 중심의 리더십 강화"
+  - href: "/service/corporate/event"
+    title: "Event"
+    description: "기념행사·단합행사에 맞춘 운영형 솔루션"
+  - href: "/service/corporate/wellness"
+    title: "Wellness"
+    description: "임직원 웰빙 중심의 활동형 건강 프로그램"
+---

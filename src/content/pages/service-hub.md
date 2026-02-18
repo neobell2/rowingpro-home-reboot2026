@@ -1,0 +1,27 @@
+---
+title: "Service Hub | 로잉프로"
+description: "기업, 학교, 청소년, 스포츠 이벤트, 클럽, 가족 대상 맞춤형 조정 서비스"
+heroTitle: "서비스 허브"
+heroSubtitle: "다양한 대상과 목적에 맞춘 조정 서비스를 탐색하세요."
+cards:
+  - title: "기업·조직"
+    description: "HRD 적용형(신입교육, 조직개발)과 비HRD 행사형(기념행사, 단합대회)으로 구분해 설계합니다."
+    href: "/service/corporate"
+  - title: "학교·청소년"
+    description: "인성 교육, 체육 활동, 리더십 캠프 목적에 맞춘 학교 연계 프로그램입니다."
+    href: "/service/school-youth"
+  - title: "스포츠 이벤트·행사"
+    description: "SIMPLE/CORE/PRO/MASTER 패키지 기반 체험형 이벤트를 운영합니다."
+    href: "/service/event"
+  - title: "클럽·일반"
+    description: "정기 레슨, 동호회 훈련, 원데이 체험 중심의 생활체육 프로그램입니다."
+    href: "/service/club-general"
+  - title: "가족 체험"
+    description: "비상품 안내형으로 운영하며 문의를 통해 가능 일정과 장소를 확인합니다."
+    href: "/service/family"
+ctaSection:
+  heading: "맞춤형 서비스 문의"
+  body: "각 서비스에 대한 상세 내용과 맞춤형 견적은 Contact 페이지를 통해 문의해 주세요."
+  cta: "문의하기"
+  href: "/contact"
+---

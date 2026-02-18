@@ -6,11 +6,13 @@ import Footer from '../components/Footer.astro';
 interface Props {
   title?: string;
   description?: string;
+  canonicalUrl?: string;
 }
 
-const { 
-  title = 'ROWING PRO | The Kinetic Experience', 
-  description = '대한민국 국가대표 출신이 운영하는 HRD/팀빌딩 전문 기업' 
+const {
+  title = 'ROWING PRO | The Kinetic Experience',
+  description = '대한민국 국가대표 출신이 운영하는 HRD/팀빌딩 전문 기업',
+  canonicalUrl = `https://rowingpro.co.kr${Astro.url.pathname}`
 } = Astro.props;
 ---
 
@@ -22,15 +24,30 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- SEO: Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://rowingpro.co.kr/og/og-default.png" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+
+    <!-- SEO: Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://rowingpro.co.kr/og/og-default.png" />
+
     <!-- Fonts: Readex Pro (Display) & Pretendard (Body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:opsz,wght@0.5..12,200;0.5..12,400;0.5..12,600;0.5..12,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
     
     <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
 
     <title>{title}</title>
   </head>

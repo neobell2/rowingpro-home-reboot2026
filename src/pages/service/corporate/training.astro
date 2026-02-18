@@ -1,18 +1,16 @@
 ---
 import ServiceDetailPage from '../../../components/ServiceDetailPage.astro';
+import { getEntry } from 'astro:content';
 
-const bullets = [
-  '신입·주니어 구성원을 위한 팀워크 기반 온보딩 교육',
-  '직무 간 협업을 강화하는 커뮤니케이션 훈련 세션',
-  '실내 기초 훈련 후 수상 체험으로 연결되는 단계형 커리큘럼',
-];
+const page = await getEntry('pages', 'service-corporate-training');
+const { title, description, summary, bullets, audience, ctaLabel } = page.data;
 ---
 
 <ServiceDetailPage
   title="Corporate Training"
-  description="사원 교육 및 조직 개발 프로그램"
-  summary="HRD 적용형 교육 목적에 맞춰 설계하는 기업 훈련 프로그램입니다."
-  bullets={bullets}
-  audience="신입사원 교육팀, 조직개발 담당자, 직무 전환·협업 교육 조직"
-  ctaLabel="교육 프로그램 문의"
+  {description}
+  {summary}
+  {bullets}
+  {audience}
+  {ctaLabel}
 />

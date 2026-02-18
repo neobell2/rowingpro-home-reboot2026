@@ -1,18 +1,16 @@
 ---
 import ServiceDetailPage from '../../../components/ServiceDetailPage.astro';
+import { getEntry } from 'astro:content';
 
-const bullets = [
-  '사내 체육대회, 창립 기념행사, 조직 단합 행사 맞춤 운영',
-  '행사 규모에 맞춘 장비 구성과 운영 인력 배치',
-  '기록 경쟁형, 릴레이형, 체험형 등 목적별 이벤트 연출',
-];
+const page = await getEntry('pages', 'service-corporate-event');
+const { title, description, summary, bullets, audience, ctaLabel } = page.data;
 ---
 
 <ServiceDetailPage
   title="Corporate Event"
-  description="기업 행사 및 체육대회 운영 프로그램"
-  summary="비HRD 성격의 기념행사·단합행사 목적에 적합한 운영형 서비스입니다."
-  bullets={bullets}
-  audience="사내 행사 기획팀, 노사 화합 행사 운영팀, 기업 홍보 이벤트 조직"
-  ctaLabel="기업 행사 문의"
+  {description}
+  {summary}
+  {bullets}
+  {audience}
+  {ctaLabel}
 />

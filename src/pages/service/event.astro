@@ -1,58 +1,48 @@
 ---
 import ServiceDetailPage from '../../components/ServiceDetailPage.astro';
+import { getEntry } from 'astro:content';
 
-const bullets = [
-  'SIMPLE, CORE, PRO, MASTER 패키지 기반의 대규모 체험 운영',
-  '행사 동선에 맞춘 부스형 로잉 장비 설치 및 현장 운영',
-  '기록 측정, 순위 이벤트, 사회자 연동 등 참여형 구성 가능',
-];
+const page = await getEntry('pages', 'service-event');
+const { title, description, summary, bullets, audience, ctaLabel, packageSection } = page.data;
 ---
 
 <ServiceDetailPage
   title="Sports Event"
-  description="스포츠 이벤트 및 행사 기획/운영"
-  summary="지역 축제, 학교 행사, 기업 이벤트를 위한 부스형 4단계 패키지(SIMPLE/CORE/PRO/MASTER)를 제공합니다."
-  bullets={bullets}
-  audience="지자체·공공행사 운영사, 기업 이벤트 담당 조직, 스포츠 축제 기획팀"
-  ctaLabel="행사 견적 문의"
+  {description}
+  {summary}
+  {bullets}
+  {audience}
+  {ctaLabel}
 >
   <section class="pb-24">
     <div class="max-w-6xl mx-auto px-6 lg:px-8">
       <div class="glass-panel p-10">
-        <h2 class="text-3xl font-display font-bold text-white mb-8">부스형 패키지 안내</h2>
-        <p class="text-white/70 mb-8">확정 체계: SIMPLE / CORE / PRO / MASTER</p>
+        <h2 class="text-3xl font-display font-bold text-white mb-8">{packageSection.heading}</h2>
+        <p class="text-white/70 mb-8">{packageSection.note}</p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
-            <h3 class="text-xl font-bold text-white mb-2">SIMPLE</h3>
-            <p class="text-white/80 mb-3">입문형 체험 패키지</p>
-            <p class="text-sm text-white/60">세부 구성/금액 별도 협의</p>
-          </div>
-
-          <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
-            <h3 class="text-xl font-bold text-white mb-2">CORE</h3>
-            <p class="text-white/80 mb-3">운영형 체험 패키지</p>
-            <p class="text-sm text-white/60">세부 구성/금액 별도 협의</p>
-          </div>
-
-          <div class="bg-heritage/10 p-6 rounded-2xl border border-heritage/50">
-            <h3 class="text-xl font-bold text-heritage mb-2">PRO</h3>
-            <p class="text-3xl font-bold text-white mb-4">
-              200만원 <span class="text-base font-normal text-white/60">(VAT 별도)</span>
-            </p>
-            <ul class="space-y-2 text-white/75 text-sm">
-              <li>• 로잉머신 10대</li>
-              <li>• 전문 강사 2명</li>
-              <li>• 4시간 운영 기준</li>
-              <li>• 서울·경기 기준 (기타 지역 별도 협의)</li>
-            </ul>
-          </div>
-
-          <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
-            <h3 class="text-xl font-bold text-white mb-2">MASTER</h3>
-            <p class="text-white/80 mb-3">대규모/맞춤형 패키지</p>
-            <p class="text-sm text-white/60">현장 규모와 운영 목적에 따라 별도 설계</p>
-          </div>
+          {packageSection.tiers.map((tier: { id: string; label: string; note?: string; price?: string; priceNote?: string; specs?: string[]; featured: boolean }) => (
+            <div class={tier.featured ? "bg-heritage/10 p-6 rounded-2xl border border-heritage/50" : "bg-white/5 p-6 rounded-2xl border border-white/10"}>
+              <h3 class={`text-xl font-bold mb-2 ${tier.featured ? 'text-heritage' : 'text-white'}`}>{tier.id}</h3>
+              {tier.price ? (
+                <>
+                  <p class="text-3xl font-bold text-white mb-4">
+                    {tier.price} <span class="text-base font-normal text-white/60">{tier.priceNote}</span>
+                  </p>
+                  <ul class="space-y-2 text-white/75 text-sm">
+                    {tier.specs?.map((spec: string) => (
+                      <li>• {spec}</li>
+                    ))}
+                  </ul>
+                </>
+              ) : (
+                <>
+                  <p class="text-white/80 mb-3">{tier.label}</p>
+                  <p class="text-sm text-white/60">{tier.note}</p>
+                </>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </div>

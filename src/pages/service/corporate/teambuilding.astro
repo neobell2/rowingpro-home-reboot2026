@@ -1,18 +1,16 @@
 ---
 import ServiceDetailPage from '../../../components/ServiceDetailPage.astro';
+import { getEntry } from 'astro:content';
 
-const bullets = [
-  '역할 분담과 실시간 피드백을 중심으로 설계한 협업 미션',
-  '리더와 팔로워의 의사결정 흐름을 체감하는 팀 세션',
-  '현장 활동 후 디브리핑으로 조직 행동 변화 포인트 도출',
-];
+const page = await getEntry('pages', 'service-corporate-teambuilding');
+const { title, description, summary, bullets, audience, ctaLabel } = page.data;
 ---
 
 <ServiceDetailPage
   title="Corporate Teambuilding"
-  description="팀워크와 협업을 강화하는 기업 팀빌딩 프로그램"
-  summary="조정의 구조를 활용해 팀의 호흡과 실행력을 높이는 기업 팀빌딩 과정입니다."
-  bullets={bullets}
-  audience="프로젝트 조직, 부서 워크숍, 조직문화 개선이 필요한 팀"
-  ctaLabel="팀빌딩 프로그램 상담"
+  {description}
+  {summary}
+  {bullets}
+  {audience}
+  {ctaLabel}
 />

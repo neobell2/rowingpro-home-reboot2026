@@ -1,19 +1,17 @@
 ---
 import ServiceDetailPage from '../../components/ServiceDetailPage.astro';
+import { getEntry } from 'astro:content';
 
-const bullets = [
-  '가족 구성원이 함께 참여하는 비상품 안내형 체험 프로그램',
-  '보트 기본 동작, 호흡 맞추기, 안전 규칙을 중심으로 운영',
-  '행사 성격과 연령대에 맞춘 단기 체험 코스 설계',
-];
+const page = await getEntry('pages', 'service-family');
+const { title, description, summary, bullets, audience, footnote, ctaLabel } = page.data;
 ---
 
 <ServiceDetailPage
   title="Family"
-  description="가족 체험 조정 프로그램"
-  summary="가족 체험은 정규 상품 판매보다는 안내 및 문의 연결 중심으로 운영됩니다."
-  bullets={bullets}
-  audience="가족 단위 체험 희망자, 패밀리 데이 행사 기획 조직"
-  footnote="가족 체험은 계절·장소·안전 인력 조건에 따라 운영 가능 여부가 달라질 수 있습니다."
-  ctaLabel="가족 체험 문의"
+  {description}
+  {summary}
+  {bullets}
+  {audience}
+  {footnote}
+  {ctaLabel}
 />
