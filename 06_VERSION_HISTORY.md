@@ -66,6 +66,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.27** | 2026-02-18 | SESSION_33 PM(Sonnet): D-034(상품/가격 표기 정책), D-037(Programs 구조 확정), D-012 주소 교정(케이에듀동→케이앤몰동). |
+| **v1.26** | 2026-02-18 | SESSION_32 Architect(Opus): D-033(소비자 기준 원칙 확립). |
+| **v1.25** | 2026-02-18 | SESSION_32 Architect(Opus): D-032(Content Collections 설계 확정, Builder 재량 17페이지 기준). |
 | **v1.24** | 2026-02-17 | D-031 내 GEMINI.md 항목 교정: SESSION_27(PM) 생성 사실 반영. |
 | **v1.23** | 2026-02-17 | D-031 추가: CLAUDE.md 경량화 + Roo→Cline 전환 + Architect 모델 교정(Opus). |
 | **v1.22** | 2026-02-16 | D-030 추가: PM+DocManager 통합, Sonnet 배정. D-021/D-022/D-023 부분 대체. Architect 설계 결함 자인. |
@@ -98,6 +101,8 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.26** | 2026-02-18 | SESSION_33 PM(Sonnet): D-034, D-037, D-012 주소 교정, Builder WO 발행. SESSION_31~33 상태 반영. |
+| **v1.25** | 2026-02-18 | SESSION_31 PM(Sonnet): 콘텐츠 폴더 정리, TD-02 선행 결정, Architect WO 발행. |
 | **v1.24** | 2026-02-17 | SESSION_27 PM(Sonnet) 2차: WO 정비(PHASE_3_ROADMAP HPOC폐기·스쿼드 갱신, GEMINI_TOOLCHAIN COMPLETED), 리포트 아카이브 정리, git push 완료. |
 | **v1.23** | 2026-02-17 | SESSION_27 PM(Sonnet): config.toml 교정, GEMINI.md 생성, 거버넌스 오류 수정(06 누락버전 12개, D-031 교정, PROTOCOLS.md 06갱신규칙 추가). |
 | **v1.22** | 2026-02-17 | SESSION_26 Architect(Opus): CLAUDE.md 경량화(302→61줄), PROTOCOLS.md/ROLES.md 분리, Architect 모델 오타 교정, D-031, Gemini 툴체인 검토. |

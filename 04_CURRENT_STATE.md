@@ -7,9 +7,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.26** | 2026-02-18 | SESSION_33 PM(Sonnet): D-034(상품/가격 표기 정책), D-037(Programs 구조 확정), D-012 주소 교정(케이에듀동→케이앤몰동). Builder WO 발행(WO_BUILDER_CONTENT_COLLECTIONS_IMPL). |
 | **v1.25** | 2026-02-18 | SESSION_31 PM(Sonnet): 콘텐츠 폴더 정리(_source/ 분리), TD-02 Content Collections 선행 결정, Architect WO 발행, 05_NEXT_TASK 갱신. |
 | **v1.24** | 2026-02-17 | SESSION_27 PM(Sonnet) 2차: WO 정비(PHASE_3_ROADMAP HPOC폐기·스쿼드 갱신, GEMINI_TOOLCHAIN COMPLETED), 리포트 아카이브 정리, 보고서 작성, git push 완료. |
-| **v1.23** | 2026-02-17 | SESSION_27 PM(Sonnet): config.toml 교정, GEMINI.md 생성, 거버넌스 오류 수정(06 누락버전 12개, D-031 교정, PROTOCOLS.md 06갱신규칙 추가). |
 | **v1.21** | 2026-02-17 | SESSION_25 PM(Sonnet, D-030 첫 가동): Git 정리, WO 상태 갱신, 네이밍 규칙 수립, docs/_archive/ 전면 정비 완료. |
 
 > 📋 **전체 버전 히스토리:** [06_VERSION_HISTORY.md](06_VERSION_HISTORY.md)
@@ -102,11 +102,21 @@
   - HTML-based XLS 비교시트 17종 생성 (Original/Gemini/Opus/Director Final 4열)
   - `REVIEW_GUIDE.md` 작성
 
-- **SESSION_31 (PM / Sonnet)** — 진행중
+- **SESSION_31 (PM / Sonnet)** — 완료 ✅
   - 콘텐츠 폴더 정리: `_source/` 분리 (1차 재료 11개 격리), SSOT 21개 루트 정리
   - 설계 이슈 발견: TD-02(Content Collections) 선행 필요 확인
   - `WO_ARCHITECT_CONTENT_COLLECTIONS_REVIEW` 발행
-  - 다음: Architect 검토 세션 → PM 재개 → Builder WO 발행
+
+- **SESSION_32 (Architect / Opus 4.6)** — 완료 ✅
+  - D-032: Content Collections 설계 확정 (스키마 구조, Builder 재량 17페이지 기준)
+  - D-033: 소비자 기준 원칙 확립 (다음 작업자 관점 우선)
+  - 잠재 위험 16건 심층점검 보고 (처리 방침: 기존 트랙 배분)
+
+- **SESSION_33 (PM / Sonnet)** — 완료 ✅
+  - D-034: 상품/가격 표기 정책 확정 (체험부스 200만+VAT 노출, 나머지 상담)
+  - D-037: Programs 구조 확정 (인도어/수상/부스형/MIX — SESSION_16 명세 공백 교정)
+  - D-012 주소 교정: 케이에듀동 → 케이앤몰동 (OCR 오류)
+  - Builder WO 발행: `WO_BUILDER_CONTENT_COLLECTIONS_IMPL.md`
 
 - **Phase 3 (Content + Design Polishing)** — 콘텐츠 고도화 및 디자인 폴리싱
   - ✅ **드래프트 생산 완료**: Gemini 17개 + Opus 17개 + XLS 비교시트 17종
@@ -139,9 +149,9 @@
   - 예정: Phase 4 (SEO/OG 배포 품질 확보 단계)
 
 ### 보류(On-Hold)
-- 부스형 4단계 가격표 디테일 CEO 확인 필요 (현재 PRO급 200만+VAT만 확정)
-  - 누적 기간: 약 1주일 (D-012 이후 미진행)
-  - 권장: PM이 다음 보고서에서 CEO 확인 진행 상황 보고 필요
+- 부스형 4단계 가격 티어 세부 확정 (D-034: SIMPLE/CORE/PRO/MASTER 틀 확정, 세부 금액 CEO 확인 필요)
+  - 현재 확정: PRO급 200만+VAT (기준점), SIMPLE은 과거 자료 60만 (검토 필요)
+  - 처리: Builder가 서비스 이벤트 페이지 구현 시 플레이스홀더 처리 후 별도 확정
 
 ### 재검토 가능(Optional)
 - 디자인 단계 재검토 가능: 히어로 타이틀 색상, 포인트 핑크 사용 여부 (D-012 참조)

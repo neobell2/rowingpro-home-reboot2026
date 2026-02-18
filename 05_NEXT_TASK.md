@@ -7,6 +7,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.13** | 2026-02-18 | SESSION_33 PM(Sonnet): Builder WO 발행 완료. 현재 지시를 Builder 구현으로 교체. |
 | **v1.12** | 2026-02-18 | SESSION_32 Architect(Opus): Architect 검토 완료. 현재 지시를 PM→Builder WO 발행으로 교체. Phase 전환 체크리스트에 D-033 항목 추가. |
 | **v1.11** | 2026-02-18 | SESSION_31 PM(Sonnet): 다음 지시를 Architect 검토(TD-02 Content Collections 설계)로 교체. |
 | **v1.10** | 2026-02-17 | SESSION_25 PM(Sonnet) 완료 — 다음 지시를 STEP 1-1 콘텐츠 톤 확정 (Opus 티키타카)으로 갱신. |
@@ -32,19 +33,29 @@ Phase 3 → Phase 4 전환 조건:
 
 ## 현재 지시
 
-**근거:** `03_DECISIONS.md` D-032, `docs/reports/SESSION_32_ARCHITECT_OPUS.md`
+**근거:** `docs/work_orders/WO_BUILDER_CONTENT_COLLECTIONS_IMPL.md`, `03_DECISIONS.md` D-032, D-037
 
 ```
-목표: Builder WO 발행 — Content Collections 구현
+목표: Content Collections 구현 — Builder 세션
 우선순위: 긴급 (콘텐츠 확정 작업 착수 전 선행 필수)
-작업자: PM (Claude Sonnet) → Builder (Claude Sonnet)
+작업자: Builder (Claude Sonnet)
 
 내용:
-  - Architect 설계안(D-032) 기반 Builder WO 작성
-  - Builder: src/content/ 구조 구현, 17페이지 + common 데이터 분리
-  - 세부 스키마는 Builder 재량 (17페이지 실제 구조 기반)
-  - 제약: 시각적 출력 변경 금지, 새 패키지 금지, 빌드 통과 필수
-  - 완료 후: PM이 src/content/pages/*.md에 확정 텍스트 주입 가능 상태 확보
+  TASK 1: src/content/ 구조 신설 (config.ts + 17개 .md + common/)
+  TASK 2: 17개 .astro 파일 Content Collections API 소비로 리팩터링
+  TASK 3: 즉시 처리 4건
+    - Lucide 버전 고정 (^0.396.0 → 0.396.0)
+    - Google Fonts CDN 버전 고정
+    - BaseLayout.astro 삭제 (MainLayout.astro가 정본)
+    - package.json build 명령 개선
+
+제약:
+  - 텍스트 그대로 이전 (내용 수정 금지)
+  - CSS/스타일 변경 금지
+  - 새 패키지 추가 금지
+  - npm run build Exit 0 필수
+  - Programs 구조: 인도어/수상/부스형/MIX (D-037)
+  - service-event 가격 티어: SIMPLE/CORE/PRO/MASTER (D-034, 금액은 플레이스홀더)
 ```
 
 ---
