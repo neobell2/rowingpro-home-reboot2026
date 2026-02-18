@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #000; padding: 8px; text-align: left; vertical-align: top; }
+  th { background-color: #f2f2f2; }
+</style>
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Original (기존)</th>
+      <th>Gemini Draft (감성/축제)</th>
+      <th>Opus Draft (선언/신뢰)</th>
+      <th>Director (Final)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intro Headline</td>
+      <td><b>Sports Event: 축제의 열기를 더하다</b><br>지역 축제, 마라톤 대회, 기업 프로모션 등 다양한 현장에서 즐기는 이색 체험 부스입니다.</td>
+      <td><b>"축제의 주인공은 시민입니다."</b><br>직접 참여하게 만드는 강력한 '축제 킬러 콘텐츠'입니다. 즉석에서 기록 경쟁을 펼치는 짜릿한 경험을 선사하세요.</td>
+      <td><b>행사장에 로잉 머신을 놓으면, 사람이 모입니다.</b><br>누구나 1분 안에 배울 수 있고, 한번 잡으면 놓지 못합니다. 설치부터 철수까지 로잉프로가 책임집니다.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>핵심 가치 / 특징</td>
+      <td><b>Hardware:</b> 간편 설치 머신<br><b>Operation:</b> 대규모 행사 운영 노하우</td>
+      <td><b>가장 간편하고, 가장 화려한 이벤트.</b><br>설치/철수 간편, 시선 집중(실시간 중계), 안전 제일(숙련 코치 상주).</td>
+      <td><b>진입장벽 제로.</b> 나이, 성별, 체력 무관.<br><b>현장 연출.</b> 대형 스크린, 음향, 응원전.<br><b>풀 서비스.</b> 기획부터 운영까지.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>패키지 1 (SIMPLE)</td>
+      <td>머신 2~4대 + 강사 1인</td>
+      <td><b>"작지만 확실한 재미."</b><br>플리마켓, 소규모 이벤트 추천</td>
+      <td>머신 2~4대 + 강사 1인. 실내 프로모션 적합.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>패키지 3 (PRO)</td>
+      <td>머신 10대 + 강사 2인 + 스크린 중계. 200만원 + VAT.</td>
+      <td><b>"축제의 하이라이트."</b><br>대형 스크린으로 관객 시선 압도. 지역 축제 베스트셀러.</td>
+      <td>머신 10대 + 대형 스크린. 지역 축제, 기업 체육대회 추천.</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

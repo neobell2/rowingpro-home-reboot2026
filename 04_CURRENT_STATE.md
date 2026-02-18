@@ -7,9 +7,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.25** | 2026-02-18 | SESSION_31 PM(Sonnet): 콘텐츠 폴더 정리(_source/ 분리), TD-02 Content Collections 선행 결정, Architect WO 발행, 05_NEXT_TASK 갱신. |
 | **v1.24** | 2026-02-17 | SESSION_27 PM(Sonnet) 2차: WO 정비(PHASE_3_ROADMAP HPOC폐기·스쿼드 갱신, GEMINI_TOOLCHAIN COMPLETED), 리포트 아카이브 정리, 보고서 작성, git push 완료. |
 | **v1.23** | 2026-02-17 | SESSION_27 PM(Sonnet): config.toml 교정, GEMINI.md 생성, 거버넌스 오류 수정(06 누락버전 12개, D-031 교정, PROTOCOLS.md 06갱신규칙 추가). |
-| **v1.22** | 2026-02-17 | SESSION_26 Architect(Opus): CLAUDE.md 경량화(302→61줄), PROTOCOLS.md/ROLES.md 분리, Architect 모델 오타 교정, D-031, Gemini 툴체인 검토. |
 | **v1.21** | 2026-02-17 | SESSION_25 PM(Sonnet, D-030 첫 가동): Git 정리, WO 상태 갱신, 네이밍 규칙 수립, docs/_archive/ 전면 정비 완료. |
 
 > 📋 **전체 버전 히스토리:** [06_VERSION_HISTORY.md](06_VERSION_HISTORY.md)
@@ -89,10 +89,29 @@
   - PHASE_3_INTEGRATED_ROADMAP_WO: HPOC 폐기 반영, 운영 스쿼드 갱신 (Opus·Sonnet)
   - git push 완료 (origin 동기화, 39커밋)
 
+- **SESSION_28 (Content / Gemini Pro)** — 완료 ✅
+  - 17페이지 `_GEMINI_draft.md` 초안 생성 (HPOC 제거, 창업주 정보 정정, 구체적 표현 적용)
+  - `text_extract_지오캐치_회사소개서_V2.0_202601.md` 생성
+
+- **SESSION_29 (Content / Opus 4.6)** — 완료 ✅
+  - 17페이지 `_OPUS_draft.md` 독립 창작 (Gemini 드래프트 미참조, 앵커링 방지)
+  - 톤 원칙: 선언적·짧은 문장·사실 기반·고객 직접 대화체
+
+- **SESSION_30 (Media PD / Gemini Flash)** — 완료 ✅
+  - `docs/contents/review/` 신규 생성, 드래프트 34개 이동
+  - HTML-based XLS 비교시트 17종 생성 (Original/Gemini/Opus/Director Final 4열)
+  - `REVIEW_GUIDE.md` 작성
+
+- **SESSION_31 (PM / Sonnet)** — 진행중
+  - 콘텐츠 폴더 정리: `_source/` 분리 (1차 재료 11개 격리), SSOT 21개 루트 정리
+  - 설계 이슈 발견: TD-02(Content Collections) 선행 필요 확인
+  - `WO_ARCHITECT_CONTENT_COLLECTIONS_REVIEW` 발행
+  - 다음: Architect 검토 세션 → PM 재개 → Builder WO 발행
+
 - **Phase 3 (Content + Design Polishing)** — 콘텐츠 고도화 및 디자인 폴리싱
-  - ✅ **상태: APPROVED — Content 작업 착수 준비 완료**
+  - ✅ **드래프트 생산 완료**: Gemini 17개 + Opus 17개 + XLS 비교시트 17종
+  - ⏸️ **콘텐츠 확정 작업 일시 대기**: TD-02 Content Collections 선행 후 착수
   - ✅ **Header 복구 완료** (SESSION_22, Builder/Codex)
-  - STEP 1-1: Claude Opus — 디렉터 티키타카 방식으로 Home 톤 확정 (다음 작업, SESSION 28)
   - STEP 2: Gemini 3.0 Flash — 미디어 자산 생산 및 정제
   - STEP 3: Claude 4.5 Sonnet (Builder/Designer) — 디자인 폴리싱 및 최종 바인딩
   - ✅ **블로커 1 RESOLVED**: npm run build 성공 (Node 22로 고정, Exit 0, dist 생성)

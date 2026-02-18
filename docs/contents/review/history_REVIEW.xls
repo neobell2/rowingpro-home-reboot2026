@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #000; padding: 8px; text-align: left; vertical-align: top; }
+  th { background-color: #f2f2f2; }
+</style>
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Original (기존)</th>
+      <th>Gemini Draft (감성/혜택)</th>
+      <th>Opus Draft (선언/사실)</th>
+      <th>Director (Final)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intro Headline</td>
+      <td><b>걸어온 길 (History)</b><br>The Origin of Corporate Rowing<br>대한민국 기업 조정 교육의 시작과 현재, 13년의 독보적인 기록입니다.</td>
+      <td><b>"단 한 번의 멈춤도 없었습니다."</b><br>2013년 국내 최초로 기업 조정 교육을 시작한 이래, 로잉프로는 대한민국 조정의 역사와 함께했습니다.</td>
+      <td><b>The Origin</b><br>대한민국 기업 조정 교육은 여기서 시작되었습니다.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>신뢰 지표 (Metrics)</td>
+      <td>13+ Years: 무결점 업력<br>219+ Clients: 글로벌 파트너<br>418 Events: 총 행사 횟수<br>Zero Accident: 무사고 원칙</td>
+      <td><b>숫자로 보는 로잉프로</b><br>13 Years: 뚝심 있는 업력<br>219 Clients: 글로벌 파트너십<br>418 Events: 완벽한 운영 노하우<br>Zero Accident: 무사고 기록</td>
+      <td><b>숫자가 말합니다</b><br>13+ Years: 무사고 업력<br>418 Events: 행사 운영 횟수<br>219+ Clients: 검증된 파트너<br>12,000+ Participants: 함께 노 저은 사람들<br>Zero Accident: 단 한 건의 사고도 없음</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Timeline 2024-25</td>
+      <td>제1회 하남시장배 조정대회 주관<br>ABL생명, 서울특별시 등</td>
+      <td><b>"대한민국 조정의 중심에 서다."</b><br>제1회 하남시장배 조정대회 공식 주관</td>
+      <td><b>현장의 리더</b><br>누적 행사 418건 달성. 제1회 하남시장배 주관.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Timeline 2013-15</td>
+      <td><b>2013:</b> 로잉프로 창립 (국내 최초 기업 조정 도입)</td>
+      <td><b>"조정을 비즈니스에 접목하다."</b><br>2013: (주)로잉프로 법인 설립 (국내 최초)</td>
+      <td><b>위대한 시작</b><br>2013: 로잉프로 창립. 국내 최초 기업 조정 교육 도입.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>클라이언트 (Clients)</td>
+      <td>삼성전자, 현대자동차, LG디스플레이... 서울특별시, 하남시조정협회...</td>
+      <td><b>함께한 파트너</b><br>삼성전자, 현대자동차... 구찌코리아, 로레알... 서울특별시, 하남시조정협회...</td>
+      <td><b>주요 클라이언트</b><br>삼성전자, 현대자동차, LG디스플레이, SK브로드밴드, 구찌코리아, 로레알, 루이뷔통, 나이키, 벤츠코리아, 마이크로소프트...</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #000; padding: 8px; text-align: left; vertical-align: top; }
+  th { background-color: #f2f2f2; }
+</style>
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Original (기존)</th>
+      <th>Gemini Draft (감성/교육)</th>
+      <th>Opus Draft (선언/신뢰)</th>
+      <th>Director (Final)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intro Headline</td>
+      <td><b>School & Youth: 미래를 이끄는 힘, 협동심</b><br>청소년기에 필요한 협동심, 배려, 인내심을 조정을 통해 체득하는 인성 교육 프로그램입니다.</td>
+      <td><b>"교실에서는 배울 수 없는 진짜 협력."</b><br>친구를 경쟁자로 생각하는 아이들에게 '함께하는 즐거움'을 알려주세요. 탁 트인 자연을 마주하는 호연지기를 기릅니다.</td>
+      <td><b>같이 노를 저어본 아이들은 다릅니다.</b><br>교실에서 백 번 말하는 '협동'을, 보트 위에서 한 번에 몸으로 배웁니다.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>핵심 가치 / 특징</td>
+      <td><b>People:</b> 청소년 전문 코치진<br><b>Content:</b> 교육청/학교 연계 노하우</td>
+      <td><b>가장 정직한 땀방울.</b><br>왕따 없는 스포츠(소외 방지), 입시 스트레스 해소, 글로벌 리더의 소양(명문대 필수 스포츠).</td>
+      <td><b>청소년 전문 코치진.</b> 11년간의 현장 경험.<br><b>안전이 최우선.</b> 13년 무사고, 코치 동승.<br><b>전신 운동 효과.</b> 균형 잡힌 신체 발달.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>상세 단계 (Process)</td>
+      <td>(없음)</td>
+      <td><b>Step 1. Fun Rowing</b> (놀이처럼)<br><b>Step 2. Team Challenge</b> (협동심)<br><b>Step 3. Dream Talk</b> (진로 멘토링)</td>
+      <td>(없음)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>대상 / 운영 정보</td>
+      <td>초·중·고 체육 수업, 동아리. 20~30명, 2시간~1학기.</td>
+      <td>학교 체육, 수련 활동, 진로 체험. 20~30명, 2시간~1학기.</td>
+      <td>체험학습, 수련회, 방과후 활동. 20~30명, 2시간~1학기.</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

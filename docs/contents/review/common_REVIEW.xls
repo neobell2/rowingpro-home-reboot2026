@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #000; padding: 8px; text-align: left; vertical-align: top; }
+  th { background-color: #f2f2f2; }
+</style>
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Original (기존)</th>
+      <th>Gemini Draft (감성/SEO)</th>
+      <th>Opus Draft (선언/사실)</th>
+      <th>Director (Final)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>기본 타이틀 (Meta Title)</td>
+      <td>ROWING PRO | 대한민국 기업 조정 교육의 시작</td>
+      <td>ROWING PRO | 혼자일 땐 몰랐던 우리 팀의 진짜 호흡</td>
+      <td>ROWING PRO | 2013년부터, 대한민국 기업 조정 교육의 시작</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>기본 설명 (Meta Desc)</td>
+      <td>국가대표 출신이 운영하는 13년 무사고 HRD/팀빌딩 전문 기업. 기업교육, 워크샵, 이색 체험 프로그램 제공.</td>
+      <td>13년 무사고, 219개 기업이 선택한 No.1 팀빌딩 솔루션. 국가대표 출신 강사진이 전하는 진짜 팀워크를 경험하세요.</td>
+      <td>국가대표 출신이 세운 조정 교육 전문기업. 13년 무사고, 219개 기업, 418건의 행사. 기업교육, 팀빌딩, 이벤트, 체험 프로그램.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Footer Copyright</td>
+      <td>© 2025 Rowing Pro. All rights reserved.</td>
+      <td>© 2026 Rowing Pro. All rights reserved.</td>
+      <td>© 2026 Rowing Pro. All rights reserved.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>주 CTA 버튼명</td>
+      <td>무료 상담 신청</td>
+      <td>무료 견적 받기</td>
+      <td>무료 상담 신청</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>보조 CTA 버튼명</td>
+      <td>프로그램 알아보기</td>
+      <td>프로그램 자세히 보기</td>
+      <td>프로그램 보기</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

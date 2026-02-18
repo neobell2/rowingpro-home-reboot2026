@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #000; padding: 8px; text-align: left; vertical-align: top; }
+  th { background-color: #f2f2f2; }
+</style>
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Original (기존)</th>
+      <th>Gemini Draft (감성/가족)</th>
+      <th>Opus Draft (선언/신뢰)</th>
+      <th>Director (Final)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intro Headline</td>
+      <td><b>Family: 가족이 하나 되는 시간</b><br>온 가족이 함께 호흡을 맞추며 소통하고 화합하는 가족 친화형 체험 프로그램입니다.</td>
+      <td><b>"핸드폰은 잠시 꺼두셔도 좋습니다."</b><br>미사리 조정경기장의 자연 속에서 온 가족이 하나의 배에 올라타세요. 서로의 구령에 맞춰 노를 젓는 동안 대화가 흘러나옵니다.</td>
+      <td><b>온 가족이 한 배에 탑니다.</b><br>아이가 노를 잡으면, 부모가 리듬을 맞춰줍니다. 부모가 지치면, 아이가 힘을 보탭니다. 스마트폰 없이 서로만 보는 2시간.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>핵심 가치 / 특징</td>
+      <td><b>Hardware:</b> 어린이 안전 장비<br><b>Content:</b> 가족 유대감 강화 놀이형</td>
+      <td><b>가족을 하나로 묶는 특별한 끈.</b><br>역할 놀이(엔진 아빠/콕스 엄마), 자연 체험, 안전한 레저.</td>
+      <td><b>아이 눈높이.</b> 쉽고 재미있는 지도.<br><b>안전합니다.</b> 코치 동승, 구명조끼 필수.<br><b>자연 속 체험.</b> 미사리에서 만드는 가족의 기억.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>상세 단계 (Process)</td>
+      <td>(없음)</td>
+      <td><b>Step 1. Family Training</b> (호흡)<br><b>Step 2. Water Tour</b> (물 위 산책)<br><b>Step 3. Picnic</b> (피크닉)</td>
+      <td>(없음)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>대상 / 운영 정보</td>
+      <td>주말 나들이 가족. 3인 이상, 2~3시간.</td>
+      <td>초등학생 이상 자녀 가족. 사전 예약 필수.</td>
+      <td>나들이 가족, 3대 가족. 3인 이상, 2~3시간.</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

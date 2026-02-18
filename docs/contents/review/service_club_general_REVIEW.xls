@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #000; padding: 8px; text-align: left; vertical-align: top; }
+  th { background-color: #f2f2f2; }
+</style>
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Original (기존)</th>
+      <th>Gemini Draft (감성/일상)</th>
+      <th>Opus Draft (선언/신뢰)</th>
+      <th>Director (Final)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intro Headline</td>
+      <td><b>Club & General: 일상에 활력을 더하는 로잉 라이프</b><br>바쁜 일상 속에서 건강과 즐거움을 동시에 찾고 싶은 분들을 위한 생활체육 프로그램입니다.</td>
+      <td><b>"주말 아침, 당신을 깨우는 물소리."</b><br>미사리 조정경기장의 상쾌한 바람을 맞으며 스트레스를 날려버리세요. 조정은 가장 완벽한 취미입니다.</td>
+      <td><b>미사리에서 노를 잡아보세요.</b><br>대한민국 조정의 요람, 미사리 조정경기장. 국가대표 선수들이 훈련하는 그 물 위에서 직접 배울 수 있습니다.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>핵심 가치 / 특징</td>
+      <td><b>People:</b> 선수 출신 코치 지도<br><b>Content:</b> 단계별 커리큘럼</td>
+      <td><b>내 몸을 위한 최고의 선물.</b><br>칼로리 버닝(다이어트), 건강한 커뮤니티, 성취감.</td>
+      <td><b>처음이어도 괜찮습니다.</b> 코치가 보트에 함께 탑니다.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>구성 (Curriculum)</td>
+      <td>원데이 클래스, 정규 레슨, 주말 클럽</td>
+      <td><b>One-day Class</b> (체험)<br><b>Regular Lesson</b> (정규 강습)<br><b>Weekend Club</b> (주말 클럽)</td>
+      <td><b>원데이 클래스</b><br><b>정기 레슨</b><br><b>서울로잉클럽</b> (대한조정협회 산하)<br><b>아이비리그 준비반</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>대상 / 운영 정보</td>
+      <td>다이어트 직장인, 가족 단위. 미사리 조정경기장.</td>
+      <td>새로운 취미를 찾는 분들. 샤워 시설 완비.</td>
+      <td>직장인, 동호회, 가족, 아이비리그 준비생.</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

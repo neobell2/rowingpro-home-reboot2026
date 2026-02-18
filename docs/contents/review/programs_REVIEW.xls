@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #000; padding: 8px; text-align: left; vertical-align: top; }
+  th { background-color: #f2f2f2; }
+</style>
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Original (기존)</th>
+      <th>Gemini Draft (감성/혜택)</th>
+      <th>Opus Draft (선언/사실)</th>
+      <th>Director (Final)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intro Headline</td>
+      <td>조정(Rowing)에는 스타 플레이어가 없습니다.</td>
+      <td><b>나 혼자 잘해서는 이길 수 없는 유일한 스포츠.</b><br>축구는 메시 혼자 골을 넣을 수 있지만, 조정은 다릅니다. 여덟 명이 하나의 호흡이 되어야만 배는 나아갑니다.</td>
+      <td><b>왜 조정인가</b><br>조정에는 스타 플레이어가 없습니다. 여덟 명 전원이 완벽한 하나가 되어야만 배가 나아갑니다.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>교육적 접근</td>
+      <td><b>교육적 접근 (HRD Perspective)</b><br>단순한 체육 활동이 아닙니다. 조직개발 전문가와 함께 설계한 로잉프로의 프로그램...</td>
+      <td><b>Not Just Sports (땀 흘리며 배우는 조직문화)</b><br>강의실에 앉아서 듣는 "소통하세요"는 금방 잊혀집니다. 하지만 동료와 구령을 맞추며 물살을 갈랐던 기억은 몸에 남습니다.</td>
+      <td>(없음)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Category 1 (기업)</td>
+      <td><b>기업·조직 (Corporate)</b><br>신입사원 연수, 조직 활성화, 리더십 교육 등 맞춤형 프로그램</td>
+      <td><b>기업 교육 (Corporate)</b><br>조직의 결속력이 필요할 때. 그냥 노는 행사가 아니라, 기업의 인재상과 교육 목표에 맞춰 설계된 전문 HRD 프로그램입니다.</td>
+      <td><b>기업·조직</b><br>삼성, 현대, LG, 구찌가 선택한 기업교육. 신입사원 연수, 리더십 교육, 전사 워크샵. 219개 기업이 경험한 조정의 힘.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Category 2 (학교)</td>
+      <td><b>학교·청소년 (School & Youth)</b><br>협동심과 배려심을 기르는 인성 교육 및 체력 증진 프로그램</td>
+      <td><b>학교/청소년 (School & Youth)</b><br>경쟁보다 협동을 가르칩니다. 친구를 이겨야 하는 경쟁 교육에서 벗어나, 친구를 믿어야 배가 나아가는 경험을 선물하세요.</td>
+      <td><b>학교·청소년</b><br>같이 노를 저어본 아이들은 다릅니다. 체험학습, 리더십 캠프, 방과후 프로그램. 협동과 인내를 몸으로 배우는 시간.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Category 3 (이벤트)</td>
+      <td><b>스포츠 이벤트·행사 (Sports Event)</b><br>지역 축제, 기업 행사, 대규모 이벤트. 부스형 체험 프로그램</td>
+      <td><b>이벤트/행사 (Event)</b><br>축제의 하이라이트. 지역 축제, 사내 체육대회. 누구나 1분이면 배우는 실내 조정으로 현장의 열기를 더하세요.</td>
+      <td><b>스포츠 이벤트</b><br>축제에 로잉 머신을 놓으면, 사람이 모입니다. 부스형 체험 패키지. 설치부터 운영까지. 남녀노소 누구나.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Category 4 (클럽)</td>
+      <td><b>클럽·일반 (Club & General)</b><br>정기 레슨, 원데이 클래스 등 취미와 건강을 위한 프로그램</td>
+      <td><b>클럽/일반 (Club)</b><br>내 인생의 새로운 활력. 주말 아침, 미사리 조정경기장의 상쾌한 바람을 맞으며 노를 젓는 기분. 당신의 새로운 취미가 기다립니다.</td>
+      <td><b>클럽·일반·가족</b><br>주말, 미사리에서 노를 잡아보세요. 원데이 클래스, 정기 레슨, 가족 체험. 처음이어도 괜찮습니다.</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

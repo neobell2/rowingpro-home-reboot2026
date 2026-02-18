@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #000; padding: 8px; text-align: left; vertical-align: top; }
+  th { background-color: #f2f2f2; }
+</style>
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Original (기존)</th>
+      <th>Gemini Draft (감성/통찰)</th>
+      <th>Opus Draft (선언/신뢰)</th>
+      <th>Director (Final)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intro Headline</td>
+      <td><b>Leadership: 방향을 제시하고, 함께 젓는다</b><br>콕스와 크루의 역할을 통해, 리더십과 팔로워십의 상호보완적 관계를 배우는 프로그램입니다.</td>
+      <td><b>"노를 젓지 않는 유일한 사람, 콕스(Cox)."</b><br>전략을 지시하고 동료를 독려하는 리더는 팀원들이 최상의 힘을 내도록 돕는 사람임을 배웁니다.</td>
+      <td><b>콕스는 방향을 잡고, 크루는 젓습니다.</b><br>리더십은 지시가 아닙니다. 신뢰입니다. 콕스 없는 크루는 방향을 잃고, 크루 없는 콕스는 배를 움직일 수 없습니다.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>핵심 가치 / 특징</td>
+      <td><b>People:</b> 리더십 전문 강사진<br><b>Content:</b> 상황별 시뮬레이션 및 디브리핑</td>
+      <td><b>리더의 무게와 팔로워의 헌신.</b><br>신뢰의 리더십(믿음), 명확한 소통(목소리), 역지사지(역할 체험).</td>
+      <td><b>역할을 바꿔봅니다.</b> 상대의 자리를 이해합니다.<br><b>지시의 무게를 체감합니다.</b> 콕스의 한마디가 배 전체를 좌우합니다.<br><b>경청이 결과를 만듭니다.</b> 듣지 않으면 배는 멈춥니다.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>상세 단계 (Process)</td>
+      <td>역할 교대, 소통 훈련, 위기 관리</td>
+      <td><b>Step 1. Role Define</b> (역할 이해)<br><b>Step 2. Simulation</b> (콕스 체험)<br><b>Step 3. Debriefing</b> (성찰)</td>
+      <td>(없음)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>대상 / 운영 정보</td>
+      <td>신임 팀장, 차세대 리더. 10~50명, 4~8시간.</td>
+      <td>신임 팀장/임원, 수평적 조직문화 필요 시. 10~50명, 4~8시간.</td>
+      <td>신임 팀장/관리자, 차세대 리더 후보. 10~50명, 4~8시간.</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #000; padding: 8px; text-align: left; vertical-align: top; }
+  th { background-color: #f2f2f2; }
+</style>
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Original (기존)</th>
+      <th>Gemini Draft (감성/경험)</th>
+      <th>Opus Draft (선언/신뢰)</th>
+      <th>Director (Final)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intro Headline</td>
+      <td><b>Training: 조직의 기초 체력을 다지는 교육</b><br>신입사원 입문 교육, 승진자 교육 등 협업 마인드를 고취하는 HRD 연계 프로그램입니다.</td>
+      <td><b>"입사 동기, 평생의 파트너가 되는 시간."</b><br>책상에 앉아 회사의 역사를 외우는 것보다, 동기들과 땀 흘리며 노를 젓는 3시간이 더 강력한 유대감을 만듭니다.</td>
+      <td><b>어떻게 '우리'로 만드시겠습니까?</b><br>신입사원 입문, 승진자 전환, 핵심가치 교육. 강의실에서 듣는 것과 보트 위에서 체득하는 것은 차원이 다릅니다.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>핵심 가치 / 강점</td>
+      <td><b>People:</b> 국가대표 출신 강사진<br><b>Content:</b> 인재상 연계 커스터마이징</td>
+      <td><b>이론은 잊혀지지만, 경험은 몸에 남습니다.</b><br>역할의 무게(책임감), 동기 부여(성취감), 수평적 소통(호흡).</td>
+      <td><b>코치 전원 선수 출신.</b> 규율과 팀워크를 몸으로 아는 전문가.<br><b>기업 현장 맞춤.</b> 교육 목표에 맞는 설계.<br><b>단시간 고효과.</b> 3시간 안에 한 팀이 됩니다.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>상세 단계 (Process)</td>
+      <td>조직 적응력 강화, 역할 인식, 피드백 루프</td>
+      <td><b>Step 1. Ground</b> (호흡 맞추기)<br><b>Step 2. On Water</b> (신뢰 쌓기)<br><b>Step 3. Race</b> (목표 달성)</td>
+      <td>(없음)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>대상 / 운영 정보</td>
+      <td>신입/승진자 온보딩. 20~100명, 3~8시간.</td>
+      <td>신입/경력직/승진자. 20~100명, 3~8시간.</td>
+      <td>신입/경력직 온보딩, 승진자 역할 전환. 20~100명, 3~8시간.</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

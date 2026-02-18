@@ -7,9 +7,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.11** | 2026-02-18 | SESSION_31 PM(Sonnet): 다음 지시를 Architect 검토(TD-02 Content Collections 설계)로 교체. |
 | **v1.10** | 2026-02-17 | SESSION_25 PM(Sonnet) 완료 — 다음 지시를 STEP 1-1 콘텐츠 톤 확정 (Opus 티키타카)으로 갱신. |
 | **v1.9** | 2026-02-16 | SESSION_22: Header 모바일 메뉴 긴급 복구 우선순위 변경. 기술 부채 로드맵 반영. |
-| **v1.8** | 2026-02-15 | Phase 전환 체크리스트 신설, Architect 필수 호출 지점 명시 추가. D-024 반영. |
 
 > 📋 **전체 버전 히스토리:** [06_VERSION_HISTORY.md](06_VERSION_HISTORY.md)
 
@@ -31,31 +31,42 @@ Phase 3 → Phase 4 전환 조건:
 
 ## 현재 지시
 
-**근거:** `docs/work_orders/PHASE_3_INTEGRATED_ROADMAP_WO.md`
+**근거:** `docs/work_orders/WO_ARCHITECT_CONTENT_COLLECTIONS_REVIEW.md`
 
 ```
-목표: STEP 1-1 — Home 페이지 톤 확정 (디렉터 티키타카)
-우선순위: 즉시 실행
-작업자: Content (Claude Opus — 고감도 카피라이팅 전담)
-방식: 디렉터와 티키타카 방식으로 Home 콘텐츠 톤 확정
+목표: TD-02 Content Collections 도입 설계 검토 및 확정
+우선순위: 긴급 (콘텐츠 확정 작업 착수 전 선행 필수)
+작업자: Architect (Claude Opus 4.6)
 
-입력:
-  - 01_PROJECT_CONTEXT.md (브랜드 정체성/핵심 메시지)
-  - docs/contents/home.md (현재 콘텐츠 SSOT)
-  - docs/contents/Headline_ideas_Set.txt (헤드라인 아이디어 세트)
-  - SESSION_24 Architect 판정 (HPOC 제거, 톤 전면 교체 필요)
+배경:
+  - 현재 텍스트가 .astro 파일에 하드코딩 → 텍스트 수정마다 코드 직접 편집 필요
+  - 17페이지 콘텐츠 확정 작업 시작 전 구조 변경이 효율적
+  - PM이 스키마 샘플 작성 완료 (docs/contents/home_schema_sample.md)
+
+검토 항목:
+  1. Content Collections 선행 타당성 (Phase 3 내 TD-02)
+  2. src/content/ 디렉터리 구조 설계
+  3. docs/contents/ 폴더 향후 역할 결정
+  4. 스키마 샘플 검토 (home_schema_sample.md)
+  5. Builder WO 발행용 기술 범위 명세
 
 출력:
-  - docs/contents/home.md 업데이트 (Hero H1/H2 확정, 섹션별 카피)
-  - 확정된 톤 원칙 요약 (다음 13페이지 확장 기준)
+  - Content Collections 설계안 확정
+  - Builder WO 발행 기준 제공
+  - Architect 세션 보고서 (docs/reports/SESSION_32_ARCHITECT_OPUS.md)
+```
 
-중점:
-  - H1: "ROWING = TEAMWORK" (고정, 변경 불가)
-  - H2: 디렉터 티키타카로 확정 (★핵심 작업)
-  - 금지 표현: HPOC 제거 (SESSION_24 Architect 지시)
-  - 톤: 프리미엄 + 전문성 + 신뢰 (스포츠/레저 경량 톤 금지)
+---
 
-검수 순서: Home 확정 → About → Programs → Corporate Hub (순차 확장)
+## 다음 예정 지시 (Architect 검토 완료 후)
+
+```
+목표: Builder WO 발행 — Content Collections 구현
+작업자: PM (Claude Sonnet) → Builder (Claude Sonnet)
+내용:
+  - Architect 설계안 기반 Builder WO 작성
+  - Builder: src/content/ 구조 구현, 17페이지 스키마 적용
+  - PM: 17개 SSOT .md 파일 새 형식으로 재작성
 ```
 
 ---

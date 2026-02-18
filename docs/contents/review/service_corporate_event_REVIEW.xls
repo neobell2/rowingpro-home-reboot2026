@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #000; padding: 8px; text-align: left; vertical-align: top; }
+  th { background-color: #f2f2f2; }
+</style>
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Original (기존)</th>
+      <th>Gemini Draft (감성/축제)</th>
+      <th>Opus Draft (선언/신뢰)</th>
+      <th>Director (Final)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intro Headline</td>
+      <td><b>Event: 모두가 즐기는 에너지 충전소</b><br>전사 체육대회, 창립기념일 등 기업 행사에 활력을 불어넣는 이벤트 프로그램입니다.</td>
+      <td><b>"지루한 행사는 이제 그만."</b><br>박수만 치다 끝나는 기념식, 몸 사리는 체육대회는 잊으세요. 웅장한 사운드와 실시간 중계가 있는 진짜 축제입니다.</td>
+      <td><b>체육대회, 매년 똑같으셨죠?</b><br>익숙하지만 지루한 구성에서 벗어나십시오. 418건의 행사를 운영한 팀이 책임집니다.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>핵심 가치 / 강점</td>
+      <td><b>Hardware:</b> 대규모 인원용 머신 세팅<br><b>Operation:</b> 418건의 대규모 행사 실적</td>
+      <td><b>가장 안전하고, 가장 뜨거운 스포츠.</b><br>진입장벽 제로(1분 완성), 실시간 중계(응원전), 공간 제약 없음.</td>
+      <td><b>진입장벽 제로.</b> 나이, 성별 무관.<br><b>현장 연출.</b> 대형 스크린, 음향, 응원전.<br><b>안전합니다.</b> 부상 위험 거의 없음.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>상세 단계 (Process)</td>
+      <td>(없음)</td>
+      <td><b>Step 1. Learn</b> (속성 마스터)<br><b>Step 2. Warm-up</b> (분위기 띄우기)<br><b>Step 3. Championship</b> (메인 경기)</td>
+      <td>(없음)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>대상 / 운영 정보</td>
+      <td>체육대회, 창립기념일. 50~500명 이상, 1~4시간.</td>
+      <td>전사 행사, 프로모션 팝업. 50~500명 이상, 2~4시간.</td>
+      <td>체육대회, 부서 대항전. 50~500명 이상, 1~4시간.</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

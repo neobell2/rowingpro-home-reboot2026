@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #000; padding: 8px; text-align: left; vertical-align: top; }
+  th { background-color: #f2f2f2; }
+</style>
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Original (기존)</th>
+      <th>Gemini Draft (감성/비유)</th>
+      <th>Opus Draft (선언/신뢰)</th>
+      <th>Director (Final)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intro Headline</td>
+      <td><b>Teambuilding: 하나의 목표, 완벽한 호흡</b><br>개인이 아닌 팀으로서 성과를 내는 방법을 체득하는 팀빌딩 프로그램입니다.</td>
+      <td><b>"백 마디 말보다 한 번의 호흡."</b><br>앞사람의 등을 믿고, 뒷사람을 위해 노를 젓는 '몰입의 시간'이 팀을 하나로 묶습니다.</td>
+      <td><b>한 명이 멈추면, 배는 돌아갑니다.</b><br>한 사람이 리듬을 놓치면 배 전체가 흔들립니다. 함께 결승선을 통과한 팀은 진짜 팀이 됩니다.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>핵심 가치 / 특징</td>
+      <td><b>강력한 응집력:</b> 템포의 중요성<br><b>비언어적 소통:</b> 리듬의 공유<br><b>공동의 성취:</b> 짜릿한 전율</td>
+      <td><b>가장 정직한 팀워크의 실험장.</b><br>강제된 협력(생존), 비언어적 소통(유대감), 공동의 성취(전율).</td>
+      <td><b>말이 아니라 호흡으로 소통합니다.</b><br><b>구조적으로 빠질 수 없습니다.</b> 한 명의 이탈은 전체의 실패입니다.<br><b>2시간이면 충분합니다.</b> 짧고 강렬합니다.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>상세 단계 (Process)</td>
+      <td>(없음)</td>
+      <td><b>Step 1. Sync</b> (리듬 맞추기)<br><b>Step 2. Harmony</b> (물살 가르기)<br><b>Step 3. One Team</b> (팀 대항전)</td>
+      <td>(없음)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>대상 / 운영 정보</td>
+      <td>소통이 필요한 조직. 10~200명, 2~4시간.</td>
+      <td>부서간 장벽, 프로젝트 킥오프. 10~200명, 2~4시간.</td>
+      <td>부서간 장벽, 조직 개편. 10~200명, 2~4시간.</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

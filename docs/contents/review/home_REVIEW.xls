@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #000; padding: 8px; text-align: left; vertical-align: top; }
+  th { background-color: #f2f2f2; }
+</style>
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Section</th>
+      <th>Original (기존)</th>
+      <th>Gemini Draft (감성/혜택)</th>
+      <th>Opus Draft (선언/사실)</th>
+      <th>Director (Final)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hero H1</td>
+      <td>ROWING = TEAMWORK</td>
+      <td>ROWING = TEAMWORK</td>
+      <td>ROWING = TEAMWORK</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hero H2 (Sub)</td>
+      <td>혼자일 땐 몰랐던 우리 팀의 진짜 호흡</td>
+      <td>혼자일 땐 몰랐던 우리 팀의 진짜 호흡</td>
+      <td>2013년부터, 대한민국 기업 조정 교육의 시작.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>신뢰 가치 1</td>
+      <td><b>Hardware (안전)</b><br>철저한 안전 대책과 프로그램 설계로 13년간 완전 무사고 실적을 보유하고 있습니다.</td>
+      <td><b>Safety (13년 무사고)</b><br>단 한 번의 사고도 없었습니다. 2013년 설립 이래 418건의 기업 행사, 참가자 12,000명. 로잉프로의 기록은 13년 연속 무사고입니다. 안전은 약속이 아니라 실적입니다.</td>
+      <td><b>Since 2013</b><br>13년, 418건의 행사.<br>단 한 건의 사고도 없었습니다.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>신뢰 가치 2</td>
+      <td><b>People (전문성)</b><br>전원 10년이상 전문 선수 출신 교육진만이 제공할 수 있는 조정의 깊은 가치를 제공합니다.</td>
+      <td><b>Professional (전원 선수 출신)</b><br>조정을 책으로 배운 강사는 없습니다. 로잉프로의 모든 코치진은 10년 이상 물살을 가른 엘리트 선수 출신입니다. 진짜 팀워크는 진짜 전문가에게서만 배울 수 있습니다.</td>
+      <td><b>전원 선수 출신</b><br>코치 전원, 최소 10년 이상의 엘리트 조정 경력.<br>1994 아시안게임 국가대표가 세운 기준입니다.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>신뢰 가치 3</td>
+      <td><b>Operation (신뢰)</b><br>13년 업력의 노하우로 기업의 니즈에 맞춘 체계적인 프로그램을 운영합니다.</td>
+      <td><b>Heritage (검증된 파트너)</b><br>대한민국 기업 교육의 역사를 함께했습니다. 삼성, 현대, SK, LG... 219개 기업이 팀의 결속을 위해 로잉프로를 찾았습니다. 유행 타는 프로그램이 아닌, 시간이 증명하는 오리지널을 선택하세요.</td>
+      <td><b>219개 기업이 선택한 교육</b><br>삼성, 현대, LG, SK, 구찌, 마이크로소프트.<br>이름이 검증을 대신합니다.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>한 줄 철학</td>
+      <td>(없음)</td>
+      <td>(없음)</td>
+      <td>조정에는 스타 플레이어가 없습니다.<br>여덟 명이 하나의 호흡이 되지 않으면, 배는 한 뼘도 나아가지 않습니다.<br>그래서 조정이 가르치는 팀워크는 진짜입니다.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>주 CTA</td>
+      <td>무료 상담 신청</td>
+      <td>무료 상담 신청</td>
+      <td>무료 상담 신청</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>보조 CTA</td>
+      <td>프로그램 알아보기</td>
+      <td>프로그램 알아보기</td>
+      <td>프로그램 보기</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
