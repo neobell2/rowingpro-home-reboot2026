@@ -29,6 +29,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.2** | 2026-02-18 | SESSION_35 PM(Sonnet): H-01 교정 — 현재 단계 Phase 3, 총 페이지 17페이지로 현행화 (SESSION_34 감사 지적) |
 | **v1.1** | 2026-02-13 | 레거시 참조를 아카이브 경로(`docs/_archive/legacy/governance_v1/*_v1.md`)로 정정 |
 | **v1.0** | 2026-02-13 | 문서 가버넌스 개편에 따라 신규 작성. 기존 `docs/_archive/legacy/governance_v1/PROJECT_BLUEPRINT_2026_v1.md`와 `docs/_archive/legacy/governance_v1/SESSION_HANDOVER_v1.md`의 브랜드 정체성 섹션을 통합. |
 
@@ -101,6 +102,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.27** | 2026-02-18 | SESSION_35 PM(Sonnet): 외부감사(SESSION_34) 리뷰. H-01/H-04 교정, Builder WO TASK 3 보강(8건), WO_SEO_BASELINE 신규 발행, SESSION_34~35 상태 반영. |
 | **v1.26** | 2026-02-18 | SESSION_33 PM(Sonnet): D-034, D-037, D-012 주소 교정, Builder WO 발행. SESSION_31~33 상태 반영. |
 | **v1.25** | 2026-02-18 | SESSION_31 PM(Sonnet): 콘텐츠 폴더 정리, TD-02 선행 결정, Architect WO 발행. |
 | **v1.24** | 2026-02-17 | SESSION_27 PM(Sonnet) 2차: WO 정비(PHASE_3_ROADMAP HPOC폐기·스쿼드 갱신, GEMINI_TOOLCHAIN COMPLETED), 리포트 아카이브 정리, git push 완료. |
@@ -135,6 +137,10 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.14** | 2026-02-18 | SESSION_35 PM(Sonnet): Builder WO TASK 3 보강(8건), WO_SEO_BASELINE 신규 추가. 현재 지시 갱신. |
+| **v1.13** | 2026-02-18 | SESSION_33 PM(Sonnet): Builder WO 발행 완료. 현재 지시를 Builder 구현으로 교체. |
+| **v1.12** | 2026-02-18 | SESSION_32 Architect(Opus): Architect 검토 완료. 현재 지시를 PM→Builder WO 발행으로 교체. |
+| **v1.11** | 2026-02-18 | SESSION_31 PM(Sonnet): 다음 지시를 Architect 검토(TD-02 Content Collections 설계)로 교체. |
 | **v1.10** | 2026-02-17 | SESSION_25 PM(Sonnet) 완료 — 다음 지시를 STEP 1-1 콘텐츠 톤 확정 (Opus 티키타카)으로 갱신. |
 | **v1.9** | 2026-02-16 | SESSION_22: Header 모바일 메뉴 긴급 복구 우선순위 변경. 기술 부채 로드맵 반영. |
 | **v1.8** | 2026-02-15 | Phase 전환 체크리스트 신설, Architect 필수 호출 지점 명시 추가. D-024 반영. |

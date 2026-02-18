@@ -7,6 +7,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.2** | 2026-02-18 | SESSION_35 PM(Sonnet): H-01 교정 — 현재 단계 Phase 3, 총 페이지 17페이지로 현행화 (SESSION_34 감사 지적) |
 | **v1.1** | 2026-02-13 | 레거시 참조를 아카이브 경로(`docs/_archive/legacy/governance_v1/*_v1.md`)로 정정 |
 | **v1.0** | 2026-02-13 | 문서 가버넌스 개편에 따라 신규 작성. 기존 `docs/_archive/legacy/governance_v1/PROJECT_BLUEPRINT_2026_v1.md`와 `docs/_archive/legacy/governance_v1/SESSION_HANDOVER_v1.md`의 브랜드 정체성 섹션을 통합. |
 
@@ -21,8 +22,8 @@
 | 프로젝트명 | Rowing Pro Reboot 2026 |
 | 목적 | 로잉프로 공식 웹사이트 리뉴얼 (기업소개 + 서비스 안내) |
 | 목표 | 13년 업력의 전문성과 고감도 디자인이 결합된 프리미엄 B2B/B2C 웹사이트 |
-| 현재 단계 | Phase 2 — 디자인 아키텍처 확정 및 개발 준비 |
-| 총 페이지 | 13페이지 |
+| 현재 단계 | Phase 3 — 구현 단계 (진행중) |
+| 총 페이지 | 17페이지 |
 
 ---
 

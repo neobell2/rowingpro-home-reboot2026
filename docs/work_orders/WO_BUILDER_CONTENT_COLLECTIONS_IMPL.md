@@ -68,14 +68,18 @@ service-corporate-wellness.md
 
 ### TASK 3 — 즉시 처리 항목 (기술 부채)
 
-아래 4건을 이번 WO에 함께 처리한다:
+아래 8건을 이번 WO에 함께 처리한다:
 
-| 항목 | 작업 내용 |
-|:--|:--|
-| Lucide Icons `@latest` CDN | 특정 버전으로 고정 (예: `@0.460.0`) |
-| 외부 CDN 3개 (Google Fonts, jsdelivr, unpkg) | 버전 고정 또는 로컬 번들링 |
-| `BaseLayout.astro` | 미사용 레거시 파일 삭제 |
-| 빌드 명령 `npx --yes node@22` | 로컬 Node 바이너리 직접 참조로 교체 |
+| 항목 | 작업 내용 | 근거 |
+|:--|:--|:--|
+| Lucide Icons `@latest` CDN | 특정 버전으로 고정 (예: `@0.460.0`) | C-03 (SESSION_34 감사) |
+| 외부 CDN 3개 (Google Fonts, jsdelivr, unpkg) | 버전 고정 또는 로컬 번들링 | SESSION_34 감사 |
+| `BaseLayout.astro` | 미사용 레거시 파일 삭제 | SESSION_32 Architect |
+| 빌드 명령 `npx --yes node@22` | 로컬 Node 바이너리 직접 참조로 교체 | SESSION_33 WO |
+| 주소 오기 수정 (`케이에듀동` → `케이앤몰동`) | `src/pages/contact.astro`, `src/components/Footer.astro`, `src/content/common/site.yaml` 3곳 교정 | H-02 (SESSION_34 감사), D-012 |
+| `tsconfig.json` 범위 제한 | `include`/`exclude` 명시 — `src/**` 중심으로 제한, `docs/**` 제외 → `astro check` 의미있게 통과 | H-03 (SESSION_34 감사) |
+| `/colors` 페이지 배포 제외 | `src/pages/colors.astro` 빌드에서 제외 (파일 삭제 또는 `export const prerender = false` + robots noindex) | M-01 (SESSION_34 감사) |
+| `aos` 패키지 제거 | `package.json`에서 제거 (`src/`에서 미사용 확인 후 처리) | M-03 (SESSION_34 감사) |
 
 ---
 
@@ -94,7 +98,7 @@ service-corporate-wellness.md
 - [ ] `src/content/pages/` 17개 .md 파일 생성
 - [ ] `src/content/common/` 공통 데이터 생성
 - [ ] 17개 `.astro` 파일 Content Collections API 소비로 전환
-- [ ] 즉시 처리 4건 완료
+- [ ] 즉시 처리 8건 완료 (기술 부채 4건 + SESSION_34 감사 지적 4건)
 - [ ] `npm run build` Exit 0 확인
 - [ ] 시각적 출력 변화 없음 확인
 
@@ -124,5 +128,6 @@ service-corporate-wellness.md
 
 ---
 
-**PM 서명:** Claude Sonnet 4.5 (SESSION_33)
+**PM 서명:** Claude Sonnet 4.5 (SESSION_33 최초 발행, SESSION_35 TASK 3 보강)
+**보강 근거:** SESSION_34 레드팀 감사(GPT-5.2) 지적사항 반영 — H-02, H-03, M-01, M-03
 **디렉터 승인 대기**

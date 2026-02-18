@@ -7,6 +7,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.27** | 2026-02-18 | SESSION_35 PM(Sonnet): 외부감사(SESSION_34) 리뷰 완료. H-01 교정(01_PROJECT_CONTEXT.md Phase/페이지수), H-04 교정(WO_TECHNICAL_DEBT_ROADMAP 경로), Builder WO TASK 3 보강(8건), WO_SEO_BASELINE 신규 발행. |
 | **v1.26** | 2026-02-18 | SESSION_33 PM(Sonnet): D-034(상품/가격 표기 정책), D-037(Programs 구조 확정), D-012 주소 교정(케이에듀동→케이앤몰동). Builder WO 발행(WO_BUILDER_CONTENT_COLLECTIONS_IMPL). |
 | **v1.25** | 2026-02-18 | SESSION_31 PM(Sonnet): 콘텐츠 폴더 정리(_source/ 분리), TD-02 Content Collections 선행 결정, Architect WO 발행, 05_NEXT_TASK 갱신. |
 | **v1.24** | 2026-02-17 | SESSION_27 PM(Sonnet) 2차: WO 정비(PHASE_3_ROADMAP HPOC폐기·스쿼드 갱신, GEMINI_TOOLCHAIN COMPLETED), 리포트 아카이브 정리, 보고서 작성, git push 완료. |
@@ -117,6 +118,18 @@
   - D-037: Programs 구조 확정 (인도어/수상/부스형/MIX — SESSION_16 명세 공백 교정)
   - D-012 주소 교정: 케이에듀동 → 케이앤몰동 (OCR 오류)
   - Builder WO 발행: `WO_BUILDER_CONTENT_COLLECTIONS_IMPL.md`
+
+- **SESSION_34 (External Red Team / GPT-5.2)** — 완료 ✅
+  - 레드팀 감사 21개 이슈 발굴 (CRITICAL 3, HIGH 4, MEDIUM 3 등)
+  - `npm run build` Exit 0, `astro preview` 재현 점검
+  - 보고서: `docs/reports/SESSION_34_REDAUDIT_GPT52.md`
+
+- **SESSION_35 (PM / Sonnet)** — 완료 ✅
+  - C-02 RESOLVED: `public/videos/hero-bg.mp4` 디렉터 직접 배치
+  - H-01 교정: `01_PROJECT_CONTEXT.md` Phase 3 / 17페이지로 현행화
+  - H-04 교정: `WO_TECHNICAL_DEBT_ROADMAP.md` 근거 경로 `docs/_archive/reports/`로 교정
+  - Builder WO 보강: `WO_BUILDER_CONTENT_COLLECTIONS_IMPL` TASK 3 8건으로 확장 (H-02 주소교정, H-03 tsconfig, M-01 /colors, M-03 aos)
+  - WO_SEO_BASELINE 신규 발행 (C-01: robots.txt / sitemap.xml / OG / canonical)
 
 - **Phase 3 (Content + Design Polishing)** — 콘텐츠 고도화 및 디자인 폴리싱
   - ✅ **드래프트 생산 완료**: Gemini 17개 + Opus 17개 + XLS 비교시트 17종

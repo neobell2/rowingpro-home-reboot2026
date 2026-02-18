@@ -12,8 +12,8 @@
 외부감사(SESSION_21)에서 식별된 4가지 기술 부채를 Phase별로 체계적으로 해결하기 위한 로드맵입니다.
 
 **근거 문서:**
-- `docs/reports/SESSION_21_FINAL_AUDIT_REPORT.md` (Section 4.2)
-- `docs/reports/SESSION_21_EMERGENCY_AUDIT_REPORT.md` (Section 4)
+- `docs/_archive/reports/SESSION_21_FINAL_AUDIT_REPORT.md` (Section 4.2)
+- `docs/_archive/reports/SESSION_21_EMERGENCY_AUDIT_REPORT.md` (Section 4)
 
 **디렉터 승인:** Phase 4 진입 시 해결 (2026-02-16)
 
@@ -175,8 +175,8 @@ Gemini Pro가 제시한 4가지 공격 시나리오 예방:
 
 ## 6. 참고 문서
 
-- `docs/reports/SESSION_21_FINAL_AUDIT_REPORT.md` (Section 4.2, 5)
-- `docs/reports/SESSION_21_EMERGENCY_AUDIT_REPORT.md` (Section 4)
+- `docs/_archive/reports/SESSION_21_FINAL_AUDIT_REPORT.md` (Section 4.2, 5)
+- `docs/_archive/reports/SESSION_21_EMERGENCY_AUDIT_REPORT.md` (Section 4)
 - `02_ARCHITECTURE.md` (디자인 시스템 LOCKED 기준)
 
 ---
