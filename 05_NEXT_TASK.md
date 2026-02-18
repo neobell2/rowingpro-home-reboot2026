@@ -7,6 +7,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.15** | 2026-02-18 | SESSION_37 PM(Sonnet): SESSION_36 완료 반영. 현재 지시를 콘텐츠 확정(디렉터 직접 입력)으로 교체. |
 | **v1.14** | 2026-02-18 | SESSION_35 PM(Sonnet): Builder WO TASK 3 보강(8건), WO_SEO_BASELINE 신규 추가. 현재 지시 갱신. |
 | **v1.13** | 2026-02-18 | SESSION_33 PM(Sonnet): Builder WO 발행 완료. 현재 지시를 Builder 구현으로 교체. |
 | **v1.12** | 2026-02-18 | SESSION_32 Architect(Opus): Architect 검토 완료. 현재 지시를 PM→Builder WO 발행으로 교체. Phase 전환 체크리스트에 D-033 항목 추가. |
@@ -34,38 +35,26 @@ Phase 3 → Phase 4 전환 조건:
 
 ## 현재 지시
 
-**근거:** `docs/work_orders/WO_BUILDER_CONTENT_COLLECTIONS_IMPL.md` (SESSION_35 보강), `docs/work_orders/WO_SEO_BASELINE.md`, `03_DECISIONS.md` D-032, D-034, D-037
+**근거:** `docs/work_orders/WO_CONTENT_CONFIRMATION.md`, `03_DECISIONS.md` D-034, D-037
 
 ```
-목표: Content Collections 구현 + SEO 기반 구축 — Builder 세션
-우선순위: 긴급 (콘텐츠 확정 작업 착수 전 선행 필수)
-작업자: Builder (Claude Sonnet)
+목표: 17페이지 콘텐츠 최종 확정 — 디렉터 직접 입력 세션
+우선순위: Phase 3 STEP 1 (콘텐츠 확정)
+작업자: Director (직접 입력)
 
-WO 1: WO_BUILDER_CONTENT_COLLECTIONS_IMPL (우선 실행)
-  TASK 1: src/content/ 구조 신설 (config.ts + 17개 .md + common/)
-  TASK 2: 17개 .astro 파일 Content Collections API 소비로 리팩터링
-  TASK 3: 즉시 처리 8건 (SESSION_35 보강)
-    - Lucide @latest → 버전 고정
-    - Google Fonts / jsdelivr / unpkg CDN 버전 고정
-    - BaseLayout.astro 삭제
-    - package.json build 명령 개선
-    - 주소 오기 수정 (케이에듀동 → 케이앤몰동) 3곳
-    - tsconfig.json include/exclude 명시 (astro check 복구)
-    - /colors 페이지 배포 제외
-    - aos 패키지 제거
+방식:
+  1. docs/contents/review/ 비교시트 참고 (선택적)
+  2. src/content/pages/*.md 17개 파일에 최종 카피 직접 입력
+  3. 완료 후 PM 호출
 
-WO 2: WO_SEO_BASELINE (WO1 완료 후 또는 병행)
-  TASK 1: public/robots.txt, public/sitemap.xml 정적 파일 추가
-  TASK 2: MainLayout.astro canonical + OG + Twitter Card 최소세트 추가
-  TASK 3: public/og/og-default.jpg 임시 이미지 배치
+제약:
+  - frontmatter 구조(키 이름) 변경 금지 — 값만 수정
+  - D-034: 부스형 PRO급 200만+VAT 노출, 나머지 금액 플레이스홀더
+  - D-037: Programs 4종 구조 유지 (인도어/수상/부스형/MIX)
 
-공통 제약:
-  - 텍스트 그대로 이전 (내용 수정 금지)
-  - CSS/스타일 변경 금지
-  - 새 패키지 추가 금지
-  - npm run build Exit 0 필수
-  - Programs 구조: 인도어/수상/부스형/MIX (D-037)
-  - service-event 가격 티어: SIMPLE/CORE/PRO/MASTER (D-034, 금액은 플레이스홀더)
+PM 호출 후:
+  - PM: 17개 파일 전수 확인 + Build 요청
+  - WO_CONTENT_CONFIRMATION COMPLETED 처리
 ```
 
 ---

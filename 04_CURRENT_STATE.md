@@ -7,6 +7,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.28** | 2026-02-18 | SESSION_37 PM(Sonnet): SESSION_36 완료 반영(Content Collections + SEO 기반), 완료 WO/보고서 아카이브(WO 5건, 보고서 11건), WO_CONTENT_CONFIRMATION 신규 발행. |
 | **v1.27** | 2026-02-18 | SESSION_35 PM(Sonnet): 외부감사(SESSION_34) 리뷰 완료. H-01 교정(01_PROJECT_CONTEXT.md Phase/페이지수), H-04 교정(WO_TECHNICAL_DEBT_ROADMAP 경로), Builder WO TASK 3 보강(8건), WO_SEO_BASELINE 신규 발행. |
 | **v1.26** | 2026-02-18 | SESSION_33 PM(Sonnet): D-034(상품/가격 표기 정책), D-037(Programs 구조 확정), D-012 주소 교정(케이에듀동→케이앤몰동). Builder WO 발행(WO_BUILDER_CONTENT_COLLECTIONS_IMPL). |
 | **v1.25** | 2026-02-18 | SESSION_31 PM(Sonnet): 콘텐츠 폴더 정리(_source/ 분리), TD-02 Content Collections 선행 결정, Architect WO 발행, 05_NEXT_TASK 갱신. |
@@ -131,9 +132,24 @@
   - Builder WO 보강: `WO_BUILDER_CONTENT_COLLECTIONS_IMPL` TASK 3 8건으로 확장 (H-02 주소교정, H-03 tsconfig, M-01 /colors, M-03 aos)
   - WO_SEO_BASELINE 신규 발행 (C-01: robots.txt / sitemap.xml / OG / canonical)
 
+- **SESSION_36 (Builder / Opus 4.6)** — 완료 ✅ (커밋 5a0cee0)
+  - WO_BUILDER_CONTENT_COLLECTIONS_IMPL TASK 1~3 전부 완료
+    - TASK 1: src/content/ 구조 신설 (config.ts, 17개 .md, common/)
+    - TASK 2: 17개 .astro 파일 Content Collections API 전환
+    - TASK 3: 기술 부채 8건 처리 (Lucide 버전 고정, 주소 교정, /colors 삭제, aos 제거 등)
+  - WO_SEO_BASELINE 완료 (robots.txt, sitemap.xml, og-default.png 플레이스홀더, MainLayout SEO 메타태그)
+  - 빌드: npm run build Exit 0 확인
+  - 잔여: og-default.png 실제 브랜드 이미지 교체 필요 (현재 단색 플레이스홀더)
+
+- **SESSION_37 (PM / Sonnet)** — 완료 ✅
+  - 완료 WO 5건 아카이브: WO_GEMINI_TOOLCHAIN_REVIEW, WO_DIRECTOR_17page_Text_Creation_Plan, WO_ARCHITECT_CONTENT_COLLECTIONS_REVIEW, WO_BUILDER_CONTENT_COLLECTIONS_IMPL, WO_SEO_BASELINE
+  - 보고서 11건 아카이브: SESSION_24~36 전체
+  - WO_CONTENT_CONFIRMATION 신규 발행 (디렉터 직접 입력 방식)
+
 - **Phase 3 (Content + Design Polishing)** — 콘텐츠 고도화 및 디자인 폴리싱
   - ✅ **드래프트 생산 완료**: Gemini 17개 + Opus 17개 + XLS 비교시트 17종
-  - ⏸️ **콘텐츠 확정 작업 일시 대기**: TD-02 Content Collections 선행 후 착수
+  - ✅ **Content Collections 구축 완료** (SESSION_36): src/content/pages/*.md 17개 파일이 실제 콘텐츠 소스
+  - 🔄 **콘텐츠 확정 작업 진행 예정**: 디렉터 직접 MD 파일 입력 방식 (WO_CONTENT_CONFIRMATION)
   - ✅ **Header 복구 완료** (SESSION_22, Builder/Codex)
   - STEP 2: Gemini 3.0 Flash — 미디어 자산 생산 및 정제
   - STEP 3: Claude 4.5 Sonnet (Builder/Designer) — 디자인 폴리싱 및 최종 바인딩
