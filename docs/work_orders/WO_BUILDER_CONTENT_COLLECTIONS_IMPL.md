@@ -78,7 +78,7 @@ service-corporate-wellness.md
 | 빌드 명령 `npx --yes node@22` | 로컬 Node 바이너리 직접 참조로 교체 | SESSION_33 WO |
 | 주소 오기 수정 (`케이에듀동` → `케이앤몰동`) | `src/pages/contact.astro`, `src/components/Footer.astro`, `src/content/common/site.yaml` 3곳 교정 | H-02 (SESSION_34 감사), D-012 |
 | `tsconfig.json` 범위 제한 | `include`/`exclude` 명시 — `src/**` 중심으로 제한, `docs/**` 제외 → `astro check` 의미있게 통과 | H-03 (SESSION_34 감사) |
-| `/colors` 페이지 배포 제외 | `src/pages/colors.astro` 빌드에서 제외 (파일 삭제 또는 `export const prerender = false` + robots noindex) | M-01 (SESSION_34 감사) |
+| `/colors` 페이지 삭제 | `src/pages/colors.astro` 파일 삭제 (디자인 작업용 내부 페이지, 용도 종료 — 디렉터 확정 2026-02-18) | M-01 (SESSION_34 감사) |
 | `aos` 패키지 제거 | `package.json`에서 제거 (`src/`에서 미사용 확인 후 처리) | M-03 (SESSION_34 감사) |
 
 ---

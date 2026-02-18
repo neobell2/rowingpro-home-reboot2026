@@ -29,7 +29,7 @@ Allow: /
 Sitemap: https://www.rowingpro.co.kr/sitemap.xml
 ```
 - 배포 도메인 확정 전까지는 플레이스홀더 URL 사용 허용
-- `/colors` 페이지는 noindex 처리 (WO_BUILDER_CONTENT_COLLECTIONS_IMPL TASK 3와 연동)
+- `/colors` 페이지는 파일 삭제로 확정 (디렉터 2026-02-18) — sitemap.xml 미포함
 
 **`public/sitemap.xml` 신설**
 - 17페이지 URL 정적 수동 작성 (Astro sitemap 통합 플러그인은 Phase 4)
@@ -100,7 +100,7 @@ Sitemap: https://www.rowingpro.co.kr/sitemap.xml
 ## 6. 실행 순서
 
 이 WO는 `WO_BUILDER_CONTENT_COLLECTIONS_IMPL` **이후** 또는 **병행** 실행 가능.
-단, `sitemap.xml`의 `/colors` 항목 포함 여부는 TASK 3 M-01 처리 결과에 따라 결정.
+`sitemap.xml`에 `/colors` 미포함 (파일 삭제 확정).
 
 ---
 
