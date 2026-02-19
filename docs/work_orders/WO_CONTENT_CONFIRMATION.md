@@ -3,7 +3,7 @@
 **발행:** PM (Claude Sonnet 4.6, SESSION_37)
 **수신:** Director
 **일시:** 2026-02-18
-**상태:** [STATUS: ISSUED]
+**상태:** [STATUS: IN PROGRESS] — TASK 1.5 완료, TASK 2 대기중
 
 ---
 
@@ -34,31 +34,88 @@
 - 17개 페이지별 비교시트 (Original / Gemini / Opus / Director Final)
 - 필요 시 참고하여 최종 카피 결정
 
+**review ↔ src 파일명 매핑 (구분자: 언더스코어 → 하이픈)**
+
+| review 폴더 (`_REVIEW`) | src/content/pages/ | 비고 |
+|:--|:--|:--|
+| `about_REVIEW` | `about.md` | |
+| `common_REVIEW` | *(common.yaml — 데이터 컬렉션)* | 페이지 아님 |
+| `contact_REVIEW` | `contact.md` | |
+| `history_REVIEW` | `history.md` | |
+| `index_REVIEW` | `index.md` | |
+| `programs_REVIEW` | `programs.md` | |
+| `service_club_general_REVIEW` | `service-club-general.md` | |
+| `service_corporate_event_REVIEW` | `service-corporate-event.md` | |
+| `service_corporate_hub_REVIEW` | `service-corporate-hub.md` | |
+| `service_corporate_leadership_REVIEW` | `service-corporate-leadership.md` | |
+| `service_corporate_teambuilding_REVIEW` | `service-corporate-teambuilding.md` | |
+| `service_corporate_training_REVIEW` | `service-corporate-training.md` | |
+| `service_corporate_wellness_REVIEW` | `service-corporate-wellness.md` | |
+| `service_event_REVIEW` | `service-event.md` | |
+| `service_family_REVIEW` | `service-family.md` | |
+| `service_hub_REVIEW` | `service-hub.md` | |
+| `service_school_youth_REVIEW` | `service-school-youth.md` | |
+| *(없음)* | `privacy.md` | 법적 고정 텍스트, 리뷰 불필요 |
+
+---
+
+## TASK 1.5 — SEO title/description 드래프트 생산 ✅ 완료 (SESSION_40)
+
+**완료 일시:** 2026-02-19 (SESSION_40 Architect/Opus 4.6)
+
+**실제 수행 방식 (원래 계획과 다름):**
+SESSION_38 중단(앵커링 오염) → SESSION_40에서 방식 변경하여 실행
+
+| 변형 | 방법 | 앵커링 방지 |
+|:--|:--|:--|
+| GPT | 기존 src 파일 원문 그대로 추출 | 원본 보존 |
+| Gemini | `ai_studio_package/GEMINI_SEO_PROMPT_OUTPUT.md`에서 추출 | src 미접촉 |
+| Opus1 | 클린 창작 — 파일 0개 읽음 | 완전 격리 |
+| Opus2 | SESSION_29 Opus 본문 드래프트만 참조 | src 미접촉 |
+
+**결과:** `src/content/pages/*.md` 16개 frontmatter에 아래 형식으로 병합 완료:
+```yaml
+# GPT title: [원문]
+# Gemini title: [AI Studio 드래프트]
+# Opus1 title: [V1 클린 창작]
+# Opus2 title: [V2 본문 기반]
+title: "[기존 GPT 값 — 변경 없음]"
+# GPT desc: ...
+# Gemini desc: ...
+# Opus1 desc: ...
+# Opus2 desc: ...
+description: "[기존 GPT 값 — 변경 없음]"
+```
+
+**다음 단계:** 디렉터가 각 파일에서 최종 title/description 선택 후 나머지 주석 삭제 (TASK 2와 동시 진행 가능)
+
+**대상:** 16개 완료 (privacy.md 제외 — 법적 고정 텍스트)
+
 ---
 
 ## TASK 2 — 직접 입력
 
 **수정 대상:** `src/content/pages/*.md` (17개 파일)
 
-| 파일 | 페이지 |
+| 파일 | URL 경로 |
 |:--|:--|
-| home.md | 홈 |
-| about.md | 회사소개 |
-| programs-indoor.md | 프로그램 - 인도어 |
-| programs-water.md | 프로그램 - 수상 |
-| programs-booth.md | 프로그램 - 부스형 |
-| programs-mix.md | 프로그램 - MIX |
-| service-corporate.md | 서비스 - 법인/단체 |
-| service-event.md | 서비스 - 이벤트 |
-| service-hrd.md | 서비스 - HRD |
-| why-rowing.md | 왜 로잉인가 |
-| why-us.md | 왜 로잉프로인가 |
-| instructors.md | 강사진 |
-| media.md | 미디어 |
-| contact.md | 문의 |
-| faq.md | FAQ |
-| partners.md | 파트너 |
-| landing.md | 랜딩 |
+| index.md | / (홈) |
+| about.md | /about |
+| programs.md | /programs |
+| contact.md | /contact |
+| history.md | /history |
+| privacy.md | /privacy |
+| service-hub.md | /service |
+| service-event.md | /service/event |
+| service-club-general.md | /service/club-general |
+| service-family.md | /service/family |
+| service-school-youth.md | /service/school-youth |
+| service-corporate-hub.md | /service/corporate |
+| service-corporate-training.md | /service/corporate/training |
+| service-corporate-teambuilding.md | /service/corporate/teambuilding |
+| service-corporate-leadership.md | /service/corporate/leadership |
+| service-corporate-event.md | /service/corporate/event |
+| service-corporate-wellness.md | /service/corporate/wellness |
 
 **제약 사항:**
 - frontmatter 구조(키 이름) 변경 금지 — 값만 수정
@@ -81,7 +138,9 @@ PM 수행:
 
 ## 완료 기준
 
-- [ ] 17개 `src/content/pages/*.md` 최종 카피 반영
+- [x] SEO 4종 드래프트 생산 및 src 병합 완료 (TASK 1.5) — SESSION_40
+- [ ] 디렉터 최종 title/description 선택 + 나머지 주석 삭제 (TASK 1.5 디렉터 단계)
+- [ ] 17개 `src/content/pages/*.md` 최종 카피 반영 (TASK 2)
 - [ ] frontmatter 구조 이상 없음
 - [ ] `npm run build` Exit 0
 - [ ] PM 검증 완료

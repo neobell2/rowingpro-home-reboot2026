@@ -1,5 +1,13 @@
 ---
+# GPT title: ROWING PRO | The Kinetic Experience
+# Gemini title: 로잉프로 | 국가대표의 기술로 완성하는 기업 팀워크
+# Opus1 title: 로잉프로 | 기업 조정 교육의 오리지널
+# Opus2 title: 로잉프로 | 2013년부터, 기업 조정 교육의 시작
 title: "ROWING PRO | The Kinetic Experience"
+# GPT desc: 대한민국 국가대표 출신이 운영하는 HRD/팀빌딩 전문 기업
+# Gemini desc: 13년 무사고, 국가대표 출신 코칭. 단순한 체험을 넘어 조직의 실행력을 설계하는 HRD 전문 기업 로잉프로입니다.
+# Opus1 desc: 보트 위에서 팀이 달라집니다. 대한민국 대표 기업들이 선택한 조정 교육 전문 기업. 팀빌딩, 리더십, 신입 연수, 체험 이벤트까지.
+# Opus2 desc: 418건의 행사, 219개 기업, 13년 무사고. 삼성·현대·LG·구찌가 선택한 조정 교육 전문 기업 로잉프로.
 description: "대한민국 국가대표 출신이 운영하는 HRD/팀빌딩 전문 기업"
 heroTitle: "ROWING = TEAMWORK"
 heroSubtitle: "대한민국 국가대표 출신이 운영하는 HRD/팀빌딩 전문 기업"

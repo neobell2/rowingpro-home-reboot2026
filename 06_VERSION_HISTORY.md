@@ -102,6 +102,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.30** | 2026-02-20 | SESSION_42 PM(Sonnet): SESSION_40/41 완료 반영, 차단이슈 원인 교정(설계결함 판정), R-01 신규 등록, seo_OPUS_draft 무효화 처리. |
+| **v1.29** | 2026-02-19 | SESSION_39 PM(Sonnet): SESSION_38 중단 반영, 이슈 3건 등록(WO순서오류/seo_OPUS오염/Git미커밋), 다음 실행 목록 확정. |
+| **v1.28** | 2026-02-18 | SESSION_37 PM(Sonnet): SESSION_36 완료 반영, WO_CONTENT_CONFIRMATION 신규 발행. |
 | **v1.27** | 2026-02-18 | SESSION_35 PM(Sonnet): 외부감사(SESSION_34) 리뷰. H-01/H-04 교정, Builder WO TASK 3 보강(8건), WO_SEO_BASELINE 신규 발행, SESSION_34~35 상태 반영. |
 | **v1.26** | 2026-02-18 | SESSION_33 PM(Sonnet): D-034, D-037, D-012 주소 교정, Builder WO 발행. SESSION_31~33 상태 반영. |
 | **v1.25** | 2026-02-18 | SESSION_31 PM(Sonnet): 콘텐츠 폴더 정리, TD-02 선행 결정, Architect WO 발행. |

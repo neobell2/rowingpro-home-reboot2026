@@ -1,5 +1,13 @@
 ---
+# GPT title: History | 로잉프로
+# Gemini title: 13년의 기록 | 150개 기업이 선택한 로잉프로
+# Opus1 title: 연혁 | 로잉프로 — 메트라이프에서 현대자동차까지
+# Opus2 title: 연혁 | 로잉프로 — 13년, 418건, 219개 기업
 title: "History | 로잉프로"
+# GPT desc: 13년 업력 전수 기록, 걸어온 길
+# Gemini desc: 2013년부터 이어진 무사고 기록. 삼성, 현대차 등 국내 유수 기업과 함께한 대한민국 기업 조정 교육의 표준을 확인하세요.
+# Opus1 desc: 로잉프로가 함께한 기업과 기관의 기록. 대한민국 기업 조정 교육의 역사가 여기에 있습니다.
+# Opus2 desc: 2013년 창립. 삼성전자, 현대자동차, 구찌코리아, 마이크로소프트, 서울특별시. 대한민국 기업 조정 교육의 전체 기록.
 description: "13년 업력 전수 기록, 걸어온 길"
 heroTitle: "THE ORIGIN OF CORPORATE ROWING"
 heroSubtitle: "대한민국 기업 조정 교육의 시작과 현재, 13년의 독보적인 기록입니다."

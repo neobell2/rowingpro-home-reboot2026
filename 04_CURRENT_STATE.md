@@ -7,6 +7,8 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.30** | 2026-02-20 | SESSION_42 PM(Sonnet): SESSION_40/41 반영, 차단이슈 원인 교정, R-01 신규 이슈 등록, seo_OPUS_draft.md 무효화 처리. |
+| **v1.29** | 2026-02-19 | SESSION_39 PM(Sonnet): SESSION_38 사후 진단, 이슈 등록, 다음 세션 실행 목록 확정. |
 | **v1.28** | 2026-02-18 | SESSION_37 PM(Sonnet): SESSION_36 완료 반영(Content Collections + SEO 기반), 완료 WO/보고서 아카이브(WO 5건, 보고서 11건), WO_CONTENT_CONFIRMATION 신규 발행. |
 | **v1.27** | 2026-02-18 | SESSION_35 PM(Sonnet): 외부감사(SESSION_34) 리뷰 완료. H-01 교정(01_PROJECT_CONTEXT.md Phase/페이지수), H-04 교정(WO_TECHNICAL_DEBT_ROADMAP 경로), Builder WO TASK 3 보강(8건), WO_SEO_BASELINE 신규 발행. |
 | **v1.26** | 2026-02-18 | SESSION_33 PM(Sonnet): D-034(상품/가격 표기 정책), D-037(Programs 구조 확정), D-012 주소 교정(케이에듀동→케이앤몰동). Builder WO 발행(WO_BUILDER_CONTENT_COLLECTIONS_IMPL). |
@@ -146,10 +148,34 @@
   - 보고서 11건 아카이브: SESSION_24~36 전체
   - WO_CONTENT_CONFIRMATION 신규 발행 (디렉터 직접 입력 방식)
 
+- **SESSION_38 (Content / Opus 4.6)** — ❌ 중단 (ABORTED)
+  - SEO title/description 드래프트 작업 중 앵커링 오염 발생
+  - 원인: WO TASK 순서 오류(SEO→본문확정) + 설계 결함 (SESSION_40 Architect 판정 — D-040)
+  - 보고서: `docs/reports/SESSION_38_CONTENT_OPUS_SEO_ABORT.md`
+
+- **SESSION_39 (PM / Sonnet)** — 완료 ✅ (진단 전용)
+  - SESSION 38 사후 진단 및 거버넌스 검토
+  - 다음 세션 실행 목록 확정
+  - 파일 변경 없음
+
+- **SESSION_40 (Architect / Opus 4.6)** — 완료 ✅ (미커밋)
+  - 거버넌스 감사: SESSION_38 원인 판정 (설계 결함), PM WO 거버넌스 위반 판단 → 디렉터 판정으로 추궁 아님
+  - SEO 4종 드래프트(GPT/Gemini/Opus1/Opus2) 생산 → `src/content/pages/*.md` 16개 frontmatter 주석 형식으로 직접 병합
+  - 활성 title/description 값 미변경 (GPT 원문 유지, 디렉터 선택 대기)
+  - 보고서: `docs/reports/SESSION_40_ARCHITECT_OPUS.md`
+
+- **SESSION_41 (External Auditor / Codex CLI)** — 완료 ✅ (감사 전용)
+  - 저장소 전수 감사: 구조/기술/보안/배포 리스크 10건 발굴
+  - 신규 식별: R-01(trailingSlash vs sitemap 불일치), R-04(스키마 느슨), R-05(회사정보 이중화)
+  - 교차검증: R-06(Contact 실연동), R-08(Git 미커밋) — 기존 계획 확인
+  - 기각: F-02(SSOT 이원화) — 콘텐츠 작업 플로우 정상, 디렉터 판정
+  - 보고서: `docs/reports/SESSION_41_AUDIT_CODEX.md`
+
 - **Phase 3 (Content + Design Polishing)** — 콘텐츠 고도화 및 디자인 폴리싱
-  - ✅ **드래프트 생산 완료**: Gemini 17개 + Opus 17개 + XLS 비교시트 17종
+  - ✅ **드래프트 생산 완료**: Gemini 17개 + Opus 17개 + HTML 비교시트 17종 (.xls → .html 전환)
   - ✅ **Content Collections 구축 완료** (SESSION_36): src/content/pages/*.md 17개 파일이 실제 콘텐츠 소스
-  - 🔄 **콘텐츠 확정 작업 진행 예정**: 디렉터 직접 MD 파일 입력 방식 (WO_CONTENT_CONFIRMATION)
+  - ✅ **SEO 4종 드래프트 병합 완료** (SESSION_40): src/*.md 16개 frontmatter에 GPT/Gemini/Opus1/Opus2 주석 삽입. 디렉터 최종 선택 대기
+  - 🔄 **콘텐츠 확정 작업 대기 중**: TASK 2(본문 확정) 미시작 — 디렉터 직접 입력 방식
   - ✅ **Header 복구 완료** (SESSION_22, Builder/Codex)
   - STEP 2: Gemini 3.0 Flash — 미디어 자산 생산 및 정제
   - STEP 3: Claude 4.5 Sonnet (Builder/Designer) — 디자인 폴리싱 및 최종 바인딩
@@ -160,6 +186,22 @@
 ## 이슈
 
 ### 차단(Blocking)
+
+- **R-01: trailingSlash vs sitemap 불일치** — 신규 식별 (SESSION_41)
+  - 현상: `astro.config.mjs` `trailingSlash: 'never'` ↔ `public/sitemap.xml` trailing slash 버전 혼용
+  - 영향: 크롤러 중복 URL 인식, SEO 기반 투자 효과 반감
+  - 해결: Builder WO에 포함 (trailingSlash 정책 일원화 + sitemap.xml 교정)
+
+- **Git 미커밋** — SESSION 38~41 작업물 미반영
+  - 대상: *_REVIEW.html 17개, ai_studio_package/, seo_*.md, 보고서 4개, src/*.md 16개(SEO 주석), WO 수정분
+  - 해결: SESSION_42 PM 커밋 (디렉터 승인 후)
+
+~~**WO_CONTENT_CONFIRMATION TASK 순서 오류**~~ → ✅ **RESOLVED (SESSION_40)**
+  - TASK 1.5(SEO)는 SESSION_40 Architect가 src 직접 편집 방식으로 완료 처리
+  - 원인(교정): WO TASK 순서 오류 + 설계 결함 (PM WO 거버넌스 위반 아님 — 디렉터 판정)
+
+~~**seo_OPUS_draft.md 오염**~~ → ✅ **무효화 (SESSION_40)**
+  - SESSION_40에서 src 직접 편집으로 대체. 무효화 주석 추가 완료 (SESSION_42)
 - ~~**Header 모바일 메뉴 기능 파산** (Session 21 외부감사 발견)~~ → ✅ **RESOLVED (Session 22, Builder/Codex)**
   - 현상: 모바일(360px~768px)에서 햄버거 버튼 클릭 시 메뉴 미동작
   - 원인: Session 17 스켈레톤 구현 시 미완성 (모바일 메뉴 스크립트/패널 마크업 누락)
