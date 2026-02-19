@@ -7,6 +7,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.31** | 2026-02-20 | SESSION_43 PM(Sonnet): 참여인원수 전수조사 방법확정, WO_BUILDER_HEADCOUNT_AUTOMATION 발행, 비공식 작업물 정리. |
 | **v1.30** | 2026-02-20 | SESSION_42 PM(Sonnet): SESSION_40/41 반영, 차단이슈 원인 교정, R-01 신규 이슈 등록, seo_OPUS_draft.md 무효화 처리. |
 | **v1.29** | 2026-02-19 | SESSION_39 PM(Sonnet): SESSION_38 사후 진단, 이슈 등록, 다음 세션 실행 목록 확정. |
 | **v1.28** | 2026-02-18 | SESSION_37 PM(Sonnet): SESSION_36 완료 반영(Content Collections + SEO 기반), 완료 WO/보고서 아카이브(WO 5건, 보고서 11건), WO_CONTENT_CONFIRMATION 신규 발행. |
@@ -147,6 +148,15 @@
   - 완료 WO 5건 아카이브: WO_GEMINI_TOOLCHAIN_REVIEW, WO_DIRECTOR_17page_Text_Creation_Plan, WO_ARCHITECT_CONTENT_COLLECTIONS_REVIEW, WO_BUILDER_CONTENT_COLLECTIONS_IMPL, WO_SEO_BASELINE
   - 보고서 11건 아카이브: SESSION_24~36 전체
   - WO_CONTENT_CONFIRMATION 신규 발행 (디렉터 직접 입력 방식)
+
+- **SESSION_43 (PM / Sonnet)** — 완료 ✅
+  - 참여인원수 전수조사 방법 전체 확정
+    - 범위: 416건 전수 / 도구: Gemini Flash Vision, 세션당 파일크기 큰 JPG 5장
+    - 추산 규칙: 조끼 색깔 수 × 8~15명 (실내/실외 동일), fallback 기본 범위표
+    - 실행: VSCode 터미널에서 디렉터가 연도별로 `python headcount.py --year YYYY` 직접 실행
+  - `WO_BUILDER_HEADCOUNT_AUTOMATION.md` 발행
+  - 비공식 작업물 12건 → `docs/_archive/headcount_scratch_20260219/` 이동
+  - 임시파일 (`session_sample_`, `.tmp_frames/`) 삭제
 
 - **SESSION_38 (Content / Opus 4.6)** — ❌ 중단 (ABORTED)
   - SEO title/description 드래프트 작업 중 앵커링 오염 발생

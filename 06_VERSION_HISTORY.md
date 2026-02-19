@@ -102,6 +102,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.31** | 2026-02-20 | SESSION_43 PM(Sonnet): 인원수 전수조사 방법확정, WO_BUILDER_HEADCOUNT_AUTOMATION 발행, 비공식 작업물 정리. |
 | **v1.30** | 2026-02-20 | SESSION_42 PM(Sonnet): SESSION_40/41 완료 반영, 차단이슈 원인 교정(설계결함 판정), R-01 신규 등록, seo_OPUS_draft 무효화 처리. |
 | **v1.29** | 2026-02-19 | SESSION_39 PM(Sonnet): SESSION_38 중단 반영, 이슈 3건 등록(WO순서오류/seo_OPUS오염/Git미커밋), 다음 실행 목록 확정. |
 | **v1.28** | 2026-02-18 | SESSION_37 PM(Sonnet): SESSION_36 완료 반영, WO_CONTENT_CONFIRMATION 신규 발행. |
