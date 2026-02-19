@@ -60,7 +60,13 @@
       "Bash(cmd /c \"copy \"\"c:\\\\Users\\\\윤종호\\\\Desktop\\\\로잉프로홈페이지Reboot.202601\\\\docs\\\\contents\\\\_source\\\\history_full_list.txt\"\" \"\"c:\\\\Users\\\\윤종호\\\\Desktop\\\\hl.txt\"\"\")",
       "Bash(cmd /c \"for %i in \\(\"\"c:\\\\Users\\\\윤종호\\\\Desktop\\\\로잉프로홈페이지Reboot.202601\\\\docs\\\\contents\\\\_source\\\\history_full_list.txt\"\"\\) do echo %~si\")",
       "Bash(cmd /c \"del \"\"c:\\\\Users\\\\윤종호\\\\Desktop\\\\로잉프로홈페이지Reboot.202601\\\\docs\\\\contents\\\\_source\\\\history_count\\\\history_draft_2024_2025.md\"\"\")",
-      "Bash(git -C \"c:/Users/윤종호/Desktop/로잉프로홈페이지Reboot.202601\" status --short)"
+      "Bash(git -C \"c:/Users/윤종호/Desktop/로잉프로홈페이지Reboot.202601\" status --short)",
+      "Bash(cmd /c:*)",
+      "Bash(\"/c/Users/윤종호/AppData/Local/Microsoft/WindowsApps/python3.exe\" --version)",
+      "Bash(\"/c/Users/윤종호/AppData/Local/Programs/Python/Python312/python.exe\" -m py_compile \"/c/Users/윤종호/Desktop/로잉프로홈페이지Reboot.202601/headcount.py\")",
+      "Bash(\"/c/Users/윤종호/AppData/Local/Programs/Python/Python312/python.exe\" -m pip install google-generativeai pillow)",
+      "Bash(\"/c/Users/윤종호/AppData/Local/Programs/Python/Python312/python.exe\" \"/c/Users/윤종호/Desktop/로잉프로홈페이지Reboot.202601/headcount.py\" --help)",
+      "Bash(\"/c/Users/윤종호/AppData/Local/Programs/Python/Python312/python.exe\" -c:*)"
     ],
     "additionalDirectories": [
       "c:\\Users\\윤종호\\Desktop\\로잉프로홈페이지Reboot.202601\\project"

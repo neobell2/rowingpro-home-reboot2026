@@ -37,3 +37,5 @@ docs/_archive/*
 
 # Claude Code CLI local settings
 .claude/settings*.json
+__pycache__/
+*.pyc

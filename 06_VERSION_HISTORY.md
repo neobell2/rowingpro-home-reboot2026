@@ -102,6 +102,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.32** | 2026-02-20 | SESSION_44 PM(Sonnet): 비공식 문서관리 — 버전히스토리 교정(04/05/06), 폴더 전수점검, legacy/ 압축, 빈폴더·위치오류 교정 7건. |
 | **v1.31** | 2026-02-20 | SESSION_43 PM(Sonnet): 인원수 전수조사 방법확정, WO_BUILDER_HEADCOUNT_AUTOMATION 발행, 비공식 작업물 정리. |
 | **v1.30** | 2026-02-20 | SESSION_42 PM(Sonnet): SESSION_40/41 완료 반영, 차단이슈 원인 교정(설계결함 판정), R-01 신규 등록, seo_OPUS_draft 무효화 처리. |
 | **v1.29** | 2026-02-19 | SESSION_39 PM(Sonnet): SESSION_38 중단 반영, 이슈 3건 등록(WO순서오류/seo_OPUS오염/Git미커밋), 다음 실행 목록 확정. |
@@ -141,6 +142,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.15** | 2026-02-18 | SESSION_37 PM(Sonnet): SESSION_36 완료 반영. 현재 지시를 콘텐츠 확정(디렉터 직접 입력)으로 교체. |
 | **v1.14** | 2026-02-18 | SESSION_35 PM(Sonnet): Builder WO TASK 3 보강(8건), WO_SEO_BASELINE 신규 추가. 현재 지시 갱신. |
 | **v1.13** | 2026-02-18 | SESSION_33 PM(Sonnet): Builder WO 발행 완료. 현재 지시를 Builder 구현으로 교체. |
 | **v1.12** | 2026-02-18 | SESSION_32 Architect(Opus): Architect 검토 완료. 현재 지시를 PM→Builder WO 발행으로 교체. |

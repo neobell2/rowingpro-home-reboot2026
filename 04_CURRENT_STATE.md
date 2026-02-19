@@ -7,15 +7,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.32** | 2026-02-20 | SESSION_44 PM(Sonnet): 비공식 문서관리 — 버전히스토리 교정(04/05/06), 폴더 전수점검, legacy/ 압축, 빈폴더·위치오류 교정 7건. |
 | **v1.31** | 2026-02-20 | SESSION_43 PM(Sonnet): 참여인원수 전수조사 방법확정, WO_BUILDER_HEADCOUNT_AUTOMATION 발행, 비공식 작업물 정리. |
 | **v1.30** | 2026-02-20 | SESSION_42 PM(Sonnet): SESSION_40/41 반영, 차단이슈 원인 교정, R-01 신규 이슈 등록, seo_OPUS_draft.md 무효화 처리. |
-| **v1.29** | 2026-02-19 | SESSION_39 PM(Sonnet): SESSION_38 사후 진단, 이슈 등록, 다음 세션 실행 목록 확정. |
-| **v1.28** | 2026-02-18 | SESSION_37 PM(Sonnet): SESSION_36 완료 반영(Content Collections + SEO 기반), 완료 WO/보고서 아카이브(WO 5건, 보고서 11건), WO_CONTENT_CONFIRMATION 신규 발행. |
-| **v1.27** | 2026-02-18 | SESSION_35 PM(Sonnet): 외부감사(SESSION_34) 리뷰 완료. H-01 교정(01_PROJECT_CONTEXT.md Phase/페이지수), H-04 교정(WO_TECHNICAL_DEBT_ROADMAP 경로), Builder WO TASK 3 보강(8건), WO_SEO_BASELINE 신규 발행. |
-| **v1.26** | 2026-02-18 | SESSION_33 PM(Sonnet): D-034(상품/가격 표기 정책), D-037(Programs 구조 확정), D-012 주소 교정(케이에듀동→케이앤몰동). Builder WO 발행(WO_BUILDER_CONTENT_COLLECTIONS_IMPL). |
-| **v1.25** | 2026-02-18 | SESSION_31 PM(Sonnet): 콘텐츠 폴더 정리(_source/ 분리), TD-02 Content Collections 선행 결정, Architect WO 발행, 05_NEXT_TASK 갱신. |
-| **v1.24** | 2026-02-17 | SESSION_27 PM(Sonnet) 2차: WO 정비(PHASE_3_ROADMAP HPOC폐기·스쿼드 갱신, GEMINI_TOOLCHAIN COMPLETED), 리포트 아카이브 정리, 보고서 작성, git push 완료. |
-| **v1.21** | 2026-02-17 | SESSION_25 PM(Sonnet, D-030 첫 가동): Git 정리, WO 상태 갱신, 네이밍 규칙 수립, docs/_archive/ 전면 정비 완료. |
 
 > 📋 **전체 버전 히스토리:** [06_VERSION_HISTORY.md](06_VERSION_HISTORY.md)
 
@@ -148,6 +142,12 @@
   - 완료 WO 5건 아카이브: WO_GEMINI_TOOLCHAIN_REVIEW, WO_DIRECTOR_17page_Text_Creation_Plan, WO_ARCHITECT_CONTENT_COLLECTIONS_REVIEW, WO_BUILDER_CONTENT_COLLECTIONS_IMPL, WO_SEO_BASELINE
   - 보고서 11건 아카이브: SESSION_24~36 전체
   - WO_CONTENT_CONFIRMATION 신규 발행 (디렉터 직접 입력 방식)
+
+- **SESSION_44 (PM / Sonnet)** — 완료 ✅
+  - 비공식 문서관리 세션 — 버전히스토리 규칙 위반 교정(04/05/06), 전수점검
+  - 교정 7건: 빈폴더 4개 삭제, SESSION_42B 리네임, SESSION_12_OPUS_WO 위치 교정, 06 v1.15 누락 추가
+  - legacy/ 67개 파일 → `docs/_archive/legacy.zip` 압축 후 폴더 삭제
+  - 보고서: `docs/reports/SESSION_44_PM_SONNET.md`
 
 - **SESSION_43 (PM / Sonnet)** — 완료 ✅
   - 참여인원수 전수조사 방법 전체 확정
