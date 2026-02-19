@@ -14,7 +14,7 @@ WO: WO_BUILDER_HEADCOUNT_AUTOMATION.md (SESSION_43 발행, 2026-02-20)
     GEMINI_API_KEY: Gemini API 키 (--api-key 대신 사용 가능)
 
 필요 패키지:
-    pip install google-generativeai pillow
+    pip install google-genai pillow
 """
 
 import argparse
@@ -62,7 +62,7 @@ GEMINI_PROMPT = """\
 단체샷도 없고 인원 파악이 전혀 불가하면:
 {{"type":"UNKNOWN","min":null,"max":null,"confidence":"C","evidence":"no_people_visible"}}"""
 
-GEMINI_MODEL = "gemini-1.5-flash"
+GEMINI_MODEL = "gemini-3-flash-preview"
 MAX_RETRIES = 3
 RETRY_DELAY_SEC = 15  # Rate limit 시 재시도 대기
 MAX_IMAGE_PX = 2000   # 장변 최대 픽셀 (업로드 안정성)
@@ -189,7 +189,7 @@ def load_image(path: Path):
     return img
 
 
-def call_gemini(model, session_name: str, jpg_paths: list[Path]) -> tuple[dict | None, str | None]:
+def call_gemini(client, session_name: str, jpg_paths: list[Path]) -> tuple[dict | None, str | None]:
     """Gemini Flash Vision API 호출. (result_dict, error_str) 반환."""
     images = []
     for p in jpg_paths:
@@ -206,7 +206,7 @@ def call_gemini(model, session_name: str, jpg_paths: list[Path]) -> tuple[dict |
 
     for attempt in range(1, MAX_RETRIES + 1):
         try:
-            response = model.generate_content(contents)
+            response = client.models.generate_content(model=GEMINI_MODEL, contents=contents)
             text = response.text.strip()
             # 마크다운 코드블록 제거
             text = re.sub(r"```[a-z]*\s*|\s*```", "", text).strip()
@@ -278,7 +278,7 @@ def summarize_csv(csv_path: Path, year: int):
 
 # ── 연도 단위 처리 ────────────────────────────────────────────────────────
 
-def process_year(year: int, model, drive_root: Path, delay: float):
+def process_year(year: int, client, drive_root: Path, delay: float):
     print(f"\n{'='*60}")
     print(f"  {year}년 처리 시작")
     print(f"{'='*60}")
@@ -356,7 +356,7 @@ def process_year(year: int, model, drive_root: Path, delay: float):
         print(f"    JPG {len(jpg_paths)}장 → Gemini 호출 중...")
 
         # ── Gemini API 호출
-        data, err = call_gemini(model, session_name, jpg_paths)
+        data, err = call_gemini(client, session_name, jpg_paths)
 
         if err:
             print(f"    → 오류: {err}")
@@ -394,17 +394,16 @@ def main():
 
     # 의존성 확인
     try:
-        import google.generativeai as genai
+        from google import genai
         from PIL import Image  # noqa: F401
     except ImportError as e:
         print(f"오류: 필요한 패키지가 없습니다 — {e}")
-        print("  pip install google-generativeai pillow")
+        print("  pip install google-genai pillow")
         sys.exit(1)
 
     # API 초기화
     api_key = get_api_key(args)
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel(GEMINI_MODEL)
+    client = genai.Client(api_key=api_key)
 
     drive_root = Path(args.drive_root)
     delay = args.delay
@@ -426,7 +425,7 @@ def main():
     grand_total_min = grand_total_max = 0
 
     for year in years:
-        process_year(year, model, drive_root, delay)
+        process_year(year, client, drive_root, delay)
 
         # 전체 누적 집계
         csv_path = OUTPUT_DIR / f"photo_headcount_estimates_{year}.csv"
