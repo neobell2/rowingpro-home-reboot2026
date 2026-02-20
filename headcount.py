@@ -155,12 +155,15 @@ def build_folder_index(drive_root: Path, year: int) -> dict[str, Path]:
 
 # ── 이미지 선택 ───────────────────────────────────────────────────────────
 
+IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".tif", ".tiff", ".bmp", ".gif", ".webp"}
+
+
 def get_top_jpgs(folder: Path, n: int = 5) -> list[Path]:
-    """폴더(재귀)에서 파일 크기 내림차순 상위 n개 JPG 반환."""
+    """폴더(재귀)에서 파일 크기 내림차순 상위 n개 이미지 반환 (jpg/png/tiff/bmp 등)."""
     candidates: list[tuple[int, Path]] = []
     try:
         for f in folder.rglob("*"):
-            if f.is_file() and f.suffix.lower() in (".jpg", ".jpeg"):
+            if f.is_file() and f.suffix.lower() in IMAGE_EXTS:
                 try:
                     candidates.append((f.stat().st_size, f))
                 except OSError:
@@ -183,8 +186,8 @@ def load_image(path: Path):
     if max(w, h) > MAX_IMAGE_PX:
         scale = MAX_IMAGE_PX / max(w, h)
         img = img.resize((int(w * scale), int(h * scale)), Image.LANCZOS)
-    # Gemini는 RGB 필요
-    if img.mode not in ("RGB", "RGBA"):
+    # JPEG 저장을 위해 RGB로 통일 (RGBA/P/L/CMYK 등 모두 변환)
+    if img.mode != "RGB":
         img = img.convert("RGB")
     return img
 
@@ -213,9 +216,14 @@ def call_gemini(client, session_name: str, jpg_paths: list[Path]) -> tuple[dict 
         parts=[types.Part(text=prompt)] + parts,
     )
 
+    config = types.GenerateContentConfig(
+        response_mime_type="application/json",
+        thinking_config=types.ThinkingConfig(thinking_budget=0),
+    )
+
     for attempt in range(1, MAX_RETRIES + 1):
         try:
-            response = client.models.generate_content(model=GEMINI_MODEL, contents=[content])
+            response = client.models.generate_content(model=GEMINI_MODEL, contents=[content], config=config)
             text = response.text.strip()
             # 마크다운 코드블록 제거
             text = re.sub(r"```[a-z]*\s*|\s*```", "", text).strip()
