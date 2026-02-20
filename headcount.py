@@ -175,6 +175,27 @@ def get_top_jpgs(folder: Path, n: int = 5) -> list[Path]:
     return [f for _, f in candidates[:n]]
 
 
+def summarize_folder_exts(folder: Path, max_items: int = 8) -> str:
+    """폴더 내 파일 확장자 분포 요약 (지원 포맷이 없을 때 원인 파악용)."""
+    counts: dict[str, int] = {}
+    try:
+        for f in folder.rglob("*"):
+            if not f.is_file():
+                continue
+            ext = f.suffix.lower() or "<noext>"
+            counts[ext] = counts.get(ext, 0) + 1
+    except PermissionError:
+        return "permission_denied"
+
+    if not counts:
+        return "no_files"
+
+    items = sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))
+    shown = items[:max_items]
+    tail = len(items) - len(shown)
+    summary = ", ".join(f"{k}:{v}" for k, v in shown)
+    return f"{summary}{' …' if tail > 0 else ''}"
+
 # ── Gemini API 호출 ───────────────────────────────────────────────────────
 
 def load_image(path: Path):
@@ -268,11 +289,18 @@ def load_processed_sessions(csv_path: Path, year: int) -> set[str]:
 def write_csv_row(csv_path: Path, row: dict):
     """CSV에 1행 추가. 파일 없으면 헤더 포함 생성."""
     file_exists = csv_path.exists()
-    with open(csv_path, "a", newline="", encoding="utf-8-sig") as f:
-        writer = csv.DictWriter(f, fieldnames=CSV_HEADER)
-        if not file_exists:
-            writer.writeheader()
-        writer.writerow(row)
+    try:
+        with open(csv_path, "a", newline="", encoding="utf-8-sig") as f:
+            writer = csv.DictWriter(f, fieldnames=CSV_HEADER)
+            if not file_exists:
+                writer.writeheader()
+            writer.writerow(row)
+    except PermissionError:
+        print(f"\n오류: CSV 파일에 쓸 수 없습니다 (권한/잠금): {csv_path}")
+        print("  - Excel/Numbers/스프레드시트 등에서 파일이 열려있으면 닫고 다시 실행하세요.")
+        print("  - Windows 읽기 전용 속성이라면 해제하세요:")
+        print(f"      attrib -R \"{csv_path}\"")
+        sys.exit(1)
 
 
 def summarize_csv(csv_path: Path, year: int):
@@ -315,6 +343,16 @@ def process_year(year: int, client, drive_root: Path, delay: float):
     # CSV 경로 + 기처리 세션
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     csv_path = OUTPUT_DIR / f"photo_headcount_estimates_{year}.csv"
+    # CSV가 잠겨있으면(예: Excel에서 열어둠) API 호출 전에 중단해서 비용/시간 낭비 방지
+    try:
+        with open(csv_path, "a", newline="", encoding="utf-8-sig"):
+            pass
+    except PermissionError:
+        print(f"\n오류: CSV 파일에 쓸 수 없습니다 (권한/잠금): {csv_path}")
+        print("  - Excel/Numbers/스프레드시트 등에서 파일이 열려있으면 닫고 다시 실행하세요.")
+        print("  - Windows 읽기 전용 속성이라면 해제하세요:")
+        print(f"      attrib -R \"{csv_path}\"")
+        return
     processed = load_processed_sessions(csv_path, year)
     if processed:
         print(f"  이미 처리된 세션: {len(processed)}건 (스킵)")
@@ -361,16 +399,16 @@ def process_year(year: int, client, drive_root: Path, delay: float):
 
         row["session_path"] = str(folder)
 
-        # ── JPG 선택
+        # ── 이미지 선택
         jpg_paths = get_top_jpgs(folder)
         if not jpg_paths:
-            print(f"    → JPG 없음")
-            row["notes"] = "no_images_found"
+            print(f"    → 지원 이미지 포맷 없음")
+            row["notes"] = f"no_supported_images_found: {summarize_folder_exts(folder)}"
             write_csv_row(csv_path, row)
             no_image += 1
             continue
 
-        print(f"    JPG {len(jpg_paths)}장 → Gemini 호출 중...")
+        print(f"    이미지 {len(jpg_paths)}장 → Gemini 호출 중...")
 
         # ── Gemini API 호출
         data, err = call_gemini(client, session_name, jpg_paths)
@@ -379,7 +417,10 @@ def process_year(year: int, client, drive_root: Path, delay: float):
             print(f"    → 오류: {err}")
             row["notes"] = err
             write_csv_row(csv_path, row)
-            errors += 1
+            if err == "no_images_loaded":
+                no_image += 1
+            else:
+                errors += 1
         else:
             row["session_type"] = data.get("type", "")
             row["people_min"] = data.get("min") if data.get("min") is not None else ""
