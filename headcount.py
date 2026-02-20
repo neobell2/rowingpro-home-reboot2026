@@ -191,22 +191,31 @@ def load_image(path: Path):
 
 def call_gemini(client, session_name: str, jpg_paths: list[Path]) -> tuple[dict | None, str | None]:
     """Gemini Flash Vision API 호출. (result_dict, error_str) 반환."""
-    images = []
+    import io
+    from google.genai import types
+
+    parts = []
     for p in jpg_paths:
         try:
-            images.append(load_image(p))
+            img = load_image(p)
+            buf = io.BytesIO()
+            img.save(buf, format="JPEG")
+            parts.append(types.Part.from_bytes(data=buf.getvalue(), mime_type="image/jpeg"))
         except Exception as e:
             print(f"    이미지 로드 실패: {p.name} — {e}")
 
-    if not images:
+    if not parts:
         return None, "no_images_loaded"
 
     prompt = GEMINI_PROMPT.format(session_name=session_name)
-    contents = [prompt] + images
+    content = types.Content(
+        role="user",
+        parts=[types.Part(text=prompt)] + parts,
+    )
 
     for attempt in range(1, MAX_RETRIES + 1):
         try:
-            response = client.models.generate_content(model=GEMINI_MODEL, contents=contents)
+            response = client.models.generate_content(model=GEMINI_MODEL, contents=[content])
             text = response.text.strip()
             # 마크다운 코드블록 제거
             text = re.sub(r"```[a-z]*\s*|\s*```", "", text).strip()
