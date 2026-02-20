@@ -3,6 +3,8 @@ node_modules/
 
 # Build output
 dist/
+.tmp_*/
+docs/reports/_backup_headcount_csv_before_dedup/
 .astro/
 
 # Environment variables

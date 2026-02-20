@@ -1,12 +1,58 @@
 ﻿year,session_name,session_path,session_type,people_min,people_max,confidence,evidence,notes
-2013,2013.04.04 메트라이프 천안행사,j:\공유 드라이브\2013 사진 영상\2013.04.04 메트라이프 천안행사,GROUP,40,60,A,direct_counting_from_seating_shot_and_multiple_teams,
-2013,2013.07.03 메디포스트.윤원일,j:\공유 드라이브\2013 사진 영상\2013.07.03 메디포스트.윤원일,GROUP,30,50,A,direct_counting_from_gathering_shot,
-2013,2013.07.20 동국대.인제백담사만해마을.윤원일,j:\공유 드라이브\2013 사진 영상\2013.07.20 동국대.인제백담사만해마을.윤원일,GROUP,40,60,B,"Multiple color-coded teams (yellow, orange, blue, green, black) visible with at least 8-10 people per group based on vest numbering.",
-2013,2013.07.26 현대아산아카데미.미사리.백경훈,j:\공유 드라이브\2013 사진 영상\2013.07.26 현대아산아카데미.미사리.백경훈,,,,,,no_images_found
-2013,2013.07.29 조말론.미사리.백경훈,j:\공유 드라이브\2013 사진 영상\2013.07.29 조말론.미사리.백경훈,,,,,,no_images_found
-2013,2013.07.31 전체회식.태릉갈비집,j:\공유 드라이브\2013 사진 영상\2013.07.31 전체회식.태릉갈비집,GROUP,12,20,B,multiple_tables_with_at_least_10_unique_people_visible_in_restaurant,
-2013,2013.08.02 서울시장애인체육회.미사리,j:\공유 드라이브\2013 사진 영상\2013.08.02 서울시장애인체육회.미사리,GROUP,15,25,B,Direct count of approximately 16-18 individuals visible in a single frame across two rowing machines,
-2013,2013.08.22 흥국배구단.양평미리내.윤종성(녹취_백),j:\공유 드라이브\2013 사진 영상\2013.08.22 흥국배구단.양평미리내.윤종성(녹취_백),,,,,,no_images_found
-2013,2013.09.11 지오캐치야유회.춘천,j:\공유 드라이브\2013 사진 영상\2013.09.11 지오캐치야유회.춘천,,,,,,no_images_found
-2013,2013.10.10 (주)동서.일산동양인재개발원.윤종성,j:\공유 드라이브\2013 사진 영상\2013.10.10 (주)동서.일산동양인재개발원.윤종성,GROUP,24,45,B,"3 colors of vests (green, yellow, red) visible in training room",
-2013,2013.06.28 한국외대 훈련,j:\공유 드라이브\2013 사진 영상\2013.06.28 한국외대 훈련,GROUP,12,20,B,Direct count of visible participants and multiple rowing boats (8+ individuals per frame),
+2013,2013.04.04 메트라이프 천안행사,j:\공유 드라이브\2013 사진 영상\2013.04.04 메트라이프 천안행사,GROUP,40,60,A,"4 team colors (red, green, orange, yellow) with visible group of approx 45 people sitting",
+2013,2013.07.03 메디포스트.윤원일,j:\공유 드라이브\2013 사진 영상\2013.07.03 메디포스트.윤원일,GROUP,40,75,B,vest colors green/orange/yellow and rowing machines visible,
+2013,2013.07.20 동국대.인제백담사만해마을.윤원일,j:\공유 드라이브\2013 사진 영상\2013.07.20 동국대.인제백담사만해마을.윤원일,GROUP,40,60,A,"Multiple color-coded bibs (Yellow, Orange, Blue, Green, White) and 8+ rowing lanes shown on screen.",
+2013,2013.07.26 현대아산아카데미.미사리.백경훈,j:\공유 드라이브\2013 사진 영상\2013.07.26 현대아산아카데미.미사리.백경훈,,,,,,no_supported_images_found: .mpg:4
+2013,2013.07.29 조말론.미사리.백경훈,j:\공유 드라이브\2013 사진 영상\2013.07.29 조말론.미사리.백경훈,,,,,,"no_supported_images_found: .mpg:16, .db:1"
+2013,2013.07.31 전체회식.태릉갈비집,j:\공유 드라이브\2013 사진 영상\2013.07.31 전체회식.태릉갈비집,GROUP,10,20,B,multiple people seated across long tables in a restaurant setting,
+2013,2013.08.02 서울시장애인체육회.미사리,j:\공유 드라이브\2013 사진 영상\2013.08.02 서울시장애인체육회.미사리,GROUP,15,25,B,counting 15+ individuals in a single scene with multiple rowing machines visible,
+2013,2013.08.22 흥국배구단.양평미리내.윤종성(녹취_백),j:\공유 드라이브\2013 사진 영상\2013.08.22 흥국배구단.양평미리내.윤종성(녹취_백),,,,,,"no_supported_images_found: .mpg:8, .pptx:1, .wmv:1"
+2013,2013.09.11 지오캐치야유회.춘천,j:\공유 드라이브\2013 사진 영상\2013.09.11 지오캐치야유회.춘천,,,,,,"no_supported_images_found: .3gp:3, .db:1"
+2013,2013.10.10 (주)동서.일산동양인재개발원.윤종성,j:\공유 드라이브\2013 사진 영상\2013.10.10 (주)동서.일산동양인재개발원.윤종성,GROUP,24,45,B,"three color teams (green, yellow, red) observed in a workshop setting",
+2013,2013.06.28 한국외대 훈련,j:\공유 드라이브\2013 사진 영상\2013.06.28 한국외대 훈련,GROUP,10,15,B,Direct count of people on the dock and in boats across multiple shots,
+2013,2013.07.16 서울대 훈련,j:\공유 드라이브\2013 사진 영상\2013.07.16 서울대 훈련,,,,,,no_supported_images_found: .db:1
+2013,2013.05.02 SK브로드밴드,j:\공유 드라이브\2013 사진 영상\2013.05.02 SK브로드밴드,GROUP,25,35,A,manual_count_from_group_formation_shot,
+2013,2013.05.25 동서.윤원일,j:\공유 드라이브\2013 사진 영상\2013.05.25 동서.윤원일,MEGA,45,60,A,"Multiple rows of 15+ participants in team vests (white, orange, black, yellow) and over 6 rowing machines visible.",
+2013,2013.06.04 메트라이프.용인퓨처리더십센터.윤원일,j:\공유 드라이브\2013 사진 영상\2013.06.04 메트라이프.용인퓨처리더십센터.윤원일,GROUP,25,35,A,direct_counting_from_standing_group_photo,
+2013,2013.11.09 (미확인) 미사리 백경훈,j:\공유 드라이브\2013 사진 영상\2013.11.09 (미확인) 미사리 백경훈,,,,,,"no_supported_images_found: .3gp:3, .db:1"
+2013,2013.11.11 (미확인) 미사리 백경훈,j:\공유 드라이브\2013 사진 영상\2013.11.11 (미확인) 미사리 백경훈,GROUP,20,35,B,"Multiple color vests (Red, Blue, Yellow) and large boat carrying group (approx 16+ per boat)",
+2013,2013.11.14 (미확인) 인도어 윤종성,j:\공유 드라이브\2013 사진 영상\2013.11.14 (미확인) 인도어 윤종성,,,,,,no_supported_images_found: .3gp:3
+2013,2013.11.17 나이키 위런,j:\공유 드라이브\2013 사진 영상\2013.11.17 나이키 위런,MEGA,100,300,B,10 rowing lanes on digital screen and large outdoor crowd,
+2013,2013.08.03 부산광역시장배,,,,,,,excluded
+2013,2013.08.02 장애인체육 조정강습회,j:\공유 드라이브\2013 사진 영상\2013.08.02 장애인체육 조정강습회,GROUP,15,25,A,Visible 6 rowing machines with 15+ distinct participants queuing and rotating,
+2013,2013.07.19 컨셉촬영 홈페이지제작용,j:\공유 드라이브\2013 사진 영상\2013.07.19 컨셉촬영 홈페이지제작용,SMALL,5,10,B,rowing_crew_of_5_plus_instructors_and_other_staff_visible,
+2013,2013.05.30-06.02 경기국제보트쇼 킨텍스,,,,,,,excluded
+2013,2013.10.01-03 제33회 장애인체육대회,,,,,,,excluded
+2013,2013.10.13 KSPO 체육장학금 수여식,j:\공유 드라이브\2013 사진 영상\2013.10.13 KSPO 체육장학금 수여식,GROUP,18,25,A,direct_counting_of_group_photo,
+2013,2013.11.13 상상인 워크샵 이정민선수 후원,j:\공유 드라이브\2013 사진 영상\2013.11.13 상상인 워크샵 이정민선수 후원,GROUP,15,25,B,three_boats_with_five_crew_members_each,
+2013,2013.10.22 전국체육대회,,,,,,,excluded
+2013,2013.10.27 제1회 기흥호수배 조정대회,,,,,,,excluded
+2013,2013.04.15 롯데카드,j:\공유 드라이브\2013 사진 영상\2013.04.15 롯데카드,GROUP,35,45,A,direct count of people standing in formation and rowing machines,
+2013,2013.04.18 오픈타이드코리아,j:\공유 드라이브\2013 사진 영상\2013.04.18 오픈타이드코리아,GROUP,32,60,B,"4 vest colors (light green, yellow, orange, white) x 8-15 people",
+2013,2013.05.06 삼성전자 미사리,j:\공유 드라이브\2013 사진 영상\2013.05.06 삼성전자 미사리,GROUP,24,45,B,three_vest_colors_observed_blue_red_neon_and_6_plus_rowing_machines,
+2013,2013.04.11 경주 동희그룹,j:\공유 드라이브\2013 사진 영상\2013.04.11 경주 동희그룹,GROUP,32,60,B,"three colors (red, blue, lime/orange) visible across multiple photos",
+2013,2013.05.01 LIG,j:\공유 드라이브\2013 사진 영상\2013.05.01 LIG,GROUP,32,60,B,"at least 4 colored teams (blue, orange, yellow, black) visible with rowers and support staff",
+2013,2013.05.13 경기국제보트쇼,,,,,,,excluded
+2013,2013.05.55 메트라이프 천안재능연수원,j:\공유 드라이브\2013 사진 영상\2013.05.55 메트라이프 천안재능연수원,GROUP,40,75,B,at least 5 color-coded vest teams with 8+ members per team and 6+ machines visible,
+2013,2013.10.15 비품점검.미사리(백경훈이 말 안들어 처먹고 대충 하다가 돌풍에 텐트 해 먹은 날),j:\공유 드라이브\2013 사진 영상\2013.10.15 비품점검.미사리(백경훈이 말 안들어 처먹고 대충 하다가 돌풍에 텐트 해 먹은 날),,,,,,no_supported_images_found: .3gp:1
+2013,2013.10.18 신젠타코리아,j:\공유 드라이브\2013 사진 영상\2013.10.18 신젠타코리아,GROUP,45,65,A,direct_counting_from_seated_group_and_3_colored_vests,
+2013,2013.06.19 흥국 양평미리내.윤종성(녹취완료),j:\공유 드라이브\2013 사진 영상\2013.06.19 흥국 양평미리내.윤종성(녹취완료),,,,,,"no_supported_images_found: .sfap0:3, .sfk:3, .wmv:3, .bak:1, .veg:1"
+2013,2013.06.05 흥국 양평미리내,j:\공유 드라이브\2013 사진 영상\2013.06.05 흥국 양평미리내,GROUP,40,60,A,"Multiple colored vests (red, blue, yellow, green) with approx 10+ people per team visible in the room",
+2013,2013.06.10 흥국 양평미리내,j:\공유 드라이브\2013 사진 영상\2013.06.10 흥국 양평미리내,MEGA,64,120,A,8 rowing machines labeled up to 8 and at least 4 team vest colors visible,
+2013,2013.07.04 흥국 양평미리내.윤종성,j:\공유 드라이브\2013 사진 영상\2013.07.04 흥국 양평미리내.윤종성,GROUP,35,50,A,direct_counting_of_participants_in_vests_orange_yellow_purple_red_green,
+2013,2013.07.08 흥국 양평미리내.윤종성,j:\공유 드라이브\2013 사진 영상\2013.07.08 흥국 양평미리내.윤종성,GROUP,40,60,A,direct_counting_group_shot_and_multiple_team_vest_colors,
+2013,2013.07.10 흥국 양평미리내.윤원일,j:\공유 드라이브\2013 사진 영상\2013.07.10 흥국 양평미리내.윤원일,GROUP,32,60,B,"at least 4 colored teams (orange, blue, yellow, red) with 8-15 people each",
+2013,2013.07.24 흥국 양평미리내.윤종성,j:\공유 드라이브\2013 사진 영상\2013.07.24 흥국 양평미리내.윤종성,GROUP,48,90,B,"6 vest colors (blue, red, orange, yellow, green, purple) visible with multiple participants per color",
+2013,2013.07.25 흥국 양평미리내.윤원일,j:\공유 드라이브\2013 사진 영상\2013.07.25 흥국 양평미리내.윤원일,,,,,,no_supported_images_found: .mpg:4
+2013,2013.07.27 대학조정대회2013,,,,,,,excluded
+2013,2013.06.17 흥국 양평미리내.윤종성,j:\공유 드라이브\2013 사진 영상\2013.06.17 흥국 양평미리내.윤종성,,,,,,"no_supported_images_found: .mp4:1, .wav:1"
+2013,2013.05.15 나이키 미사리,j:\공유 드라이브\2013 사진 영상\2013.05.15 나이키 미사리,GROUP,25,35,B,"direct count of three color groups (white, black, blue) and instructors",
+2013,2013.05.16 용인백현중학교 미사리,j:\공유 드라이브\2013 사진 영상\2013.05.16 용인백현중학교 미사리,GROUP,12,36,B,at least 12 rowing machines visible with 1-3 rotations per session,
+2013,2013.06.03 백석대 장안대,j:\공유 드라이브\2013 사진 영상\2013.06.03 백석대 장안대,GROUP,30,50,B,indoor_outdoor_crowd_and_multiple_boats_visible,
+2013,2013.08.21 메트라이프 안성TS인재개발원.윤종성,j:\공유 드라이브\2013 사진 영상\2013.08.21 메트라이프 안성TS인재개발원.윤종성,GROUP,15,30,A,direct_count_of_visible_participants_in_vests,
+2013,2013.08.30 하남 코치숙소 방문,j:\공유 드라이브\2013 사진 영상\2013.08.30 하남 코치숙소 방문,SMALL,5,8,A,direct_count_from_group_selfie_and_window_reflections,
+2013,2013.09.05 메트라이프 용인FLC.윤종성,j:\공유 드라이브\2013 사진 영상\2013.09.05 메트라이프 용인FLC.윤종성,GROUP,32,60,A,"4 team colors (white, navy, yellow, green) visible with at least 8 rowers per team plus 8 rowing machines",
+2013,2013.09.10 (미확인) 미사리,j:\공유 드라이브\2013 사진 영상\2013.09.10 (미확인) 미사리,,,,,,no_supported_images_found: .3gp:1
+2013,2013.09.13 BR코리아.미사리 백경훈,j:\공유 드라이브\2013 사진 영상\2013.09.13 BR코리아.미사리 백경훈,GROUP,24,45,B,"three team colors (green, orange, white) visible with multiple participants per group",
+2013,2013.10.10 LG 미사리.백경훈,j:\공유 드라이브\2013 사진 영상\2013.10.10 LG 미사리.백경훈,GROUP,16,16,A,direct_counting_from_group_shot,
+2013,2013.10.11 멕ICS 미사리.백경훈,j:\공유 드라이브\2013 사진 영상\2013.10.11 멕ICS 미사리.백경훈,MEGA,24,60,B,"Multiple color vests (Green, Yellow, Red, Orange) observed with at least 2 machines",

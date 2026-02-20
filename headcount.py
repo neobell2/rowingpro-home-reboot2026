@@ -288,7 +288,7 @@ def load_processed_sessions(csv_path: Path, year: int) -> set[str]:
 
 def write_csv_row(csv_path: Path, row: dict):
     """CSV에 1행 추가. 파일 없으면 헤더 포함 생성."""
-    file_exists = csv_path.exists()
+    file_exists = csv_path.exists() and csv_path.stat().st_size > 0
     try:
         with open(csv_path, "a", newline="", encoding="utf-8-sig") as f:
             writer = csv.DictWriter(f, fieldnames=CSV_HEADER)
@@ -344,15 +344,16 @@ def process_year(year: int, client, drive_root: Path, delay: float):
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     csv_path = OUTPUT_DIR / f"photo_headcount_estimates_{year}.csv"
     # CSV가 잠겨있으면(예: Excel에서 열어둠) API 호출 전에 중단해서 비용/시간 낭비 방지
-    try:
-        with open(csv_path, "a", newline="", encoding="utf-8-sig"):
-            pass
-    except PermissionError:
-        print(f"\n오류: CSV 파일에 쓸 수 없습니다 (권한/잠금): {csv_path}")
-        print("  - Excel/Numbers/스프레드시트 등에서 파일이 열려있으면 닫고 다시 실행하세요.")
-        print("  - Windows 읽기 전용 속성이라면 해제하세요:")
-        print(f"      attrib -R \"{csv_path}\"")
-        return
+    if csv_path.exists():
+        try:
+            with open(csv_path, "a", newline="", encoding="utf-8-sig"):
+                pass
+        except PermissionError:
+            print(f"\n오류: CSV 파일에 쓸 수 없습니다 (권한/잠금): {csv_path}")
+            print("  - Excel/Numbers/스프레드시트 등에서 파일이 열려있으면 닫고 다시 실행하세요.")
+            print("  - Windows 읽기 전용 속성이라면 해제하세요:")
+            print(f"      attrib -R \"{csv_path}\"")
+            return
     processed = load_processed_sessions(csv_path, year)
     if processed:
         print(f"  이미 처리된 세션: {len(processed)}건 (스킵)")
