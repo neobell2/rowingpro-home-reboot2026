@@ -7,6 +7,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.2** | 2026-02-22 | SESSION_46G PM(Sonnet): D-041 반영. VSCode 작업 모델 사양 4.6으로 상향 교정. |
 | **v1.1** | 2026-02-17 | SESSION_27 PM: PM 종료 체크리스트에 06_VERSION_HISTORY.md 동시 갱신 의무 명시. |
 | **v1.0** | 2026-02-17 | SESSION_26 Architect(Opus): CLAUDE.md 분리 신설. 세션 시작/종료 프로토콜, 맥락 유지, 문서 구조, 작업 환경. |
 
@@ -118,7 +119,7 @@ git log --oneline -5
 
 | 환경 | 모델 | 도구 | 규칙 파일 |
 |:--|:--|:--|:--|
-| VSCode | **Claude Sonnet 4.5** | Cline, Claude 확장 | `.clinerules`, `CLAUDE.md` |
+| VSCode | **Claude Sonnet 4.6** | Cline, Claude 확장 | `.clinerules`, `CLAUDE.md` |
 | AntiGravity | **Claude Sonnet 4.6** | 자율 에이전트 | `.antigravityrules` |
 
 > 모든 도구별 규칙 파일은 `CLAUDE.md`를 가리키는 포인터입니다.

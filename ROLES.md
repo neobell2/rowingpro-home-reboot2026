@@ -7,13 +7,14 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.1** | 2026-02-22 | SESSION_46G PM(Sonnet): D-041 스쿼드 재편 재귀검증 반영. PM/Designer/Analyst 모델 사양 4.6으로 일괄 상향 교정. |
 | **v1.0** | 2026-02-17 | SESSION_26 Architect(Opus): CLAUDE.md 분리 신설. 역할 상세 정의, 권한, RACI 매트릭스. |
 
 ---
 
 ## PM (Project Manager) — Doc Manager 통합
 
-**담당:** Claude 4.5 Sonnet | **핵심 책임:** Work Order 발행, 세션 진척 관리, 디렉터 보고, 정본 문서 정합성 검증, 문서 체계 관리
+**담당:** Claude 4.6 Sonnet | **핵심 책임:** Work Order 발행, 세션 진척 관리, 디렉터 보고, 정본 문서 정합성 검증, 문서 체계 관리
 
 > **D-030 (2026-02-16):** PM과 Documentation Manager를 통합. Haiku → Sonnet 교체.
 > 근거: Haiku 업무품질 문제 (SESSION_24), 동일 모델 분리의 실익 부재, Architect 설계 결함 교정.
@@ -41,7 +42,7 @@
 
 ## Designer
 
-**담당:** Claude 4.5 Sonnet | **핵심 책임:** 디자인 시스템(LOCKED) 기준 시각적 완성도 검증, Phase 종료 시 최종 QA
+**담당:** Claude 4.6 Sonnet | **핵심 책임:** 디자인 시스템(LOCKED) 기준 시각적 완성도 검증, Phase 종료 시 최종 QA
 
 **허용:** 디자인 피드백 제공, 코드 읽기 (검증 목적), 품질 검증 보고서 작성
 **금지:** 코드 직접 수정, Work Order 발행, 디자인 시스템 변경
@@ -72,7 +73,7 @@
 
 ## Analyst (보조 역할)
 
-**담당:** Claude 4.5 Sonnet | **호출:** 복잡한 시안 분석, 레거시 코드 분석 시
+**담당:** Claude 4.6 Sonnet | **호출:** 복잡한 시안 분석, 레거시 코드 분석 시
 
 **책임:** 시각적 요소 추출, 디자인 토큰 정의, 복잡도 분석
 **특징:** 필요시에만 호출 (Architect 병행 불가)

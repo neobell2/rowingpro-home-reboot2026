@@ -7,6 +7,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.35** | 2026-02-22 | SESSION_46E PM(Gemini): 2026.02 AI 스쿼드 최신화 검증. 부적절 산출물(47) 폐기, D-041(Claude 4.6 전면 승급) 반영. |
 | **v1.34** | 2026-02-21 | SESSION_46D PM(Gemini): SESSION_46C 감사 후속조치 PM-01~PM-14 일괄 처리 완료. 완료 항목 경량화. |
 | **v1.33** | 2026-02-21 | SESSION_46B PM(Sonnet): 컨텐츠 중간점검 완료(16/17), IA 재설계 확정(14페이지), 기업 서비스 통합(HRD 교육), Index 구성(7섹션+롤링배너 30개), 레이아웃 재설계 Decision Gate 설정. |
 | **v1.32** | 2026-02-20 | SESSION_44 PM(Sonnet): 비공식 문서관리 — 버전히스토리 교정(04/05/06), 폴더 전수점검, legacy/ 압축, 빈폴더·위치오류 교정 7건. |
@@ -36,11 +37,11 @@
 | 역할 | 담당 | 책임 | 권한 제한 |
 |:--|:--|:--|:--|
 | Director | 사용자(디렉터) | 최종 승인/결정 | — |
-| **PM (Doc Manager 통합)** | **Claude 4.5 Sonnet** | **WO 발행, 세션 보고, 공정 모니터링, 정본 문서 정합성 검증, 문서 체계 관리** | **❌ 코드 수정, 정본 구조 변경(승인 필요), Phase 전환 결정** |
-| Content | Gemini 3.0 Pro | 브랜드 스토리 및 고난도 카피라이팅 | — |
+| **PM (Doc Manager 통합)** | **Claude 4.6 Sonnet** | **WO 발행, 세션 보고, 공정 모니터링, 정본 문서 정합성 검증, 문서 체계 관리** | **❌ 코드 수정, 정본 구조 변경(승인 필요), Phase 전환 결정** |
+| Content | Gemini 3.1 Pro | 브랜드 스토리 및 고난도 카피라이팅 | — |
 | **Media Producer** | **Gemini 3.0 Flash** | **미디어 아카이브 탐색, 자산 생산, Midjourney 프롬프트** | **❌ 코드/정본 문서 수정 금지** |
-| Builder | **Claude 4.5 Sonnet** | Astro/Tailwind 구현 가이드 및 코드 작업 | — |
-| **Designer** | **Claude 4.5 Sonnet** | **디자인 폴리싱, 시각적 완성도, 최종 QA** | **❌ 코드 직접 수정 금지** |
+| Builder | **Claude 4.6 Sonnet** | Astro/Tailwind 구현 가이드 및 코드 작업 | — |
+| **Designer** | **Claude 4.6 Sonnet** | **디자인 폴리싱, 시각적 완성도, 최종 QA** | **❌ 코드 직접 수정 금지** |
 
 ### 보조 역할
 
@@ -70,11 +71,11 @@
 - SESSION_38~44: SEO 드래프트 병합, 외부감사(Codex), 폴더 정비, headcount 자동화 WO 발행
 - **SESSION_46B (PM/Sonnet)**: IA 14페이지 재설계 확정, Index 7섹션, Decision Gate 설정
 - **SESSION_46C (Architect/Opus)**: 통합 감사(정합성/업무/심층/로지컬), 가비지 5건 삭제, D-039 검증, AD-01 추인, 빌드 성공
-- **SESSION_46D (PM/Gemini — 이번 세션 완료)**:
+- **SESSION_46D (PM/Gemini)**:
   - PM-01: D-040(IA 14페이지) 03_DECISIONS.md 등록
   - PM-02: 02_ARCHITECTURE.md 14페이지 IA 전면 갱신, GNB/Footer/리소스 교정
   - PM-03: 01_PROJECT_CONTEXT.md 17→14페이지, IA 간접화
-  - PM-04: 04_CURRENT_STATE.md 경량화 (이 항목)
+  - PM-04: 04_CURRENT_STATE.md 경량화
   - PM-06: WO_CONTENT_CONFIRMATION SUPERSEDED
   - PM-07: PHASE_3_INTEGRATED_ROADMAP_WO → _archive/work_orders/
   - PM-08: WO_BUILDER_HEADCOUNT_AUTOMATION COMPLETED + 아카이브
@@ -82,6 +83,13 @@
   - PM-10: NAMING_CONVENTIONS.md 경로 교정
   - PM-11/12: docs/contents/ .md 21개+.html 1개 삭제 (src/content/pages/에 이전 완료)
   - DD-03: public/logo.jpg+logo.png → public/images/ 이동
+- **SESSION_46E (PM/Gemini)**:
+  - 잘못된 페르소나/환각으로 생성된 SESSION_47 리포트 전면 파기 및 46E 정식 보고서 생성
+  - 2026.02 AI 스쿼드 최적화 검토 (D-041: Claude 4.6 전면 승급 확정) 및 스쿼드 템플릿 갱신
+- **SESSION_46G (PM/Sonnet — 이번 세션 완료)**:
+  - 46F 스레드 핸드오프 검토 완료 및 SESSION_48(GPT) 부적절 산출물 2건 삭제.
+  - D-041에 따른 `ROLES.md` 및 `PROTOCOLS.md` 상의 작업 모델 사양(Claude 4.6) 상향 교정.
+  - `06_VERSION_HISTORY.md` 전체 버전 히스토리 등록 완료.
 
 ## 진행중
 
