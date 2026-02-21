@@ -66,7 +66,20 @@
       "Bash(\"/c/Users/윤종호/AppData/Local/Programs/Python/Python312/python.exe\" -m py_compile \"/c/Users/윤종호/Desktop/로잉프로홈페이지Reboot.202601/headcount.py\")",
       "Bash(\"/c/Users/윤종호/AppData/Local/Programs/Python/Python312/python.exe\" -m pip install google-generativeai pillow)",
       "Bash(\"/c/Users/윤종호/AppData/Local/Programs/Python/Python312/python.exe\" \"/c/Users/윤종호/Desktop/로잉프로홈페이지Reboot.202601/headcount.py\" --help)",
-      "Bash(\"/c/Users/윤종호/AppData/Local/Programs/Python/Python312/python.exe\" -c:*)"
+      "Bash(\"/c/Users/윤종호/AppData/Local/Programs/Python/Python312/python.exe\" -c:*)",
+      "Bash(/c/Users/윤종호/AppData/Local/Programs/Python/Python312/python.exe --version)",
+      "Bash(/c/Users/윤종호/AppData/Local/Programs/Python/Python312/python.exe -c \"import google.generativeai; from PIL import Image; print\\(''패키지 OK''\\)\")",
+      "Bash(/c/Users/윤종호/AppData/Local/Programs/Python/Python312/python.exe:*)",
+      "WebFetch(domain:ai.google.dev)",
+      "Bash(for folder in \"2013.07.26 현대아산아카데미.미사리.백경훈\" \"2013.07.29 조말론.미사리.백경훈\" \"2013.08.22 흥국배구단.양평미리내.윤종성\\(녹취_백\\)\" \"2013.09.11 지오캐치야유회.춘천\")",
+      "Bash(do echo \"=== $folder ===\" find \"j:/공유 드라이브/2013 사진 영상/$folder\" -type f)",
+      "Bash(done)",
+      "Bash(C:Users윤종호AppDataLocalProgramsPythonPython312python.exe classify_indoor_outdoor.py)",
+      "Bash(cmd.exe /c \"cd /d C:\\\\Users\\\\윤종호\\\\Desktop\\\\로잉프로홈페이지Reboot.202601 && C:\\\\Users\\\\윤종호\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe classify_indoor_outdoor.py\")",
+      "Bash(cmd.exe /c \"C:\\\\Users\\\\윤종호\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe \"\"C:\\\\Users\\\\윤종호\\\\Desktop\\\\로잉프로홈페이지Reboot.202601\\\\classify_indoor_outdoor.py\"\" 2>&1\")",
+      "Bash(cmd.exe /c \"C:\\\\Users\\\\윤종호\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe \"\"C:\\\\Users\\\\윤종호\\\\Desktop\\\\로잉프로홈페이지Reboot.202601\\\\classify_indoor_outdoor.py\"\" > C:\\\\Users\\\\윤종호\\\\Desktop\\\\classify_out.txt 2>&1\")",
+      "Bash(powershell.exe -Command \"& ''C:\\\\Users\\\\윤종호\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe'' ''C:\\\\Users\\\\윤종호\\\\Desktop\\\\로잉프로홈페이지Reboot.202601\\\\classify_indoor_outdoor.py''\")",
+      "Bash(powershell.exe -Command \"& ''C:\\\\Users\\\\윤종호\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe'' ''C:\\\\Users\\\\윤종호\\\\Desktop\\\\로잉프로홈페이지Reboot.202601\\\\headcount_aggregate.py''\")"
     ],
     "additionalDirectories": [
       "c:\\Users\\윤종호\\Desktop\\로잉프로홈페이지Reboot.202601\\project"

@@ -1,0 +1,53 @@
+﻿year,session_name,session_path,session_type,people_min,people_max,confidence,evidence,notes
+2013,2013.04.04 메트라이프 천안행사,,GROUP,40,50,B,machine=8; venue=천안 JEI재능교육 연수원; cue=indoor-setting,"source=history_full_list.txt; seed=gemini_task_1771525407267"
+2013,2013.06.05 흥국 양평미리내,"J:\공유 드라이브\2013 사진 영상\2013.06.05 흥국 양평미리내",GROUP,20,40,C,machine_visible=2+; cue=indoor-training; photo=9,"source=history_full_list.txt; sampled=m2_* (2장)"
+2013,2013.06.10 흥국 양평미리내,"J:\공유 드라이브\2013 사진 영상\2013.06.10 흥국 양평미리내",GROUP,60,120,B,crowd_visible=40+; machine_visible=2+; cue=vest/teamplay; photo=293; video=3,"source=history_full_list.txt; sampled=DSC_0057.jpg,DSC_0246.jpg"
+2013,2013.07.03 메디포스트.윤원일,,,,,,,source=history_full_list.txt
+2013,2013.07.20 동국대.인제백담사만해마을.윤원일,,,,,,,source=history_full_list.txt
+2013,2013.07.26 현대아산아카데미.미사리.백경훈,,,,,,,source=history_full_list.txt
+2013,2013.07.29 조말론.미사리.백경훈,,,,,,,source=history_full_list.txt
+2013,2013.07.31 전체회식.태릉갈비집,,,,,,,source=history_full_list.txt
+2013,2013.08.02 서울시장애인체육회.미사리,,,,,,,source=history_full_list.txt
+2013,2013.08.22 흥국배구단.양평미리내.윤종성(녹취_백),,,,,,,source=history_full_list.txt
+2013,2013.09.11 지오캐치야유회.춘천,,,,,,,source=history_full_list.txt
+2013,2013.10.10 (주)동서.일산동양인재개발원.윤종성,,,,,,,source=history_full_list.txt
+2013,2013.06.28 한국외대 훈련,,,,,,,source=history_full_list.txt
+2013,2013.07.16 서울대 훈련,,,,,,,source=history_full_list.txt
+2013,2013.05.02 SK브로드밴드,,,,,,,source=history_full_list.txt
+2013,2013.05.25 동서.윤원일,,,,,,,source=history_full_list.txt
+2013,2013.06.04 메트라이프.용인퓨처리더십센터.윤원일,,,,,,,source=history_full_list.txt
+2013,2013.11.09 (미확인) 미사리 백경훈,,,,,,,source=history_full_list.txt
+2013,2013.11.11 (미확인) 미사리 백경훈,,,,,,,source=history_full_list.txt
+2013,2013.11.14 (미확인) 인도어 윤종성,,,,,,,source=history_full_list.txt
+2013,2013.11.17 나이키 위런,,,,,,,source=history_full_list.txt
+2013,2013.08.02 장애인체육 조정강습회,,,,,,,source=history_full_list.txt
+2013,2013.07.19 컨셉촬영 홈페이지제작용,,,,,,,source=history_full_list.txt
+2013,2013.05.30-06.02 경기국제보트쇼 킨텍스,,,,,,,source=history_full_list.txt
+2013,2013.10.13 KSPO 체육장학금 수여식,,,,,,,source=history_full_list.txt
+2013,2013.11.13 상상인 워크샵 이정민선수 후원,,,,,,,source=history_full_list.txt
+2013,2013.04.15 롯데카드,,,,,,,source=history_full_list.txt
+2013,2013.04.18 오픈타이드코리아,,,,,,,source=history_full_list.txt
+2013,2013.05.06 삼성전자 미사리,,,,,,,source=history_full_list.txt
+2013,2013.04.11 경주 동희그룹,,,,,,,source=history_full_list.txt
+2013,2013.05.01 LIG,,,,,,,source=history_full_list.txt
+2013,2013.05.13 경기국제보트쇼,,,,,,,source=history_full_list.txt
+2013,2013.05.55 메트라이프 천안재능연수원,,,,,,,source=history_full_list.txt
+2013,2013.10.15 비품점검.미사리(백경훈이 말 안들어 처먹고 대충 하다가 돌풍에 텐트 해 먹은 날),,,,,,,source=history_full_list.txt
+2013,2013.10.18 신젠타코리아,,,,,,,source=history_full_list.txt
+2013,2013.06.19 흥국 양평미리내.윤종성(녹취완료),,,,,,,source=history_full_list.txt
+2013,2013.07.04 흥국 양평미리내.윤종성,,,,,,,source=history_full_list.txt
+2013,2013.07.08 흥국 양평미리내.윤종성,,,,,,,source=history_full_list.txt
+2013,2013.07.10 흥국 양평미리내.윤원일,,,,,,,source=history_full_list.txt
+2013,2013.07.24 흥국 양평미리내.윤종성,,,,,,,source=history_full_list.txt
+2013,2013.07.25 흥국 양평미리내.윤원일,,,,,,,source=history_full_list.txt
+2013,2013.06.17 흥국 양평미리내.윤종성,"J:\공유 드라이브\2013 사진 영상\2013.06.17 흥국 양평미리내.윤종성",GROUP,70,120,B,crowd_visible=60+; machine_visible=4+; cue=vest/teamplay; banner=안마음교육; video=1,"source=history_full_list.txt; sampled=.tmp_frames\\2013-06-17_흥국_양평미리내\\frame_01_000257.jpg,.tmp_frames\\2013-06-17_흥국_양평미리내\\frame_02_002930.jpg,.tmp_frames\\2013-06-17_흥국_양평미리내\\frame_03_005306.jpg"
+2013,2013.05.15 나이키 미사리,,,,,,,source=history_full_list.txt
+2013,2013.05.16 용인백현중학교 미사리,,,,,,,source=history_full_list.txt
+2013,2013.06.03 백석대 장안대,,,,,,,source=history_full_list.txt
+2013,2013.08.21 메트라이프 안성TS인재개발원.윤종성,,,,,,,source=history_full_list.txt
+2013,2013.08.30 하남 코치숙소 방문,,,,,,,source=history_full_list.txt
+2013,2013.09.05 메트라이프 용인FLC.윤종성,,,,,,,source=history_full_list.txt
+2013,2013.09.10 (미확인) 미사리,,,,,,,source=history_full_list.txt
+2013,2013.09.13 BR코리아.미사리 백경훈,,,,,,,source=history_full_list.txt
+2013,2013.10.10 LG 미사리.백경훈,,,,,,,source=history_full_list.txt
+2013,2013.10.11 멕ICS 미사리.백경훈,,,,,,,source=history_full_list.txt

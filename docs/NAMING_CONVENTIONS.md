@@ -44,7 +44,7 @@
 ```
 
 **완료 처리:**
-- 완료된 WO는 `docs/work_orders/_completed/` 폴더로 이동 (아카이브)
+- 완료된 WO는 `docs/_archive/work_orders/` 폴더로 이동 (아카이브)
 - 파일명 변경 없음, 파일 내 상태 필드를 `[STATUS: COMPLETED]`로 갱신
 
 ---

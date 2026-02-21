@@ -7,9 +7,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.30** | 2026-02-21 | D-040(IA 14페이지 재설계 확정, D-037 부분 수정) 추가. SESSION_46D PM/Gemini. |
 | **v1.29** | 2026-02-19 | D-039(거버넌스 경량화 + 소비자 확인 의무화) 추가. SESSION_37 Architect/Opus. |
 | **v1.28** | 2026-02-18 | D-038(Google Workspace 다운사이징 방향) 추가. SESSION_35 PM/Sonnet. |
-| **v1.27** | 2026-02-18 | D-037(Programs 구조 확정), D-034(상품/가격 표기 정책) 추가. SESSION_33 PM/Sonnet. D-012 주소 OCR 오류 교정. |
 
 > 📋 **전체 버전 히스토리:** [06_VERSION_HISTORY.md](06_VERSION_HISTORY.md)
 
@@ -47,7 +47,48 @@
 
 > **최신 결정이 맨 위에 표시됩니다.**
 
-### D-039: 거버넌스 경량화 + 소비자 확인 의무화
+### D-040: IA 14페이지 재설계 확정 (D-037 부분 수정)
+
+```
+결정:
+  [1] IA를 17페이지에서 14페이지로 재설계한다.
+  - 삭제: Programs (/programs), Training, Teambuilding, Leadership (3개) → HRD 교육 1개 통합
+  - 신설: 비즈니스 허브 (/business), 라이프 허브 (/life)
+  - 네비게이션: Home / About / 비즈니스 / 라이프 / History / Contact (6개)
+  - 비즈니스 하위: HRD 교육 (/business/hrd), 기업행사 (/business/event), 임직원건강복지 (/business/wellness)
+  - 라이프 하위: 학교·청소년 (/life/school-youth), 스포츠이벤트 (/life/sports-event), 클럽·일반 (/life/club), 가족 (/life/family)
+
+  [2] D-037 부분 수정
+  - 기존 D-037: "4분류(인도어/수상/부스형/MIX) Programs 구조 유지"
+  - 수정: Programs 페이지 자체 삭제. 4분류 상품은 Index 서비스 미리보기 섹션에 흡수.
+  - D-037 원칙(상품 유형 분류 기준)은 유효하나, 독립 페이지 존재는 폐지.
+
+  [3] URL 경로 확정 (DD-01=A)
+  - Architect AD-02 권고 채택: /business/ + /life/ 구조
+  - 기존 URL 리디렉트: /programs → /, /service → /life, /service/corporate/* → /business/*
+
+  [4] Index 구성 확정 (7섹션)
+  - 히어로, 통계, 클라이언트 롤링배너(30개), 제공방식, 서비스미리보기, 왜로잉프로, CTA
+
+이유:
+  SESSION_46B PM(Sonnet) + 디렉터 합의로 결정.
+  SESSION_46C Architect(Opus)가 기술적 타당성 사후 추인 (AD-01).
+  - Programs 4종은 서비스 유형과 중복 상위 개요 역할에 그침
+  - 비즈니스/라이프 분리로 B2B, B2C 고객 진입 경로 명확화
+  - 14페이지 구조가 실제 서비스 구조를 더 정확하게 반영
+
+대안:
+  - 17페이지 유지 (기각) — Programs 역할 모호, 상위 개요 페이지 불필요 클릭 증가
+  - Programs → 허브화 (기각) — 비즈니스/라이프 분리와 구조 충돌
+
+변경 가능 여부: 낮음 (Phase 3 구현 목표 기준, Phase 4 이후 재검토 가능)
+
+일시: 2026-02-21 (SESSION_46B PM/Sonnet + 디렉터 확정, SESSION_46C Architect 추인)
+```
+
+---
+
+
 
 ```
 결정:

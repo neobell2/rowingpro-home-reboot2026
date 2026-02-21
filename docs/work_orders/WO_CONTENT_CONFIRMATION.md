@@ -3,7 +3,7 @@
 **발행:** PM (Claude Sonnet 4.6, SESSION_37)
 **수신:** Director
 **일시:** 2026-02-18
-**상태:** [STATUS: IN PROGRESS] — TASK 1.5 완료, TASK 2 대기중
+**상태:** [STATUS: SUPERSEDED] — IA 14페이지 재설계(D-040)로 17페이지 기준 WO 무효. 후속: PM-14 Builder IA 전환 WO로 대체.
 
 ---
 

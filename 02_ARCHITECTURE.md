@@ -7,44 +7,41 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.4** | 2026-02-21 | SESSION_46D PM(Gemini): IA 14페이지 재설계 반영(D-040). Programs 삭제, 비즈니스/라이프 분리, GNB 6메뉴 갱신, Footer 주소 오타 교정(케이앤몰동), 리소스 경로 갱신. |
 | **v1.3** | 2026-02-14 | SESSION 16 미결 사안 반영. IA 17페이지 확장(4개 카테고리 추가), Track Record→History 변경, Programs 역할 정의, 히어로 타이틀 White 확정, Footer 법인정보 추가, 보류사항 정리. |
 | **v1.2** | 2026-02-13 | SESSION 15 디자인 명세 반영. 컬러 시스템 확정(Heritage 승격, Cobalt 폐기), 타이포그래피/글라스모피즘/버튼 시스템 명세 추가. STATUS → LOCKED. |
-| **v1.1** | 2026-02-13 | 레거시 참조를 아카이브 경로(`docs/_archive/legacy/governance_v1/*_v1.md`)로 정정 |
 
 > 📋 **전체 버전 히스토리:** [06_VERSION_HISTORY.md](06_VERSION_HISTORY.md)
 
 ---
 
-## 1. 정보 구조 (IA) — 총 17페이지
+## 1. 정보 구조 (IA) — 총 14페이지 (D-040, 2026-02-21)
 
 ```
-메인 6페이지:
-├── Home (/)                     ← Video Loop 배경 + "ROWING = TEAMWORK" (White)
+메인 5페이지:
+├── Home (/)                     ← Video Loop 배경 + "ROWING = TEAMWORK" (White), 7섹션
 ├── About (/about)               ← 국가대표, 13년 무사고, 협회 주관사, CEO+창업주 프로필
-├── Programs (/programs)         ← 전체 프로그램 개요/분류 (Service의 상위 개요 역할)
-├── Service Hub (/service)       ← 서비스 허브 페이지 (상세 카드 진입점)
 ├── History (/history)           ← 13년 업력 전수 기록 ("걸어온 길")
-└── Contact (/contact)           ← 문의 폼 (실패 시 대표번호 1566-1931 노출)
+├── Contact (/contact)           ← 문의 폼 (실패 시 대표번호 1566-1931 노출)
+└── Privacy (/privacy)           ← 시스템
 
-Service 하위 — 기업·조직 (6페이지):
-├── Corporate Hub (/service/corporate)
-├── Training (/service/corporate/training)
-├── Teambuilding (/service/corporate/teambuilding)
-├── Leadership (/service/corporate/leadership)
-├── Event (/service/corporate/event)
-└── Wellness (/service/corporate/wellness)
+비즈니스 — B2B (4페이지):
+├── 비즈니스 허브 (/business)          ← 허브 (HRD·기업행사·임직원건강복지 카드)
+├── HRD 교육 (/business/hrd)          ← Training+Teambuilding+Leadership 통합
+├── 기업행사 (/business/event)
+└── 임직원건강복지 (/business/wellness)
 
-Service 하위 — 기타 카테고리 허브 (4페이지):
-├── School & Youth (/service/school-youth)        ← 학교·청소년
-├── Sports Event (/service/event)                  ← 스포츠 이벤트·행사 (부스형 가격 게시)
-├── Club & General (/service/club-general)         ← 클럽·일반
-└── Family (/service/family)                       ← 가족 체험
-
-시스템 1페이지:
-└── Privacy (/privacy)
+라이프 — B2C (5페이지):
+├── 라이프 허브 (/life)               ← 허브 (학교·청소년·스포츠이벤트·클럽·가족 카드)
+├── 학교·청소년 (/life/school-youth)
+├── 스포츠이벤트 (/life/sports-event)  ← 부스형 가격 게시
+├── 클럽·일반 (/life/club)
+└── 가족 (/life/family)
 ```
 
-> **Programs vs Service 관계:** Programs=전체 프로그램 개요/분류, Service=상세 서비스 카드. Programs에서 Service 카드로 연결하는 구조.
+> **GNB 6메뉴:** Home | About | 비즈니스 | 라이프 | History | Contact
+> **리디렉트:** `/programs` → `/`, `/service` → `/life`, `/service/corporate/*` → `/business/*`
+> **Index 7섹션:** 히어로 / 통계 / 클라이언트 롤링배너(30개) / 제공방식 / 서비스미리보기 / 왜로잉프로 / CTA
 > **404:** Astro 기본 404 처리, 별도 IA 카운트에서 제외.
 
 ---
@@ -215,7 +212,7 @@ border-color: rgba(255, 255, 255, 0.5);
 ## 4. 공통 레이아웃
 
 - `src/layouts/MainLayout.astro` — 모든 페이지의 공통 레이아웃
-- 헤더: 상단 고정 네비게이션 (All Pages), GNB 6메뉴 (Home | About | Programs | Service | History | Contact)
+- 헤더: 상단 고정 네비게이션 (All Pages), GNB 6메뉴 (Home | About | 비즈니스 | 라이프 | History | Contact)
 - 푸터: 공통 푸터 (All Pages)
 - 반응형: 모바일 → 햄버거 메뉴
 
@@ -225,7 +222,7 @@ border-color: rgba(255, 255, 255, 0.5);
 |:--|:--|
 | 상호 | 주식회사 로잉프로 |
 | 대표 | 김정겸 |
-| 주소 | 경기도 하남시 덕풍동로 111-21, 케이에듀동 10층 1021호 |
+| 주소 | 경기도 하남시 덕풍동로 111-21, 케이앤몰동 10층 1021호 |
 | 대표번호 | 1566-1931 |
 | 사업자등록번호 | 211-88-99912 |
 | 개인정보 처리방침 | `/privacy` |
@@ -236,12 +233,12 @@ border-color: rgba(255, 255, 255, 0.5);
 
 | 리소스 | 경로 |
 |:--|:--|
-| 히어로 배경 영상 | `docs/design/Hero_bg.webm`, `Hero_bg.mp4` |
+| 히어로 배경 영상 | `public/videos/hero-bg.webm`, `hero-bg.mp4` |
 | 디자인 시안 (Draft 03) | `docs/design/Rowingpro-Draft03-Wave-3D/` |
-| 콘텐츠 문서 | `docs/contents/*.md` |
-| 히스토리 마스터 데이터 | `docs/contents/history_master.md` |
-| 히스토리 콘텐츠 스펙 | `docs/contents/history_checklist.md` |
-| 로고 | `public/logo.svg` |
+| 콘텐츠 SSOT (빌드 기준) | `src/content/pages/*.md` |
+| 회사 원본 자료 | `docs/contents/_source/` |
+| 로고 (빌드용) | `public/logo.svg` |
+| 로고 (원본 보관) | `public/images/logo.jpg`, `logo.png` |
 | OG 이미지 | `public/og/og-default.png` (실사+로고, 1200x630) |
 
 ---

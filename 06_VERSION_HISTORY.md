@@ -29,9 +29,10 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
-| **v1.2** | 2026-02-18 | SESSION_35 PM(Sonnet): H-01 교정 — 현재 단계 Phase 3, 총 페이지 17페이지로 현행화 (SESSION_34 감사 지적) |
-| **v1.1** | 2026-02-13 | 레거시 참조를 아카이브 경로(`docs/_archive/legacy/governance_v1/*_v1.md`)로 정정 |
-| **v1.0** | 2026-02-13 | 문서 가버넌스 개편에 따라 신규 작성. 기존 `docs/_archive/legacy/governance_v1/PROJECT_BLUEPRINT_2026_v1.md`와 `docs/_archive/legacy/governance_v1/SESSION_HANDOVER_v1.md`의 브랜드 정체성 섹션을 통합. |
+| **v1.3** | 2026-02-21 | SESSION_46D PM(Gemini): 전체 페이지 17→14(D-040), IA 간접화(02 참조). |
+| **v1.2** | 2026-02-18 | SESSION_35 PM(Sonnet): H-01 교정 — 현재 단계 Phase 3, 총 페이지 17페이지로 현행화 |
+| **v1.1** | 2026-02-13 | 레거시 참조를 아카이브 경로로 정정 |
+| **v1.0** | 2026-02-13 | 문서 가버넌스 개편에 따라 신규 작성. |
 
 ---
 
@@ -39,10 +40,11 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.4** | 2026-02-21 | SESSION_46D PM(Gemini): IA 14페이지 재설계 반영(D-040). Programs 삭제, 비즈니스/라이프 분리, GNB 6메뉴 갱신, Footer 주소 오타 교정(케이앤몰동), 리소스 경로 갱신. |
 | **v1.3** | 2026-02-14 | SESSION 16 미결 사안 반영. IA 17페이지 확장(4개 카테고리 추가), Track Record→History 변경, Programs 역할 정의, 히어로 타이틀 White 확정, Footer 법인정보 추가, 보류사항 정리. |
 | **v1.2** | 2026-02-13 | SESSION 15 디자인 명세 반영. 컬러 시스템 확정(Heritage 승격, Cobalt 폐기), 타이포그래피/글라스모피즘/버튼 시스템 명세 추가. STATUS → LOCKED. |
-| **v1.1** | 2026-02-13 | 레거시 참조를 아카이브 경로(`docs/_archive/legacy/governance_v1/*_v1.md`)로 정정 |
-| **v1.0** | 2026-02-13 | 문서 가버넌스 개편에 따라 신규 작성. 기존 `docs/_archive/legacy/governance_v1/PROJECT_BLUEPRINT_2026_v1.md`의 IA/디자인/기술 섹션과 `docs/_archive/legacy/governance_v1/SESSION_HANDOVER_v1.md`의 구조 정보를 통합. 디자인 시스템은 Draft 03 기준 BASELINE으로 설정. |
+| **v1.1** | 2026-02-13 | 레거시 참조를 아카이브 경로로 정정 |
+| **v1.0** | 2026-02-13 | 문서 가버넌스 개편에 따라 신규 작성. |
 
 ---
 
@@ -67,6 +69,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.30** | 2026-02-21 | SESSION_46D PM(Gemini): D-040(IA 14페이지 재설계 확정, D-037 부분 수정) 등록. |
+| **v1.29** | 2026-02-19 | D-039(거버넌스 경량화 + 소비자 확인 의무화) 추가. SESSION_37 Architect/Opus. |
+| **v1.28** | 2026-02-18 | D-038(Google Workspace 다운사이징 방향) 추가. SESSION_35 PM/Sonnet. |
 | **v1.27** | 2026-02-18 | SESSION_33 PM(Sonnet): D-034(상품/가격 표기 정책), D-037(Programs 구조 확정), D-012 주소 교정(케이에듀동→케이앤몰동). |
 | **v1.26** | 2026-02-18 | SESSION_32 Architect(Opus): D-033(소비자 기준 원칙 확립). |
 | **v1.25** | 2026-02-18 | SESSION_32 Architect(Opus): D-032(Content Collections 설계 확정, Builder 재량 17페이지 기준). |
@@ -102,6 +107,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.33** | 2026-02-21 | SESSION_46B PM(Sonnet): 컨텐츠 중간점검 완료(16/17), IA 재설계 확정(14페이지), 기업 서비스 통합(HRD 교육), Index 구성(7섹션+롤링배너 30개), 레이아웃 재설계 Decision Gate 설정. |
 | **v1.32** | 2026-02-20 | SESSION_44 PM(Sonnet): 비공식 문서관리 — 버전히스토리 교정(04/05/06), 폴더 전수점검, legacy/ 압축, 빈폴더·위치오류 교정 7건. |
 | **v1.31** | 2026-02-20 | SESSION_43 PM(Sonnet): 인원수 전수조사 방법확정, WO_BUILDER_HEADCOUNT_AUTOMATION 발행, 비공식 작업물 정리. |
 | **v1.30** | 2026-02-20 | SESSION_42 PM(Sonnet): SESSION_40/41 완료 반영, 차단이슈 원인 교정(설계결함 판정), R-01 신규 등록, seo_OPUS_draft 무효화 처리. |
@@ -142,6 +148,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.16** | 2026-02-21 | SESSION_46B PM(Sonnet): Decision Gate 추가(레이아웃 재설계 방식), IA 14페이지 반영, 1차 예정 지시 갱신(미디어 자산 우선순위). |
 | **v1.15** | 2026-02-18 | SESSION_37 PM(Sonnet): SESSION_36 완료 반영. 현재 지시를 콘텐츠 확정(디렉터 직접 입력)으로 교체. |
 | **v1.14** | 2026-02-18 | SESSION_35 PM(Sonnet): Builder WO TASK 3 보강(8건), WO_SEO_BASELINE 신규 추가. 현재 지시 갱신. |
 | **v1.13** | 2026-02-18 | SESSION_33 PM(Sonnet): Builder WO 발행 완료. 현재 지시를 Builder 구현으로 교체. |

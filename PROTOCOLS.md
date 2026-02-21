@@ -116,11 +116,12 @@ git log --oneline -5
 
 ## 5. 작업 환경
 
-| 환경 | 도구 | 규칙 파일 |
-|:--|:--|:--|
-| VSCode | Cline, Claude 확장 | `.clinerules`, `CLAUDE.md` |
-| AntiGravity | 자율 에이전트 | `.antigravityrules` |
+| 환경 | 모델 | 도구 | 규칙 파일 |
+|:--|:--|:--|:--|
+| VSCode | **Claude Sonnet 4.5** | Cline, Claude 확장 | `.clinerules`, `CLAUDE.md` |
+| AntiGravity | **Claude Sonnet 4.6** | 자율 에이전트 | `.antigravityrules` |
 
 > 모든 도구별 규칙 파일은 `CLAUDE.md`를 가리키는 포인터입니다.
+> **세션 보고서 작성 시 위 표의 모델명을 파일명과 내용에 반드시 반영할 것.**
 
 ---

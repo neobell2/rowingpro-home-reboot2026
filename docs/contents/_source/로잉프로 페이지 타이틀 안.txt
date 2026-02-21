@@ -1,0 +1,42 @@
+# 로잉프로 페이지 타이틀 안
+
+## 메인
+| URL | Title |
+|-----|-------|
+| `/` | 로잉프로 \| 대한민국 조정 교육의 시작 |
+
+## 소개
+| URL | Title |
+|-----|-------|
+| `/about` | 로잉프로 \| 조정은 정직합니다 |
+| `/history` | 로잉프로 \| 2013년부터 시작된 이야기 |
+
+## 프로그램/서비스
+| URL | Title |
+|-----|-------|
+| `/programs` | 로잉프로 \| 조정 교육 프로그램 안내 |
+| `/service` | 로잉프로 \| 서비스 안내 |
+
+## 기업 서비스 (SEO 핵심)
+| URL | Title |
+|-----|-------|
+| `/service/corporate` | 로잉프로 \| 기업 조정 교육 · HRD 서비스 |
+| `/service/corporate/teambuilding` | 로잉프로 \| 조정 팀빌딩 프로그램 |
+| `/service/corporate/leadership` | 로잉프로 \| 조정 리더십 교육 |
+| `/service/corporate/training` | 로잉프로 \| 기업 조정 교육·훈련 |
+| `/service/corporate/wellness` | 로잉프로 \| 임직원 웰니스 조정 프로그램 |
+| `/service/corporate/event` | 로잉프로 \| 기업 조정 이벤트 |
+
+## 기타 서비스
+| URL | Title |
+|-----|-------|
+| `/service/event` | 로잉프로 \| 조정 스포츠 이벤트 |
+| `/service/school-youth` | 로잉프로 \| 학교·청소년 조정 교육 |
+| `/service/family` | 로잉프로 \| 가족 조정 체험 |
+| `/service/club-general` | 로잉프로 \| 조정 클럽·일반 교육 |
+
+## 기타
+| URL | Title |
+|-----|-------|
+| `/contact` | 로잉프로 \| 문의하기 |
+| `/privacy` | 로잉프로 \| 개인정보처리방침 |

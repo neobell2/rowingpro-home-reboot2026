@@ -1,31 +1,25 @@
 ---
-# GPT title: Service Hub | 로잉프로
-# Gemini title: 서비스 안내 | HRD, 행사, 클럽, 가족 - 로잉프로
-# Opus1 title: 서비스 안내 | 로잉프로 — 누구를 위한 프로그램인가요?
-# Opus2 title: 서비스 | 로잉프로 — 기업·학교·이벤트·가족
-title: "Service Hub | 로잉프로"
-# GPT desc: 기업, 학교, 청소년, 스포츠 이벤트, 클럽, 가족 대상 맞춤형 조정 서비스
-# Gemini desc: 기업 팀빌딩부터 청소년 리더십, 스포츠 이벤트까지. 대상과 목적에 따라 세분화된 로잉프로의 전문 운영 시스템을 소개합니다.
-# Opus1 desc: 기업, 학교, 가족, 동호회, 이벤트. 대상에 맞는 로잉프로 프로그램을 찾아보세요. 모든 서비스를 한 곳에서 안내합니다.
-# Opus2 desc: 누구를 위한 프로그램인가요? 기업 연수, 청소년 체험, 스포츠 이벤트, 동호회·가족. 대상에 맞는 프로그램을 안내합니다.
-description: "기업, 학교, 청소년, 스포츠 이벤트, 클럽, 가족 대상 맞춤형 조정 서비스"
-heroTitle: "서비스 허브"
-heroSubtitle: "다양한 대상과 목적에 맞춘 조정 서비스를 탐색하세요."
+title: "로잉프로 | 서비스 안내: HRD, 행사, 동호회, 가족"
+description: "기업, 학교, 청소년, 스포츠 이벤트, 클럽, 가족. 로잉프로의 모든 서비스를 안내합니다."
+heroTitle: "서비스 안내"
+heroSubtitle: "기업과 조직을 위한 HRD 액티비티부터, 학교·청소년, 스포츠 이벤트, 로잉클럽, 가족체험까지. 대상과 목적에 따라 세분화된 로잉프로의 서비스를 소개합니다."
+
+# "타겟별 서비스" 하드코딩 제거 확인할 것 
 cards:
-  - title: "기업·조직"
-    description: "HRD 적용형(신입교육, 조직개발)과 비HRD 행사형(기념행사, 단합대회)으로 구분해 설계합니다."
+  - title: "기업·기관·단체"
+    description: "비즈니스 HRD 액티비티 서비스: 팀빌딩, 팀워크, 리더십, 조직활성화, 워크숍, 기념행사, 단합대회, 체육대회"
     href: "/service/corporate"
   - title: "학교·청소년"
-    description: "인성 교육, 체육 활동, 리더십 캠프 목적에 맞춘 학교 연계 프로그램입니다."
+    description: "대학 체육 수업/특강, 리더십 캠프, 중고등학교 체험학습, 중학 내신체육, 방과 후 학교, 유소년 생활체육, 스포츠 진학/진로 상담, Varsity Rowing: 보딩스쿨, 아이비리그, 옥스브리지."
     href: "/service/school-youth"
   - title: "스포츠 이벤트·행사"
-    description: "SIMPLE/CORE/PRO/MASTER 패키지 기반 체험형 이벤트를 운영합니다."
+    description: "SIMPLE/CORE/PRO/MASTER 부스 패키지, 대회/경기 컨설팅"
     href: "/service/event"
-  - title: "클럽·일반"
-    description: "정기 레슨, 동호회 훈련, 원데이 체험 중심의 생활체육 프로그램입니다."
+  - title: "로잉클럽·일반"
+    description: "정기 레슨, 동호회 훈련, 대회참가 지원, 일반인 체력증진, 원데이 체험 등 생활체육 서비스입니다."
     href: "/service/club-general"
-  - title: "가족 체험"
-    description: "비상품 안내형으로 운영하며 문의를 통해 가능 일정과 장소를 확인합니다."
+  - title: "가족·커뮤니티"
+    description: "미사리경정공원의 쾌적한 공간에서 잊지 못할 즐거운 추억을 만들어보세요."
     href: "/service/family"
 ctaSection:
   heading: "맞춤형 서비스 문의"
