@@ -36,6 +36,8 @@ Design_ref/
 docs/_archive/*
 !docs/_archive/decisions/
 !docs/_archive/decisions/03_DECISIONS_PHASE*.md
+!docs/_archive/version_history/
+!docs/_archive/version_history/*.md
 
 # Claude Code CLI local settings
 .claude/settings*.json
