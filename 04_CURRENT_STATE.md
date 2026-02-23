@@ -7,9 +7,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.37** | 2026-02-24 | SESSION_46L Builder+PM(Sonnet): 클라이언트 로고 롤링배너 구현 완료. KIBS.png 제거(66개), 모노크롬, 70초/루프. |
 | **v1.36** | 2026-02-23 | SESSION_46K 중간점검(PM/Sonnet): 로고 수량 교정(34종→67개), 중복/부적절 로고 4종 삭제, 문서 정합성 교정. |
 | **v1.35** | 2026-02-22 | SESSION_46E PM(Gemini): 2026.02 AI 스쿼드 최신화 검증. 부적절 산출물(47) 폐기, D-041(Claude 4.6 전면 승급) 반영. |
-| **v1.34** | 2026-02-21 | SESSION_46D PM(Gemini): SESSION_46C 감사 후속조치 PM-01~PM-14 일괄 처리 완료. 완료 항목 경량화. |
 | **v1.33** | 2026-02-21 | SESSION_46B PM(Sonnet): 컨텐츠 중간점검 완료(16/17), IA 재설계 확정(14페이지), 기업 서비스 통합(HRD 교육), Index 구성(7섹션+롤링배너 30개), 레이아웃 재설계 Decision Gate 설정. |
 | **v1.32** | 2026-02-20 | SESSION_44 PM(Sonnet): 비공식 문서관리 — 버전히스토리 교정(04/05/06), 폴더 전수점검, legacy/ 압축, 빈폴더·위치오류 교정 7건. |
 | **v1.31** | 2026-02-20 | SESSION_43 PM(Sonnet): 참여인원수 전수조사 방법확정, WO_BUILDER_HEADCOUNT_AUTOMATION 발행, 비공식 작업물 정리. |
@@ -87,10 +87,15 @@
 - **SESSION_46E (PM/Gemini)**:
   - 잘못된 페르소나/환각으로 생성된 SESSION_47 리포트 전면 파기 및 46E 정식 보고서 생성
   - 2026.02 AI 스쿼드 최적화 검토 (D-041: Claude 4.6 전면 승급 확정) 및 스쿼드 템플릿 갱신
-- **SESSION_46G (PM/Sonnet — 이번 세션 완료)**:
+- **SESSION_46G (PM/Sonnet)**:
   - 46F 스레드 핸드오프 검토 완료 및 SESSION_48(GPT) 부적절 산출물 2건 삭제.
   - D-041에 따른 `ROLES.md` 및 `PROTOCOLS.md` 상의 작업 모델 사양(Claude 4.6) 상향 교정.
   - `06_VERSION_HISTORY.md` 전체 버전 히스토리 등록 완료.
+- **SESSION_46L (Builder+PM/Sonnet)**:
+  - 클라이언트 로고 롤링배너 구현 완료: `ClientLogosBanner.astro` 신규 생성, `index.astro` 삽입
+  - KIBS.png 제거 (67→66개 로고), 모노크롬 기본 / hover 컬러 복원, 70초/루프
+  - CSS-only 무한 스크롤, 접근성(prefers-reduced-motion) 지원
+  - 빌드 성공 (18 pages), 커밋 b03ad8a
 
 ## 진행중
 
@@ -100,10 +105,11 @@
   - ✅ **SEO 4종 드래프트 병합 완료** (SESSION_40): 16개 frontmatter 주석 삽입
   - ✅ **IA 14페이지 재설계 확정** (SESSION_46B+46C): D-040
   - ✅ **SESSION_46C 감사 후속 PM 처리 완료** (SESSION_46D): PM-01~PM-14
-  - ✅ **클라이언트 로고 67개 확보 완료** (SESSION_46H~46K): `/public/assets/images/logos/` (중복 4종 제거 완료 — SESSION_46K 중간점검)
+  - ✅ **클라이언트 로고 66개 확보 완료** (SESSION_46H~46L): `/public/assets/images/logos/` (KIBS.png 제거)
+  - ✅ **롤링배너 구현 완료** (SESSION_46L): `ClientLogosBanner.astro`, 모노크롬, 70초/루프
   - 🔄 **콘텐츠 확정 작업 대기**: index.md 주석 해제 (디렉터 직접 입력)
-  - STEP 3: Builder — IA 전환 구현
-  - STEP 4: Designer+Builder — 레이아웃 재설계 (Decision Gate 후)
+  - 🔄 **STEP 3: Builder — IA 전환 구현** (WO_BUILDER_IA_TRANSITION.md)
+  - 🔄 **STEP 4: Designer+Builder — 레이아웃 재설계** (Decision Gate 후)
 
 ## 이슈
 
