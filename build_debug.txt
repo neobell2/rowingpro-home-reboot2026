@@ -1,0 +1,5 @@
+﻿03:01:48 [types] Generated 481ms
+03:01:48 [build] output: "static"
+03:01:48 [build] directory: C:\Users\?ㅼ쥌??Desktop\濡쒖엵?꾨줈?덊럹?댁?Reboot.202601\dist\
+03:01:48 [build] Collecting build info...
+03:01:48 [build] ??Completed in 570ms.

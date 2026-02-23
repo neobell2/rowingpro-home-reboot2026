@@ -1,0 +1,12 @@
+/programs / 301
+/service /life 301
+/service/corporate /business 301
+/service/corporate/training /business/hrd 301
+/service/corporate/teambuilding /business/hrd 301
+/service/corporate/leadership /business/hrd 301
+/service/corporate/event /business/event 301
+/service/corporate/wellness /business/wellness 301
+/service/school-youth /life/school-youth 301
+/service/event /life/sports-event 301
+/service/club-general /life/club 301
+/service/family /life/family 301

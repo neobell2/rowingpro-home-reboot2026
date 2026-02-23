@@ -79,7 +79,8 @@
       "Bash(cmd.exe /c \"C:\\\\Users\\\\윤종호\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe \"\"C:\\\\Users\\\\윤종호\\\\Desktop\\\\로잉프로홈페이지Reboot.202601\\\\classify_indoor_outdoor.py\"\" 2>&1\")",
       "Bash(cmd.exe /c \"C:\\\\Users\\\\윤종호\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe \"\"C:\\\\Users\\\\윤종호\\\\Desktop\\\\로잉프로홈페이지Reboot.202601\\\\classify_indoor_outdoor.py\"\" > C:\\\\Users\\\\윤종호\\\\Desktop\\\\classify_out.txt 2>&1\")",
       "Bash(powershell.exe -Command \"& ''C:\\\\Users\\\\윤종호\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe'' ''C:\\\\Users\\\\윤종호\\\\Desktop\\\\로잉프로홈페이지Reboot.202601\\\\classify_indoor_outdoor.py''\")",
-      "Bash(powershell.exe -Command \"& ''C:\\\\Users\\\\윤종호\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe'' ''C:\\\\Users\\\\윤종호\\\\Desktop\\\\로잉프로홈페이지Reboot.202601\\\\headcount_aggregate.py''\")"
+      "Bash(powershell.exe -Command \"& ''C:\\\\Users\\\\윤종호\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe'' ''C:\\\\Users\\\\윤종호\\\\Desktop\\\\로잉프로홈페이지Reboot.202601\\\\headcount_aggregate.py''\")",
+      "Bash(du:*)"
     ],
     "additionalDirectories": [
       "c:\\Users\\윤종호\\Desktop\\로잉프로홈페이지Reboot.202601\\project"

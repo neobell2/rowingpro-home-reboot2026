@@ -1,0 +1,69 @@
+2026-02-23T18:06:55.728Z astro:telemetry [notify] last notified on 1770103841717
+2026-02-23T18:06:57.013Z astro:telemetry {
+  context: {
+    isGit: true,
+    anonymousProjectId: 'd46ade5671535b9aeb35518a258cd9edbe29751cce2dcd367b911e072474ba8a',
+    packageManager: 'npm',
+    packageManagerVersion: '11.6.2',
+    anonymousId: '7d12df3dc8278a60b30ad75f2aaab497a4082bad394a34271cf8754471aef4ec',
+    anonymousSessionId: 'b51d5bde1fee6c8ce5c024b620690ae9aa5de8e423dd2aea08b68b410c5c002c'
+  },
+  meta: {
+    nodeVersion: '24.12.0',
+    viteVersion: '5.4.21',
+    astroVersion: '4.16.19',
+    systemPlatform: 'win32',
+    systemRelease: '10.0.26200',
+    systemArchitecture: 'x64',
+    cpuCount: 12,
+    cpuModel: 'AMD Ryzen 5 6600HS Creator Edition',
+    cpuSpeed: 3294,
+    memoryInMb: 14020,
+    isDocker: false,
+    isTTY: undefined,
+    isWSL: false,
+    isCI: false,
+    ciName: null
+  }
+}
+2026-02-23T18:06:57.013Z astro:telemetry [
+  {
+    "eventName": "ASTRO_CLI_SESSION_STARTED",
+    "payload": {
+      "cliCommand": "build",
+      "config": {
+        "site": true,
+        "base": true,
+        "trailingSlash": "never",
+        "integrations": [
+          "@astrojs/tailwind"
+        ],
+        "build": {},
+        "server": true,
+        "image": {},
+        "markdown": {},
+        "experimental": {},
+        "legacy": {}
+      }
+    }
+  }
+]
+2026-02-23T18:06:57.022Z astro:build Initial setup...
+2026-02-23T18:06:57.688Z astro:content common collection added
+2026-02-23T18:06:57.688Z astro:content pages collection added
+2026-02-23T18:06:57.709Z astro:build ├── ✔ src/pages/404.astro → /404/index.html
+2026-02-23T18:06:57.709Z astro:build ├── ✔ src/pages/about.astro → /about/index.html
+2026-02-23T18:06:57.709Z astro:build ├── ✔ src/pages/business/event.astro → /business/event/index.html
+2026-02-23T18:06:57.709Z astro:build ├── ✔ src/pages/business/hrd.astro → /business/hrd/index.html
+2026-02-23T18:06:57.709Z astro:build ├── ✔ src/pages/business/wellness.astro → /business/wellness/index.html
+2026-02-23T18:06:57.709Z astro:build ├── ✔ src/pages/business/index.astro → /business/index.html
+2026-02-23T18:06:57.709Z astro:build ├── ✔ src/pages/contact.astro → /contact/index.html
+2026-02-23T18:06:57.709Z astro:build ├── ✔ src/pages/history.astro → /history/index.html
+2026-02-23T18:06:57.709Z astro:build ├── ✔ src/pages/life/club.astro → /life/club/index.html
+2026-02-23T18:06:57.709Z astro:build ├── ✔ src/pages/life/family.astro → /life/family/index.html
+2026-02-23T18:06:57.709Z astro:build ├── ✔ src/pages/life/school-youth.astro → /life/school-youth/index.html
+2026-02-23T18:06:57.710Z astro:build ├── ✔ src/pages/life/sports-event.astro → /life/sports-event/index.html
+2026-02-23T18:06:57.710Z astro:build ├── ✔ src/pages/life/index.astro → /life/index.html
+2026-02-23T18:06:57.710Z astro:build ├── ✔ src/pages/privacy.astro → /privacy/index.html
+2026-02-23T18:06:57.710Z astro:build ├── ✔ src/pages/index.astro → /index.html
+2026-02-23T18:06:57.710Z astro:build All pages loaded   1771870014.6s

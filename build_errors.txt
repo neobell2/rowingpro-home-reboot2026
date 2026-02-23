@@ -1,0 +1,37 @@
+﻿03:20:54 [types] Generated 432ms
+03:20:54 [check] Getting diagnostics for Astro files in C:\Users\?ㅼ쥌??Desktop\濡쒖엵?꾨줈?덊럹?댁?Reboot.202601...
+[96msrc/pages/business/event.astro[0m:[93m6[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'title' is declared but its value is never read.
+
+[7m6[0m const { title, description, summary, bullets, audience, ctaLabel } = page.data;
+[7m [0m [93m        ~~~~~[0m
+
+[96msrc/pages/business/wellness.astro[0m:[93m6[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'title' is declared but its value is never read.
+
+[7m6[0m const { title, description, summary, bullets, audience, ctaLabel } = page.data;
+[7m [0m [93m        ~~~~~[0m
+
+[96msrc/pages/life/club.astro[0m:[93m6[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'title' is declared but its value is never read.
+
+[7m6[0m const { title, description, summary, bullets, audience, footnote, ctaLabel } = page.data;
+[7m [0m [93m        ~~~~~[0m
+
+[96msrc/pages/life/family.astro[0m:[93m6[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'title' is declared but its value is never read.
+
+[7m6[0m const { title, description, summary, bullets, audience, footnote, ctaLabel } = page.data;
+[7m [0m [93m        ~~~~~[0m
+
+[96msrc/pages/life/school-youth.astro[0m:[93m6[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'title' is declared but its value is never read.
+
+[7m6[0m const { title, description, summary, bullets, audience, footnote, ctaLabel } = page.data;
+[7m [0m [93m        ~~~~~[0m
+
+[96msrc/pages/life/sports-event.astro[0m:[93m6[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'title' is declared but its value is never read.
+
+[7m6[0m const { title, description, summary, bullets, audience, ctaLabel, packageSection } = page.data;
+[7m [0m [93m        ~~~~~[0m
+
+Result (23 files): 
+- 0 errors
+- 0 warnings
+- 6 hints
+

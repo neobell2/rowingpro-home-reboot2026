@@ -1,13 +1,13 @@
 ---
-import ServiceDetailPage from '../../../components/ServiceDetailPage.astro';
+import ServiceDetailPage from '../../components/ServiceDetailPage.astro';
 import { getEntry } from 'astro:content';
 
-const page = await getEntry('pages', 'service-corporate-teambuilding');
+const page = await getEntry('pages', 'business-hrd');
 const { title, description, summary, bullets, audience, ctaLabel } = page.data;
 ---
 
 <ServiceDetailPage
-  title="Corporate Teambuilding"
+  {title}
   {description}
   {summary}
   {bullets}

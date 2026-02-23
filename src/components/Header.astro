@@ -5,8 +5,8 @@ const currentPath = Astro.url.pathname.replace(/\/+$/, '') || '/';
 const navItems = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
-  { label: 'Programs', href: '/programs' },
-  { label: 'Service', href: '/service' },
+  { label: '비즈니스', href: '/business' },
+  { label: '라이프', href: '/life' },
   { label: 'History', href: '/history' },
   { label: 'Contact', href: '/contact' },
 ];
@@ -156,6 +156,7 @@ const mobileLinkClasses = (href: string) => {
     const closeIcon = mobileMenuButton.querySelector('[data-icon-close]');
 
     const isMenuOpen = () => mobileMenuButton.getAttribute('aria-expanded') === 'true';
+    // @ts-ignore
     const isClickOutsidePanel = (target) => {
       if (!(target instanceof Node)) {
         return false;
@@ -164,6 +165,7 @@ const mobileLinkClasses = (href: string) => {
       return !mobileMenuPanel.contains(target) && !mobileMenuButton.contains(target);
     };
 
+    // @ts-ignore
     const setMenuState = (open) => {
       mobileMenuButton.setAttribute('aria-expanded', open ? 'true' : 'false');
       mobileMenuOverlay.classList.toggle('opacity-0', !open);

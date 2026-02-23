@@ -101,17 +101,19 @@ const faqItems = faqData.data.items;
     </div>
   </section>
 
-  <section class="py-24 bg-deep/50">
-    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-      <h2 class="text-4xl font-display font-bold text-white mb-8">
-        {ctaSection.heading}
-      </h2>
-      <p class="text-xl text-white/80 mb-12">
-        {ctaSection.body}
-      </p>
-      <a href={ctaSection.href} class="btn-primary inline-flex items-center justify-center px-12 py-4 text-lg">
-        {ctaSection.cta}
-      </a>
-    </div>
-  </section>
+  {ctaSection && (
+    <section class="py-24 bg-deep/50">
+      <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-display font-bold text-white mb-8">
+          {ctaSection.heading}
+        </h2>
+        <p class="text-xl text-white/80 mb-12">
+          {ctaSection.body}
+        </p>
+        <a href={ctaSection.href} class="btn-primary inline-flex items-center justify-center px-12 py-4 text-lg">
+          {ctaSection.cta}
+        </a>
+      </div>
+    </section>
+  )}
 </MainLayout>

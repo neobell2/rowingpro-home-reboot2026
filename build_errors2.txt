@@ -1,0 +1,280 @@
+﻿02:52:12 [types] Generated 447ms
+02:52:12 [check] Getting diagnostics for Astro files in C:\Users\?ㅼ쥌??Desktop\濡쒖엵?꾨줈?덊럹?댁?Reboot.202601...
+[96msrc/components/Header.astro[0m:[93m167[0m:[93m27[0m - [91merror[0m[90m ts(7006): [0mParameter 'open' implicitly has an 'any' type.
+
+[7m167[0m     const setMenuState = (open) => {
+[7m   [0m [91m                          ~~~~[0m
+[96msrc/components/Header.astro[0m:[93m159[0m:[93m34[0m - [91merror[0m[90m ts(7006): [0mParameter 'target' implicitly has an 'any' type.
+
+[7m159[0m     const isClickOutsidePanel = (target) => {
+[7m   [0m [91m                                 ~~~~~~[0m
+
+[96msrc/pages/about.astro[0m:[93m75[0m:[93m10[0m - [91merror[0m[90m ts(18046): [0m'coreMessage' is of type 'unknown'.
+
+[7m75[0m         {coreMessage.body}
+[7m  [0m [91m         ~~~~~~~~~~~[0m
+[96msrc/pages/about.astro[0m:[93m73[0m:[93m68[0m - [91merror[0m[90m ts(18046): [0m'coreMessage' is of type 'unknown'.
+
+[7m73[0m       <h2 class="text-4xl font-display font-bold text-white mb-8">{coreMessage.heading}</h2>
+[7m  [0m [91m                                                                   ~~~~~~~~~~~[0m
+[96msrc/pages/about.astro[0m:[93m58[0m:[93m10[0m - [91merror[0m[90m ts(18046): [0m'founders' is of type 'unknown'.
+
+[7m58[0m         {founders.items.map((founder: { name: string; bio: string; period: string }) => (
+[7m  [0m [91m         ~~~~~~~~[0m
+[96msrc/pages/about.astro[0m:[93m56[0m:[93m81[0m - [91merror[0m[90m ts(18046): [0m'founders' is of type 'unknown'.
+
+[7m56[0m       <h2 class="text-4xl font-display font-bold text-white mb-12 text-center">{founders.heading}</h2>
+[7m  [0m [91m                                                                                ~~~~~~~~[0m
+[96msrc/pages/about.astro[0m:[93m44[0m:[93m10[0m - [91merror[0m[90m ts(18046): [0m'differentiators' is of type 'unknown'.
+
+[7m44[0m         {differentiators.items.map((item: { value: string; detail: string }) => (
+[7m  [0m [91m         ~~~~~~~~~~~~~~~[0m
+[96msrc/pages/about.astro[0m:[93m42[0m:[93m81[0m - [91merror[0m[90m ts(18046): [0m'differentiators' is of type 'unknown'.
+
+[7m42[0m       <h2 class="text-4xl font-display font-bold text-white mb-10 text-center">{differentiators.heading}</h2>
+[7m  [0m [91m                                                                                ~~~~~~~~~~~~~~~[0m
+[96msrc/pages/about.astro[0m:[93m29[0m:[93m12[0m - [91merror[0m[90m ts(18046): [0m'translationSection' is of type 'unknown'.
+
+[7m29[0m           {translationSection.pillars.map((pillar: { title: string; detail: string }) => (
+[7m  [0m [91m           ~~~~~~~~~~~~~~~~~~[0m
+[96msrc/pages/about.astro[0m:[93m26[0m:[93m12[0m - [91merror[0m[90m ts(18046): [0m'translationSection' is of type 'unknown'.
+
+[7m26[0m           {translationSection.body}
+[7m  [0m [91m           ~~~~~~~~~~~~~~~~~~[0m
+[96msrc/pages/about.astro[0m:[93m24[0m:[93m70[0m - [91merror[0m[90m ts(18046): [0m'translationSection' is of type 'unknown'.
+
+[7m24[0m         <h2 class="text-3xl font-display font-bold text-white mb-6">{translationSection.heading}</h2>
+[7m  [0m [91m                                                                     ~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/pages/contact.astro[0m:[93m113[0m:[93m10[0m - [91merror[0m[90m ts(18048): [0m'ctaSection' is possibly 'undefined'.
+
+[7m113[0m         {ctaSection.cta}
+[7m   [0m [91m         ~~~~~~~~~~[0m
+[96msrc/pages/contact.astro[0m:[93m112[0m:[93m16[0m - [91merror[0m[90m ts(18048): [0m'ctaSection' is possibly 'undefined'.
+
+[7m112[0m       <a href={ctaSection.href} class="btn-primary inline-flex items-center justify-center px-12 py-4 text-lg">
+[7m   [0m [91m               ~~~~~~~~~~[0m
+[96msrc/pages/contact.astro[0m:[93m110[0m:[93m10[0m - [91merror[0m[90m ts(18048): [0m'ctaSection' is possibly 'undefined'.
+
+[7m110[0m         {ctaSection.body}
+[7m   [0m [91m         ~~~~~~~~~~[0m
+[96msrc/pages/contact.astro[0m:[93m107[0m:[93m10[0m - [91merror[0m[90m ts(18048): [0m'ctaSection' is possibly 'undefined'.
+
+[7m107[0m         {ctaSection.heading}
+[7m   [0m [91m         ~~~~~~~~~~[0m
+[96msrc/pages/contact.astro[0m:[93m76[0m:[93m48[0m - [91merror[0m[90m ts(18046): [0m'responseTime' is of type 'unknown'.
+
+[7m76[0m             <p class="text-white/70" set:html={responseTime.body.replace('\n', '<br>')} />
+[7m  [0m [91m                                               ~~~~~~~~~~~~[0m
+[96msrc/pages/contact.astro[0m:[93m75[0m:[93m61[0m - [91merror[0m[90m ts(18046): [0m'responseTime' is of type 'unknown'.
+
+[7m75[0m             <h3 class="text-2xl font-bold text-white mb-6">{responseTime.heading}</h3>
+[7m  [0m [91m                                                            ~~~~~~~~~~~~[0m
+
+[96msrc/pages/history.astro[0m:[93m44[0m:[93m10[0m - [91merror[0m[90m ts(18046): [0m'stats' is of type 'unknown'.
+
+[7m44[0m         {stats.items.map((stat: { value: string; label: string }) => (
+[7m  [0m [91m         ~~~~~[0m
+[96msrc/pages/history.astro[0m:[93m42[0m:[93m81[0m - [91merror[0m[90m ts(18046): [0m'stats' is of type 'unknown'.
+
+[7m42[0m       <h2 class="text-4xl font-display font-bold text-white mb-12 text-center">{stats.heading}</h2>
+[7m  [0m [91m                                                                                ~~~~~[0m
+[96msrc/pages/history.astro[0m:[93m22[0m:[93m10[0m - [91merror[0m[90m ts(18046): [0m'timeline' is of type 'unknown'.
+
+[7m22[0m         {timeline.map((item: { year: string; title: string; details: string[] }) => (
+[7m  [0m [91m         ~~~~~~~~[0m
+
+[96msrc/pages/index.astro[0m:[93m151[0m:[93m10[0m - [91merror[0m[90m ts(18048): [0m'ctaSection' is possibly 'undefined'.
+
+[7m151[0m         {ctaSection.cta}
+[7m   [0m [91m         ~~~~~~~~~~[0m
+[96msrc/pages/index.astro[0m:[93m148[0m:[93m10[0m - [91merror[0m[90m ts(18048): [0m'ctaSection' is possibly 'undefined'.
+
+[7m148[0m         {ctaSection.body}
+[7m   [0m [91m         ~~~~~~~~~~[0m
+[96msrc/pages/index.astro[0m:[93m145[0m:[93m10[0m - [91merror[0m[90m ts(18048): [0m'ctaSection' is possibly 'undefined'.
+
+[7m145[0m         {ctaSection.heading}
+[7m   [0m [91m         ~~~~~~~~~~[0m
+[96msrc/pages/index.astro[0m:[93m57[0m:[93m10[0m - [91merror[0m[90m ts(18046): [0m'stats' is of type 'unknown'.
+
+[7m57[0m         {stats.map((stat: { value: string; label: string; detail: string }) => (
+[7m  [0m [91m         ~~~~~[0m
+
+[96msrc/pages/privacy.astro[0m:[93m20[0m:[93m10[0m - [91merror[0m[90m ts(18046): [0m'sections' is of type 'unknown'.
+
+[7m20[0m         {sections.map((section: { heading: string; body: string; bullets?: string[]; contact?: { name: string; position: string; phone: string; email: string } }) => (
+[7m  [0m [91m         ~~~~~~~~[0m
+
+[96msrc/pages/business/event.astro[0m:[93m15[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string | undefined'.
+
+[7m15[0m   {ctaLabel}
+[7m  [0m [91m   ~~~~~~~~[0m
+[96msrc/pages/business/event.astro[0m:[93m14[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string | undefined'.
+
+[7m14[0m   {audience}
+[7m  [0m [91m   ~~~~~~~~[0m
+[96msrc/pages/business/event.astro[0m:[93m13[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string[]'.
+
+[7m13[0m   {bullets}
+[7m  [0m [91m   ~~~~~~~[0m
+[96msrc/pages/business/event.astro[0m:[93m12[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string'.
+
+[7m12[0m   {summary}
+[7m  [0m [91m   ~~~~~~~[0m
+[96msrc/pages/business/event.astro[0m:[93m6[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'title' is declared but its value is never read.
+
+[7m6[0m const { title, description, summary, bullets, audience, ctaLabel } = page.data;
+[7m [0m [93m        ~~~~~[0m
+
+[96msrc/pages/business/hrd.astro[0m:[93m15[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string | undefined'.
+
+[7m15[0m   {ctaLabel}
+[7m  [0m [91m   ~~~~~~~~[0m
+[96msrc/pages/business/hrd.astro[0m:[93m14[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string | undefined'.
+
+[7m14[0m   {audience}
+[7m  [0m [91m   ~~~~~~~~[0m
+[96msrc/pages/business/hrd.astro[0m:[93m13[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string[]'.
+
+[7m13[0m   {bullets}
+[7m  [0m [91m   ~~~~~~~[0m
+[96msrc/pages/business/hrd.astro[0m:[93m12[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string'.
+
+[7m12[0m   {summary}
+[7m  [0m [91m   ~~~~~~~[0m
+
+[96msrc/pages/business/wellness.astro[0m:[93m15[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string | undefined'.
+
+[7m15[0m   {ctaLabel}
+[7m  [0m [91m   ~~~~~~~~[0m
+[96msrc/pages/business/wellness.astro[0m:[93m14[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string | undefined'.
+
+[7m14[0m   {audience}
+[7m  [0m [91m   ~~~~~~~~[0m
+[96msrc/pages/business/wellness.astro[0m:[93m13[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string[]'.
+
+[7m13[0m   {bullets}
+[7m  [0m [91m   ~~~~~~~[0m
+[96msrc/pages/business/wellness.astro[0m:[93m12[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string'.
+
+[7m12[0m   {summary}
+[7m  [0m [91m   ~~~~~~~[0m
+[96msrc/pages/business/wellness.astro[0m:[93m6[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'title' is declared but its value is never read.
+
+[7m6[0m const { title, description, summary, bullets, audience, ctaLabel } = page.data;
+[7m [0m [93m        ~~~~~[0m
+
+[96msrc/pages/life/club.astro[0m:[93m16[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string | undefined'.
+
+[7m16[0m   {ctaLabel}
+[7m  [0m [91m   ~~~~~~~~[0m
+[96msrc/pages/life/club.astro[0m:[93m15[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string | undefined'.
+
+[7m15[0m   {footnote}
+[7m  [0m [91m   ~~~~~~~~[0m
+[96msrc/pages/life/club.astro[0m:[93m14[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string | undefined'.
+
+[7m14[0m   {audience}
+[7m  [0m [91m   ~~~~~~~~[0m
+[96msrc/pages/life/club.astro[0m:[93m13[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string[]'.
+
+[7m13[0m   {bullets}
+[7m  [0m [91m   ~~~~~~~[0m
+[96msrc/pages/life/club.astro[0m:[93m12[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string'.
+
+[7m12[0m   {summary}
+[7m  [0m [91m   ~~~~~~~[0m
+[96msrc/pages/life/club.astro[0m:[93m6[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'title' is declared but its value is never read.
+
+[7m6[0m const { title, description, summary, bullets, audience, footnote, ctaLabel } = page.data;
+[7m [0m [93m        ~~~~~[0m
+
+[96msrc/pages/life/family.astro[0m:[93m16[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string | undefined'.
+
+[7m16[0m   {ctaLabel}
+[7m  [0m [91m   ~~~~~~~~[0m
+[96msrc/pages/life/family.astro[0m:[93m15[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string | undefined'.
+
+[7m15[0m   {footnote}
+[7m  [0m [91m   ~~~~~~~~[0m
+[96msrc/pages/life/family.astro[0m:[93m14[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string | undefined'.
+
+[7m14[0m   {audience}
+[7m  [0m [91m   ~~~~~~~~[0m
+[96msrc/pages/life/family.astro[0m:[93m13[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string[]'.
+
+[7m13[0m   {bullets}
+[7m  [0m [91m   ~~~~~~~[0m
+[96msrc/pages/life/family.astro[0m:[93m12[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string'.
+
+[7m12[0m   {summary}
+[7m  [0m [91m   ~~~~~~~[0m
+[96msrc/pages/life/family.astro[0m:[93m6[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'title' is declared but its value is never read.
+
+[7m6[0m const { title, description, summary, bullets, audience, footnote, ctaLabel } = page.data;
+[7m [0m [93m        ~~~~~[0m
+
+[96msrc/pages/life/school-youth.astro[0m:[93m16[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string | undefined'.
+
+[7m16[0m   {ctaLabel}
+[7m  [0m [91m   ~~~~~~~~[0m
+[96msrc/pages/life/school-youth.astro[0m:[93m15[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string | undefined'.
+
+[7m15[0m   {footnote}
+[7m  [0m [91m   ~~~~~~~~[0m
+[96msrc/pages/life/school-youth.astro[0m:[93m14[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string | undefined'.
+
+[7m14[0m   {audience}
+[7m  [0m [91m   ~~~~~~~~[0m
+[96msrc/pages/life/school-youth.astro[0m:[93m13[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string[]'.
+
+[7m13[0m   {bullets}
+[7m  [0m [91m   ~~~~~~~[0m
+[96msrc/pages/life/school-youth.astro[0m:[93m12[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string'.
+
+[7m12[0m   {summary}
+[7m  [0m [91m   ~~~~~~~[0m
+[96msrc/pages/life/school-youth.astro[0m:[93m6[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'title' is declared but its value is never read.
+
+[7m6[0m const { title, description, summary, bullets, audience, footnote, ctaLabel } = page.data;
+[7m [0m [93m        ~~~~~[0m
+
+[96msrc/pages/life/sports-event.astro[0m:[93m24[0m:[93m12[0m - [91merror[0m[90m ts(18046): [0m'packageSection' is of type 'unknown'.
+
+[7m24[0m           {packageSection.tiers.map((tier: { id: string; label: string; note?: string; price?: string; priceNote?: string; specs?: string[]; featured: boolean }) => (
+[7m  [0m [91m           ~~~~~~~~~~~~~~[0m
+[96msrc/pages/life/sports-event.astro[0m:[93m21[0m:[93m40[0m - [91merror[0m[90m ts(18046): [0m'packageSection' is of type 'unknown'.
+
+[7m21[0m         <p class="text-white/70 mb-8">{packageSection.note}</p>
+[7m  [0m [91m                                       ~~~~~~~~~~~~~~[0m
+[96msrc/pages/life/sports-event.astro[0m:[93m20[0m:[93m70[0m - [91merror[0m[90m ts(18046): [0m'packageSection' is of type 'unknown'.
+
+[7m20[0m         <h2 class="text-3xl font-display font-bold text-white mb-8">{packageSection.heading}</h2>
+[7m  [0m [91m                                                                     ~~~~~~~~~~~~~~[0m
+[96msrc/pages/life/sports-event.astro[0m:[93m15[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string | undefined'.
+
+[7m15[0m   {ctaLabel}
+[7m  [0m [91m   ~~~~~~~~[0m
+[96msrc/pages/life/sports-event.astro[0m:[93m14[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string | undefined'.
+
+[7m14[0m   {audience}
+[7m  [0m [91m   ~~~~~~~~[0m
+[96msrc/pages/life/sports-event.astro[0m:[93m13[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string[]'.
+
+[7m13[0m   {bullets}
+[7m  [0m [91m   ~~~~~~~[0m
+[96msrc/pages/life/sports-event.astro[0m:[93m12[0m:[93m4[0m - [91merror[0m[90m ts(2322): [0mType 'unknown' is not assignable to type 'string'.
+
+[7m12[0m   {summary}
+[7m  [0m [91m   ~~~~~~~[0m
+[96msrc/pages/life/sports-event.astro[0m:[93m6[0m:[93m9[0m - [93mwarning[0m[90m ts(6133): [0m'title' is declared but its value is never read.
+
+[7m6[0m const { title, description, summary, bullets, audience, ctaLabel, packageSection } = page.data;
+[7m [0m [93m        ~~~~~[0m
+
+Result (23 files): 
+- 59 errors
+- 0 warnings
+- 6 hints
+

@@ -1,0 +1,5 @@
+03:06:57 [types] Generated 614ms
+03:06:57 [build] output: "static"
+03:06:57 [build] directory: C:\Users\윤종호\Desktop\로잉프로홈페이지Reboot.202601\dist\
+03:06:57 [build] Collecting build info...
+03:06:57 [build] ✓ Completed in 688ms.

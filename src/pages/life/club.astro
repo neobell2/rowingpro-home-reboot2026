@@ -2,12 +2,12 @@
 import ServiceDetailPage from '../../components/ServiceDetailPage.astro';
 import { getEntry } from 'astro:content';
 
-const page = await getEntry('pages', 'service-family');
+const page = await getEntry('pages', 'life-club');
 const { title, description, summary, bullets, audience, footnote, ctaLabel } = page.data;
 ---
 
 <ServiceDetailPage
-  title="Family"
+  title="Club & General"
   {description}
   {summary}
   {bullets}
