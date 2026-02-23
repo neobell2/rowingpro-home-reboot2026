@@ -15,10 +15,16 @@ try {
 // 세로 우세형 로고 예외 목록 (WO 스펙: max-width 48px)
 const portraitLogoNames = ['Korea_Univ.svg'];
 const isPortrait = (url: string) => portraitLogoNames.some((name) => url.endsWith(name));
+
+interface Props {
+  caption?: string;
+}
+
+const { caption = "13년간 함께 해주신 500+ 클라이언트" } = Astro.props;
 ---
 
 <section class="client-banner-section">
-  <p class="banner-caption">13년간 함께 해주신 500+ 클라이언트</p>
+  {caption && <p class="banner-caption">{caption}</p>}
   <div class="banner-wrapper">
     <div class="banner-fade-left" aria-hidden="true"></div>
     <div class="banner-fade-right" aria-hidden="true"></div>

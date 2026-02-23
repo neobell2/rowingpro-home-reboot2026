@@ -77,8 +77,8 @@
   - ✅ **클라이언트 로고 66개 확보 완료** (SESSION_46H~46L): `/public/assets/images/logos/` (KIBS.png 제거)
   - ✅ **롤링배너 구현 완료** (SESSION_46L): `ClientLogosBanner.astro`, 모노크롬, 70초/루프
   - ✅ **WO_BUILDER_IA_TRANSITION 발행 완료** (SESSION_46L): Codex 주/Sonnet 검수, QA 프로토콜 6개 항목
+  - ✅ **IA 전환 구현 완료** (SESSION_46M): 17페이지 → 14페이지 구조 축소, TS 타입 스키마 에러 완벽 해결
   - 🔄 **콘텐츠 확정 작업 대기**: index.md 주석 해제 (디렉터 직접 입력)
-  - 🔄 **STEP 3: Builder — IA 전환 구현** (WO_BUILDER_IA_TRANSITION.md, ISSUED)
   - 🔄 **STEP 4: Designer+Builder — 레이아웃 재설계** (Decision Gate 후)
 
 ## 이슈

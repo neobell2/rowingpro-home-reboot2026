@@ -42,19 +42,10 @@ Phase 3 → Phase 4 전환 조건:
 
 ### 1. 콘텐츠 확정 (디렉터 직접 입력)
 목표: src/content/pages/*.md 파일에 디렉터 최종 카피 직접 입력 (진행 중)
-완료 후: 다음 단계 (2. Builder IA 전환) 수행
+완료 후: [STEP 3] Designer + Builder 의 하이브리드 레이아웃 폴리싱으로 이동
 
-### 2. Builder: IA 전환 및 스켈레톤 압축 구현
-- **담당:** Builder (Claude Sonnet 4.6 또는 GPT Codex)
-- **근거:** `WO_BUILDER_IA_TRANSITION.md`
-- **핵심:** 17페이지 → 14페이지 구조 축소 구현, GNB 변경, Index 7개 섹션 활성화. 콘텐츠 입력과 독립적으로 구조 공사 즉시 진행.
-
-### 3. Builder: 클라이언트 로고 롤링배너 컴포넌트 구현
-- **담당:** Builder (Claude Sonnet 4.6)
-- **근거:** `WO_BUILDER_ROLLING_BANNER.md` ✅ 발행 완료
-- **스펙 확정:** 모노크롬 기본 / hover 컬러 복원 / CSS-only / 로고 67개 전량
-- **에셋:** `/public/assets/images/logos/` 67개 확보 완료
-- **착수 조건:** 없음 — 즉시 착수 가능
+*(✅ 완료: Builder IA 전환 17->14페이지 압축 완료)*
+*(✅ 완료: Builder 클라이언트 로고 롤링배너 구현 완료)*
 
 ---
 
