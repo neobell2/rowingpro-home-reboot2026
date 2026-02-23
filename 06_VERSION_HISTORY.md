@@ -19,9 +19,8 @@
 | **v2.2** | 2026-02-13 | 세션 시작을 Quick/Conditional/Full Start로 재정의하고, 자동 주입 문서량을 줄이는 운영 방식을 도입. |
 | **v2.1** | 2026-02-13 | 실행 모드 정의를 "리포지토리 쓰기"로 확장(문서/폴더 포함). 문서 폴더 역할/변경관리/상대링크 규칙 추가. |
 | **v2.0** | 2026-02-13 | 문서 가버넌스 전면 개편. 6개 파편 규칙 → 단일 Hub 통합. 관문 프로토콜, 5개 핵심 문서 체계, 한국어 작성 원칙 도입. |
-| v1.2 | 2026-02-12 | Memory Protocol 개선 (Tiered Sync & Strategic Distillation) |
-| v1.1 | 2026-02-12 | Context Continuity Protocol 재구성 |
-| v1.0 | 2026-02-12 | 최초 작성 |
+
+> **초기 버전 (v1.0~v1.2)**: [docs/_archive/version_history/06_VERSION_HISTORY_EARLY_VERSIONS.md](docs/_archive/version_history/06_VERSION_HISTORY_EARLY_VERSIONS.md)
 
 ---
 
@@ -71,9 +70,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.33** | 2026-02-24 | SESSION_46L PM(Sonnet): 거버넌스 다이어트 — 8개 결정 아카이브(D-019~D-023, D-028, D-029, D-031). Phase 3 Operational 분리. |
+| **v1.32** | 2026-02-22 | D-042(AI 스쿼드 다원화 및 상호 보완 운용 원칙) 추가. 디렉터의 멀티 모델 신뢰 철학 반영. |
 | **v1.31** | 2026-02-22 | D-041(2026.02 AI 스쿼드 최적화) 등록. SESSION_46E 스쿼드 점검 결산. |
-| **v1.30** | 2026-02-21 | SESSION_46D PM(Gemini): D-040(IA 14페이지 재설계 확정, D-037 부분 수정) 등록. |
-| **v1.29** | 2026-02-19 | D-039(거버넌스 경량화 + 소비자 확인 의무화) 추가. SESSION_37 Architect/Opus. |
 | **v1.28** | 2026-02-18 | D-038(Google Workspace 다운사이징 방향) 추가. SESSION_35 PM/Sonnet. |
 | **v1.27** | 2026-02-18 | SESSION_33 PM(Sonnet): D-034(상품/가격 표기 정책), D-037(Programs 구조 확정), D-012 주소 교정(케이에듀동→케이앤몰동). |
 | **v1.26** | 2026-02-18 | SESSION_32 Architect(Opus): D-033(소비자 기준 원칙 확립). |
@@ -81,28 +80,8 @@
 | **v1.24** | 2026-02-17 | D-031 내 GEMINI.md 항목 교정: SESSION_27(PM) 생성 사실 반영. |
 | **v1.23** | 2026-02-17 | D-031 추가: CLAUDE.md 경량화 + Roo→Cline 전환 + Architect 모델 교정(Opus). |
 | **v1.22** | 2026-02-16 | D-030 추가: PM+DocManager 통합, Sonnet 배정. D-021/D-022/D-023 부분 대체. Architect 설계 결함 자인. |
-| **v1.21** | 2026-02-16 | D-029 갱신, Phase 3 초기 결정(D-013~D-018, D-027) 추가 아카이브. 활성 결정 10개만 유지. |
-| **v1.20** | 2026-02-16 | D-029 추가(Phase 2 아카이브 및 역순 정렬), Phase 2 결정(D-001~D-012) 아카이브 분리, Phase 3 결정 역순 배치. |
-| **v1.19** | 2026-02-16 | D-028 추가(세션 보고서 파일명 표준화: 작업자 약칭 추가로 검색성 향상). |
-| **v1.18** | 2026-02-16 | D-027 추가 (SESSION_22, 이후 Phase 3 초기 아카이브로 이동). |
-| **v1.17** | 2026-02-15 | D-025 추가(GPT Designer 제거 및 운영 스쿼드 재편), D-026 추가(Builder 모델 교체 권고). |
-| **v1.16** | 2026-02-15 | D-024 추가(Architect 역할 지정: 외부감사관 겸임, 필수 호출 지점 명시). 1주일 완료 목표 로드맵 수립. |
-| **v1.15** | 2026-02-15 | D-021~023 추가(PM 권한 재정의, Doc Manager 재포지셔닝, 세션 종료 프로토콜 개정). 거버넌스 모순 해결. |
-| **v1.14** | 2026-02-15 | D-020 추가(세션 부분 표기 규칙 명시: SESSION_19.5 등) |
-| **v1.13** | 2026-02-15 | D-019 추가(아카이브 정책 수립: Deprecated 리포트 관리) |
-| **v1.12** | 2026-02-15 | D-018 추가(PM/Doc Manager Claude Haiku 전환: 품질 향상 및 비용 최적화) |
-| **v1.11** | 2026-02-15 | D-017 추가(05_NEXT_TASK.md 근거 Work Order 명시 추가) |
-| **v1.10** | 2026-02-15 | D-016 추가(비용최적화 재구조화: Gemini 주력 전환, Designer 신설, 9개 역할 확정) |
-| **v1.9** | 2026-02-15 | D-015 추가(팀 구조 재편: PM 권한 제한, Documentation Manager 신설, RACI 매트릭스 도입) |
-| **v1.8** | 2026-02-15 | D-014 추가(콘텐츠 SSOT 최신화 및 재바인딩 기준 확정) |
-| **v1.7** | 2026-02-14 | D-013 추가(SESSION 18 작업 범위 축소 및 분리 결정) |
-| **v1.6** | 2026-02-14 | D-012 추가(Session 16 미결 사안 D1~D12 전체 확정, 히어로 타이틀/포인트 핑크 결정, 법인 정보 확보) |
-| **v1.5** | 2026-02-13 | D-011 추가(디자인 시스템 최종 확정, Heritage 승격, Cobalt 폐기, LOCKED 전환) |
-| **v1.4** | 2026-02-13 | D-010 추가(Quick/Conditional/Full Start 프로토콜 도입, 자동 주입 문서량 최적화) |
-| **v1.3** | 2026-02-13 | D-009 추가(실행 모드 정의 확장 + Work Order/Report 폴더 역할 확정) |
-| **v1.2** | 2026-02-13 | D-008 예시 표기에서 구 파일명 토큰 제거(혼동 방지) |
-| **v1.1** | 2026-02-13 | 01~05 문서 번호 체계 정본 확정(포인터 파일 미사용) 결정 추가 |
-| **v1.0** | 2026-02-13 | 문서 가버넌스 개편에 따라 신규 작성. 기존 세션 보고서 및 핸드오버에서 주요 결정 5건 복원. |
+
+> **초기 버전 (v1.0~v1.21)**: [docs/_archive/version_history/06_VERSION_HISTORY_EARLY_VERSIONS.md](docs/_archive/version_history/06_VERSION_HISTORY_EARLY_VERSIONS.md)
 
 ---
 
@@ -110,41 +89,17 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
-| **v1.35** | 2026-02-22 | SESSION_46E PM(Gemini): 2026.02 AI 스쿼드 최신화 검증. 부적절 산출물(47) 폐기, D-041(Claude 4.6 전면 승급) 및 스쿼드 템플릿 반영. |
-| **v1.34** | 2026-02-21 | SESSION_46D PM(Gemini): SESSION_46C 감사 후속조치 PM-01~PM-14 일괄 처리 완료. 완료 항목 경량화. |
-| **v1.32** | 2026-02-20 | SESSION_44 PM(Sonnet): 비공식 문서관리 — 버전히스토리 교정(04/05/06), 폴더 전수점검, legacy/ 압축, 빈폴더·위치오류 교정 7건. |
+| **v1.38** | 2026-02-24 | SESSION_46L PM(Sonnet): 거버넌스 다이어트 완료 — 해결된 이슈 4개 삭제, 완료 섹션 압축(36줄→7줄), 06 초기 버전 아카이브(58줄). |
+| **v1.37** | 2026-02-24 | SESSION_46L Builder+PM(Sonnet): 클라이언트 로고 롤링배너 구현 완료. KIBS.png 제거(66개), 모노크롬, 70초/루프. |
+| **v1.36** | 2026-02-23 | SESSION_46K 중간점검(PM/Sonnet): 로고 수량 교정(34종→67개), 중복/부적절 로고 4종 삭제, 문서 정합성 교정. |
 | **v1.31** | 2026-02-20 | SESSION_43 PM(Sonnet): 인원수 전수조사 방법확정, WO_BUILDER_HEADCOUNT_AUTOMATION 발행, 비공식 작업물 정리. |
 | **v1.30** | 2026-02-20 | SESSION_42 PM(Sonnet): SESSION_40/41 완료 반영, 차단이슈 원인 교정(설계결함 판정), R-01 신규 등록, seo_OPUS_draft 무효화 처리. |
 | **v1.29** | 2026-02-19 | SESSION_39 PM(Sonnet): SESSION_38 중단 반영, 이슈 3건 등록(WO순서오류/seo_OPUS오염/Git미커밋), 다음 실행 목록 확정. |
 | **v1.28** | 2026-02-18 | SESSION_37 PM(Sonnet): SESSION_36 완료 반영, WO_CONTENT_CONFIRMATION 신규 발행. |
 | **v1.27** | 2026-02-18 | SESSION_35 PM(Sonnet): 외부감사(SESSION_34) 리뷰. H-01/H-04 교정, Builder WO TASK 3 보강(8건), WO_SEO_BASELINE 신규 발행, SESSION_34~35 상태 반영. |
 | **v1.26** | 2026-02-18 | SESSION_33 PM(Sonnet): D-034, D-037, D-012 주소 교정, Builder WO 발행. SESSION_31~33 상태 반영. |
-| **v1.25** | 2026-02-18 | SESSION_31 PM(Sonnet): 콘텐츠 폴더 정리, TD-02 선행 결정, Architect WO 발행. |
-| **v1.24** | 2026-02-17 | SESSION_27 PM(Sonnet) 2차: WO 정비(PHASE_3_ROADMAP HPOC폐기·스쿼드 갱신, GEMINI_TOOLCHAIN COMPLETED), 리포트 아카이브 정리, git push 완료. |
-| **v1.23** | 2026-02-17 | SESSION_27 PM(Sonnet): config.toml 교정, GEMINI.md 생성, 거버넌스 오류 수정(06 누락버전 12개, D-031 교정, PROTOCOLS.md 06갱신규칙 추가). |
-| **v1.22** | 2026-02-17 | SESSION_26 Architect(Opus): CLAUDE.md 경량화(302→61줄), PROTOCOLS.md/ROLES.md 분리, Architect 모델 오타 교정, D-031, Gemini 툴체인 검토. |
-| **v1.21** | 2026-02-17 | SESSION_25 PM(Sonnet, D-030 첫 가동): Git 정리, WO 상태 갱신, 네이밍 규칙 수립, docs/_archive/ 전면 정비 완료. |
-| **v1.20** | 2026-02-16 | SESSION_24 Architect 감사: D-030 PM+DocMgr 통합(Sonnet), CLAUDE.md v3.0 반영. |
-| **v1.19** | 2026-02-16 | SESSION_22 PM: 외부감사 정리, WO 발행(Header 긴급복구/기술부채), 리포트 폴더 정리, 진행중 섹션 갱신. |
-| **v1.18** | 2026-02-15 | GPT Designer 제거 및 운영 스쿼드 재편 반영. Builder 모델 교체 권고 추가. D-025, D-026 반영. |
-| **v1.17** | 2026-02-15 | Architect 역할 공식 지정 (외부감사관 겸임, Sonnet), 필수 호출 지점 명시. D-024 반영. |
-| **v1.16** | 2026-02-15 | 거버넌스 모순 해결 완료. PM 권한 재정의, Doc Manager 재포지셔닝, 세션 종료 프로토콜 개정. CLAUDE.md v2.6, 03_DECISIONS.md D-021~023 기록. |
-| **v1.15** | 2026-02-15 | Session 19.7 완료. Preflight Work Order 발행, 팀 스쿼드 체제 확립, 이미지 자산 요구사항 명세, 거버넌스 이슈 발견(PM 권한). |
-| **v1.14** | 2026-02-15 | Session 19.6 완료. 문서 검수(정본/콘텐츠/구조 A-등급), 프로젝트 전수조사(미결 5건 명시), 아카이브 정책 수립(D-019), 2개 최종 보고서 생성. |
-| **v1.13** | 2026-02-15 | Session 19.6 문서 검수 완료. 콘텐츠 SSOT 근거 명시, Git 파일 이동 정리, Doc Manager 검수 보고서 생성. |
-| **v1.12** | 2026-02-15 | PM/Doc Manager를 Claude Haiku로 전환. 품질 향상 및 Gemini 크레딧 Content 집중 투입. |
-| **v1.11** | 2026-02-15 | Session 19.5 완료 반영. 팀 구조 외부 감사, 거버넌스 개선(문서 추적성 강화, Work Order 근거 명시). |
-| **v1.10** | 2026-02-15 | 비용최적화 재구조화. Doc Manager Gemini 전환, Designer/Media Producer 신설, 9개 역할 확정. 비용최적 vs 이상적 모델 병기. |
-| **v1.9** | 2026-02-15 | 팀 구조 재편. Documentation Manager 신설, PM 권한 제한, 스쿼드 7개→8개 역할 확대 (외부 감사 결과 반영) |
-| **v1.8** | 2026-02-15 | 운영 스쿼드 모델 사양 최신화 (Gemini 3.0 Pro/Flash, Claude 4.6/4.5, GPT 5.2/5.3) |
-| **v1.7** | 2026-02-15 | SESSION 18 완료 반영. 콘텐츠 SSOT 최신화, D-014 기록, Contact 법인정보 보강, 빌드 검증 통과 |
-| **v1.6** | 2026-02-14 | SESSION 16 완료 반영. D1~D12 전체 확정, IA 17페이지 확장, Phase 3 구현 단계 진입 |
-| **v1.5** | 2026-02-13 | SESSION 15 완료 반영. 디자인 시스템 LOCKED, Phase 2 완료, Phase 3 진입 준비 |
-| **v1.4** | 2026-02-13 | 세션 시작 Quick/Conditional/Full Start 도입 반영 |
-| **v1.3** | 2026-02-13 | 운영 스쿼드 템플릿 추가, 진행중 항목 중복 제거 |
-| **v1.2** | 2026-02-13 | 레거시 참조를 아카이브 경로(`docs/_archive/legacy/governance_v1/SESSION_HANDOVER_v1.md`)로 정정 |
-| **v1.1** | 2026-02-13 | 01~05 정본 문서 확정 및 도구 지침 참조 정렬 반영 |
-| **v1.0** | 2026-02-13 | 문서 가버넌스 개편에 따라 신규 작성. `docs/_archive/legacy/governance_v1/SESSION_HANDOVER_v1.md`의 상태 정보 추출 및 정리. |
+
+> **초기 버전 (v1.0~v1.25)**: [docs/_archive/version_history/06_VERSION_HISTORY_EARLY_VERSIONS.md](docs/_archive/version_history/06_VERSION_HISTORY_EARLY_VERSIONS.md)
 
 ---
 
@@ -162,13 +117,8 @@
 | **v1.9** | 2026-02-16 | SESSION_22: Header 모바일 메뉴 긴급 복구 우선순위 변경. 기술 부채 로드맵 반영. |
 | **v1.8** | 2026-02-15 | Phase 전환 체크리스트 신설, Architect 필수 호출 지점 명시 추가. D-024 반영. |
 | **v1.7** | 2026-02-15 | GPT Designer 제거 및 운영 스쿼드 재편 반영. D-025, D-026 반영. |
-| **v1.6** | 2026-02-15 | 근거 Work Order 명시 추가 (문서 추적성 강화). |
-| **v1.5** | 2026-02-15 | Phase 3 통합 로드맵(콘텐츠 고도화 우선) 반영 및 모델 사양 최신화 |
-| **v1.4** | 2026-02-15 | 현재 지시를 Session 19 디자인 폴리싱/기능 연동 준비로 갱신 (Session 18 완료) |
-| **v1.3** | 2026-02-14 | 현재 지시를 17페이지 스켈레톤 구현으로 갱신 (Session 16 완료) |
-| **v1.2** | 2026-02-13 | 금지사항에 문서체계/폴더 구조 변경 승인 관문을 명시 |
-| **v1.1** | 2026-02-13 | 현재 지시를 다음 단계(디자인 시스템 디벨롭/LOCKED 전환)로 갱신 |
-| **v1.0** | 2026-02-13 | 문서 가버넌스 개편에 따라 신규 작성. 현재 지시: 가버넌스 v2 이행 완료. |
+
+> **초기 버전 (v1.0~v1.6)**: [docs/_archive/version_history/06_VERSION_HISTORY_EARLY_VERSIONS.md](docs/_archive/version_history/06_VERSION_HISTORY_EARLY_VERSIONS.md)
 
 ---
 

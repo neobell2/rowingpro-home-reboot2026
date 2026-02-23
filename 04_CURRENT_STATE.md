@@ -7,12 +7,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.38** | 2026-02-24 | SESSION_46L PM(Sonnet): 거버넌스 다이어트 완료 — 해결된 이슈 4개 삭제, 완료 섹션 압축(36줄→7줄), 06 초기 버전 아카이브(58줄). |
 | **v1.37** | 2026-02-24 | SESSION_46L Builder+PM(Sonnet): 클라이언트 로고 롤링배너 구현 완료. KIBS.png 제거(66개), 모노크롬, 70초/루프. |
 | **v1.36** | 2026-02-23 | SESSION_46K 중간점검(PM/Sonnet): 로고 수량 교정(34종→67개), 중복/부적절 로고 4종 삭제, 문서 정합성 교정. |
-| **v1.35** | 2026-02-22 | SESSION_46E PM(Gemini): 2026.02 AI 스쿼드 최신화 검증. 부적절 산출물(47) 폐기, D-041(Claude 4.6 전면 승급) 반영. |
-| **v1.33** | 2026-02-21 | SESSION_46B PM(Sonnet): 컨텐츠 중간점검 완료(16/17), IA 재설계 확정(14페이지), 기업 서비스 통합(HRD 교육), Index 구성(7섹션+롤링배너 30개), 레이아웃 재설계 Decision Gate 설정. |
-| **v1.32** | 2026-02-20 | SESSION_44 PM(Sonnet): 비공식 문서관리 — 버전히스토리 교정(04/05/06), 폴더 전수점검, legacy/ 압축, 빈폴더·위치오류 교정 7건. |
-| **v1.31** | 2026-02-20 | SESSION_43 PM(Sonnet): 참여인원수 전수조사 방법확정, WO_BUILDER_HEADCOUNT_AUTOMATION 발행, 비공식 작업물 정리. |
 
 > 📋 **전체 버전 히스토리:** [06_VERSION_HISTORY.md](06_VERSION_HISTORY.md)
 
@@ -62,40 +59,12 @@
 
 ## 완료
 
-> 상세 이력: [docs/_archive/04_COMPLETED_LOG.md](docs/_archive/04_COMPLETED_LOG.md)
+> **상세 이력**: [docs/_archive/04_COMPLETED_LOG.md](docs/_archive/04_COMPLETED_LOG.md)
 
-- Phase 1: 기획/설계 완료
-- Phase 2: 디자인 시스템 LOCKED, D1~D12 확정, IA 17페이지 확장
-- Phase 3 (완료분): 스켈레톤 구현, 콘텐츠 SSOT 최신화, 거버넌스 감사 3회, Header 복구, Git/문서 정비, CLAUDE.md 경량화
-- SESSION_22~31: 외부감사 정리, Header 복구, Content Collections 설계, 콘텐츠 드래프트 3종, 비교시트 생산
-- SESSION_32~37: Architect Content Collections 설계 확정, Builder WO 구현, SEO 기반 구축, WO 아카이브 정비
-- SESSION_38~44: SEO 드래프트 병합, 외부감사(Codex), 폴더 정비, headcount 자동화 WO 발행
-- **SESSION_46B (PM/Sonnet)**: IA 14페이지 재설계 확정, Index 7섹션, Decision Gate 설정
-- **SESSION_46C (Architect/Opus)**: 통합 감사(정합성/업무/심층/로지컬), 가비지 5건 삭제, D-039 검증, AD-01 추인, 빌드 성공
-- **SESSION_46D (PM/Gemini)**:
-  - PM-01: D-040(IA 14페이지) 03_DECISIONS.md 등록
-  - PM-02: 02_ARCHITECTURE.md 14페이지 IA 전면 갱신, GNB/Footer/리소스 교정
-  - PM-03: 01_PROJECT_CONTEXT.md 17→14페이지, IA 간접화
-  - PM-04: 04_CURRENT_STATE.md 경량화
-  - PM-06: WO_CONTENT_CONFIRMATION SUPERSEDED
-  - PM-07: PHASE_3_INTEGRATED_ROADMAP_WO → _archive/work_orders/
-  - PM-08: WO_BUILDER_HEADCOUNT_AUTOMATION COMPLETED + 아카이브
-  - PM-09: docs/IA.md 삭제
-  - PM-10: NAMING_CONVENTIONS.md 경로 교정
-  - PM-11/12: docs/contents/ .md 21개+.html 1개 삭제 (src/content/pages/에 이전 완료)
-  - DD-03: public/logo.jpg+logo.png → public/images/ 이동
-- **SESSION_46E (PM/Gemini)**:
-  - 잘못된 페르소나/환각으로 생성된 SESSION_47 리포트 전면 파기 및 46E 정식 보고서 생성
-  - 2026.02 AI 스쿼드 최적화 검토 (D-041: Claude 4.6 전면 승급 확정) 및 스쿼드 템플릿 갱신
-- **SESSION_46G (PM/Sonnet)**:
-  - 46F 스레드 핸드오프 검토 완료 및 SESSION_48(GPT) 부적절 산출물 2건 삭제.
-  - D-041에 따른 `ROLES.md` 및 `PROTOCOLS.md` 상의 작업 모델 사양(Claude 4.6) 상향 교정.
-  - `06_VERSION_HISTORY.md` 전체 버전 히스토리 등록 완료.
-- **SESSION_46L (Builder+PM/Sonnet)**:
-  - 클라이언트 로고 롤링배너 구현 완료: `ClientLogosBanner.astro` 신규 생성, `index.astro` 삽입
-  - KIBS.png 제거 (67→66개 로고), 모노크롬 기본 / hover 컬러 복원, 70초/루프
-  - CSS-only 무한 스크롤, 접근성(prefers-reduced-motion) 지원
-  - 빌드 성공 (18 pages), 커밋 b03ad8a
+- **Phase 1~2**: 기획/설계, 디자인 시스템 LOCKED, IA 17페이지 확장
+- **Phase 3 (완료분)**: 스켈레톤 구현, 콘텐츠 SSOT, 거버넌스 감사, IA 14페이지 재설계, 롤링배너 구현
+
+> SESSION_22~SESSION_46L 상세 이력은 아카이브 참조
 
 ## 진행중
 
@@ -123,25 +92,6 @@
 - **Git 미커밋** — SESSION 38~41 작업물 미반영
   - 대상: *_REVIEW.html 17개, ai_studio_package/, seo_*.md, 보고서 4개, src/*.md 16개(SEO 주석), WO 수정분
   - 해결: SESSION_42 PM 커밋 (디렉터 승인 후)
-
-~~**WO_CONTENT_CONFIRMATION TASK 순서 오류**~~ → ✅ **RESOLVED (SESSION_40)**
-  - TASK 1.5(SEO)는 SESSION_40 Architect가 src 직접 편집 방식으로 완료 처리
-  - 원인(교정): WO TASK 순서 오류 + 설계 결함 (PM WO 거버넌스 위반 아님 — 디렉터 판정)
-
-~~**seo_OPUS_draft.md 오염**~~ → ✅ **무효화 (SESSION_40)**
-  - SESSION_40에서 src 직접 편집으로 대체. 무효화 주석 추가 완료 (SESSION_42)
-- ~~**Header 모바일 메뉴 기능 파산** (Session 21 외부감사 발견)~~ → ✅ **RESOLVED (Session 22, Builder/Codex)**
-  - 현상: 모바일(360px~768px)에서 햄버거 버튼 클릭 시 메뉴 미동작
-  - 원인: Session 17 스켈레톤 구현 시 미완성 (모바일 메뉴 스크립트/패널 마크업 누락)
-  - 해결: 햄버거 토글, 5가지 닫기 동작, 활성 링크, 글라스모피즘 적용 완료
-  - 검증: npm run build Exit 0, 모바일 동작 확인 완료
-  - Work Order: docs/work_orders/WO_HEADER_MOBILE_EMERGENCY.md
-  - Report: docs/reports/SESSION_22_BUILDER_CODEX.md
-
-- ~~**npm run build 실패** (Session 20 발견)~~ → ✅ **RESOLVED (Session 21, Builder/Codex)**
-  - 원인: Node v24 + Astro 4.16.19 호환성 (Windows crash 0xC0000409)
-  - 해결: Node 22 LTS로 빌드 경로 고정 (package.json)
-  - 검증: npm run build Exit 0, dist/ 생성, preview HTTP 200
 
 - Contact 폼 백엔드 연동(Supabase/Resend) 미구현 상태
   - 현재: 폼 UI/검증 구현만 완료
