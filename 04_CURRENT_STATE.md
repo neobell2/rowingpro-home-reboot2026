@@ -7,9 +7,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.39** | 2026-02-24 | SESSION_46L PM(Sonnet): WO_BUILDER_IA_TRANSITION 발행 완료 — Codex+Sonnet 하이브리드 방식, QA 프로토콜 추가. |
 | **v1.38** | 2026-02-24 | SESSION_46L PM(Sonnet): 거버넌스 다이어트 완료 — 해결된 이슈 4개 삭제, 완료 섹션 압축(36줄→7줄), 06 초기 버전 아카이브(58줄). |
 | **v1.37** | 2026-02-24 | SESSION_46L Builder+PM(Sonnet): 클라이언트 로고 롤링배너 구현 완료. KIBS.png 제거(66개), 모노크롬, 70초/루프. |
-| **v1.36** | 2026-02-23 | SESSION_46K 중간점검(PM/Sonnet): 로고 수량 교정(34종→67개), 중복/부적절 로고 4종 삭제, 문서 정합성 교정. |
 
 > 📋 **전체 버전 히스토리:** [06_VERSION_HISTORY.md](06_VERSION_HISTORY.md)
 
@@ -76,8 +76,9 @@
   - ✅ **SESSION_46C 감사 후속 PM 처리 완료** (SESSION_46D): PM-01~PM-14
   - ✅ **클라이언트 로고 66개 확보 완료** (SESSION_46H~46L): `/public/assets/images/logos/` (KIBS.png 제거)
   - ✅ **롤링배너 구현 완료** (SESSION_46L): `ClientLogosBanner.astro`, 모노크롬, 70초/루프
+  - ✅ **WO_BUILDER_IA_TRANSITION 발행 완료** (SESSION_46L): Codex 주/Sonnet 검수, QA 프로토콜 6개 항목
   - 🔄 **콘텐츠 확정 작업 대기**: index.md 주석 해제 (디렉터 직접 입력)
-  - 🔄 **STEP 3: Builder — IA 전환 구현** (WO_BUILDER_IA_TRANSITION.md)
+  - 🔄 **STEP 3: Builder — IA 전환 구현** (WO_BUILDER_IA_TRANSITION.md, ISSUED)
   - 🔄 **STEP 4: Designer+Builder — 레이아웃 재설계** (Decision Gate 후)
 
 ## 이슈
