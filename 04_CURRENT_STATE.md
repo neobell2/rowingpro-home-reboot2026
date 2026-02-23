@@ -7,6 +7,7 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.36** | 2026-02-23 | SESSION_46K 중간점검(PM/Sonnet): 로고 수량 교정(34종→67개), 중복/부적절 로고 4종 삭제, 문서 정합성 교정. |
 | **v1.35** | 2026-02-22 | SESSION_46E PM(Gemini): 2026.02 AI 스쿼드 최신화 검증. 부적절 산출물(47) 폐기, D-041(Claude 4.6 전면 승급) 반영. |
 | **v1.34** | 2026-02-21 | SESSION_46D PM(Gemini): SESSION_46C 감사 후속조치 PM-01~PM-14 일괄 처리 완료. 완료 항목 경량화. |
 | **v1.33** | 2026-02-21 | SESSION_46B PM(Sonnet): 컨텐츠 중간점검 완료(16/17), IA 재설계 확정(14페이지), 기업 서비스 통합(HRD 교육), Index 구성(7섹션+롤링배너 30개), 레이아웃 재설계 Decision Gate 설정. |
@@ -99,9 +100,8 @@
   - ✅ **SEO 4종 드래프트 병합 완료** (SESSION_40): 16개 frontmatter 주석 삽입
   - ✅ **IA 14페이지 재설계 확정** (SESSION_46B+46C): D-040
   - ✅ **SESSION_46C 감사 후속 PM 처리 완료** (SESSION_46D): PM-01~PM-14
+  - ✅ **클라이언트 로고 67개 확보 완료** (SESSION_46H~46K): `/public/assets/images/logos/` (중복 4종 제거 완료 — SESSION_46K 중간점검)
   - 🔄 **콘텐츠 확정 작업 대기**: index.md 주석 해제 (디렉터 직접 입력)
-  - 🔄 **Builder IA 전환 WO 발행 대기**: PM-14 (본 세션 마지막)
-  - STEP 2: Media PD — 클라이언트 로고 30개 수집 (WO_MEDIA_LOGO_COLLECTION)
   - STEP 3: Builder — IA 전환 구현
   - STEP 4: Designer+Builder — 레이아웃 재설계 (Decision Gate 후)
 
