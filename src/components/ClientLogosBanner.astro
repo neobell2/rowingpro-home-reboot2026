@@ -1,0 +1,125 @@
+---
+// 로고 파일 목록 수집 (Vite 빌드 타임 glob, JS 라이브러리 미사용)
+const allLogoFiles = import.meta.glob('/public/assets/images/logos/*');
+const logoUrls = Object.keys(allLogoFiles).map((path) => path.replace('/public', ''));
+
+// 세로 우세형 로고 예외 목록 (WO 스펙: max-width 48px)
+const portraitLogoNames = ['Korea_Univ.svg'];
+const isPortrait = (url: string) => portraitLogoNames.some((name) => url.endsWith(name));
+---
+
+<section class="client-banner-section">
+  <p class="banner-caption">13년간 함께 해주신 500+ 클라이언트</p>
+  <div class="banner-wrapper">
+    <div class="banner-fade-left" aria-hidden="true"></div>
+    <div class="banner-fade-right" aria-hidden="true"></div>
+    <div class="banner-track" role="list" aria-label="클라이언트 로고">
+      <!-- 세트 1 -->
+      {logoUrls.map((url) => (
+        <img
+          src={url}
+          alt=""
+          loading="lazy"
+          role="listitem"
+          class:list={['logo-item', isPortrait(url) && 'logo-portrait']}
+        />
+      ))}
+      <!-- 세트 2: 무한 루프용 복제 -->
+      {logoUrls.map((url) => (
+        <img
+          src={url}
+          alt=""
+          loading="lazy"
+          aria-hidden="true"
+          class:list={['logo-item', isPortrait(url) && 'logo-portrait']}
+        />
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .client-banner-section {
+    padding: 4rem 0;
+    background-color: rgba(5, 8, 15, 0.95);
+  }
+
+  .banner-caption {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+  }
+
+  .banner-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .banner-fade-left,
+  .banner-fade-right {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 6rem;
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  .banner-fade-left {
+    left: 0;
+    background: linear-gradient(to right, #05080f, transparent);
+  }
+
+  .banner-fade-right {
+    right: 0;
+    background: linear-gradient(to left, #05080f, transparent);
+  }
+
+  .banner-track {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    width: max-content;
+    animation: scroll-logos 70s linear infinite;
+  }
+
+  .banner-wrapper:hover .banner-track {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll-logos {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .logo-item {
+    height: 56px;
+    width: auto;
+    max-width: 160px;
+    object-fit: contain;
+    flex-shrink: 0;
+    filter: grayscale(100%) opacity(0.6);
+    transition: filter 0.3s ease;
+  }
+
+  .logo-item:hover {
+    filter: grayscale(0%) opacity(1);
+  }
+
+  .logo-portrait {
+    max-width: 48px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .banner-track {
+      animation: none;
+    }
+  }
+</style>

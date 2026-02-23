@@ -1,5 +1,6 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
+import ClientLogosBanner from '../components/ClientLogosBanner.astro';
 import { getEntry } from 'astro:content';
 
 const page = await getEntry('pages', 'index');
@@ -45,6 +46,9 @@ const { title, description, heroTitle, heroSubtitle, ctaPrimary, ctaSecondary, s
       </div>
     </div>
   </section>
+
+  <!-- Client Logos Rolling Banner -->
+  <ClientLogosBanner />
 
   <!-- Stats Section -->
   <section class="py-24 bg-deep/90">
