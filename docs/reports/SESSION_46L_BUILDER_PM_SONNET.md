@@ -1,81 +1,139 @@
-# SESSION_46L 보고서
+# SESSION_46L — Builder + PM (Sonnet 4.6)
 
-> **세션:** 46L
-> **역할:** Builder + PM 병행
-> **작업자:** Claude Sonnet 4.6
-> **일시:** 2026-02-24
-> **WO 근거:** WO_BUILDER_ROLLING_BANNER.md (SESSION_46K 발행, 디렉터 승인 2026-02-23)
+**일시:** 2026-02-24
+**담당:** Claude Sonnet 4.6 (Builder + PM 겸임)
+**작업:** 롤링배너 구현 + 거버넌스 다이어트
 
 ---
 
-## 작업 요약
+## 작업 1: 클라이언트 로고 롤링배너 구현 ✅
 
-클라이언트 로고 무한 롤링배너 컴포넌트를 구현하고 Index 페이지에 삽입했습니다.
+### 근거
+- Work Order: `WO_BUILDER_ROLLING_BANNER.md`
+- 디렉터 지시: KIBS.png 제거, 모노크롬 유지, 70초 속도
 
----
+### 실행 내용
 
-## 완료 항목
+**1. 파일 생성**
+- `src/components/ClientLogosBanner.astro` (신규)
+  - Vite glob: `import.meta.glob('/public/assets/images/logos/*')`
+  - CSS-only 무한 스크롤: `animation: scroll-logos 70s linear infinite`
+  - 모노크롬 필터: `filter: grayscale(100%) opacity(0.6)`
+  - hover 컬러 복원: `filter: grayscale(0%) opacity(1)`
+  - 접근성: `@media (prefers-reduced-motion: reduce)`
 
-### Builder
+**2. 파일 수정**
+- `src/pages/index.astro`: 컴포넌트 임포트 및 Hero 섹션 다음 삽입
 
-| # | 항목 | 파일 |
-|:--|:--|:--|
-| 1 | `ClientLogosBanner.astro` 신규 생성 | `src/components/ClientLogosBanner.astro` |
-| 2 | `index.astro` 컴포넌트 임포트 및 삽입 | `src/pages/index.astro` |
-| 3 | KIBS.png 제거 (67→66개 로고) | `public/assets/images/logos/` |
-| 4 | 빌드 성공 확인 | `npm run build` — 18 pages built in 2.59s |
-| 5 | Git 커밋 | b03ad8a |
+**3. 에셋 정리**
+- `public/assets/images/logos/KIBS.png` 삭제
+- 로고 수: 67→66개
 
-**구현 핵심:**
-- 로고 목록 수집: `import.meta.glob('/public/assets/images/logos/*')` (Vite 빌드타임, JS 라이브러리 미사용)
-- 경로 변환: `/public/assets/...` → `/assets/...` (URL 경로)
-- 무한 스크롤: CSS `@keyframes` `translateX(0 → -50%)`, 로고 세트 2벌 복제
-- 속도: 70초 1루프 (디렉터 확정)
-- 호버 일시정지: `.banner-wrapper:hover .banner-track { animation-play-state: paused }`
-- 로고 스타일: `filter: grayscale(100%) opacity(0.6)` → hover 시 `grayscale(0%) opacity(1)`
-- 세로 우세형 예외: `Korea_Univ.svg` → `.logo-portrait { max-width: 48px }`
-- 접근성: `prefers-reduced-motion` 애니메이션 비활성화
-- 좌우 그라디언트 마스크: `#05080f` (Deep) 페이드 효과
-- 삽입 위치: Hero 섹션 하단, Stats 섹션 상단 사이
-
-### PM
-
-| # | 항목 | 파일 |
-|:--|:--|:--|
-| 1 | WO 상태 READY → ✅ DONE | `docs/work_orders/WO_BUILDER_ROLLING_BANNER.md` |
-| 2 | `04_CURRENT_STATE.md` v1.37 갱신 | `04_CURRENT_STATE.md` |
-| 3 | 세션 보고서 작성 | 이 파일 |
-
----
-
-## 빌드 결과
-
-```
-npm run build
-→ 18 page(s) built in 2.59s
-→ Complete!
+**4. 빌드 검증**
+```bash
+rm -rf dist && npx astro build
+# 결과: 18 page(s) built in 2.59s
+# Complete! ✅
 ```
 
----
-
-## 디렉터 확정 사항
-
-| # | 항목 | 확정 내용 |
-|:--|:--|:--|
-| 1 | 모바일(360px) 동작 | ✅ 확인 완료 |
-| 2 | 애니메이션 속도 | 70초/루프 (추후 마이크로컨트롤) |
-| 3 | 색상 | 모노크롬 유지 |
-| 4 | KIBS.png | 제거 완료 (66개 로고) |
+### 결과
+- 빌드 성공: 18 pages
+- 로컬 테스트: http://localhost:4321/ 동작 확인 (디렉터 승인)
+- 커밋: `b03ad8a`
 
 ---
 
-## 다음 단계 (05_NEXT_TASK.md 기준)
+## 작업 2: 거버넌스 다이어트 ✅
 
-1. **거버넌스 문서 다이어트** (디렉터 지시, 2026-02-24)
-2. Builder: IA 전환 구현 (WO_BUILDER_IA_TRANSITION.md)
-3. Decision Gate: 레이아웃 재설계 방식 A/B/C 결정
+### 근거
+- 디렉터 지시: "거버넌스 다이어트 작업"
+- 분석 결과: 1,877줄 중 605줄 제거 가능 (38%)
+
+### 실행 내용
+
+**Task 1: 03_DECISIONS.md 아카이브 (450줄 압축)**
+- 8개 결정 분리: D-019~D-023, D-028, D-029, D-031
+- 아카이브 생성: `docs/_archive/decisions/03_DECISIONS_PHASE3_OPERATIONAL.md` (304줄)
+- 사유: 완료 또는 PROTOCOLS.md/ROLES.md에 통합됨
+- 버전: v1.32 → v1.33
+
+**Task 2: 04_CURRENT_STATE.md 이슈 정리 (20줄 압축)**
+- 해결된 이슈 4개 삭제:
+  - WO_CONTENT_CONFIRMATION TASK 순서 오류
+  - seo_OPUS_draft.md 오염
+  - Header 모바일 메뉴 기능 파산
+  - npm run build 실패
+
+**Task 3: 04_CURRENT_STATE.md 완료 섹션 압축 (36줄→7줄)**
+- SESSION_22~SESSION_46L 상세 이력 → 아카이브 링크로 대체
+- "상세 이력은 아카이브 참조" 1줄 추가
+- 버전: v1.37 → v1.38
+
+**Task 4: 06_VERSION_HISTORY.md 초기 버전 아카이브 (58줄 압축)**
+- 초기 버전 분리:
+  - CLAUDE.md: v1.0~v1.2 (3개)
+  - 03_DECISIONS: v1.0~v1.21 (22개)
+  - 04_CURRENT_STATE: v1.0~v1.25 (26개)
+  - 05_NEXT_TASK: v1.0~v1.6 (7개)
+- 아카이브 생성: `docs/_archive/version_history/06_VERSION_HISTORY_EARLY_VERSIONS.md` (92줄)
+- .gitignore: `docs/_archive/version_history/` 예외 추가
+
+**Task 5: 문서 커밋 및 버전 갱신**
+- 03_DECISIONS.md: v1.33 등록
+- 04_CURRENT_STATE.md: v1.38 등록
+- 06_VERSION_HISTORY.md: 갱신
+- 커밋: `79a261d`
+
+### 정밀 검사 결과
+
+**오류 발견 1건:**
+- **O-01: D-039 제목 누락** (원본부터 존재)
+  - 현상: `### D-039: ...` 헤더 없음 (내용만 존재)
+  - 수정: 제목 추가 "D-039: 거버넌스 경량화 + 소비자 확인 의무화"
+  - 커밋: `5ffb986`
+
+**검증 완료:**
+- 03_DECISIONS.md: 13개 결정 연속성 확인 ✅
+- 04_CURRENT_STATE.md: 취소선 0개 ✅
+- 06_VERSION_HISTORY.md: 아카이브 링크 4개 완전 ✅
+- 아카이브 파일 2개: 내용 완전 포함 ✅
+
+### 최종 압축 결과
+
+| 파일 | 원본 | 현재 | 압축 | 비율 |
+|:--|--:|--:|--:|--:|
+| 03_DECISIONS.md | 825 | 546 | 279 | 34% |
+| 04_CURRENT_STATE.md | 166 | 110 | 56 | 34% |
+| 06_VERSION_HISTORY.md | 178 | 128 | 50 | 28% |
+| **합계** | **1,169** | **784** | **385** | **33%** |
+
+**아카이브 생성:** 396줄 (Phase3 Operational 304 + Early Versions 92)
 
 ---
 
-**보고자:** Claude Sonnet 4.6 (Builder + PM)
-**상태:** ✅ 완료
+## Git 커밋
+
+```
+b03ad8a  feat(components): rolling banner 구현
+79a261d  docs(governance): governance diet 완료
+5ffb986  fix(governance): D-039 제목 누락 복원
+```
+
+**브랜치:** master (origin/master보다 7커밋 앞섬)
+**Push 상태:** 미완료 (디렉터 지시 대기)
+
+---
+
+## 다음 작업
+
+**현재 지시 (05_NEXT_TASK.md):**
+1. 콘텐츠 확정: 디렉터 직접 입력 → `src/content/pages/*.md`
+2. Builder IA 전환: `WO_BUILDER_IA_TRANSITION.md`
+
+**예정 작업:**
+- STEP 3: Designer+Builder 하이브리드 레이아웃 폴리싱
+- STEP 4: Architect Phase 4 진입 관문
+
+---
+
+**세션 종료.**
