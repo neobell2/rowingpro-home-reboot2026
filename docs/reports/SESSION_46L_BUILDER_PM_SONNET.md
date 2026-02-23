@@ -124,6 +124,41 @@ b03ad8a  feat(components): rolling banner 구현
 
 ---
 
+## 작업 3: WO_BUILDER_IA_TRANSITION 발행 ✅
+
+### 근거
+- 디렉터 지시: "코덱스메인, 소네트검수로 오더 확정발행"
+- D-042: AI 스쿼드 다원화 및 상호 보완 운용 원칙
+
+### 실행 내용
+
+**1. Work Order 수정**
+- 수신자 변경: Builder → Builder (GPT Codex 주 / Claude Sonnet 4.6 검수)
+- 상태 변경: READY → ISSUED
+- 근거 추가: D-042 (다원화 및 상호 보완 운용)
+- 발행 일시: 2026-02-24 (최종 발행)
+
+**2. QA 프로토콜 섹션 추가**
+- 작업 흐름: Codex 구현 → Sonnet 검수 → 승인 후 커밋
+- Sonnet 검수 항목 6개:
+  1. 디자인 토큰 일관성
+  2. 리디렉트 규칙 완전성 (12개)
+  3. 빌드 성공 확인
+  4. 링크 무결성
+  5. Content Collections 스키마
+  6. 네비게이션 구조
+
+**3. 하이브리드 접근 사유**
+- Codex: 원저자 (SESSION_17), 구조 변경 속도 우수
+- Sonnet: 디자인 토큰/품질 검증 정밀도 우수
+- 위험도: 4/5 (Breaking change, SEO 영향)
+
+### 결과
+- WO 발행 완료: `docs/work_orders/WO_BUILDER_IA_TRANSITION.md` (ISSUED)
+- 다음 세션: GPT Codex Builder 호출 예정
+
+---
+
 ## 다음 작업
 
 **현재 지시 (05_NEXT_TASK.md):**

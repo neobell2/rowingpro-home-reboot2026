@@ -1,10 +1,10 @@
 # WO_BUILDER_IA_TRANSITION — IA 14페이지 전환 구현
 
-**발행:** PM / Gemini (SESSION_46D)
-**수신:** Builder
-**일시:** 2026-02-21
-**상태:** [STATUS: READY] — 선행 조건 모두 완료
-**근거:** `docs/reports/SESSION_46C_ARCHITECT_OPUS.md` BL-01~BL-12 + AD-02 URL 권고
+**발행:** PM / Gemini (SESSION_46D) + PM / Sonnet (SESSION_46L)
+**수신:** Builder (GPT Codex 주 / Claude Sonnet 4.6 검수)
+**일시:** 2026-02-21 (초안) / 2026-02-24 (최종 발행)
+**상태:** [STATUS: ISSUED] — Codex+Sonnet 하이브리드 작업
+**근거:** `docs/reports/SESSION_46C_ARCHITECT_OPUS.md` BL-01~BL-12 + AD-02 URL 권고 + D-042 (다원화 및 상호 보완 운용)
 
 ---
 
@@ -223,6 +223,42 @@ trailing slash 제거 (astro.config trailingSlash: 'never'와 일치)
 - [ ] BL-12: _redirects 파일 생성
 - [ ] `npm run build` Exit 0
 - [ ] Builder 세션 보고서 작성
+
+---
+
+## QA 프로토콜 — Sonnet 검수 필수
+
+**작업 흐름:** Codex 구현 → Sonnet 검수 → 승인 후 커밋
+
+### Sonnet 검수 항목
+
+1. **디자인 토큰 일관성**
+   - `02_ARCHITECTURE.md` 컬러/타이포/간격 시스템 준수
+   - 글라스모피즘 적용 일관성 (허브 카드, 버튼)
+   - 히어로 타이틀 White 확인
+
+2. **리디렉트 규칙 완전성**
+   - 12개 URL 매핑 전부 `public/_redirects`에 존재
+   - 형식: Cloudflare Pages 호환 (`/old /new 301`)
+
+3. **빌드 성공 확인**
+   - `npm run build` Exit 0
+   - 14페이지 전부 생성 확인
+
+4. **링크 무결성**
+   - Header/Footer 링크 404 없음
+   - 허브 페이지 카드 링크 정확성
+   - Index 섹션 앵커 링크 유효성
+
+5. **Content Collections 스키마**
+   - `src/content/config.ts` 타입 준수
+   - 필수 필드 누락 없음 (heroTitle, heroSubtitle 등)
+
+6. **네비게이션 구조**
+   - GNB 6메뉴: Home | About | 비즈니스 | 라이프 | History | Contact
+   - Footer Quick Links: /business, /life 포함 확인
+
+**검수 실패 시:** Codex에게 수정 요청 후 재검수
 
 ---
 
