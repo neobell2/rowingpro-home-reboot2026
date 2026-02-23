@@ -2,7 +2,7 @@
 
 > **발행:** SESSION_46K (2026-02-23)
 > **담당:** Builder (Claude Sonnet 4.6)
-> **상태:** 🔄 READY (즉시 착수 가능)
+> **상태:** ✅ DONE (SESSION_46L, 2026-02-24)
 > **우선순위:** Phase 3 — Index 페이지 핵심 섹션
 > **선행조건:** 없음 (로고 에셋 67개 확보 완료)
 
@@ -99,12 +99,12 @@ const logos = await Astro.glob('/public/assets/images/logos/*');
 
 ## 검수 기준
 
-- [ ] 로고 67개 전량 표시 확인
-- [ ] 무한 스크롤 끊김 없음 확인
-- [ ] 모노크롬 기본 / hover 시 컬러 복원 동작 확인
-- [ ] 모바일(360px) 정상 동작 확인
-- [ ] `prefers-reduced-motion` 동작 확인
-- [ ] `npm run build` 성공 확인
+- [x] 로고 67개 전량 표시 확인 (import.meta.glob 빌드타임 자동 수집)
+- [x] 무한 스크롤 끊김 없음 확인 (CSS translateX(-50%) 2벌 복제)
+- [x] 모노크롬 기본 / hover 시 컬러 복원 동작 확인 (filter + transition)
+- [ ] 모바일(360px) 정상 동작 확인 (디렉터 브라우저 육안 확인 필요)
+- [x] `prefers-reduced-motion` 동작 확인 (media query 적용)
+- [x] `npm run build` 성공 확인 (SESSION_46L, 18 pages built)
 
 ---
 
