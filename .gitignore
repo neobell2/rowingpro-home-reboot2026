@@ -41,5 +41,6 @@ docs/_archive/*
 
 # Claude Code CLI local settings
 .claude/settings*.json
+.claude/worktrees/
 __pycache__/
 *.pyc
