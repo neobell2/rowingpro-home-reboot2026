@@ -89,9 +89,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.40** | 2026-02-24 | SESSION_47E PM(Sonnet): IA 전환 Cloudflare Pages 배포 완료, 14페이지 정상 작동 확인, 모바일 메뉴 가독성 이슈 기록. |
 | **v1.39** | 2026-02-24 | SESSION_46L PM(Sonnet): WO_BUILDER_IA_TRANSITION 발행 완료 — Codex+Sonnet 하이브리드 방식, QA 프로토콜 추가. |
 | **v1.38** | 2026-02-24 | SESSION_46L PM(Sonnet): 거버넌스 다이어트 완료 — 해결된 이슈 4개 삭제, 완료 섹션 압축(36줄→7줄), 06 초기 버전 아카이브(58줄). |
-| **v1.37** | 2026-02-24 | SESSION_46L Builder+PM(Sonnet): 클라이언트 로고 롤링배너 구현 완료. KIBS.png 제거(66개), 모노크롬, 70초/루프. |
 | **v1.36** | 2026-02-23 | SESSION_46K 중간점검(PM/Sonnet): 로고 수량 교정(34종→67개), 중복/부적절 로고 4종 삭제, 문서 정합성 교정. |
 | **v1.31** | 2026-02-20 | SESSION_43 PM(Sonnet): 인원수 전수조사 방법확정, WO_BUILDER_HEADCOUNT_AUTOMATION 발행, 비공식 작업물 정리. |
 | **v1.30** | 2026-02-20 | SESSION_42 PM(Sonnet): SESSION_40/41 완료 반영, 차단이슈 원인 교정(설계결함 판정), R-01 신규 등록, seo_OPUS_draft 무효화 처리. |

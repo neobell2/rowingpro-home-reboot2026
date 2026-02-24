@@ -7,9 +7,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.40** | 2026-02-24 | SESSION_47E PM(Sonnet): IA 전환 Cloudflare Pages 배포 완료, 14페이지 정상 작동 확인, 모바일 메뉴 가독성 이슈 기록. |
 | **v1.39** | 2026-02-24 | SESSION_46L PM(Sonnet): WO_BUILDER_IA_TRANSITION 발행 완료 — Codex+Sonnet 하이브리드 방식, QA 프로토콜 추가. |
 | **v1.38** | 2026-02-24 | SESSION_46L PM(Sonnet): 거버넌스 다이어트 완료 — 해결된 이슈 4개 삭제, 완료 섹션 압축(36줄→7줄), 06 초기 버전 아카이브(58줄). |
-| **v1.37** | 2026-02-24 | SESSION_46L Builder+PM(Sonnet): 클라이언트 로고 롤링배너 구현 완료. KIBS.png 제거(66개), 모노크롬, 70초/루프. |
 
 > 📋 **전체 버전 히스토리:** [06_VERSION_HISTORY.md](06_VERSION_HISTORY.md)
 
@@ -78,6 +78,7 @@
   - ✅ **롤링배너 구현 완료** (SESSION_46L): `ClientLogosBanner.astro`, 모노크롬, 70초/루프
   - ✅ **WO_BUILDER_IA_TRANSITION 발행 완료** (SESSION_46L): Codex 주/Sonnet 검수, QA 프로토콜 6개 항목
   - ✅ **IA 전환 구현 완료** (SESSION_46M): 17페이지 → 14페이지 구조 축소, TS 타입 스키마 에러 완벽 해결
+  - ✅ **IA 전환 배포 완료** (SESSION_47E): Cloudflare Pages 배포 성공, 14페이지 전체 정상 작동 확인, 구버전 MD 참조용 보관
   - 🔄 **콘텐츠 확정 작업 대기**: index.md 주석 해제 (디렉터 직접 입력)
   - 🔄 **STEP 4: Designer+Builder — 레이아웃 재설계** (Decision Gate 후)
 
@@ -107,5 +108,9 @@
 
 ### 재검토 가능(Optional)
 - 디자인 단계 재검토 가능: 히어로 타이틀 색상, 포인트 핑크 사용 여부 (D-012 참조)
+- **모바일 메뉴 가독성 개선** — 신규 식별 (SESSION_47E)
+  - 현상: 모바일 뷰 햄버거 메뉴 열림 시 메뉴 항목이 배경 콘텐츠에 가려져 가독성 저하
+  - 개선안: 메뉴 오버레이 opacity 조정, 배경 blur 강화, 또는 메뉴 배경색 불투명도 증가
+  - 담당: Designer (Phase 3 디자인 폴리싱 단계에서 처리)
 
 ---
