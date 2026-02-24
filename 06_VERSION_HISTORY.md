@@ -108,6 +108,10 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.20** | 2026-02-24 | SESSION_47E PM(Sonnet): Architect IA 평가 소환 지시 추가. Gemini 3.1 Builder 능력 검증, IA 14페이지 정합성 평가. |
+| **v1.19** | 2026-02-23 | SESSION_46K PM(Sonnet): 롤링배너 Builder WO 발행 확정. 모노크롬+한색 hover 스펙, CSS-only, 67개 로고 전량 사용. |
+| **v1.18** | 2026-02-22 | SESSION_46G PM(Gemini): 다원적 AI 스쿼드 운용 원칙(D-042)에 따른 스쿼드 라인업 및 향후 하이브리드 지시 추가. |
+| **v1.17** | 2026-02-21 | SESSION_46D PM(Gemini): 46C 감사 후속 PM 처리 완료 반영. 현재 지시 갱신. Builder/Designer WO 착수 선행조건 명시. |
 | **v1.16** | 2026-02-21 | SESSION_46B PM(Sonnet): Decision Gate 추가(레이아웃 재설계 방식), IA 14페이지 반영, 1차 예정 지시 갱신(미디어 자산 우선순위). |
 | **v1.15** | 2026-02-18 | SESSION_37 PM(Sonnet): SESSION_36 완료 반영. 현재 지시를 콘텐츠 확정(디렉터 직접 입력)으로 교체. |
 | **v1.14** | 2026-02-18 | SESSION_35 PM(Sonnet): Builder WO TASK 3 보강(8건), WO_SEO_BASELINE 신규 추가. 현재 지시 갱신. |

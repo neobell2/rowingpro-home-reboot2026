@@ -7,9 +7,9 @@
 
 | 버전 | 일시 | 변경 내용 |
 |:--|:--|:--|
+| **v1.20** | 2026-02-24 | SESSION_47E PM(Sonnet): Architect IA 평가 소환 지시 추가. Gemini 3.1 Builder 능력 검증, IA 14페이지 정합성 평가. |
 | **v1.19** | 2026-02-23 | SESSION_46K PM(Sonnet): 롤링배너 Builder WO 발행 확정. 모노크롬+한색 hover 스펙, CSS-only, 67개 로고 전량 사용. |
 | **v1.18** | 2026-02-22 | SESSION_46G PM(Gemini): 다원적 AI 스쿼드 운용 원칙(D-042)에 따른 스쿼드 라인업 및 향후 하이브리드 지시 추가. |
-| **v1.17** | 2026-02-21 | SESSION_46D PM(Gemini): 46C 감사 후속 PM 처리 완료 반영. 현재 지시 갱신. Builder/Designer WO 착수 선행조건 명시. |
 | **v1.16** | 2026-02-21 | SESSION_46B PM(Sonnet): Decision Gate 추가(레이아웃 재설계 방식), IA 14페이지 반영, 1차 예정 지시 갱신(미디어 자산 우선순위). |
 
 > 📋 **전체 버전 히스토리:** [06_VERSION_HISTORY.md](06_VERSION_HISTORY.md)
@@ -40,12 +40,26 @@ Phase 3 → Phase 4 전환 조건:
 
 ## 현재 지시 (진행중)
 
-### 1. 콘텐츠 확정 (디렉터 직접 입력)
-목표: src/content/pages/*.md 파일에 디렉터 최종 카피 직접 입력 (진행 중)
-완료 후: [STEP 3] Designer + Builder 의 하이브리드 레이아웃 폴리싱으로 이동
+### 1. Architect 소환 — IA 전환 작업 평가 (최우선)
+**담당:** Architect (Claude Opus 4.6)
+**목적:** Gemini 3.1 Builder 능력 검증 및 IA 14페이지 아키텍처 정합성 평가
+**지시서:** [docs/work_orders/ARCHITECT_IA_EVALUATION.md](docs/work_orders/ARCHITECT_IA_EVALUATION.md)
 
-*(✅ 완료: Builder IA 전환 17->14페이지 압축 완료)*
-*(✅ 완료: Builder 클라이언트 로고 롤링배너 구현 완료)*
+**평가 범위:**
+- SESSION_47 (Gemini Builder) IA 전환 작업 기술 품질
+- Content Collections 스키마 설계 타당성
+- Astro v5 업그레이드 영향도
+- 치명적 결함 1~3건만 요약 (D-042 메타감사 룰)
+
+---
+
+### 2. 콘텐츠 확정 (디렉터 직접 입력, 병행 가능)
+목표: src/content/pages/*.md 파일에 디렉터 최종 카피 직접 입력 (진행 중)
+참조: docs/contents/_reference/deleted_pages/ (구버전 6개 파일)
+완료 후: [STEP 3] Designer + Builder 하이브리드 레이아웃 폴리싱으로 이동
+
+*(✅ 완료: IA 전환 17->14페이지 Cloudflare Pages 배포)*
+*(✅ 완료: 클라이언트 로고 롤링배너 구현)*
 
 ---
 
